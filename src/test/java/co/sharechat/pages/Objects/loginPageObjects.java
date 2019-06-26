@@ -1,0 +1,23 @@
+package co.sharechat.pages.Objects;
+
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+
+public class loginPageObjects {
+
+    @AndroidFindBy(xpath = "in.mohalla.sharechat:id/select_title")
+    public MobileElement selectTitle;
+
+    @AndroidFindBy(xpath = "//*[@text='ಕನ್ನಡ']")
+    public MobileElement selectKannada;
+
+    @AndroidFindBy(xpath = "//*[@text='ಶೇರ್ ಚಾಟ್']")
+    public MobileElement shareChatTextInKannada;
+
+    @AndroidFindBy(xpath = "in.mohalla.sharechat:id/et_phone")
+    public MobileElement et_Phone;
+
+    @AndroidFindBy(xpath = "in.mohalla.sharechat:id/tv_get_otp")
+    public MobileElement tv_get_otp;
+
+}
