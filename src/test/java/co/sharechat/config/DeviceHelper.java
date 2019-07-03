@@ -51,9 +51,22 @@ public class DeviceHelper {
     }
 
 
+    public void swipe(int startx, int starty, int endx, int endy) {
+        Dimension size = driver.manage().window().getSize();
+
+        try {
+            System.out.println("Trying to swipe up from x:" + startx + " y:" + starty + ", to x:" + endx + " y:" + endy);
+            new TouchAction((PerformsTouchActions) driver).press(point(startx, starty)).waitAction(waitOptions(ofSeconds(2)))
+                    .moveTo(point(endx, endy)).release().perform();
+        } catch (Exception e) {
+            System.out.println("Swipe did not complete succesfully.");
+        }
+    }
+
+
     public void waitTillTheElementIsVisibleAndClickable(WebElement element) {
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 12);
         wait.until(ExpectedConditions.visibilityOf(element));
 
         wait = new WebDriverWait(driver, 5);
