@@ -1,14 +1,14 @@
 {
   "android": {
     "platformName": "android",
-    "platformVersion": "6.0.1",
+    "platformVersion": "9",
     "automationName":"appium",
-    "app":"apkfile/SharechatAndroid-debug-4698.apk",
+    "app":"apkfile/sharechat.apk",
     "noReset":"false",
     "fullReset":"true",
     "appPackage": "in.mohalla.sharechat",
     "appActivity": "in.mohalla.sharechat.splash.SplashActivity",
-    "deviceName": "f19a9b2e"
+    "deviceName": "479a0d0e"
   },
   "iOS": {
   "platformName": "iOS",

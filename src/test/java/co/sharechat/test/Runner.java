@@ -14,7 +14,8 @@ public class Runner {
             ParallelThread parallelThread = new ParallelThread();
 
             List<String> tests = new ArrayList<>();
-            tests.add("launchAppTest");
+            //tests.add("SignUpTests");
+            tests.add("ReferralTests");
             parallelThread.runner("co.sharechat.test", tests);
         }
         catch(Exception e4)

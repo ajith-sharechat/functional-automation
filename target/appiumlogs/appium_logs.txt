@@ -1,0 +1,1346 @@
+2019-07-04 08:27:13:025 [Appium] Welcome to Appium v1.14.0-rc.1
+2019-07-04 08:27:13:026 [Appium] Non-default server args:
+2019-07-04 08:27:13:027 [Appium]   address: 127.0.0.1
+2019-07-04 08:27:13:027 [Appium]   port: 37896
+2019-07-04 08:27:13:027 [Appium]   logFile: /Users/jasmeetsingh/Documents/Sharechat/IntelliJ/target/appiumlogs/appium_logs.txt
+2019-07-04 08:27:13:028 [Appium]   loglevel: info
+2019-07-04 08:27:13:071 [Appium] Appium REST http interface listener started on 127.0.0.1:37896
+2019-07-04 08:27:13:273 [HTTP] --> GET /wd/hub/status
+2019-07-04 08:27:13:274 [HTTP] {}
+2019-07-04 08:27:13:285 [HTTP] <-- GET /wd/hub/status 200 11 ms - 73
+2019-07-04 08:27:13:286 [HTTP] 
+2019-07-04 08:27:15:002 [HTTP] --> POST /wd/hub/session
+2019-07-04 08:27:15:002 [HTTP] {"desiredCapabilities":{"app":"/Users/jasmeetsingh/Documents/Sharechat/IntelliJ/apkfile/sharechat.apk","appActivity":"in.mohalla.sharechat.splash.SplashActivity","appPackage":"in.mohalla.sharechat","noReset":"false","platformVersion":"9","automationName":"UIAutomator2","platformName":"Android","udid":"479a0d0e","deviceName":"479a0d0e","fullReset":"true","systemPort":54443},"capabilities":{"firstMatch":[{"appium:app":"/Users/jasmeetsingh/Documents/Sharechat/IntelliJ/apkfile/sharechat.apk","appium:appActivity":"in.mohalla.sharechat.splash.SplashActivity","appium:appPackage":"in.mohalla.sharechat","appium:automationName":"UIAutomator2","appium:deviceName":"479a0d0e","appium:fullReset":"true","appium:noReset":"false","platformName":"android","appium:platformVersion":"9","appium:systemPort":54443,"appium:udid":"479a0d0e"}]}}
+2019-07-04 08:27:15:431 [Appium] Appium v1.14.0-rc.1 creating new AndroidUiautomator2Driver (v1.33.1) session
+2019-07-04 08:27:15:432 [Appium] Capabilities:
+2019-07-04 08:27:15:432 [Appium]   platformName: android
+2019-07-04 08:27:15:433 [Appium]   app: /Users/jasmeetsingh/Documents/Sharechat/IntelliJ/apkfile/sharechat.apk
+2019-07-04 08:27:15:433 [Appium]   appActivity: in.mohalla.sharechat.splash.SplashActivity
+2019-07-04 08:27:15:434 [Appium]   appPackage: in.mohalla.sharechat
+2019-07-04 08:27:15:434 [Appium]   automationName: UIAutomator2
+2019-07-04 08:27:15:435 [Appium]   deviceName: 479a0d0e
+2019-07-04 08:27:15:435 [Appium]   fullReset: true
+2019-07-04 08:27:15:435 [Appium]   noReset: false
+2019-07-04 08:27:15:436 [Appium]   platformVersion: 9
+2019-07-04 08:27:15:436 [Appium]   systemPort: 54443
+2019-07-04 08:27:15:437 [Appium]   udid: 479a0d0e
+2019-07-04 08:27:15:445 [BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+2019-07-04 08:27:15:445 [BaseDriver] Capability 'fullReset' changed from string to boolean. This may cause unexpected behavior
+2019-07-04 08:27:15:449 [BaseDriver] Session created with session id: b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:15:474 [BaseDriver] Using local app '/Users/jasmeetsingh/Documents/Sharechat/IntelliJ/apkfile/sharechat.apk'
+2019-07-04 08:27:15:482 [ADB] Found 1 'build-tools' folders under '/Users/jasmeetsingh/Library/Android/sdk' (newest first):
+2019-07-04 08:27:15:482 [ADB]     /Users/jasmeetsingh/Library/Android/sdk/build-tools/28.0.3
+2019-07-04 08:27:15:483 [ADB] Using 'adb' from '/Users/jasmeetsingh/Library/Android/sdk/platform-tools/adb'
+2019-07-04 08:27:15:483 [AndroidDriver] Retrieving device list
+2019-07-04 08:27:15:497 [AndroidDriver] Using device: 479a0d0e
+2019-07-04 08:27:15:498 [ADB] Using 'adb' from '/Users/jasmeetsingh/Library/Android/sdk/platform-tools/adb'
+2019-07-04 08:27:15:609 [UiAutomator2] Relaxing hidden api policy
+2019-07-04 08:27:16:108 [ADB] Using 'aapt' from '/Users/jasmeetsingh/Library/Android/sdk/build-tools/28.0.3/aapt'
+2019-07-04 08:27:16:626 [ADB] Using 'apksigner' from '/Users/jasmeetsingh/Library/Android/sdk/build-tools/28.0.3/apksigner'
+2019-07-04 08:27:17:963 [UiAutomator2] Server packages are not going to be (re)installed
+2019-07-04 08:27:18:760 [ADB] in.mohalla.sharechat was successfully uninstalled
+2019-07-04 08:27:21:075 [ADB] The application at '/Users/jasmeetsingh/Documents/Sharechat/IntelliJ/apkfile/sharechat.apk' is already cached to '/data/local/tmp/appium_cache/00bcf9423e9b7482fcc62bd2af1fae2bd7a86ef1.apk'
+2019-07-04 08:27:22:650 [ADB] The installation of 'sharechat.apk' took 1.572s
+2019-07-04 08:27:22:777 [UiAutomator2] Starting UIAutomator2 server 3.7.0
+2019-07-04 08:27:22:778 [UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v3.7.0.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2019-07-04 08:27:22:778 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+2019-07-04 08:27:23:806 [WD Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+2019-07-04 08:27:24:820 [WD Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+2019-07-04 08:27:25:833 [WD Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+2019-07-04 08:27:25:834 [UiAutomator2] The instrumentation process has been unexpectedly terminated. Retrying UiAutomator2 startup (#1 of 1)
+2019-07-04 08:27:29:504 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+2019-07-04 08:27:30:527 [WD Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+2019-07-04 08:27:31:540 [WD Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+2019-07-04 08:27:32:942 [AndroidDriver] Screen already unlocked, doing nothing
+2019-07-04 08:27:32:943 [UiAutomator2] UiAutomator2 did not start the activity we were waiting for, 'in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity'. Starting it ourselves
+2019-07-04 08:27:35:535 [Appium] New AndroidUiautomator2Driver session created successfully, session b08e01ff-104b-4bca-83ef-e7291e2c374c added to master session list
+2019-07-04 08:27:35:541 [HTTP] <-- POST /wd/hub/session 200 20537 ms - 1241
+2019-07-04 08:27:35:541 [HTTP] 
+2019-07-04 08:27:35:593 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:35:593 [HTTP] {}
+2019-07-04 08:27:35:657 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 63 ms - 1173
+2019-07-04 08:27:35:658 [HTTP] 
+2019-07-04 08:27:35:671 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:35:671 [HTTP] {}
+2019-07-04 08:27:35:699 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 28 ms - 1173
+2019-07-04 08:27:35:700 [HTTP] 
+2019-07-04 08:27:35:707 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:35:707 [HTTP] {}
+2019-07-04 08:27:35:725 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 18 ms - 1173
+2019-07-04 08:27:35:726 [HTTP] 
+2019-07-04 08:27:35:739 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/log
+2019-07-04 08:27:35:739 [HTTP] {"type":"logcat"}
+2019-07-04 08:27:35:841 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/log 200 101 ms - 1992348
+2019-07-04 08:27:35:842 [HTTP] 
+2019-07-04 08:27:36:189 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:36:190 [HTTP] {}
+2019-07-04 08:27:36:239 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 49 ms - 1173
+2019-07-04 08:27:36:240 [HTTP] 
+2019-07-04 08:27:36:250 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:36:251 [HTTP] {}
+2019-07-04 08:27:36:281 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 30 ms - 1173
+2019-07-04 08:27:36:282 [HTTP] 
+2019-07-04 08:27:36:301 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:36:302 [HTTP] {}
+2019-07-04 08:27:36:339 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 37 ms - 1173
+2019-07-04 08:27:36:340 [HTTP] 
+2019-07-04 08:27:36:345 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:36:346 [HTTP] {}
+2019-07-04 08:27:36:379 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 34 ms - 1173
+2019-07-04 08:27:36:380 [HTTP] 
+2019-07-04 08:27:36:596 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:36:597 [HTTP] {}
+2019-07-04 08:27:36:626 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 29 ms - 1173
+2019-07-04 08:27:36:627 [HTTP] 
+2019-07-04 08:27:36:639 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:36:640 [HTTP] {"using":"xpath","value":"//*[@text='हिन्दी']"}
+2019-07-04 08:27:37:954 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 1314 ms - 137
+2019-07-04 08:27:37:954 [HTTP] 
+2019-07-04 08:27:37:960 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/8f9d8475-ff41-4eaa-b22d-3e1ae9823f59/displayed
+2019-07-04 08:27:37:961 [HTTP] {}
+2019-07-04 08:27:38:513 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/8f9d8475-ff41-4eaa-b22d-3e1ae9823f59/displayed 200 553 ms - 14
+2019-07-04 08:27:38:514 [HTTP] 
+2019-07-04 08:27:38:518 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:38:519 [HTTP] {}
+2019-07-04 08:27:38:566 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 47 ms - 1173
+2019-07-04 08:27:38:567 [HTTP] 
+2019-07-04 08:27:38:574 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:38:575 [HTTP] {"using":"xpath","value":"//*[@text='हिन्दी']"}
+2019-07-04 08:27:38:966 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 391 ms - 137
+2019-07-04 08:27:38:966 [HTTP] 
+2019-07-04 08:27:38:971 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/f3a47e24-7b1c-401f-a3b5-29615dc10760/displayed
+2019-07-04 08:27:38:972 [HTTP] {}
+2019-07-04 08:27:39:041 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/f3a47e24-7b1c-401f-a3b5-29615dc10760/displayed 200 69 ms - 14
+2019-07-04 08:27:39:042 [HTTP] 
+2019-07-04 08:27:39:045 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:39:046 [HTTP] {}
+2019-07-04 08:27:39:077 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 32 ms - 1173
+2019-07-04 08:27:39:078 [HTTP] 
+2019-07-04 08:27:39:085 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:39:086 [HTTP] {"using":"xpath","value":"//*[@text='हिन्दी']"}
+2019-07-04 08:27:39:370 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 284 ms - 137
+2019-07-04 08:27:39:371 [HTTP] 
+2019-07-04 08:27:39:375 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/47842b74-2361-4ad1-90b0-44b19cb1a133/enabled
+2019-07-04 08:27:39:375 [HTTP] {}
+2019-07-04 08:27:39:417 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/47842b74-2361-4ad1-90b0-44b19cb1a133/enabled 200 42 ms - 14
+2019-07-04 08:27:39:418 [HTTP] 
+2019-07-04 08:27:39:421 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:39:422 [HTTP] {}
+2019-07-04 08:27:39:453 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 31 ms - 1173
+2019-07-04 08:27:39:454 [HTTP] 
+2019-07-04 08:27:39:462 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:39:463 [HTTP] {"using":"xpath","value":"//*[@text='हिन्दी']"}
+2019-07-04 08:27:39:705 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 242 ms - 137
+2019-07-04 08:27:39:706 [HTTP] 
+2019-07-04 08:27:39:713 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/fb59d131-afc9-4032-adf6-d66ccb06a0c9/click
+2019-07-04 08:27:39:713 [HTTP] {"id":"fb59d131-afc9-4032-adf6-d66ccb06a0c9"}
+2019-07-04 08:27:39:791 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/fb59d131-afc9-4032-adf6-d66ccb06a0c9/click 200 78 ms - 14
+2019-07-04 08:27:39:792 [HTTP] 
+2019-07-04 08:27:39:795 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:39:796 [HTTP] {}
+2019-07-04 08:27:39:826 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 31 ms - 1173
+2019-07-04 08:27:39:826 [HTTP] 
+2019-07-04 08:27:39:829 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:39:829 [HTTP] {}
+2019-07-04 08:27:39:846 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 17 ms - 1173
+2019-07-04 08:27:39:847 [HTTP] 
+2019-07-04 08:27:39:852 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:39:853 [HTTP] {}
+2019-07-04 08:27:39:870 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 17 ms - 1173
+2019-07-04 08:27:39:870 [HTTP] 
+2019-07-04 08:27:39:873 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:39:873 [HTTP] {}
+2019-07-04 08:27:39:885 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 12 ms - 1173
+2019-07-04 08:27:39:886 [HTTP] 
+2019-07-04 08:27:39:892 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:39:892 [HTTP] {}
+2019-07-04 08:27:39:903 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 12 ms - 1173
+2019-07-04 08:27:39:904 [HTTP] 
+2019-07-04 08:27:39:908 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:39:909 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_name"}
+2019-07-04 08:27:41:479 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 1570 ms - 137
+2019-07-04 08:27:41:480 [HTTP] 
+2019-07-04 08:27:41:483 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/03da739b-c46c-41f2-a6c9-dfc7d6436934/displayed
+2019-07-04 08:27:41:483 [HTTP] {}
+2019-07-04 08:27:41:535 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/03da739b-c46c-41f2-a6c9-dfc7d6436934/displayed 200 53 ms - 14
+2019-07-04 08:27:41:536 [HTTP] 
+2019-07-04 08:27:41:538 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:41:539 [HTTP] {}
+2019-07-04 08:27:41:576 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 37 ms - 1173
+2019-07-04 08:27:41:576 [HTTP] 
+2019-07-04 08:27:41:582 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:41:583 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_name"}
+2019-07-04 08:27:41:656 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 73 ms - 137
+2019-07-04 08:27:41:656 [HTTP] 
+2019-07-04 08:27:41:659 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/37e1713d-f9e2-45a8-a334-f85e9de3008c/displayed
+2019-07-04 08:27:41:660 [HTTP] {}
+2019-07-04 08:27:41:739 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/37e1713d-f9e2-45a8-a334-f85e9de3008c/displayed 200 79 ms - 14
+2019-07-04 08:27:41:739 [HTTP] 
+2019-07-04 08:27:41:742 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:41:743 [HTTP] {}
+2019-07-04 08:27:41:787 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 45 ms - 1173
+2019-07-04 08:27:41:788 [HTTP] 
+2019-07-04 08:27:41:794 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:41:795 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_name"}
+2019-07-04 08:27:42:281 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 486 ms - 137
+2019-07-04 08:27:42:282 [HTTP] 
+2019-07-04 08:27:42:286 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/8453b8c8-970c-4e2c-bb45-cafcf83008a0/enabled
+2019-07-04 08:27:42:286 [HTTP] {}
+2019-07-04 08:27:42:330 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/8453b8c8-970c-4e2c-bb45-cafcf83008a0/enabled 200 43 ms - 14
+2019-07-04 08:27:42:330 [HTTP] 
+2019-07-04 08:27:42:334 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:42:334 [HTTP] {}
+2019-07-04 08:27:42:368 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 33 ms - 1173
+2019-07-04 08:27:42:369 [HTTP] 
+2019-07-04 08:27:42:376 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:42:377 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_name"}
+2019-07-04 08:27:42:462 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 86 ms - 137
+2019-07-04 08:27:42:463 [HTTP] 
+2019-07-04 08:27:42:476 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/56cb8131-373a-453f-84e5-5f47357215e4/value
+2019-07-04 08:27:42:477 [HTTP] {"id":"56cb8131-373a-453f-84e5-5f47357215e4","text":"Jasmeet","value":["J","a","s","m","e","e","t"]}
+2019-07-04 08:27:42:608 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/56cb8131-373a-453f-84e5-5f47357215e4/value 200 131 ms - 12
+2019-07-04 08:27:42:608 [HTTP] 
+2019-07-04 08:27:42:611 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:42:612 [HTTP] {}
+2019-07-04 08:27:42:644 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 32 ms - 1173
+2019-07-04 08:27:42:644 [HTTP] 
+2019-07-04 08:27:42:648 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:42:648 [HTTP] {}
+2019-07-04 08:27:42:677 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 29 ms - 1173
+2019-07-04 08:27:42:678 [HTTP] 
+2019-07-04 08:27:42:683 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:42:684 [HTTP] {}
+2019-07-04 08:27:42:718 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 34 ms - 1173
+2019-07-04 08:27:42:719 [HTTP] 
+2019-07-04 08:27:42:723 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:42:723 [HTTP] {}
+2019-07-04 08:27:42:747 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 23 ms - 1173
+2019-07-04 08:27:42:748 [HTTP] 
+2019-07-04 08:27:42:754 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:42:755 [HTTP] {}
+2019-07-04 08:27:42:790 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 35 ms - 1173
+2019-07-04 08:27:42:790 [HTTP] 
+2019-07-04 08:27:42:796 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:42:797 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_country_code"}
+2019-07-04 08:27:43:546 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 749 ms - 137
+2019-07-04 08:27:43:547 [HTTP] 
+2019-07-04 08:27:43:554 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/40da6677-93fd-4d83-991f-b26a6ef2c245/click
+2019-07-04 08:27:43:555 [HTTP] {"id":"40da6677-93fd-4d83-991f-b26a6ef2c245"}
+2019-07-04 08:27:43:638 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/40da6677-93fd-4d83-991f-b26a6ef2c245/click 200 83 ms - 14
+2019-07-04 08:27:43:639 [HTTP] 
+2019-07-04 08:27:43:641 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:43:642 [HTTP] {}
+2019-07-04 08:27:43:671 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 29 ms - 1173
+2019-07-04 08:27:43:671 [HTTP] 
+2019-07-04 08:27:43:677 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:43:678 [HTTP] {"using":"-android uiautomator","value":"new UiScrollable(new UiSelector().className(\"android.widget.ListView\")).scrollIntoView(new UiSelector().textContains(\"India\"));"}
+2019-07-04 08:27:44:660 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 982 ms - 137
+2019-07-04 08:27:44:661 [HTTP] 
+2019-07-04 08:27:44:667 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/6afeacfa-930d-461e-b197-47813b3078ff/click
+2019-07-04 08:27:44:668 [HTTP] {"id":"6afeacfa-930d-461e-b197-47813b3078ff"}
+2019-07-04 08:27:45:409 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/6afeacfa-930d-461e-b197-47813b3078ff/click 200 740 ms - 14
+2019-07-04 08:27:45:410 [HTTP] 
+2019-07-04 08:27:45:412 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:45:412 [HTTP] {}
+2019-07-04 08:27:45:461 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 49 ms - 1173
+2019-07-04 08:27:45:462 [HTTP] 
+2019-07-04 08:27:45:465 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:45:466 [HTTP] {}
+2019-07-04 08:27:45:496 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 30 ms - 1173
+2019-07-04 08:27:45:496 [HTTP] 
+2019-07-04 08:27:45:501 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:45:502 [HTTP] {}
+2019-07-04 08:27:45:530 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 29 ms - 1173
+2019-07-04 08:27:45:531 [HTTP] 
+2019-07-04 08:27:45:535 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:45:535 [HTTP] {}
+2019-07-04 08:27:45:573 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 38 ms - 1173
+2019-07-04 08:27:45:574 [HTTP] 
+2019-07-04 08:27:45:581 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:45:582 [HTTP] {}
+2019-07-04 08:27:45:612 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 30 ms - 1173
+2019-07-04 08:27:45:613 [HTTP] 
+2019-07-04 08:27:45:620 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:45:621 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_phone"}
+2019-07-04 08:27:45:690 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 70 ms - 137
+2019-07-04 08:27:45:691 [HTTP] 
+2019-07-04 08:27:45:698 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/e7c51927-e223-4c32-a974-35a4b0f66036/value
+2019-07-04 08:27:45:699 [HTTP] {"id":"e7c51927-e223-4c32-a974-35a4b0f66036","text":"9491862195","value":["9","4","9","1","8","6","2","1","9","5"]}
+2019-07-04 08:27:46:312 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/e7c51927-e223-4c32-a974-35a4b0f66036/value 200 608 ms - 12
+2019-07-04 08:27:46:313 [HTTP] 
+2019-07-04 08:27:46:314 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:46:315 [HTTP] {}
+2019-07-04 08:27:46:341 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 27 ms - 1173
+2019-07-04 08:27:46:342 [HTTP] 
+2019-07-04 08:27:46:344 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:46:344 [HTTP] {}
+2019-07-04 08:27:46:372 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 27 ms - 1173
+2019-07-04 08:27:46:372 [HTTP] 
+2019-07-04 08:27:46:377 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:46:377 [HTTP] {}
+2019-07-04 08:27:46:405 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 27 ms - 1173
+2019-07-04 08:27:46:405 [HTTP] 
+2019-07-04 08:27:46:408 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:46:409 [HTTP] {}
+2019-07-04 08:27:46:436 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 28 ms - 1173
+2019-07-04 08:27:46:436 [HTTP] 
+2019-07-04 08:27:46:443 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:46:444 [HTTP] {}
+2019-07-04 08:27:46:471 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 27 ms - 1173
+2019-07-04 08:27:46:471 [HTTP] 
+2019-07-04 08:27:46:477 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:46:477 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/rb_age_range2"}
+2019-07-04 08:27:46:841 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 364 ms - 137
+2019-07-04 08:27:46:842 [HTTP] 
+2019-07-04 08:27:46:848 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/49634a14-75c1-410d-aa23-8c289786bc7e/click
+2019-07-04 08:27:46:848 [HTTP] {"id":"49634a14-75c1-410d-aa23-8c289786bc7e"}
+2019-07-04 08:27:46:903 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/49634a14-75c1-410d-aa23-8c289786bc7e/click 200 54 ms - 14
+2019-07-04 08:27:46:903 [HTTP] 
+2019-07-04 08:27:46:906 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:46:906 [HTTP] {}
+2019-07-04 08:27:46:936 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 30 ms - 1173
+2019-07-04 08:27:46:937 [HTTP] 
+2019-07-04 08:27:46:940 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:46:940 [HTTP] {}
+2019-07-04 08:27:46:970 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 30 ms - 1173
+2019-07-04 08:27:46:971 [HTTP] 
+2019-07-04 08:27:46:976 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:46:976 [HTTP] {}
+2019-07-04 08:27:47:004 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 28 ms - 1173
+2019-07-04 08:27:47:005 [HTTP] 
+2019-07-04 08:27:47:009 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:47:009 [HTTP] {}
+2019-07-04 08:27:47:045 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 37 ms - 1173
+2019-07-04 08:27:47:046 [HTTP] 
+2019-07-04 08:27:47:056 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:47:056 [HTTP] {}
+2019-07-04 08:27:47:088 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 32 ms - 1173
+2019-07-04 08:27:47:089 [HTTP] 
+2019-07-04 08:27:47:095 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:47:096 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/rb_male"}
+2019-07-04 08:27:47:608 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 513 ms - 137
+2019-07-04 08:27:47:609 [HTTP] 
+2019-07-04 08:27:47:614 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/cf2d9915-e39e-4fa9-9d71-b33ccfb8aeb8/click
+2019-07-04 08:27:47:615 [HTTP] {"id":"cf2d9915-e39e-4fa9-9d71-b33ccfb8aeb8"}
+2019-07-04 08:27:47:693 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/cf2d9915-e39e-4fa9-9d71-b33ccfb8aeb8/click 200 78 ms - 14
+2019-07-04 08:27:47:693 [HTTP] 
+2019-07-04 08:27:47:696 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:47:696 [HTTP] {}
+2019-07-04 08:27:47:724 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 28 ms - 1173
+2019-07-04 08:27:47:725 [HTTP] 
+2019-07-04 08:27:47:728 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:47:728 [HTTP] {}
+2019-07-04 08:27:47:752 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 24 ms - 1173
+2019-07-04 08:27:47:753 [HTTP] 
+2019-07-04 08:27:47:757 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:47:757 [HTTP] {}
+2019-07-04 08:27:47:786 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 29 ms - 1173
+2019-07-04 08:27:47:787 [HTTP] 
+2019-07-04 08:27:47:790 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:47:791 [HTTP] {}
+2019-07-04 08:27:47:821 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 30 ms - 1173
+2019-07-04 08:27:47:822 [HTTP] 
+2019-07-04 08:27:47:829 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:47:830 [HTTP] {}
+2019-07-04 08:27:47:860 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 31 ms - 1173
+2019-07-04 08:27:47:860 [HTTP] 
+2019-07-04 08:27:47:865 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:47:865 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_submit"}
+2019-07-04 08:27:48:410 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 544 ms - 137
+2019-07-04 08:27:48:411 [HTTP] 
+2019-07-04 08:27:48:413 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/9ca965e3-2a6d-479b-8c54-ac8f44c28661/displayed
+2019-07-04 08:27:48:414 [HTTP] {}
+2019-07-04 08:27:48:460 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/9ca965e3-2a6d-479b-8c54-ac8f44c28661/displayed 200 47 ms - 14
+2019-07-04 08:27:48:461 [HTTP] 
+2019-07-04 08:27:48:464 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:48:464 [HTTP] {}
+2019-07-04 08:27:48:491 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 27 ms - 1173
+2019-07-04 08:27:48:491 [HTTP] 
+2019-07-04 08:27:48:497 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:48:498 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_submit"}
+2019-07-04 08:27:48:571 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 73 ms - 137
+2019-07-04 08:27:48:574 [HTTP] 
+2019-07-04 08:27:48:577 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/53861fa4-cea6-4166-ab9e-5f65b3f42582/displayed
+2019-07-04 08:27:48:577 [HTTP] {}
+2019-07-04 08:27:48:614 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/53861fa4-cea6-4166-ab9e-5f65b3f42582/displayed 200 37 ms - 14
+2019-07-04 08:27:48:615 [HTTP] 
+2019-07-04 08:27:48:618 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:48:619 [HTTP] {}
+2019-07-04 08:27:48:643 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 24 ms - 1173
+2019-07-04 08:27:48:644 [HTTP] 
+2019-07-04 08:27:48:648 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:48:648 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_submit"}
+2019-07-04 08:27:48:702 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 54 ms - 137
+2019-07-04 08:27:48:703 [HTTP] 
+2019-07-04 08:27:48:712 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/3dcf2221-1312-4db1-b2bf-ddc5237c2c67/enabled
+2019-07-04 08:27:48:713 [HTTP] {}
+2019-07-04 08:27:48:747 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/3dcf2221-1312-4db1-b2bf-ddc5237c2c67/enabled 200 34 ms - 14
+2019-07-04 08:27:48:747 [HTTP] 
+2019-07-04 08:27:48:749 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:48:750 [HTTP] {}
+2019-07-04 08:27:48:778 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 28 ms - 1173
+2019-07-04 08:27:48:778 [HTTP] 
+2019-07-04 08:27:48:784 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:48:785 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_submit"}
+2019-07-04 08:27:49:302 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 517 ms - 137
+2019-07-04 08:27:49:303 [HTTP] 
+2019-07-04 08:27:49:308 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/947cb374-d799-4209-91cb-1a2e66ec62d1/click
+2019-07-04 08:27:49:309 [HTTP] {"id":"947cb374-d799-4209-91cb-1a2e66ec62d1"}
+2019-07-04 08:27:49:375 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/947cb374-d799-4209-91cb-1a2e66ec62d1/click 200 67 ms - 14
+2019-07-04 08:27:49:376 [HTTP] 
+2019-07-04 08:27:49:383 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:49:384 [HTTP] {}
+2019-07-04 08:27:49:414 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 30 ms - 1173
+2019-07-04 08:27:49:414 [HTTP] 
+2019-07-04 08:27:49:418 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:49:418 [HTTP] {}
+2019-07-04 08:27:49:432 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 14 ms - 1173
+2019-07-04 08:27:49:432 [HTTP] 
+2019-07-04 08:27:49:435 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:49:435 [HTTP] {}
+2019-07-04 08:27:49:449 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 13 ms - 1173
+2019-07-04 08:27:49:450 [HTTP] 
+2019-07-04 08:27:49:452 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:49:453 [HTTP] {}
+2019-07-04 08:27:49:469 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 17 ms - 1173
+2019-07-04 08:27:49:470 [HTTP] 
+2019-07-04 08:27:49:478 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:49:478 [HTTP] {}
+2019-07-04 08:27:49:494 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 15 ms - 1173
+2019-07-04 08:27:49:495 [HTTP] 
+2019-07-04 08:27:49:502 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:49:503 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:50:606 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:50:614 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 1111 ms - 387
+2019-07-04 08:27:50:615 [HTTP] 
+2019-07-04 08:27:51:149 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:51:149 [HTTP] {}
+2019-07-04 08:27:51:187 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 38 ms - 1173
+2019-07-04 08:27:51:188 [HTTP] 
+2019-07-04 08:27:51:194 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:51:194 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:51:269 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:51:273 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 78 ms - 387
+2019-07-04 08:27:51:273 [HTTP] 
+2019-07-04 08:27:51:784 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:51:785 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:51:839 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:51:842 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 57 ms - 387
+2019-07-04 08:27:51:842 [HTTP] 
+2019-07-04 08:27:52:352 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:52:353 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:52:414 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:52:416 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 64 ms - 387
+2019-07-04 08:27:52:417 [HTTP] 
+2019-07-04 08:27:52:929 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:52:929 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:52:971 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:52:973 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 44 ms - 387
+2019-07-04 08:27:52:974 [HTTP] 
+2019-07-04 08:27:53:482 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:53:483 [HTTP] {}
+2019-07-04 08:27:53:522 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 39 ms - 1173
+2019-07-04 08:27:53:522 [HTTP] 
+2019-07-04 08:27:53:528 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:53:529 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:53:588 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:53:591 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 63 ms - 387
+2019-07-04 08:27:53:592 [HTTP] 
+2019-07-04 08:27:54:102 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:54:103 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:54:179 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:54:182 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 79 ms - 387
+2019-07-04 08:27:54:183 [HTTP] 
+2019-07-04 08:27:54:689 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:54:690 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:54:753 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:54:756 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 66 ms - 387
+2019-07-04 08:27:54:757 [HTTP] 
+2019-07-04 08:27:55:266 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:55:266 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:55:331 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:55:334 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 67 ms - 387
+2019-07-04 08:27:55:335 [HTTP] 
+2019-07-04 08:27:55:844 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:55:844 [HTTP] {}
+2019-07-04 08:27:55:888 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 44 ms - 1173
+2019-07-04 08:27:55:889 [HTTP] 
+2019-07-04 08:27:55:894 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:55:895 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:56:519 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:56:522 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 627 ms - 387
+2019-07-04 08:27:56:522 [HTTP] 
+2019-07-04 08:27:57:033 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:57:033 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:57:102 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:57:108 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 75 ms - 387
+2019-07-04 08:27:57:109 [HTTP] 
+2019-07-04 08:27:57:619 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:57:619 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:57:684 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:57:687 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 68 ms - 387
+2019-07-04 08:27:57:688 [HTTP] 
+2019-07-04 08:27:58:197 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:27:58:198 [HTTP] {}
+2019-07-04 08:27:58:252 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 54 ms - 1173
+2019-07-04 08:27:58:252 [HTTP] 
+2019-07-04 08:27:58:258 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:58:259 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:58:318 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:58:321 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 63 ms - 387
+2019-07-04 08:27:58:322 [HTTP] 
+2019-07-04 08:27:58:829 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:58:830 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:58:900 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:58:902 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 73 ms - 387
+2019-07-04 08:27:58:903 [HTTP] 
+2019-07-04 08:27:59:412 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:27:59:412 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:27:59:550 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:27:59:553 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 141 ms - 387
+2019-07-04 08:27:59:554 [HTTP] 
+2019-07-04 08:28:00:062 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:00:062 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:00:110 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:00:113 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 51 ms - 387
+2019-07-04 08:28:00:114 [HTTP] 
+2019-07-04 08:28:00:623 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:00:624 [HTTP] {}
+2019-07-04 08:28:00:661 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 37 ms - 1173
+2019-07-04 08:28:00:661 [HTTP] 
+2019-07-04 08:28:00:665 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:00:666 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:00:705 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:00:708 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 41 ms - 387
+2019-07-04 08:28:00:708 [HTTP] 
+2019-07-04 08:28:01:213 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:01:213 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:01:755 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:01:758 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 544 ms - 387
+2019-07-04 08:28:01:759 [HTTP] 
+2019-07-04 08:28:01:764 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:01:764 [HTTP] {}
+2019-07-04 08:28:01:799 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 34 ms - 1173
+2019-07-04 08:28:01:799 [HTTP] 
+2019-07-04 08:28:01:805 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:01:805 [HTTP] {"using":"id","value":"com.android.packageinstaller:id/permission_allow_button"}
+2019-07-04 08:28:01:850 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 45 ms - 137
+2019-07-04 08:28:01:851 [HTTP] 
+2019-07-04 08:28:01:856 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/6faf7bb4-1be5-401a-a73d-6b73c4dd4bc0/click
+2019-07-04 08:28:01:856 [HTTP] {"id":"6faf7bb4-1be5-401a-a73d-6b73c4dd4bc0"}
+2019-07-04 08:28:01:915 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/6faf7bb4-1be5-401a-a73d-6b73c4dd4bc0/click 200 59 ms - 14
+2019-07-04 08:28:01:916 [HTTP] 
+2019-07-04 08:28:01:917 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:01:918 [HTTP] {}
+2019-07-04 08:28:01:950 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 32 ms - 1173
+2019-07-04 08:28:01:950 [HTTP] 
+2019-07-04 08:28:01:959 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:01:960 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:02:766 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:02:768 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 812 ms - 387
+2019-07-04 08:28:02:768 [HTTP] 
+2019-07-04 08:28:03:278 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:03:279 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:03:338 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:03:340 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 61 ms - 387
+2019-07-04 08:28:03:340 [HTTP] 
+2019-07-04 08:28:03:850 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:03:851 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:03:918 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:03:921 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 71 ms - 387
+2019-07-04 08:28:03:922 [HTTP] 
+2019-07-04 08:28:04:430 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:04:430 [HTTP] {}
+2019-07-04 08:28:04:476 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 46 ms - 1173
+2019-07-04 08:28:04:477 [HTTP] 
+2019-07-04 08:28:04:482 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:04:483 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:04:530 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:04:533 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 50 ms - 387
+2019-07-04 08:28:04:533 [HTTP] 
+2019-07-04 08:28:05:039 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:05:040 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:05:580 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:05:583 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 543 ms - 387
+2019-07-04 08:28:05:583 [HTTP] 
+2019-07-04 08:28:06:089 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:06:090 [HTTP] {}
+2019-07-04 08:28:06:143 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 53 ms - 1173
+2019-07-04 08:28:06:144 [HTTP] 
+2019-07-04 08:28:06:150 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:06:151 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:06:220 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:06:223 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 72 ms - 387
+2019-07-04 08:28:06:223 [HTTP] 
+2019-07-04 08:28:06:734 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:06:734 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:06:792 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:06:794 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 60 ms - 387
+2019-07-04 08:28:06:795 [HTTP] 
+2019-07-04 08:28:07:304 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:07:304 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:07:363 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:07:367 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 61 ms - 387
+2019-07-04 08:28:07:368 [HTTP] 
+2019-07-04 08:28:07:874 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:07:875 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:07:935 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:07:938 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 63 ms - 387
+2019-07-04 08:28:07:939 [HTTP] 
+2019-07-04 08:28:08:446 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:08:446 [HTTP] {}
+2019-07-04 08:28:08:476 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 30 ms - 1173
+2019-07-04 08:28:08:476 [HTTP] 
+2019-07-04 08:28:08:483 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:08:484 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:08:578 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:08:581 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 97 ms - 387
+2019-07-04 08:28:08:582 [HTTP] 
+2019-07-04 08:28:09:088 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:09:088 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:09:144 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:09:147 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 59 ms - 387
+2019-07-04 08:28:09:148 [HTTP] 
+2019-07-04 08:28:09:658 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:09:659 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:09:721 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:09:724 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 65 ms - 387
+2019-07-04 08:28:09:725 [HTTP] 
+2019-07-04 08:28:10:230 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:10:231 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:10:285 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:10:288 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 57 ms - 387
+2019-07-04 08:28:10:289 [HTTP] 
+2019-07-04 08:28:10:796 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:10:797 [HTTP] {}
+2019-07-04 08:28:10:841 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 45 ms - 1173
+2019-07-04 08:28:10:842 [HTTP] 
+2019-07-04 08:28:10:847 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:10:847 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:10:893 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:10:896 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 49 ms - 387
+2019-07-04 08:28:10:897 [HTTP] 
+2019-07-04 08:28:11:404 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:11:405 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:11:601 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:11:604 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 199 ms - 387
+2019-07-04 08:28:11:605 [HTTP] 
+2019-07-04 08:28:12:112 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:12:112 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:12:171 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:12:174 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 61 ms - 387
+2019-07-04 08:28:12:174 [HTTP] 
+2019-07-04 08:28:12:685 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:12:685 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:12:740 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:12:743 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 58 ms - 387
+2019-07-04 08:28:12:743 [HTTP] 
+2019-07-04 08:28:13:248 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:13:248 [HTTP] {}
+2019-07-04 08:28:13:299 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 51 ms - 1173
+2019-07-04 08:28:13:300 [HTTP] 
+2019-07-04 08:28:13:305 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:13:306 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:13:364 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:13:367 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 61 ms - 387
+2019-07-04 08:28:13:367 [HTTP] 
+2019-07-04 08:28:13:873 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:13:873 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:13:928 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:13:930 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 57 ms - 387
+2019-07-04 08:28:13:931 [HTTP] 
+2019-07-04 08:28:14:437 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:14:438 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:14:619 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:14:624 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 187 ms - 387
+2019-07-04 08:28:14:625 [HTTP] 
+2019-07-04 08:28:15:139 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:15:140 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:15:210 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:15:213 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 73 ms - 387
+2019-07-04 08:28:15:214 [HTTP] 
+2019-07-04 08:28:15:217 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:15:218 [HTTP] {}
+2019-07-04 08:28:15:250 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 32 ms - 1173
+2019-07-04 08:28:15:251 [HTTP] 
+2019-07-04 08:28:15:256 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:15:256 [HTTP] {"using":"id","value":"com.android.packageinstaller:id/permission_allow_button"}
+2019-07-04 08:28:15:316 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 60 ms - 137
+2019-07-04 08:28:15:317 [HTTP] 
+2019-07-04 08:28:15:321 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/a8087f96-43ca-4246-8d01-545124166447/click
+2019-07-04 08:28:15:322 [HTTP] {"id":"a8087f96-43ca-4246-8d01-545124166447"}
+2019-07-04 08:28:15:394 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/a8087f96-43ca-4246-8d01-545124166447/click 200 70 ms - 14
+2019-07-04 08:28:15:395 [HTTP] 
+2019-07-04 08:28:15:397 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:15:398 [HTTP] {}
+2019-07-04 08:28:15:427 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 28 ms - 1173
+2019-07-04 08:28:15:428 [HTTP] 
+2019-07-04 08:28:15:433 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:15:433 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:16:229 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:16:232 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 799 ms - 387
+2019-07-04 08:28:16:232 [HTTP] 
+2019-07-04 08:28:16:755 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:16:756 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:16:812 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:16:815 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 59 ms - 387
+2019-07-04 08:28:16:815 [HTTP] 
+2019-07-04 08:28:17:323 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:17:323 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:17:640 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:17:643 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 319 ms - 387
+2019-07-04 08:28:17:644 [HTTP] 
+2019-07-04 08:28:18:147 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:18:148 [HTTP] {}
+2019-07-04 08:28:18:186 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 38 ms - 1173
+2019-07-04 08:28:18:187 [HTTP] 
+2019-07-04 08:28:18:192 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:18:192 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:18:239 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:18:241 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 49 ms - 387
+2019-07-04 08:28:18:242 [HTTP] 
+2019-07-04 08:28:18:751 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:18:752 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:18:814 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:18:817 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 65 ms - 387
+2019-07-04 08:28:18:817 [HTTP] 
+2019-07-04 08:28:19:326 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:19:327 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:19:390 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:19:392 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 65 ms - 387
+2019-07-04 08:28:19:393 [HTTP] 
+2019-07-04 08:28:19:900 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:19:900 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:19:960 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:19:963 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 63 ms - 387
+2019-07-04 08:28:19:963 [HTTP] 
+2019-07-04 08:28:20:470 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:20:470 [HTTP] {}
+2019-07-04 08:28:20:505 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 35 ms - 1173
+2019-07-04 08:28:20:505 [HTTP] 
+2019-07-04 08:28:20:511 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:20:512 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:20:651 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:20:654 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 143 ms - 387
+2019-07-04 08:28:20:655 [HTTP] 
+2019-07-04 08:28:21:165 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:21:166 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:21:220 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:21:222 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 57 ms - 387
+2019-07-04 08:28:21:223 [HTTP] 
+2019-07-04 08:28:21:733 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:21:733 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:21:796 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:21:799 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 65 ms - 387
+2019-07-04 08:28:21:799 [HTTP] 
+2019-07-04 08:28:22:309 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:22:310 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:22:369 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:22:373 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 62 ms - 387
+2019-07-04 08:28:22:373 [HTTP] 
+2019-07-04 08:28:22:877 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:22:877 [HTTP] {}
+2019-07-04 08:28:22:908 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 31 ms - 1173
+2019-07-04 08:28:22:909 [HTTP] 
+2019-07-04 08:28:22:913 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:22:914 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:23:154 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:23:159 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 246 ms - 387
+2019-07-04 08:28:23:159 [HTTP] 
+2019-07-04 08:28:23:666 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:23:666 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:23:715 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:23:717 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 51 ms - 387
+2019-07-04 08:28:23:718 [HTTP] 
+2019-07-04 08:28:24:227 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:24:228 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:24:263 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:24:265 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 37 ms - 387
+2019-07-04 08:28:24:266 [HTTP] 
+2019-07-04 08:28:24:773 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:24:773 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:24:816 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:24:817 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 44 ms - 387
+2019-07-04 08:28:24:818 [HTTP] 
+2019-07-04 08:28:25:325 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:25:325 [HTTP] {}
+2019-07-04 08:28:25:365 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 40 ms - 1173
+2019-07-04 08:28:25:366 [HTTP] 
+2019-07-04 08:28:25:370 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:25:371 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:25:430 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:25:432 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 62 ms - 387
+2019-07-04 08:28:25:433 [HTTP] 
+2019-07-04 08:28:25:941 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:25:943 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:26:007 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:26:009 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 68 ms - 387
+2019-07-04 08:28:26:010 [HTTP] 
+2019-07-04 08:28:26:519 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:26:519 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:26:671 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:26:673 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 154 ms - 387
+2019-07-04 08:28:26:674 [HTTP] 
+2019-07-04 08:28:27:182 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:27:183 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:27:239 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:27:241 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 59 ms - 387
+2019-07-04 08:28:27:242 [HTTP] 
+2019-07-04 08:28:27:746 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:27:746 [HTTP] {}
+2019-07-04 08:28:27:785 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 39 ms - 1173
+2019-07-04 08:28:27:785 [HTTP] 
+2019-07-04 08:28:27:790 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:27:790 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:27:846 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:27:848 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 58 ms - 387
+2019-07-04 08:28:27:849 [HTTP] 
+2019-07-04 08:28:28:357 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:28:358 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:28:422 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:28:424 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 67 ms - 387
+2019-07-04 08:28:28:424 [HTTP] 
+2019-07-04 08:28:28:930 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:28:931 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:28:981 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:28:986 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 55 ms - 387
+2019-07-04 08:28:28:986 [HTTP] 
+2019-07-04 08:28:29:493 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:29:494 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:29:693 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:29:695 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 201 ms - 387
+2019-07-04 08:28:29:695 [HTTP] 
+2019-07-04 08:28:29:700 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:29:700 [HTTP] {}
+2019-07-04 08:28:29:734 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 34 ms - 1173
+2019-07-04 08:28:29:735 [HTTP] 
+2019-07-04 08:28:29:739 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:29:740 [HTTP] {"using":"id","value":"com.android.packageinstaller:id/permission_allow_button"}
+2019-07-04 08:28:30:206 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 467 ms - 137
+2019-07-04 08:28:30:207 [HTTP] 
+2019-07-04 08:28:30:211 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/3ddf4888-7414-4473-9997-97d00624a274/click
+2019-07-04 08:28:30:211 [HTTP] {"id":"3ddf4888-7414-4473-9997-97d00624a274"}
+2019-07-04 08:28:30:283 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/3ddf4888-7414-4473-9997-97d00624a274/click 200 71 ms - 14
+2019-07-04 08:28:30:283 [HTTP] 
+2019-07-04 08:28:30:285 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:30:285 [HTTP] {}
+2019-07-04 08:28:30:311 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 25 ms - 1173
+2019-07-04 08:28:30:311 [HTTP] 
+2019-07-04 08:28:30:317 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:30:317 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:30:362 [WD Proxy] Got an unexpected response: {"sessionId":"dbdbba4b-d49a-41d6-85fa-e664643dc3de","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-07-04 08:28:30:365 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 404 47 ms - 387
+2019-07-04 08:28:30:365 [HTTP] 
+2019-07-04 08:28:30:871 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:30:872 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:32:086 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 1215 ms - 137
+2019-07-04 08:28:32:086 [HTTP] 
+2019-07-04 08:28:32:089 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/30beaa17-c7cb-4a65-8046-e01ec9621e24/displayed
+2019-07-04 08:28:32:089 [HTTP] {}
+2019-07-04 08:28:32:130 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/30beaa17-c7cb-4a65-8046-e01ec9621e24/displayed 200 41 ms - 14
+2019-07-04 08:28:32:131 [HTTP] 
+2019-07-04 08:28:32:136 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:32:137 [HTTP] {}
+2019-07-04 08:28:32:184 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 51 ms - 1173
+2019-07-04 08:28:32:184 [HTTP] 
+2019-07-04 08:28:32:188 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:32:190 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:32:779 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 589 ms - 137
+2019-07-04 08:28:32:780 [HTTP] 
+2019-07-04 08:28:32:782 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/28e9cbdb-0bde-4244-8bc9-9fcb5e77e32d/displayed
+2019-07-04 08:28:32:782 [HTTP] {}
+2019-07-04 08:28:32:839 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/28e9cbdb-0bde-4244-8bc9-9fcb5e77e32d/displayed 200 56 ms - 14
+2019-07-04 08:28:32:841 [HTTP] 
+2019-07-04 08:28:32:846 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:32:846 [HTTP] {}
+2019-07-04 08:28:32:870 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 24 ms - 1173
+2019-07-04 08:28:32:871 [HTTP] 
+2019-07-04 08:28:32:875 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:32:876 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:32:934 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 58 ms - 137
+2019-07-04 08:28:32:934 [HTTP] 
+2019-07-04 08:28:32:936 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/ad9ca031-0a74-46c8-a210-7de570384beb/enabled
+2019-07-04 08:28:32:937 [HTTP] {}
+2019-07-04 08:28:32:996 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/ad9ca031-0a74-46c8-a210-7de570384beb/enabled 200 59 ms - 14
+2019-07-04 08:28:32:996 [HTTP] 
+2019-07-04 08:28:32:998 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:32:999 [HTTP] {}
+2019-07-04 08:28:33:028 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 29 ms - 1173
+2019-07-04 08:28:33:028 [HTTP] 
+2019-07-04 08:28:33:033 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:33:033 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_otp"}
+2019-07-04 08:28:33:080 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 47 ms - 137
+2019-07-04 08:28:33:081 [HTTP] 
+2019-07-04 08:28:33:087 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/fd1fb192-8c0f-444c-bf86-ee844e4ae928/value
+2019-07-04 08:28:33:087 [HTTP] {"id":"fd1fb192-8c0f-444c-bf86-ee844e4ae928","text":"876238","value":["8","7","6","2","3","8"]}
+2019-07-04 08:28:33:799 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/fd1fb192-8c0f-444c-bf86-ee844e4ae928/value 200 712 ms - 12
+2019-07-04 08:28:33:800 [HTTP] 
+2019-07-04 08:28:33:802 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:33:803 [HTTP] {}
+2019-07-04 08:28:33:831 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 29 ms - 1173
+2019-07-04 08:28:33:832 [HTTP] 
+2019-07-04 08:28:33:835 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:33:835 [HTTP] {}
+2019-07-04 08:28:33:859 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 24 ms - 1173
+2019-07-04 08:28:33:862 [HTTP] 
+2019-07-04 08:28:33:864 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:33:865 [HTTP] {}
+2019-07-04 08:28:33:894 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 29 ms - 1173
+2019-07-04 08:28:33:895 [HTTP] 
+2019-07-04 08:28:33:897 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:33:897 [HTTP] {}
+2019-07-04 08:28:33:924 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 27 ms - 1173
+2019-07-04 08:28:33:925 [HTTP] 
+2019-07-04 08:28:33:930 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:33:930 [HTTP] {}
+2019-07-04 08:28:33:961 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 31 ms - 1173
+2019-07-04 08:28:33:961 [HTTP] 
+2019-07-04 08:28:33:965 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:33:966 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/bt_submit"}
+2019-07-04 08:28:34:785 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 819 ms - 137
+2019-07-04 08:28:34:785 [HTTP] 
+2019-07-04 08:28:34:790 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/fc5fb66e-1aea-4c4a-ba34-56d3f62587e2/click
+2019-07-04 08:28:34:790 [HTTP] {"id":"fc5fb66e-1aea-4c4a-ba34-56d3f62587e2"}
+2019-07-04 08:28:34:861 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/fc5fb66e-1aea-4c4a-ba34-56d3f62587e2/click 200 70 ms - 14
+2019-07-04 08:28:34:862 [HTTP] 
+2019-07-04 08:28:34:863 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:34:863 [HTTP] {}
+2019-07-04 08:28:34:890 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 26 ms - 1173
+2019-07-04 08:28:34:890 [HTTP] 
+2019-07-04 08:28:34:891 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:34:892 [HTTP] {}
+2019-07-04 08:28:34:912 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 20 ms - 1173
+2019-07-04 08:28:34:912 [HTTP] 
+2019-07-04 08:28:34:914 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:34:915 [HTTP] {}
+2019-07-04 08:28:34:932 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 17 ms - 1173
+2019-07-04 08:28:34:932 [HTTP] 
+2019-07-04 08:28:34:934 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:34:934 [HTTP] {}
+2019-07-04 08:28:34:954 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 20 ms - 1173
+2019-07-04 08:28:34:954 [HTTP] 
+2019-07-04 08:28:34:959 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:34:959 [HTTP] {}
+2019-07-04 08:28:34:978 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 19 ms - 1173
+2019-07-04 08:28:34:979 [HTTP] 
+2019-07-04 08:28:34:982 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:34:982 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_toolbar_title"}
+2019-07-04 08:28:37:920 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 2937 ms - 137
+2019-07-04 08:28:37:920 [HTTP] 
+2019-07-04 08:28:37:922 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/65f91ed1-888b-40dc-8292-ce5c4388d9b5/displayed
+2019-07-04 08:28:37:923 [HTTP] {}
+2019-07-04 08:28:37:955 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/65f91ed1-888b-40dc-8292-ce5c4388d9b5/displayed 200 32 ms - 14
+2019-07-04 08:28:37:956 [HTTP] 
+2019-07-04 08:28:37:957 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:37:958 [HTTP] {}
+2019-07-04 08:28:37:976 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 18 ms - 1173
+2019-07-04 08:28:37:976 [HTTP] 
+2019-07-04 08:28:37:981 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:37:983 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_toolbar_title"}
+2019-07-04 08:28:38:021 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 39 ms - 137
+2019-07-04 08:28:38:021 [HTTP] 
+2019-07-04 08:28:38:024 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/0bda3f0a-82d4-4eef-8051-fce9d323c9df/displayed
+2019-07-04 08:28:38:024 [HTTP] {}
+2019-07-04 08:28:38:057 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/0bda3f0a-82d4-4eef-8051-fce9d323c9df/displayed 200 33 ms - 14
+2019-07-04 08:28:38:057 [HTTP] 
+2019-07-04 08:28:38:059 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:38:059 [HTTP] {}
+2019-07-04 08:28:38:078 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 19 ms - 1173
+2019-07-04 08:28:38:079 [HTTP] 
+2019-07-04 08:28:38:083 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:38:084 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_toolbar_title"}
+2019-07-04 08:28:38:120 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 36 ms - 137
+2019-07-04 08:28:38:120 [HTTP] 
+2019-07-04 08:28:38:124 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/61035934-0073-4e81-8546-c3bac3f56519/enabled
+2019-07-04 08:28:38:124 [HTTP] {}
+2019-07-04 08:28:38:633 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/61035934-0073-4e81-8546-c3bac3f56519/enabled 200 510 ms - 14
+2019-07-04 08:28:38:634 [HTTP] 
+2019-07-04 08:28:38:636 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:38:637 [HTTP] {}
+2019-07-04 08:28:38:663 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 27 ms - 1173
+2019-07-04 08:28:38:664 [HTTP] 
+2019-07-04 08:28:38:668 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:38:669 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_toolbar_title"}
+2019-07-04 08:28:38:710 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 41 ms - 137
+2019-07-04 08:28:38:710 [HTTP] 
+2019-07-04 08:28:38:712 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/c4b2153a-f361-4cc5-9a18-87c8c1696834/displayed
+2019-07-04 08:28:38:713 [HTTP] {}
+2019-07-04 08:28:38:745 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/c4b2153a-f361-4cc5-9a18-87c8c1696834/displayed 200 31 ms - 14
+2019-07-04 08:28:38:746 [HTTP] 
+2019-07-04 08:28:38:751 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:38:752 [HTTP] {}
+2019-07-04 08:28:38:775 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 23 ms - 1173
+2019-07-04 08:28:38:775 [HTTP] 
+2019-07-04 08:28:38:777 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:38:778 [HTTP] {}
+2019-07-04 08:28:38:799 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 21 ms - 1173
+2019-07-04 08:28:38:799 [HTTP] 
+2019-07-04 08:28:38:802 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:38:803 [HTTP] {}
+2019-07-04 08:28:38:832 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 29 ms - 1173
+2019-07-04 08:28:38:833 [HTTP] 
+2019-07-04 08:28:38:835 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:38:836 [HTTP] {}
+2019-07-04 08:28:38:866 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 31 ms - 1173
+2019-07-04 08:28:38:866 [HTTP] 
+2019-07-04 08:28:38:869 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:38:869 [HTTP] {}
+2019-07-04 08:28:38:891 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 20 ms - 1173
+2019-07-04 08:28:38:893 [HTTP] 
+2019-07-04 08:28:38:896 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:38:896 [HTTP] {}
+2019-07-04 08:28:38:917 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 21 ms - 1173
+2019-07-04 08:28:38:917 [HTTP] 
+2019-07-04 08:28:38:924 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:38:924 [HTTP] {}
+2019-07-04 08:28:38:944 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 21 ms - 1173
+2019-07-04 08:28:38:945 [HTTP] 
+2019-07-04 08:28:38:950 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:38:950 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/rl_toolbar_referrals"}
+2019-07-04 08:28:38:990 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 40 ms - 137
+2019-07-04 08:28:38:991 [HTTP] 
+2019-07-04 08:28:38:993 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/d60d0068-4d0d-4175-8ad9-cbef3513d047/displayed
+2019-07-04 08:28:38:993 [HTTP] {}
+2019-07-04 08:28:39:028 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/d60d0068-4d0d-4175-8ad9-cbef3513d047/displayed 200 35 ms - 14
+2019-07-04 08:28:39:029 [HTTP] 
+2019-07-04 08:28:39:030 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:39:031 [HTTP] {}
+2019-07-04 08:28:39:054 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 23 ms - 1173
+2019-07-04 08:28:39:055 [HTTP] 
+2019-07-04 08:28:39:060 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:39:060 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/rl_toolbar_referrals"}
+2019-07-04 08:28:39:102 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 42 ms - 137
+2019-07-04 08:28:39:103 [HTTP] 
+2019-07-04 08:28:39:105 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/02677811-2dd4-4b8a-8073-aa02bce2b120/displayed
+2019-07-04 08:28:39:106 [HTTP] {}
+2019-07-04 08:28:39:144 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/02677811-2dd4-4b8a-8073-aa02bce2b120/displayed 200 39 ms - 14
+2019-07-04 08:28:39:146 [HTTP] 
+2019-07-04 08:28:39:148 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:39:149 [HTTP] {}
+2019-07-04 08:28:39:169 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 20 ms - 1173
+2019-07-04 08:28:39:170 [HTTP] 
+2019-07-04 08:28:39:175 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:39:175 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/rl_toolbar_referrals"}
+2019-07-04 08:28:39:220 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 45 ms - 137
+2019-07-04 08:28:39:221 [HTTP] 
+2019-07-04 08:28:39:223 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/8a28b5c2-4830-4205-a6cc-755a3048b2fc/enabled
+2019-07-04 08:28:39:224 [HTTP] {}
+2019-07-04 08:28:39:250 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/8a28b5c2-4830-4205-a6cc-755a3048b2fc/enabled 200 26 ms - 14
+2019-07-04 08:28:39:250 [HTTP] 
+2019-07-04 08:28:39:252 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:39:252 [HTTP] {}
+2019-07-04 08:28:39:273 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 21 ms - 1173
+2019-07-04 08:28:39:274 [HTTP] 
+2019-07-04 08:28:39:284 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:39:285 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/rl_toolbar_referrals"}
+2019-07-04 08:28:39:329 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 44 ms - 137
+2019-07-04 08:28:39:329 [HTTP] 
+2019-07-04 08:28:39:335 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/81ad2951-9452-4de6-aef5-3dcc50ffb148/click
+2019-07-04 08:28:39:335 [HTTP] {"id":"81ad2951-9452-4de6-aef5-3dcc50ffb148"}
+2019-07-04 08:28:39:386 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/81ad2951-9452-4de6-aef5-3dcc50ffb148/click 200 50 ms - 14
+2019-07-04 08:28:39:387 [HTTP] 
+2019-07-04 08:28:39:389 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:39:390 [HTTP] {}
+2019-07-04 08:28:39:415 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 26 ms - 1173
+2019-07-04 08:28:39:416 [HTTP] 
+2019-07-04 08:28:39:418 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:39:418 [HTTP] {}
+2019-07-04 08:28:39:436 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 18 ms - 1173
+2019-07-04 08:28:39:437 [HTTP] 
+2019-07-04 08:28:39:440 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:39:441 [HTTP] {}
+2019-07-04 08:28:39:457 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 16 ms - 1173
+2019-07-04 08:28:39:457 [HTTP] 
+2019-07-04 08:28:39:459 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:39:459 [HTTP] {}
+2019-07-04 08:28:39:474 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 15 ms - 1173
+2019-07-04 08:28:39:474 [HTTP] 
+2019-07-04 08:28:39:476 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:39:477 [HTTP] {}
+2019-07-04 08:28:39:491 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 14 ms - 1173
+2019-07-04 08:28:39:491 [HTTP] 
+2019-07-04 08:28:39:492 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:39:493 [HTTP] {}
+2019-07-04 08:28:39:505 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 12 ms - 1173
+2019-07-04 08:28:39:505 [HTTP] 
+2019-07-04 08:28:39:509 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:39:509 [HTTP] {}
+2019-07-04 08:28:39:521 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 12 ms - 1173
+2019-07-04 08:28:39:522 [HTTP] 
+2019-07-04 08:28:39:528 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:39:529 [HTTP] {"using":"xpath","value":"//*[@resource-id='in.mohalla.sharechat:id/crsv_payment_setup']//*[@resource-id = 'in.mohalla.sharechat:id/tv_custom_referral_header']"}
+2019-07-04 08:28:40:546 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 1018 ms - 137
+2019-07-04 08:28:40:546 [HTTP] 
+2019-07-04 08:28:40:548 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/0208e1aa-de20-49ec-8123-9678059cfbfd/displayed
+2019-07-04 08:28:40:549 [HTTP] {}
+2019-07-04 08:28:40:587 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/0208e1aa-de20-49ec-8123-9678059cfbfd/displayed 200 38 ms - 14
+2019-07-04 08:28:40:587 [HTTP] 
+2019-07-04 08:28:40:589 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:40:590 [HTTP] {}
+2019-07-04 08:28:40:613 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 23 ms - 1173
+2019-07-04 08:28:40:613 [HTTP] 
+2019-07-04 08:28:40:619 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:40:619 [HTTP] {"using":"xpath","value":"//*[@resource-id='in.mohalla.sharechat:id/crsv_payment_setup']//*[@resource-id = 'in.mohalla.sharechat:id/tv_custom_referral_header']"}
+2019-07-04 08:28:40:729 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 109 ms - 137
+2019-07-04 08:28:40:729 [HTTP] 
+2019-07-04 08:28:40:731 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/5ba49d4e-9f04-47db-a75c-347dc71b3520/displayed
+2019-07-04 08:28:40:731 [HTTP] {}
+2019-07-04 08:28:40:772 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/5ba49d4e-9f04-47db-a75c-347dc71b3520/displayed 200 40 ms - 14
+2019-07-04 08:28:40:773 [HTTP] 
+2019-07-04 08:28:40:776 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:40:776 [HTTP] {}
+2019-07-04 08:28:40:792 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 16 ms - 1173
+2019-07-04 08:28:40:793 [HTTP] 
+2019-07-04 08:28:40:796 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:40:796 [HTTP] {"using":"xpath","value":"//*[@resource-id='in.mohalla.sharechat:id/crsv_payment_setup']//*[@resource-id = 'in.mohalla.sharechat:id/tv_custom_referral_header']"}
+2019-07-04 08:28:43:123 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 2326 ms - 137
+2019-07-04 08:28:43:125 [HTTP] 
+2019-07-04 08:28:43:128 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/ec60f258-4773-4ceb-914b-62575784b06e/enabled
+2019-07-04 08:28:43:130 [HTTP] {}
+2019-07-04 08:28:43:184 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/ec60f258-4773-4ceb-914b-62575784b06e/enabled 200 56 ms - 14
+2019-07-04 08:28:43:185 [HTTP] 
+2019-07-04 08:28:43:186 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:43:187 [HTTP] {}
+2019-07-04 08:28:43:202 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 15 ms - 1173
+2019-07-04 08:28:43:202 [HTTP] 
+2019-07-04 08:28:43:206 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:43:207 [HTTP] {"using":"xpath","value":"//*[@resource-id='in.mohalla.sharechat:id/crsv_payment_setup']//*[@resource-id = 'in.mohalla.sharechat:id/tv_custom_referral_header']"}
+2019-07-04 08:28:43:325 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 118 ms - 137
+2019-07-04 08:28:43:326 [HTTP] 
+2019-07-04 08:28:43:331 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/4e905593-db80-4a15-b7c3-88d557297476/click
+2019-07-04 08:28:43:331 [HTTP] {"id":"4e905593-db80-4a15-b7c3-88d557297476"}
+2019-07-04 08:28:43:369 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/4e905593-db80-4a15-b7c3-88d557297476/click 200 37 ms - 14
+2019-07-04 08:28:43:369 [HTTP] 
+2019-07-04 08:28:43:372 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:43:372 [HTTP] {}
+2019-07-04 08:28:43:396 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 24 ms - 1173
+2019-07-04 08:28:43:396 [HTTP] 
+2019-07-04 08:28:43:397 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:43:398 [HTTP] {}
+2019-07-04 08:28:43:412 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 14 ms - 1173
+2019-07-04 08:28:43:412 [HTTP] 
+2019-07-04 08:28:43:414 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:43:414 [HTTP] {}
+2019-07-04 08:28:43:433 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 19 ms - 1173
+2019-07-04 08:28:43:433 [HTTP] 
+2019-07-04 08:28:43:435 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:43:435 [HTTP] {}
+2019-07-04 08:28:43:453 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 17 ms - 1173
+2019-07-04 08:28:43:453 [HTTP] 
+2019-07-04 08:28:43:457 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:43:458 [HTTP] {}
+2019-07-04 08:28:43:474 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 17 ms - 1173
+2019-07-04 08:28:43:475 [HTTP] 
+2019-07-04 08:28:43:477 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:43:478 [HTTP] {}
+2019-07-04 08:28:43:495 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 17 ms - 1173
+2019-07-04 08:28:43:495 [HTTP] 
+2019-07-04 08:28:43:499 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:43:499 [HTTP] {}
+2019-07-04 08:28:43:520 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 19 ms - 1173
+2019-07-04 08:28:43:521 [HTTP] 
+2019-07-04 08:28:43:527 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:43:528 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_phone"}
+2019-07-04 08:28:45:061 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 1533 ms - 137
+2019-07-04 08:28:45:062 [HTTP] 
+2019-07-04 08:28:45:065 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/c733d1ca-035b-4b6d-98de-b940f86e4e98/displayed
+2019-07-04 08:28:45:065 [HTTP] {}
+2019-07-04 08:28:45:091 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/c733d1ca-035b-4b6d-98de-b940f86e4e98/displayed 200 26 ms - 14
+2019-07-04 08:28:45:091 [HTTP] 
+2019-07-04 08:28:45:093 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:45:094 [HTTP] {}
+2019-07-04 08:28:45:125 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 31 ms - 1173
+2019-07-04 08:28:45:125 [HTTP] 
+2019-07-04 08:28:45:129 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:45:130 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_phone"}
+2019-07-04 08:28:45:164 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 28 ms - 137
+2019-07-04 08:28:45:164 [HTTP] 
+2019-07-04 08:28:45:165 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/daa9b0f9-a9e4-479b-a92c-6d95a38b227e/displayed
+2019-07-04 08:28:45:165 [HTTP] {}
+2019-07-04 08:28:45:186 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/daa9b0f9-a9e4-479b-a92c-6d95a38b227e/displayed 200 21 ms - 14
+2019-07-04 08:28:45:186 [HTTP] 
+2019-07-04 08:28:45:188 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:45:188 [HTTP] {}
+2019-07-04 08:28:45:214 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 26 ms - 1173
+2019-07-04 08:28:45:215 [HTTP] 
+2019-07-04 08:28:45:221 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:45:221 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_phone"}
+2019-07-04 08:28:45:258 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 37 ms - 137
+2019-07-04 08:28:45:258 [HTTP] 
+2019-07-04 08:28:45:261 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/e3088fb1-aa21-4479-b0f5-b3eb9ee3d4ac/enabled
+2019-07-04 08:28:45:261 [HTTP] {}
+2019-07-04 08:28:45:291 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/e3088fb1-aa21-4479-b0f5-b3eb9ee3d4ac/enabled 200 30 ms - 14
+2019-07-04 08:28:45:292 [HTTP] 
+2019-07-04 08:28:45:294 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:45:295 [HTTP] {}
+2019-07-04 08:28:45:320 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 26 ms - 1173
+2019-07-04 08:28:45:321 [HTTP] 
+2019-07-04 08:28:45:325 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:45:325 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/et_phone"}
+2019-07-04 08:28:45:359 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 32 ms - 137
+2019-07-04 08:28:45:359 [HTTP] 
+2019-07-04 08:28:45:364 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/e5eedcf2-0e66-4f40-a4d0-3096be133701/value
+2019-07-04 08:28:45:365 [HTTP] {"id":"e5eedcf2-0e66-4f40-a4d0-3096be133701","text":"9491862195","value":["9","4","9","1","8","6","2","1","9","5"]}
+2019-07-04 08:28:45:909 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/e5eedcf2-0e66-4f40-a4d0-3096be133701/value 200 545 ms - 12
+2019-07-04 08:28:45:909 [HTTP] 
+2019-07-04 08:28:45:910 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:45:911 [HTTP] {}
+2019-07-04 08:28:45:928 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 17 ms - 1173
+2019-07-04 08:28:45:928 [HTTP] 
+2019-07-04 08:28:45:930 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:45:930 [HTTP] {}
+2019-07-04 08:28:45:944 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 14 ms - 1173
+2019-07-04 08:28:45:944 [HTTP] 
+2019-07-04 08:28:45:946 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:45:946 [HTTP] {}
+2019-07-04 08:28:45:963 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 17 ms - 1173
+2019-07-04 08:28:45:963 [HTTP] 
+2019-07-04 08:28:45:965 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:45:965 [HTTP] {}
+2019-07-04 08:28:45:981 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 15 ms - 1173
+2019-07-04 08:28:45:981 [HTTP] 
+2019-07-04 08:28:45:984 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:45:984 [HTTP] {}
+2019-07-04 08:28:46:001 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 17 ms - 1173
+2019-07-04 08:28:46:001 [HTTP] 
+2019-07-04 08:28:46:003 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:46:004 [HTTP] {}
+2019-07-04 08:28:46:020 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 16 ms - 1173
+2019-07-04 08:28:46:020 [HTTP] 
+2019-07-04 08:28:46:024 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:46:026 [HTTP] {}
+2019-07-04 08:28:46:046 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 21 ms - 1173
+2019-07-04 08:28:46:046 [HTTP] 
+2019-07-04 08:28:46:050 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:46:050 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_submit"}
+2019-07-04 08:28:46:422 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 372 ms - 137
+2019-07-04 08:28:46:423 [HTTP] 
+2019-07-04 08:28:46:426 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/58ac0191-52b4-4dd3-901a-84408a753c06/displayed
+2019-07-04 08:28:46:426 [HTTP] {}
+2019-07-04 08:28:46:461 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/58ac0191-52b4-4dd3-901a-84408a753c06/displayed 200 35 ms - 14
+2019-07-04 08:28:46:464 [HTTP] 
+2019-07-04 08:28:46:466 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:46:466 [HTTP] {}
+2019-07-04 08:28:46:488 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 22 ms - 1173
+2019-07-04 08:28:46:488 [HTTP] 
+2019-07-04 08:28:46:493 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:46:493 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_submit"}
+2019-07-04 08:28:46:522 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 29 ms - 137
+2019-07-04 08:28:46:523 [HTTP] 
+2019-07-04 08:28:46:525 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/0e39b34f-0224-42f6-952e-c349e1308204/displayed
+2019-07-04 08:28:46:525 [HTTP] {}
+2019-07-04 08:28:46:551 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/0e39b34f-0224-42f6-952e-c349e1308204/displayed 200 24 ms - 14
+2019-07-04 08:28:46:552 [HTTP] 
+2019-07-04 08:28:46:553 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:46:554 [HTTP] {}
+2019-07-04 08:28:46:573 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 19 ms - 1173
+2019-07-04 08:28:46:574 [HTTP] 
+2019-07-04 08:28:46:579 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:46:579 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_submit"}
+2019-07-04 08:28:46:608 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 29 ms - 137
+2019-07-04 08:28:46:608 [HTTP] 
+2019-07-04 08:28:46:610 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/af7a2266-23f6-41c2-b350-d97c06a4f27b/enabled
+2019-07-04 08:28:46:610 [HTTP] {}
+2019-07-04 08:28:46:637 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/af7a2266-23f6-41c2-b350-d97c06a4f27b/enabled 200 27 ms - 14
+2019-07-04 08:28:46:637 [HTTP] 
+2019-07-04 08:28:46:639 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:46:639 [HTTP] {}
+2019-07-04 08:28:46:655 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 15 ms - 1173
+2019-07-04 08:28:46:655 [HTTP] 
+2019-07-04 08:28:46:659 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:46:659 [HTTP] {"using":"id","value":"in.mohalla.sharechat:id/tv_submit"}
+2019-07-04 08:28:46:688 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 28 ms - 137
+2019-07-04 08:28:46:688 [HTTP] 
+2019-07-04 08:28:46:695 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/229e6e83-bfed-4957-a3e1-22fc6b749c76/click
+2019-07-04 08:28:46:695 [HTTP] {"id":"229e6e83-bfed-4957-a3e1-22fc6b749c76"}
+2019-07-04 08:28:46:738 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/229e6e83-bfed-4957-a3e1-22fc6b749c76/click 200 41 ms - 14
+2019-07-04 08:28:46:739 [HTTP] 
+2019-07-04 08:28:46:743 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:46:743 [HTTP] {}
+2019-07-04 08:28:46:765 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 22 ms - 1173
+2019-07-04 08:28:46:765 [HTTP] 
+2019-07-04 08:28:46:767 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:46:768 [HTTP] {}
+2019-07-04 08:28:46:788 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 20 ms - 1173
+2019-07-04 08:28:46:789 [HTTP] 
+2019-07-04 08:28:46:792 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:46:792 [HTTP] {}
+2019-07-04 08:28:46:829 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 37 ms - 1173
+2019-07-04 08:28:46:830 [HTTP] 
+2019-07-04 08:28:46:832 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:46:833 [HTTP] {}
+2019-07-04 08:28:46:854 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 21 ms - 1173
+2019-07-04 08:28:46:855 [HTTP] 
+2019-07-04 08:28:46:859 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:46:860 [HTTP] {}
+2019-07-04 08:28:46:881 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 22 ms - 1173
+2019-07-04 08:28:46:882 [HTTP] 
+2019-07-04 08:28:46:884 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:46:885 [HTTP] {}
+2019-07-04 08:28:46:905 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 21 ms - 1173
+2019-07-04 08:28:46:905 [HTTP] 
+2019-07-04 08:28:46:909 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:46:909 [HTTP] {}
+2019-07-04 08:28:46:932 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 22 ms - 1173
+2019-07-04 08:28:46:932 [HTTP] 
+2019-07-04 08:28:46:937 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:46:938 [HTTP] {"using":"xpath","value":"//*[@resource-id='in.mohalla.sharechat:id/crsv_payment_setup']//*[@resource-id = 'in.mohalla.sharechat:id/tv_custom_referral']"}
+2019-07-04 08:28:47:764 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 827 ms - 137
+2019-07-04 08:28:47:765 [HTTP] 
+2019-07-04 08:28:47:771 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/761c171f-9af9-4f19-b92b-7d3d0305e6cd/displayed
+2019-07-04 08:28:47:772 [HTTP] {}
+2019-07-04 08:28:47:800 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/761c171f-9af9-4f19-b92b-7d3d0305e6cd/displayed 200 28 ms - 14
+2019-07-04 08:28:47:800 [HTTP] 
+2019-07-04 08:28:47:802 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:47:803 [HTTP] {}
+2019-07-04 08:28:47:821 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 18 ms - 1173
+2019-07-04 08:28:47:821 [HTTP] 
+2019-07-04 08:28:47:826 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:47:826 [HTTP] {"using":"xpath","value":"//*[@resource-id='in.mohalla.sharechat:id/crsv_payment_setup']//*[@resource-id = 'in.mohalla.sharechat:id/tv_custom_referral']"}
+2019-07-04 08:28:47:941 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 115 ms - 137
+2019-07-04 08:28:47:941 [HTTP] 
+2019-07-04 08:28:47:943 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/accd924c-9166-41ad-b733-b7d095c1c676/displayed
+2019-07-04 08:28:47:944 [HTTP] {}
+2019-07-04 08:28:47:974 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/accd924c-9166-41ad-b733-b7d095c1c676/displayed 200 30 ms - 14
+2019-07-04 08:28:47:975 [HTTP] 
+2019-07-04 08:28:47:977 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:47:977 [HTTP] {}
+2019-07-04 08:28:47:996 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 19 ms - 1173
+2019-07-04 08:28:47:997 [HTTP] 
+2019-07-04 08:28:48:001 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:48:002 [HTTP] {"using":"xpath","value":"//*[@resource-id='in.mohalla.sharechat:id/crsv_payment_setup']//*[@resource-id = 'in.mohalla.sharechat:id/tv_custom_referral']"}
+2019-07-04 08:28:48:154 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 152 ms - 137
+2019-07-04 08:28:48:154 [HTTP] 
+2019-07-04 08:28:48:156 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/01a140c8-bb3e-4ab9-b39c-edcf31ae5299/enabled
+2019-07-04 08:28:48:157 [HTTP] {}
+2019-07-04 08:28:48:192 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/01a140c8-bb3e-4ab9-b39c-edcf31ae5299/enabled 200 35 ms - 14
+2019-07-04 08:28:48:192 [HTTP] 
+2019-07-04 08:28:48:194 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:48:195 [HTTP] {}
+2019-07-04 08:28:48:224 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 28 ms - 1173
+2019-07-04 08:28:48:225 [HTTP] 
+2019-07-04 08:28:48:228 [HTTP] --> POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element
+2019-07-04 08:28:48:228 [HTTP] {"using":"xpath","value":"//*[@resource-id='in.mohalla.sharechat:id/crsv_payment_setup']//*[@resource-id = 'in.mohalla.sharechat:id/tv_custom_referral']"}
+2019-07-04 08:28:48:349 [HTTP] <-- POST /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element 200 120 ms - 137
+2019-07-04 08:28:48:349 [HTTP] 
+2019-07-04 08:28:48:351 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/07ed83d6-2d16-470f-b768-54e43002bdaa/text
+2019-07-04 08:28:48:351 [HTTP] {}
+2019-07-04 08:28:48:354 [W3C (b08e01ff)] Driver proxy active, passing request on via HTTP proxy
+2019-07-04 08:28:48:394 [WD Proxy] Replacing sessionId dbdbba4b-d49a-41d6-85fa-e664643dc3de with b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:48:398 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c/element/07ed83d6-2d16-470f-b768-54e43002bdaa/text 200 45 ms - 155
+2019-07-04 08:28:48:399 [HTTP] 
+2019-07-04 08:28:48:594 [HTTP] --> GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:48:595 [HTTP] {}
+2019-07-04 08:28:48:619 [HTTP] <-- GET /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 24 ms - 1173
+2019-07-04 08:28:48:619 [HTTP] 
+2019-07-04 08:28:48:625 [HTTP] --> DELETE /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c
+2019-07-04 08:28:48:625 [HTTP] {}
+2019-07-04 08:28:48:626 [Appium] Removing session b08e01ff-104b-4bca-83ef-e7291e2c374c from our master session list
+2019-07-04 08:28:49:266 [ADB] in.mohalla.sharechat was successfully uninstalled
+2019-07-04 08:28:49:287 [UiAutomator2] Restoring hidden api policy to the device default configuration
+2019-07-04 08:28:49:487 [HTTP] <-- DELETE /wd/hub/session/b08e01ff-104b-4bca-83ef-e7291e2c374c 200 862 ms - 14
+2019-07-04 08:28:49:488 [HTTP] 
+2019-07-04 08:28:54:833 [Appium] Received SIGTERM - shutting down
+2019-07-04 08:28:54:838 uncaughtException: write EPIPE
+Error: write EPIPE
+    at WriteWrap.onWriteComplete [as oncomplete] (internal/stream_base_commons.js:83:16)

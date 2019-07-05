@@ -44,14 +44,14 @@ public class loginPage extends WebDriverListener {
             extent.attachReporter(reporter);
             ExtentTest logger=extent.createTest("CustomerLogin");
             driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-            loginPageObjects.selectKannada.click();
-            Assert.assertEquals("ಶೇರ್ ಚಾಟ್", loginPageObjects.shareChatTextInKannada.getText());
-            ((AppiumDriver <MobileElement>)driver).hideKeyboard();
-            Assert.assertEquals(loginPageObjects.et_Phone.getText(), "ಮೊಬೈಲ್ ನಂಬರ್");
+            //loginPageObjects.selectKannada.click();
+            //Assert.assertEquals("ಶೇರ್ ಚಾಟ್", loginPageObjects.shareChatTextInKannada.getText());
+            //((AppiumDriver <MobileElement>)driver).hideKeyboard();
+            //Assert.assertEquals(loginPageObjects.et_Phone.getText(), "ಮೊಬೈಲ್ ನಂಬರ್");
             System.out.println("Edit Phone number text box found in ಕನ್ನಡ");
-            Assert.assertEquals(loginPageObjects.tv_get_otp.getText(), "ಅಕೌಂಟ್ ಗೆ ಹೋಗಲು");
+            //Assert.assertEquals(loginPageObjects.tv_get_otp.getText(), "ಅಕೌಂಟ್ ಗೆ ಹೋಗಲು");
             // Flush method will write the test in report- This is mandatory step
-            extent.flush();
+            //extent.flush();
 
         }
         catch (Exception e) {

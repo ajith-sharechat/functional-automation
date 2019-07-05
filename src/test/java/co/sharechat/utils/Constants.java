@@ -17,4 +17,9 @@ public interface Constants {
 
 
 
+    //Referral Screen texts
+    String varificationText = "नंबर वेरिफिकेशन हो रहा है";
+
+
+
 }

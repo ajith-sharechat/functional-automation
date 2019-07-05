@@ -15,8 +15,8 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = true, description = "Verify create without background button functionality")
-    public void  TC_01createTextPost(){
+    @Test(enabled = true, description = "Verify create without background button functionality", groups = {"SmokeTest"})
+    public void  TC001_createTextPost(){
 
         new SignUpTests().TC004_signupRegistered();
 
@@ -36,8 +36,8 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = true, description = "Verify create without background button functionality")
-    public void  TC_02createBackgroundTextPost(){
+    @Test(enabled = true, description = "Verify create without background button functionality", groups = {"SmokeTest"})
+    public void  TC002_createBackgroundTextPost(){
 
         new SignUpTests().TC004_signupRegistered();
 
@@ -57,8 +57,8 @@ public class CreatePostTests implements Constants {
     }
 
 
-    @Test(enabled = true, description = "Verify create without background button functionality")
-    public void  TC_03createCameraBackgroundTextPost(){
+    @Test(enabled = true, description = "Verify create without background button functionality", groups = {"SmokeTest"})
+    public void  TC003_createCameraBackgroundTextPost(){
 
         new SignUpTests().TC004_signupRegistered();
 
@@ -80,8 +80,8 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify create without background button functionality")
-    public void TC_04createPollPost(){
+    @Test(enabled = true, description = "Verify create without background button functionality", groups = {"SmokeTest"})
+    public void TC004_createPollPost(){
 
         new SignUpTests().TC004_signupRegistered();
 

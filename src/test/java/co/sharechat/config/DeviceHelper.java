@@ -208,6 +208,32 @@ public class DeviceHelper {
             return false;
         }
     }
+/*
+    public void doActionAfterScroll(By locator){
+        List <WebElement> listOfElements = driver.findElements(locator);
+        JavascriptExecutor je = (JavascriptExecutor) driver;
+        for ( int i = 0; listOfElements.size() == 0 || i < 5 ; i++ )//Maxmium 5 baar scroll krega
+        {
+            //Do Scroll jitni tuje chahiye
+            je.executeScript("javascript:window.scrollBy(250,350)");
+            listOfElements = driver.findElements(locator);
+        }
+
+        listOfElements.get(0).click();//Do what you want to do on the element
+        je.executeScript("window.scrollBy(0,500)");
+    }
+
+    public WebElement getElement(By locator){
+        try {
+            return driver.findElement(locator);
+        }catch (NoSuchElementException e){
+            List <WebElement> loderElements = driver.findElements(By.id("Tera loader da element"));
+            if (loderElements.size() > 0 )
+                wait.until(ExpectedConditions.invisibilityOfAllElements(loderElements));
+            return wait.until(ExpectedConditions.visibilityOf(driver.findElement(locator)));
+        }
+    }*/
+
 
     public String getCurrentMonth(int month) {
         int i = Calendar.getInstance().get(Calendar.MONTH);
