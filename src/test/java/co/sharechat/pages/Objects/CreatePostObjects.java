@@ -33,6 +33,9 @@ public class CreatePostObjects {
 	@AndroidFindBy(className = "android.widget.EditText")
 	public MobileElement writeTextInCreateTextPost;
 
+	@AndroidFindBy(xpath = "in.mohalla.sharechat:id/tv_create_profile")
+	public MobileElement profileSubmitButton;
+
 	//===================
 
 

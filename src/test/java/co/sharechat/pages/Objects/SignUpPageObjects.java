@@ -20,6 +20,9 @@ public class SignUpPageObjects {
 	
 	@AndroidFindBy(xpath = "//*[@text='हिन्दी']")
 	public MobileElement hindiBox;
+
+	@AndroidFindBy(xpath = "//*[@text='తెలుగు']")
+	public MobileElement teluguBox;
 	
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/et_name")
 	public MobileElement loginNameBox;
@@ -44,12 +47,21 @@ public class SignUpPageObjects {
 	
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/et_otp")
 	public MobileElement OTPtextbox;
+
+	@AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/pin_view']//following::android.widget.EditText")
+	public MobileElement OTPtextfield;
 	
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/bt_submit")
 	public MobileElement submitOTP;
 
 	@AndroidFindBy(id = "com.android.packageinstaller:id/permission_allow_button")
 	public MobileElement allowPermissionPopUp;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/tv_get_otp")
+	public MobileElement getOTPButton;
+
+	@AndroidFindBy(id = "com.android.packageinstaller:id/permission_allow_button")
+	public MobileElement allowButton;
 
 	@AndroidFindBy(uiAutomator = "new UiScrollable(new UiSelector()"
 			+ ".className(\"android.widget.ListView\")).scrollIntoView("

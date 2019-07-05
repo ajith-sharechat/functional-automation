@@ -1,10 +1,12 @@
 package co.sharechat.pages.Actions;
 
 import co.sharechat.config.TestRunnerInfo;
+import co.sharechat.test.SignUpTests;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -48,6 +50,15 @@ public class SignUp extends WebDriverListener {
 
 		element(signUpObjects.hindiBox).click();
 	}
+
+	/**
+	 * This Function is to Select Telugu Language
+	 * @author Ramesh
+	 */
+	public void selectTelugu() {
+		deviceHelper.waitTillTheElementIsVisibleAndClickable(signUpObjects.teluguBox);
+		element(signUpObjects.teluguBox).click();
+	}
 	
 	public void enterName(String name) {
 		element(signUpObjects.loginNameBox).sendKeys(name);
@@ -56,6 +67,14 @@ public class SignUp extends WebDriverListener {
 	public void enterPhNo(String phNo) {
 		signUpObjects.loginPhBox.sendKeys(phNo);
 	}
+	/**
+	 * This Function is to Click OTP Button
+	 * @author Ramesh
+	 */
+	public void clickOtpButton() {
+		element(signUpObjects.getOTPButton).click();
+	}
+
 	
 	public void selectGender() {
 		signUpObjects.loginGenderBtn.click();
@@ -85,7 +104,14 @@ public class SignUp extends WebDriverListener {
 	public void submitOTP() {
 		signUpObjects.submitOTP.click();
 	}
+	/**
+	 * This Function is to Enter OTP with using Actions class method
+	 * @author Ramesh
+	 */
 
+	public void enterOTPActions(String otp){
+		deviceHelper.writeInputActions(signUpObjects.OTPtextfield,otp);
+	}
 	public void acceptPermission(){
 		signUpObjects.allowPermissionPopUp.click();
 	}

@@ -8,6 +8,9 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -73,7 +76,19 @@ public class DeviceHelper {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
+    public void waitTillTheElementIsVisible(MobileElement element) {
+
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
     public void waitTillTheElementInVisible(WebElement element) {
+
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.invisibilityOf(element));
+    }
+
+    public void waitTillMobileElementInVisible(MobileElement element) {
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.invisibilityOf(element));
@@ -233,5 +248,45 @@ public class DeviceHelper {
         for (String winHandle : driver.getWindowHandles()) {
             driver.switchTo().window(winHandle);
         }
+    }
+
+    public boolean isElementDisplay(MobileElement locator) {
+        try {
+            locator.isDisplayed();
+            System.out.println("Element presend on screen ***********" + locator);
+            return true;
+        } catch (NoSuchElementException e) {
+            System.out.println("Element not present on screen **************" + locator);
+            return false;
+        }
+    }
+    public void longPress(MobileElement locator) {
+        TouchActions action = new TouchActions(driver);
+        action.longPress(locator);
+        action.perform();
+    }
+    /**
+     * This Function will pause the execution for given secs.
+     *
+     * @param secs : No of seconds to be paused.
+     * @author jasmeetsingh
+     */
+    public void waitInSec(int secs) {
+        try {
+            Thread.sleep(secs * 1000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+    /**
+     * This Function is to Enter OTP with using Actions class method
+     * @author Ramesh
+     *
+     */
+    public void writeInputActions(MobileElement element,String otp){
+        waitForElementToAppear(element);
+        Actions a=new Actions(driver);
+        a.sendKeys(otp).build().perform();
     }
 }
