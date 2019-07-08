@@ -30,7 +30,7 @@ public class SocialTests  implements Constants {
 
     }
 
-    @Test(enabled = true, description = "Verify chat screen functionality")
+    @Test(enabled = true, description = "Verify chat screen functionality", groups = {"RegressionTest", "Social"})
     public void TC001_verifyChatScreen() throws Exception {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
@@ -44,7 +44,7 @@ public class SocialTests  implements Constants {
         getChatPageActionsInstance().verifyChatScreen();
     }
 
-    @Test(enabled = true, description = "Verify chat initiating functionality from normal user profile screen")
+    @Test(enabled = true, description = "Verify chat initiating functionality from normal user profile screen", groups = {"RegressionTest", "Social"})
     public void TC002_verifyChatInitiatingFunctionality() throws Exception {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
@@ -57,7 +57,7 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().verifyPostUserChatInitiatingFunctionality();
     }
 
-    @Test(enabled = true, description = "Verify user row functionality")
+    @Test(enabled = true, description = "Verify user row functionality", groups = {"RegressionTest", "Social"})
     public void TC005_verifyChatScreenUserRow() throws Exception {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
@@ -74,7 +74,7 @@ public class SocialTests  implements Constants {
         getHomePageActionsInstance().clickHomeIcon();
     }
 
-    @Test(enabled = true, description = "Verify sending text message functionality to known user")
+    @Test(enabled = true, description = "Verify sending text message functionality to known user", groups = {"RegressionTest", "Social"})
     public void TC007_verifyChatScreenTextMessageFunctionlity() throws Exception {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
@@ -92,7 +92,7 @@ public class SocialTests  implements Constants {
 
     }
 
-    @Test(enabled = true, description = "Verify Block User functionality form chat session")
+    @Test(enabled = true, description = "Verify Block User functionality form chat session", groups = {"RegressionTest", "Social"})
     public void TC011_verifyChatBoxBlockUserFunctionality() throws Exception {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
@@ -110,7 +110,7 @@ public class SocialTests  implements Constants {
         getChatPageActionsInstance().clickUnblockButton();
     }
 
-    @Test(enabled = true, description = "Verify Block User functionality form chat session")
+    @Test(enabled = true, description = "Verify sharing a post functionality to known user", groups = {"RegressionTest", "Social"})
     public void TC021_verifySharingPostFunctionalityKnownUser() throws Exception {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
@@ -124,7 +124,7 @@ public class SocialTests  implements Constants {
         getHomePageActionsInstance().clickPostImageOptionTopRightCorner();
     }
 
-    @Test(enabled = true, description = "Verify Block User functionality form chat session")
+    @Test(enabled = true, description = "Verify UNKNOWN chat screen functionality", groups = {"RegressionTest", "Social"})
     public void TC022_verifyUnknownChatScreenFunctionality() throws Exception {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);

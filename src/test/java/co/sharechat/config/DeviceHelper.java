@@ -18,6 +18,7 @@ import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 import java.time.Duration;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -295,7 +296,20 @@ public class DeviceHelper {
         Actions a=new Actions(driver);
         a.sendKeys(otp).build().perform();
     }
+    /**
+     * This Function is to scroll to mobile element
+     * @author Ramesh
+     *
+     */
     public void scrollToMobileElement(MobileElement element){
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+    /**
+     * This Function is to hide keyboard
+     * @author Ramesh
+     *
+     */
+    public void hideKeyBoard(){
+        ((AppiumDriver <MobileElement>)driver).hideKeyboard();
     }
 }
