@@ -31,115 +31,116 @@ public class SocialTests  implements Constants {
 
     }
 
-//    @Test(enabled = true, description = "Verify chat screen functionality", groups = {"RegressionTest", "Social"})
-//    public void TC001_verifyChatScreen() throws Exception {
-//        getSignUpInstance().selectTelugu();
-//        getSignUpInstance().enterPhNo(registerNumber);
-//        getSignUpInstance().clickOtpButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getSignUpInstance().enterOTPActions(otp);
-//        getHomePageActionsInstance().verifyHomeScreenElement();
-//        getHomePageActionsInstance().clickChatIcon();
-//        getChatPageActionsInstance().verifyChatScreen();
-//    }
-//
-//    @Test(enabled = true, description = "Verify chat initiating functionality from normal user profile screen", groups = {"RegressionTest", "Social"})
-//    public void TC002_verifyChatInitiatingFunctionality() throws Exception {
-//        getSignUpInstance().selectTelugu();
-//        getSignUpInstance().enterPhNo(registerNumber);
-//        getSignUpInstance().clickOtpButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getSignUpInstance().enterOTPActions(otp);
-//        getHomePageActionsInstance().verifyHomeScreenElement();
-//        getSocialActionsInstance().verifyPostUserChatInitiatingFunctionality();
-//    }
-//
-//    @Test(enabled = true, description = "Verify user row functionality", groups = {"RegressionTest", "Social"})
-//    public void TC005_verifyChatScreenUserRow() throws Exception {
-//        getSignUpInstance().selectTelugu();
-//        getSignUpInstance().enterPhNo(registerNumber);
-//        getSignUpInstance().clickOtpButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getSignUpInstance().enterOTPActions(otp);
-//        getHomePageActionsInstance().verifyHomeScreenElement();
-//        getHomePageActionsInstance().clickChatIcon();
-//        getChatPageActionsInstance().verifyChatScreen();
-//        getChatPageActionsInstance().clickKnownUserList();
-//        getSocialActionsInstance().clickBackButton();
-//        getHomePageActionsInstance().clickHomeIcon();
-//    }
-//
-//    @Test(enabled = true, description = "Verify sending text message functionality to known user", groups = {"RegressionTest", "Social"})
-//    public void TC007_verifyChatScreenTextMessageFunctionlity() throws Exception {
-//        getSignUpInstance().selectTelugu();
-//        getSignUpInstance().enterPhNo(registerNumber);
-//        getSignUpInstance().clickOtpButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getSignUpInstance().enterOTPActions(otp);
-//        getHomePageActionsInstance().verifyHomeScreenElement();
-//        getHomePageActionsInstance().clickChatIcon();
-//        getChatPageActionsInstance().verifyChatScreen();
-//        getChatPageActionsInstance().clickKnownUserList();
-//        getChatPageActionsInstance().enterTextMessageActions(textMessage);
-//        getSocialActionsInstance().clickSendMessageIcon();
-//
-//    }
+    @Test(enabled = true, description = "Verify chat screen functionality", groups = {"RegressionTest", "Social"})
+    public void TC001_verifyChatScreen() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickChatIcon();
+        getChatPageActionsInstance().verifyChatScreen();
+    }
 
-//    @Test(enabled = true, description = "Verify Block User functionality form chat session", groups = {"RegressionTest", "Social"})
-//    public void TC011_verifyChatBoxBlockUserFunctionality() throws Exception {
-//        getSignUpInstance().selectTelugu();
-//        getSignUpInstance().enterPhNo(registerNumber);
-//        getSignUpInstance().clickOtpButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getSignUpInstance().enterOTPActions(otp);
-//        getHomePageActionsInstance().verifyHomeScreenElement();
-//        getHomePageActionsInstance().clickChatIcon();
-//        getChatPageActionsInstance().verifyChatScreen();
-//        getChatPageActionsInstance().clickKnownUserList();
-//        getChatPageActionsInstance().clickRightTopConerOption();
-//        getChatPageActionsInstance().clickBlockOption();
-//        getChatPageActionsInstance().clickUnblockButton();
-//    }
-//
-//    @Test(enabled = true, description = "Verify sharing a post functionality to known user", groups = {"RegressionTest", "Social"})
-//    public void TC021_verifySharingPostFunctionalityKnownUser() throws Exception {
-//        getSignUpInstance().selectTelugu();
-//        getSignUpInstance().enterPhNo(registerNumber);
-//        getSignUpInstance().clickOtpButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getSignUpInstance().enterOTPActions(otp);
-//        getHomePageActionsInstance().verifyHomeScreenElement();
-//        getHomePageActionsInstance().scrollTillPostImageOnHomeScreenClickPostImage();
-//        getHomePageActionsInstance().clickPostImageOptionTopRightCorner();
-//    }
-//
-//    @Test(enabled = true, description = "Verify UNKNOWN chat screen functionality", groups = {"RegressionTest", "Social"})
-//    public void TC022_verifyUnknownChatScreenFunctionality() throws Exception {
-//        getSignUpInstance().selectTelugu();
-//        getSignUpInstance().enterPhNo(registerNumber);
-//        getSignUpInstance().clickOtpButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getSignUpInstance().enterOTPActions(otp);
-//        getHomePageActionsInstance().verifyHomeScreenElement();
-//        getHomePageActionsInstance().clickChatIcon();
-//        getChatPageActionsInstance().verifyChatScreen();
-//        getChatPageActionsInstance().clickUknownUser();
-//        getChatPageActionsInstance().verifyUnknownUserScreen();
-//    }
+    @Test(enabled = true, description = "Verify chat initiating functionality from normal user profile screen", groups = {"RegressionTest", "Social"})
+    public void TC002_verifyChatInitiatingFunctionality() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getSocialActionsInstance().verifyPostUserChatInitiatingFunctionality();
+    }
+
+    @Test(enabled = true, description = "Verify user row functionality", groups = {"RegressionTest", "Social"})
+    public void TC005_verifyChatScreenUserRow() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickChatIcon();
+        getChatPageActionsInstance().verifyChatScreen();
+        getChatPageActionsInstance().clickKnownUserList();
+        getSocialActionsInstance().clickBackButton();
+        getHomePageActionsInstance().clickHomeIcon();
+    }
+
+    @Test(enabled = true, description = "Verify sending text message functionality to known user", groups = {"RegressionTest", "Social"})
+    public void TC007_verifyChatScreenTextMessageFunctionlity() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickChatIcon();
+        getChatPageActionsInstance().verifyChatScreen();
+        getChatPageActionsInstance().clickKnownUserList();
+        getChatPageActionsInstance().enterTextMessageActions(textMessage);
+        getSocialActionsInstance().clickSendMessageIcon();
+
+    }
+
+    @Test(enabled = true, description = "Verify Block User functionality form chat session", groups = {"RegressionTest", "Social"})
+    public void TC011_verifyChatBoxBlockUserFunctionality() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickChatIcon();
+        getChatPageActionsInstance().verifyChatScreen();
+        getChatPageActionsInstance().clickKnownUserList();
+        getChatPageActionsInstance().clickRightTopConerOption();
+        getChatPageActionsInstance().clickBlockOption();
+        getChatPageActionsInstance().clickUnblockButton();
+    }
+
+    @Test(enabled = true, description = "Verify sharing a post functionality to known user", groups = {"RegressionTest", "Social"})
+    public void TC021_verifySharingPostFunctionalityKnownUser() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().scrollTillPostImageOnHomeScreenClickPostImage();
+        getHomePageActionsInstance().clickPostImageOptionTopRightCorner();
+    }
+
+    @Test(enabled = true, description = "Verify UNKNOWN chat screen functionality", groups = {"RegressionTest", "Social"})
+    public void TC022_verifyUnknownChatScreenFunctionality() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickChatIcon();
+        getChatPageActionsInstance().verifyChatScreen();
+        getChatPageActionsInstance().clickUknownUser();
+        getChatPageActionsInstance().verifyUnknownUserScreen();
+    }
+
     @Test(enabled = true, description = "Verify Shake and Chat screen functionality", groups = {"RegressionTest", "Social"})
     public void TC026_verifyShareAndChatScreen() throws Exception {
         getSignUpInstance().selectTelugu();
@@ -158,33 +159,34 @@ public class SocialTests  implements Constants {
         getChatPageActionsInstance().verifyShareAndChatScreen();
     }
 
-//    @Test(enabled = true, description = "Verify comment screen UI for a picture post",groups = {"RegressionTest", "Social"})
-//    public void TC065_verifyCommentScreenUIPostFunctionality() throws Exception {
-//        getSignUpInstance().selectTelugu();
-//        getSignUpInstance().enterPhNo(registerNumber);
-//        getSignUpInstance().clickOtpButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getSignUpInstance().enterOTPActions(otp);
-//        getHomePageActionsInstance().verifyHomeScreenElement();
-//        getHomePageActionsInstance().scrollToPostComment();
-//        getHomePageActionsInstance().clickPostCommentIcon();
-//        getSocialActionsInstance().verifyCommentScreen();
-//    }
-//    @Test(enabled = true, description = "Verify user profile functionality from comments list",groups = {"RegressionTest", "Social"})
-//    public void TC083_verifyUserProfileFunctionalityInCommentsList() throws Exception {
-//        getSignUpInstance().selectTelugu();
-//        getSignUpInstance().enterPhNo(registerNumber);
-//        getSignUpInstance().clickOtpButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getHomePageActionsInstance().clickAllowButton();
-//        getSignUpInstance().enterOTPActions(otp);
-//        getHomePageActionsInstance().verifyHomeScreenElement();
-//        getHomePageActionsInstance().scrollToPostComment();
-//        getHomePageActionsInstance().clickPostCommentIcon();
-//        getSocialActionsInstance().verifyCommentScreen();
-//        getSocialActionsInstance().clickCommentUserProfile();
-//    }
+    @Test(enabled = true, description = "Verify comment screen UI for a picture post",groups = {"RegressionTest", "Social"})
+    public void TC065_verifyCommentScreenUIPostFunctionality() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().scrollToPostComment();
+        getHomePageActionsInstance().clickPostCommentIcon();
+        getSocialActionsInstance().verifyCommentScreen();
+    }
+
+    @Test(enabled = true, description = "Verify user profile functionality from comments list",groups = {"RegressionTest", "Social"})
+    public void TC083_verifyUserProfileFunctionalityInCommentsList() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().scrollToPostComment();
+        getHomePageActionsInstance().clickPostCommentIcon();
+        getSocialActionsInstance().verifyCommentScreen();
+        getSocialActionsInstance().clickCommentUserProfile();
+    }
 }

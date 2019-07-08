@@ -268,7 +268,12 @@ public class DeviceHelper {
             return false;
         }
     }
-
+    /**
+     * This Function is to long Press of the element
+     * @author Ramesh
+     * @param: Mobile Element
+     *
+     */
     public void longPress(MobileElement locator) {
         TouchActions action = new TouchActions(driver);
         action.longPress(locator);
@@ -352,9 +357,12 @@ public class DeviceHelper {
 
         }
     }
+    /**
+     * This Function is to click android back button
+     * @author Ramesh
+     *
+     */
     public void clickAndroidBackButton() {
         ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
-//                .pressKeyCode(AndroidKeyCode.BACK);
-//        driver.navigate().back();
     }
 }
