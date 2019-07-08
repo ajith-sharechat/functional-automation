@@ -4,17 +4,23 @@ import com.annotation.values.ElementDescription;
 import com.annotation.values.PageName;
 import com.aventstack.extentreports.Status;
 import com.report.factory.ExtentTestManager;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.touch.TouchActions;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.Calendar;
+import java.util.HashMap;
 import java.util.List;
 
 import static io.appium.java_client.touch.WaitOptions.waitOptions;
@@ -288,5 +294,8 @@ public class DeviceHelper {
         waitForElementToAppear(element);
         Actions a=new Actions(driver);
         a.sendKeys(otp).build().perform();
+    }
+    public void scrollToMobileElement(MobileElement element){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
     }
 }

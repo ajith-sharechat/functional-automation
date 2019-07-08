@@ -22,7 +22,7 @@ public class SocialActions extends WebDriverListener {
     WebDriverListener webDriverListener = new WebDriverListener();
     static HomePageObjects homePostObjects= new HomePageObjects();
     static ChatPageObjects chatPageObjects= new ChatPageObjects();
-//    static SignUpPageObjects signUpObjects = new SignUpPageObjects();
+    static UnknowUsersPageObjects unknownUserObjects = new UnknowUsersPageObjects();
     static PostUserProfileObjects postuserObjects = new PostUserProfileObjects();
     ExtentHtmlReporter reporter=new ExtentHtmlReporter("./test-output/ExtentReport.html");
     ExtentReports extent = new ExtentReports();
@@ -89,6 +89,7 @@ public class SocialActions extends WebDriverListener {
     }
 
     public void  clickBackButton(){
+        deviceHelper.waitInSec(2);
         if(deviceHelper.isElementDisplay(postuserObjects.backIcon)==true) {
             Assert.assertTrue(deviceHelper.isElementDisplay(postuserObjects.backIcon));
             postuserObjects.backIcon.click();
@@ -105,7 +106,9 @@ public class SocialActions extends WebDriverListener {
         clickSendMessageIcon();
         clickBackButton();
         clickBackButton();
-        clickBackButton();
+//        clickBackButton();
+        deviceHelper.waitTillTheElementIsVisible(postuserObjects.postUserProfileBackButton);
+        postuserObjects.postUserProfileBackButton.click();
         getHomePageActionsInstance().clickChatIcon();
         getChatPageActionsInstance().verifyChatScreen();
         String test=chatPageObjects.recentKnownNameLabel.getText();
@@ -123,5 +126,9 @@ public class SocialActions extends WebDriverListener {
         }
 
     }
+//    public void r(){
+//        deviceHelper.waitTillTheElementIsVisible(unknownUserObjects.);
+//
+//    }
 
 }

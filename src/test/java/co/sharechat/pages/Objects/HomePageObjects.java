@@ -35,4 +35,7 @@ public class HomePageObjects {
     @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_post_profile")
     public MobileElement userProfileLink;
 
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/iv_post_image")
+    public MobileElement postImage;
+
 }

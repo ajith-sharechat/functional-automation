@@ -6,7 +6,6 @@ import co.sharechat.pages.Actions.HomePageActions;
 import co.sharechat.pages.Actions.SignUp;
 import co.sharechat.pages.Actions.SocialActions;
 import co.sharechat.utils.Constants;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class SocialTests  implements Constants {
@@ -30,10 +29,6 @@ public class SocialTests  implements Constants {
         return new SocialActions(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
 
     }
-//    @AfterTest
-//    public void backToHomeScreen(){
-//        getSocialActionsInstance().backToHomeScreen();
-//    }
 
     @Test(enabled = true, description = "Verify chat screen functionality")
     public void TC001_verifyChatScreen() throws Exception {
@@ -78,6 +73,7 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().clickBackButton();
         getHomePageActionsInstance().clickHomeIcon();
     }
+
     @Test(enabled = true, description = "Verify sending text message functionality to known user")
     public void TC007_verifyChatScreenTextMessageFunctionlity() throws Exception {
         getSignUpInstance().selectTelugu();
@@ -95,25 +91,7 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().clickSendMessageIcon();
 
     }
-    @Test(enabled = true, description = "Verify audio recording functionality from user chat session")
-    public void TC008_verifyChatBoxAudioRecording() throws Exception {
-        getSignUpInstance().selectTelugu();
-        getSignUpInstance().enterPhNo(registerNumber);
-        getSignUpInstance().clickOtpButton();
-        getHomePageActionsInstance().clickAllowButton();
-        getHomePageActionsInstance().clickAllowButton();
-        getHomePageActionsInstance().clickAllowButton();
-        getSignUpInstance().enterOTPActions(otp);
-        getHomePageActionsInstance().verifyHomeScreenElement();
-        getHomePageActionsInstance().clickChatIcon();
-        getChatPageActionsInstance().verifyChatScreen();
-        getChatPageActionsInstance().clickKnownUserList();
-        getSocialActionsInstance().clickLongPressSendAudioIcon();
-        getHomePageActionsInstance().clickAllowButton();
-        getSocialActionsInstance().clickLongPressSendAudioIcon();
-        getSocialActionsInstance().clickSendMessageIcon();
 
-    }
     @Test(enabled = true, description = "Verify Block User functionality form chat session")
     public void TC011_verifyChatBoxBlockUserFunctionality() throws Exception {
         getSignUpInstance().selectTelugu();
@@ -132,4 +110,33 @@ public class SocialTests  implements Constants {
         getChatPageActionsInstance().clickUnblockButton();
     }
 
+    @Test(enabled = true, description = "Verify Block User functionality form chat session")
+    public void TC021_verifySharingPostFunctionalityKnownUser() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().scrollTillPostImageOnHomeScreenClickPostImage();
+        getHomePageActionsInstance().clickPostImageOptionTopRightCorner();
+    }
+
+    @Test(enabled = true, description = "Verify Block User functionality form chat session")
+    public void TC022_verifyUnknownChatScreenFunctionality() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickChatIcon();
+        getChatPageActionsInstance().verifyChatScreen();
+        getChatPageActionsInstance().clickUknownUser();
+        getChatPageActionsInstance().verifyUnknownUserScreen();
+    }
 }

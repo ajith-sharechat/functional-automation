@@ -23,6 +23,7 @@ public class HomePageActions extends WebDriverListener {
     static ChatPageObjects chatPageObjects= new ChatPageObjects();
     static SignUpPageObjects signUpObjects = new SignUpPageObjects();
     static ProfilePageObjects profileObjects = new ProfilePageObjects();
+    static PostUserProfileObjects postUserObjects = new PostUserProfileObjects();
     ExtentHtmlReporter reporter=new ExtentHtmlReporter("./test-output/ExtentReport.html");
     ExtentReports extent = new ExtentReports();
 
@@ -74,5 +75,19 @@ public class HomePageActions extends WebDriverListener {
         if(deviceHelper.isElementDisplay(homePostObjects.userProfileLink)) {
             homePostObjects.userProfileLink.click();
         }
+    }
+    public void scrollTillPostImageOnHomeScreenClickPostImage() {
+        if(deviceHelper.isElementDisplay(homePostObjects.postImage)) {
+            homePostObjects.postImage.click();
+        }
+        else{
+            deviceHelper.scrollToMobileElement(homePostObjects.postImage);
+            homePostObjects.postImage.click();
+        }
+    }
+    public void clickPostImageOptionTopRightCorner() {
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.postImageToolOptions);
+        postUserObjects.postImageToolOptions.click();
+
     }
 }

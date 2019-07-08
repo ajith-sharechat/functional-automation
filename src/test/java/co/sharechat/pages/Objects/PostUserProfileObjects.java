@@ -22,4 +22,10 @@ public class PostUserProfileObjects {
 
     @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_message")
     public MobileElement recentMessagePosted;
+
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/ib_toolbar_options")
+    public MobileElement postImageToolOptions;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/fl_profile_labels']/following::android.widget.ImageButton")
+    public MobileElement postUserProfileBackButton;
 }
