@@ -14,11 +14,18 @@ public class Runner {
             ParallelThread parallelThread = new ParallelThread();
 
             List<String> tests = new ArrayList<>();
-            tests.add("launchAppTest");
+
+            //    tests.add("CheckAppInstallAndUninstallTest");
+            //    tests.add("UserLoginTest");
+            // tests.add("ExploreTabTest");
+            // tests.add("ProfilePageTest");
+            tests.add("TrendingTabTest");
+            //           tests.add("HomeScreenTest");
+            tests.add("StickerFunctionalityTest");
+
             parallelThread.runner("co.sharechat.test", tests);
-        }
-        catch(Exception e4)
-        {
+
+        } catch (Exception e4) {
             System.out.println(e4);
         }
     }

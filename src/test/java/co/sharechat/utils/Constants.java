@@ -13,8 +13,7 @@ public interface Constants {
     String userName = "Jasmeet";
     String otp = "876238";
     String textAboutPost = "Post Caption- This post is created for automation purpose. " +
-            "It is a Test Post. It is a Test Post. It is a Test Post. It is a Test Post." ;
-
+            "It is a Test Post. It is a Test Post. It is a Test Post. It is a Test Post.";
 
 
 }

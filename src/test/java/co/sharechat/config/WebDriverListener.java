@@ -27,12 +27,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by Qualitrix Technologies Pvt Ltd.
- * @author:	    Ajith Manjunath
+ *
+ * @author: Ajith Manjunath
  * Date:		07/17/2018
  * Purpose:	    Test Utilities and Listeners
  */
 
-public class WebDriverListener  implements ITestListener,IInvokedMethodListener{
+public class WebDriverListener implements ITestListener, IInvokedMethodListener {
 
     ExtentReports report;
     public ExtentTest logger;
@@ -40,17 +41,17 @@ public class WebDriverListener  implements ITestListener,IInvokedMethodListener{
     private static AtomicInteger atomicIndex = new AtomicInteger(0);
     private int count = 0;
     private int maxCount = Integer.parseInt("1");
-    static HashMap<String,ExtentTest> extentMap = new HashMap();
+    static HashMap<String, ExtentTest> extentMap = new HashMap();
     PropertyReader propertyReader;
     public static String filePath = System.getProperty("user.dir") + "/target/AutomationReport.html";
 
 
-    public WebDriverListener()
-    {
+    public WebDriverListener() {
         extentTestFactory = new ExtentTestFactory();
     }
 
-    @Override public void beforeInvocation(IInvokedMethod iInvokedMethod, ITestResult iTestResult) {
+    @Override
+    public void beforeInvocation(IInvokedMethod iInvokedMethod, ITestResult iTestResult) {
         if (iInvokedMethod.isTestMethod()) {
             String browserName = iInvokedMethod.getTestMethod().getXmlTest().getLocalParameters().get("browserName");
             AppiumDriver driver = null;//DriverFactory.createInstance(browserName);
@@ -59,7 +60,8 @@ public class WebDriverListener  implements ITestListener,IInvokedMethodListener{
         Thread.currentThread().setName(String.valueOf(atomicIndex.getAndIncrement()));
     }
 
-    @Override public void afterInvocation(IInvokedMethod iInvokedMethod, ITestResult result) {
+    @Override
+    public void afterInvocation(IInvokedMethod iInvokedMethod, ITestResult result) {
         if (result.getStatus() == ITestResult.SUCCESS) {
             ExtentTest child = extentMap.get(iInvokedMethod.getTestMethod().getRealClass().getSimpleName())
                     .createNode(result.getMethod().getMethodName())
@@ -77,7 +79,7 @@ public class WebDriverListener  implements ITestListener,IInvokedMethodListener{
             try {
                 String screenPath = GenericFunctions.readFromNotepad();
 
-                captureScreenShot(iInvokedMethod.getTestMethod().getRealClass().getSimpleName(),result.getMethod().getMethodName());
+                captureScreenShot(iInvokedMethod.getTestMethod().getRealClass().getSimpleName(), result.getMethod().getMethodName());
                 extentTestFactory.getExtentTest().addScreenCaptureFromPath(failedScreen);
                 extentTestFactory.getExtentTest().fail("Te" +
                         "st failed");
@@ -95,7 +97,8 @@ public class WebDriverListener  implements ITestListener,IInvokedMethodListener{
         }
     }
 
-    @Override public void onStart(ITestContext iTestContext) {
+    @Override
+    public void onStart(ITestContext iTestContext) {
         report = new ExtentReports();
         report.attachReporter(getHtmlReporter());
         report.setSystemInfo("Selenium Java Version", "3.0");
@@ -103,19 +106,20 @@ public class WebDriverListener  implements ITestListener,IInvokedMethodListener{
 
         report.setSystemInfo("Environment", environment);
         List<XmlClass> classnames = iTestContext.getCurrentXmlTest().getClasses();
-        for(XmlClass classname:classnames) {
+        for (XmlClass classname : classnames) {
             String name = classname.getName().toString();
             String[] names = name.split("\\.");
-            extentMap.put(names[names.length - 1],report.createTest(names[names.length - 1]));
+            extentMap.put(names[names.length - 1], report.createTest(names[names.length - 1]));
         }
     }
 
-    @Override public void onFinish(ITestContext iTestContext) {
+    @Override
+    public void onFinish(ITestContext iTestContext) {
         report.flush();
     }
 
     public void captureScreenShot(String className, String methodName) throws IOException, InterruptedException {
-        try{
+        try {
 
             File scrFile = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
 
@@ -130,9 +134,9 @@ public class WebDriverListener  implements ITestListener,IInvokedMethodListener{
 
             /*String path2 = "<img src=\"file://" + filePath + "\" alt=\"\"/>";
              Reporter.log(path2);*/
-            String path = "<center><a href=\"file://" + filePath + "\" alt=\"\" target=\"_blank\" >Screenshot Image:</a>"+fileName+"</center>";
+            String path = "<center><a href=\"file://" + filePath + "\" alt=\"\" target=\"_blank\" >Screenshot Image:</a>" + fileName + "</center>";
             Reporter.log(path);
-            ExtentTest logger=null;
+            ExtentTest logger = null;
             logger.log(Status.FAIL, (Markup) logger.addScreenCaptureFromPath(filePath));
         } catch (Exception e) {
             e.printStackTrace();
@@ -157,20 +161,20 @@ public class WebDriverListener  implements ITestListener,IInvokedMethodListener{
 
 
     public boolean retry(ITestResult result) {
-        if(count < maxCount && !result.isSuccess()) {
+        if (count < maxCount && !result.isSuccess()) {
             System.out.println("Retrying test case: " + result.getMethod() + " [" + result.getParameters()[0] + "]" + ", " + count + " out of " + maxCount);
             count++;
             return true;
         }
         Object[] obj = result.getParameters();
-        if (result.getStatus() == ITestResult.FAILURE && count == maxCount){
+        if (result.getStatus() == ITestResult.FAILURE && count == maxCount) {
             ExtentTest child = extentMap.get(result.getMethod().getRealClass().getSimpleName())
                     .createNode(result.getMethod().getMethodName() + " [" + obj[0] + "]")
                     .assignCategory(result.getMethod().getRealClass().getSimpleName());
             ExtentTestFactory.setExtentTest(child);
             ExtentTestFactory.getExtentTest().log(Status.FAIL, "<pre>" + result.getThrowable() + "</pre>");
             try {
-                captureScreenShot(result.getMethod().getRealClass().getSimpleName(),result.getMethod().getMethodName());
+                captureScreenShot(result.getMethod().getRealClass().getSimpleName(), result.getMethod().getMethodName());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -185,12 +189,14 @@ public class WebDriverListener  implements ITestListener,IInvokedMethodListener{
         return false;
     }
 
-    @Override public void onTestStart(ITestResult iTestResult) {
+    @Override
+    public void onTestStart(ITestResult iTestResult) {
 
 
     }
 
-    @Override public void onTestSuccess(ITestResult iTestResult) {
+    @Override
+    public void onTestSuccess(ITestResult iTestResult) {
 
     }
 
@@ -199,11 +205,13 @@ public class WebDriverListener  implements ITestListener,IInvokedMethodListener{
 
     }
 
-    @Override public void onTestSkipped(ITestResult iTestResult) {
+    @Override
+    public void onTestSkipped(ITestResult iTestResult) {
 
     }
 
-    @Override public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
+    @Override
+    public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
 
     }
 }
