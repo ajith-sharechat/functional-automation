@@ -3,6 +3,15 @@ package co.sharechat.pages.Objects;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
+/**
+ * Created by TestingXperts Pvt Ltd.
+ * @author: Ramesh
+ * Reviewer: sheshanandan
+ * Date: 07/04/2019
+ * Purpose: This Class is for chat page objects
+ * Version: 1.0
+ */
+
 public class ChatPageObjects {
 
     @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='in.mohalla.sharechat:id/anim_view']//following::androidx.appcompat.app.ActionBar.Tab")

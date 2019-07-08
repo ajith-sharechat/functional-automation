@@ -14,7 +14,14 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
+/**
+ * Created by TestingXperts Pvt Ltd.
+ * @author: Ramesh
+ * Reviewer: sheshanandan
+ * Date: 07/04/2019
+ * Purpose: This Class is for social test cases common actions
+ * Version: 1.0
+ */
 public class SocialActions extends WebDriverListener {
     DeviceInterface runnerInfo;
     static DeviceHelper deviceHelper;
@@ -24,6 +31,7 @@ public class SocialActions extends WebDriverListener {
     static ChatPageObjects chatPageObjects= new ChatPageObjects();
     static UnknowUsersPageObjects unknownUserObjects = new UnknowUsersPageObjects();
     static PostUserProfileObjects postuserObjects = new PostUserProfileObjects();
+    static CommetsPageObjects commentsObjects = new CommetsPageObjects();
     ExtentHtmlReporter reporter=new ExtentHtmlReporter("./test-output/ExtentReport.html");
     ExtentReports extent = new ExtentReports();
 
@@ -44,23 +52,15 @@ public class SocialActions extends WebDriverListener {
         PageFactory.initElements(new AppiumFieldDecorator(driver), chatPageObjects);
         PageFactory.initElements(new AppiumFieldDecorator(driver), homePostObjects);
         PageFactory.initElements(new AppiumFieldDecorator(driver), postuserObjects);
-//        PageFactory.initElements(new AppiumFieldDecorator(driver), signUpObjects);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), commentsObjects);
         this.runnerInfo = runnerInfo;
     }
 
     public void  clickPostUserChatIcon(){
         deviceHelper.waitTillTheElementIsVisible(postuserObjects.profileChatIcon);
-        postuserObjects.profileChatIcon.click();}
-//        try {
-//            if(deviceHelper.isElementDisplay(postuserObjects.profileChatIcon)){
-//            deviceHelper.waitTillTheElementIsVisible(postuserObjects.profileChatIcon);
-//            postuserObjects.profileChatIcon.click();}
-//        }
-//        catch (Exception e) {
-//            System.out.println("Exception==="+ e);
-//        }
+        postuserObjects.profileChatIcon.click();
+    }
 
-//    }
     public void  verifyPostUserchatscreen(){
         deviceHelper.waitForElementToAppear(postuserObjects.postUserMessageField);
         Assert.assertTrue(deviceHelper.isElementDisplay(postuserObjects.sendMessageIcon));
@@ -99,20 +99,17 @@ public class SocialActions extends WebDriverListener {
     public void  verifyPostUserChatInitiatingFunctionality(){
         deviceHelper.waitTillTheElementIsVisible(homePostObjects.userProfileLink);
         String text=homePostObjects.userProfileLink.getText();
-        System.out.println("text============================="+text);
         getHomePageActionsInstance().clickUserProfileLink();
         clickPostUserChatIcon();
         verifyPostUserchatscreen();
         clickSendMessageIcon();
         clickBackButton();
         clickBackButton();
-//        clickBackButton();
         deviceHelper.waitTillTheElementIsVisible(postuserObjects.postUserProfileBackButton);
         postuserObjects.postUserProfileBackButton.click();
         getHomePageActionsInstance().clickChatIcon();
         getChatPageActionsInstance().verifyChatScreen();
         String test=chatPageObjects.recentKnownNameLabel.getText();
-        System.out.println("test============================="+test);
         Assert.assertEquals(chatPageObjects.recentKnownNameLabel.getText(), text);
     }
 
@@ -126,9 +123,46 @@ public class SocialActions extends WebDriverListener {
         }
 
     }
-//    public void r(){
-//        deviceHelper.waitTillTheElementIsVisible(unknownUserObjects.);
-//
-//    }
+    public void verifyCommentScreen(){
+        deviceHelper.waitInSec(9);
+        if(deviceHelper.isElementDisplay(commentsObjects.commentUserProfileName)){
+            Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.trendTagIcon));
+            Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.commentUserProfileImage));
+            Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.commentUserTimeStamp));
+            Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.commentUserReplyIconAndCount));
+            Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.commentUserLikeIcon));
+            Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.commentPageAudioRecordIcon));
+            Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.commentPageSendCommentIcon));
+        }
+        else {
+            if(deviceHelper.isElementDisplay(commentsObjects.noCommentlabel)) {
+                deviceHelper.isElementDisplay(commentsObjects.noCommentImage);
+                deviceHelper.clickAndroidBackButton();
+                deviceHelper.waitTillTheElementIsVisible(homePostObjects.headerMenuBar);
+                deviceHelper.swipeUp();
+                getHomePageActionsInstance().clickPostCommentIcon();
+                deviceHelper.waitTillTheElementIsVisible(commentsObjects.commentUserProfileName);
+                Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.commentUserProfileImage));
+                Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.commentUserTimeStamp));
+                Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.commentUserReplyIconAndCount));
+                Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.commentUserLikeIcon));
+                Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.commentPageAudioRecordIcon));
+                Assert.assertTrue(deviceHelper.isElementDisplay(commentsObjects.commentPageSendCommentIcon));
+            }
+
+        }
+    }
+    public void  clickCommentUserProfile(){
+        deviceHelper.waitTillTheElementIsVisible(commentsObjects.commentUserProfileName);
+        String commentUserNametext=commentsObjects.commentUserProfileName.getText();
+        System.out.println("text======="+commentUserNametext.toLowerCase());
+        commentsObjects.commentUserProfileName.click();
+        deviceHelper.waitTillTheElementIsVisible(postuserObjects.profileChatIcon);
+        Assert.assertTrue(deviceHelper.isElementDisplay(postuserObjects.postUserprofileDisplayName));
+        String profileUserNametext=postuserObjects.postUserprofileDisplayName.getText();
+        System.out.println("test======="+profileUserNametext.toLowerCase());
+        Assert.assertEquals(commentUserNametext.toLowerCase(), profileUserNametext.toLowerCase());
+    }
+
 
 }

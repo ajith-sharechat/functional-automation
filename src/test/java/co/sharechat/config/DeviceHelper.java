@@ -4,10 +4,10 @@ import com.annotation.values.ElementDescription;
 import com.annotation.values.PageName;
 import com.aventstack.extentreports.Status;
 import com.report.factory.ExtentTestManager;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.PerformsTouchActions;
-import io.appium.java_client.TouchAction;
+import io.appium.java_client.*;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidKeyCode;
+import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.*;
@@ -17,6 +17,7 @@ import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 
 import java.time.Duration;
@@ -267,6 +268,7 @@ public class DeviceHelper {
             return false;
         }
     }
+
     public void longPress(MobileElement locator) {
         TouchActions action = new TouchActions(driver);
         action.longPress(locator);
@@ -297,12 +299,14 @@ public class DeviceHelper {
         a.sendKeys(otp).build().perform();
     }
     /**
-     * This Function is to scroll to mobile element
+     * This Function is to scroll to element text
      * @author Ramesh
+     * @param: Element text
      *
      */
-    public void scrollToMobileElement(MobileElement element){
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+    public WebElement scrollToAndroidElementByText(String text) {
+        return driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector())" +
+                ".scrollIntoView(new UiSelector().text(\"" + text + "\"));"));
     }
     /**
      * This Function is to hide keyboard
@@ -311,5 +315,46 @@ public class DeviceHelper {
      */
     public void hideKeyBoard(){
         ((AppiumDriver <MobileElement>)driver).hideKeyboard();
+    }
+    /**
+     * This Function is to Scroll And click the element
+     * @author Ramesh
+     * @param: Element and count of scroll
+     *
+     */
+    public void scrollToMobileElementAndClickElement(MobileElement element, String scrollcount) {
+        waitInSec(3);
+        int count=Integer.parseInt(scrollcount);
+        for (int i = 0; i < count; i++) {
+            if (isElementDisplay(element)) {
+                element.click();
+            } else {
+                swipeUp();
+            }
+
+        }
+    }
+    /**
+     * This Function is to Scroll to element
+     * @author Ramesh
+     * @param: Element and count of scroll
+     *
+     */
+    public void scrollToMobileElement(MobileElement element, String scrollcount) {
+        waitInSec(3);
+        int count=Integer.parseInt(scrollcount);
+        for (int i = 0; i < count; i++) {
+            if (isElementDisplay(element)) {
+                isElementDisplay(element);
+            } else {
+                swipeUp();
+            }
+
+        }
+    }
+    public void clickAndroidBackButton() {
+        ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
+//                .pressKeyCode(AndroidKeyCode.BACK);
+//        driver.navigate().back();
     }
 }

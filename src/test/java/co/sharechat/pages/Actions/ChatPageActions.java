@@ -11,7 +11,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
+/**
+ * Created by TestingXperts Pvt Ltd.
+ * @author: Ramesh
+ * Reviewer: sheshanandan
+ * Date: 07/04/2019
+ * Purpose: This Class is for chat page actions
+ * Version: 1.0
+ */
 public class ChatPageActions  extends WebDriverListener {
     static DeviceHelper deviceHelper;
     DeviceInterface runnerInfo;
@@ -93,12 +100,10 @@ public class ChatPageActions  extends WebDriverListener {
     public void clickShareAndChatLink(){
         deviceHelper.waitTillTheElementIsVisible(unknownUserObjects.addFriendUnknownUserIcon);
         unknownUserObjects.shareAndChatLabel.click();
-        Assert.assertTrue(deviceHelper.isElementDisplay(unknownUserObjects.shareNChatLabel));
+        deviceHelper.waitTillTheElementIsVisible(unknownUserObjects.shareNChatLabel);
     }
     public void verifyShareAndChatScreen(){
         deviceHelper.waitTillTheElementIsVisible(unknownUserObjects.shareNChatLabel);
-        unknownUserObjects.shareAndChatLabel.click();
-        Assert.assertTrue(deviceHelper.isElementDisplay(unknownUserObjects.shareNChatLabel));
         Assert.assertTrue(deviceHelper.isElementDisplay(unknownUserObjects.sharePhoneTalkStrangersLabel));
         Assert.assertTrue(deviceHelper.isElementDisplay(postUserObjects.backIcon));
     }

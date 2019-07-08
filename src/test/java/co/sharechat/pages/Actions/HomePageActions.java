@@ -13,7 +13,14 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
+/**
+ * Created by TestingXperts Pvt Ltd.
+ * @author: Ramesh
+ * Reviewer: sheshanandan
+ * Date: 07/04/2019
+ * Purpose: This Class is for home page actions
+ * Version: 1.0
+ */
 public class HomePageActions extends WebDriverListener {
     DeviceInterface runnerInfo;
     static DeviceHelper deviceHelper;
@@ -81,7 +88,7 @@ public class HomePageActions extends WebDriverListener {
             homePostObjects.postImage.click();
         }
         else{
-            deviceHelper.scrollToMobileElement(homePostObjects.postImage);
+//            deviceHelper.scrollToMobileElement(homePostObjects.postImage);
             homePostObjects.postImage.click();
         }
     }
@@ -90,4 +97,22 @@ public class HomePageActions extends WebDriverListener {
         postUserObjects.postImageToolOptions.click();
 
     }
+    public void scrollToPostComment() {
+        deviceHelper.waitTillTheElementIsVisible(homePostObjects.userProfileLink);
+        deviceHelper.scrollToMobileElement(homePostObjects.postCommentIcon, "3");
+    }
+
+    public void clickPostCommentIcon() {
+        deviceHelper.waitTillTheElementIsVisible(homePostObjects.postCommentIcon);
+        homePostObjects.postCommentIcon.click();
+        deviceHelper.waitInSec(3);
+        if(deviceHelper.isElementDisplay(homePostObjects.postCommentSendIcon)) {
+            Assert.assertTrue(deviceHelper.isElementDisplay(homePostObjects.postCommentSendIcon));
+        }
+        else{
+            deviceHelper.swipeUp();
+            homePostObjects.postCommentIcon.click();
+        }
+    }
+
 }

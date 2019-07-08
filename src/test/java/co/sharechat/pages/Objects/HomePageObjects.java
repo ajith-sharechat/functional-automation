@@ -2,7 +2,14 @@ package co.sharechat.pages.Objects;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-
+/**
+ * Created by TestingXperts Pvt Ltd.
+ * @author: Ramesh
+ * Reviewer: sheshanandan
+ * Date: 07/04/2019
+ * Purpose: This Class is for home page objects
+ * Version: 1.0
+ */
 public class HomePageObjects {
 
     @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_home_feed")
@@ -37,5 +44,11 @@ public class HomePageObjects {
 
     @AndroidFindBy(id = "in.mohalla.sharechat:id/iv_post_image")
     public MobileElement postImage;
+
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_post_comment")
+    public MobileElement postCommentIcon;
+
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/iv_comment_send")
+    public MobileElement postCommentSendIcon;
 
 }
