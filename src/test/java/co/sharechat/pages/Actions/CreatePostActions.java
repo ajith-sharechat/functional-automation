@@ -19,6 +19,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.time.Duration;
 
+/**
+ This Class has all the actions related to the create Pots(Text/Camera/Upload/Poll)
+ @author jasmeetsingh
+ @version 1.0
+ @since 01 july 2019
+ */
 public class CreatePostActions extends WebDriverListener {
 
 	DeviceInterface runnerInfo;

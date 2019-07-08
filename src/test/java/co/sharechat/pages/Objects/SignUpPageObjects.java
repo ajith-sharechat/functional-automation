@@ -10,6 +10,13 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 import java.util.List;
 
+
+/**
+ This Class has all the objects related to the Signup/Login screen and OTP screen
+ @author jasmeetsingh
+ @version 1.0
+ @since 01 july 2019
+ */
 public class SignUpPageObjects {
 	
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/select_title")

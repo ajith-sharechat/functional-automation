@@ -12,7 +12,6 @@
       <class name="co.sharechat.test.ReferralTests">
         <methods>
           <include name="TC048_ReferralScreenUI"/>
-          <include name="TC109_SetupPaymentLinkFunctionality"/>
         </methods>
       </class> <!-- co.sharechat.test.ReferralTests -->
     </classes>

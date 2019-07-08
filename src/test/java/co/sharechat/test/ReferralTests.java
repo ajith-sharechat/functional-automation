@@ -6,6 +6,12 @@ import co.sharechat.utils.Constants;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+/**
+ This Class has all the tests related to the Referral Module
+ @author jasmeetsingh
+ @version 1.0
+ @since 05 july 2019
+ */
 public class ReferralTests implements Constants {
 
 
@@ -16,7 +22,7 @@ public class ReferralTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify Referral screen UI", groups = {"RegressionTest", "Growth"})
+    @Test(enabled = true, description = "Verify Referral screen UI", groups = {"RegressionTest", "Growth"})
     public void  TC048_ReferralScreenUI(){
 
         new SignUpTests().TC004_signupRegistered();
@@ -46,7 +52,7 @@ public class ReferralTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify My Winnings screen UI", groups = {"RegressionTest", "Growth"})
+    @Test(enabled = true, description = "Verify My Winnings screen UI", groups = {"RegressionTest", "Growth"})
     public void  TC099_MyWinningScreenUI(){
 
         new SignUpTests().TC004_signupRegistered();
@@ -63,7 +69,7 @@ public class ReferralTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify Setup Payment link functionality",
+    @Test(enabled = true, description = "Verify Setup Payment link functionality",
             groups = {"RegressionTest", "Growth"})
     public void  TC108_SetupPaymentLinkFunctionality(){
 

@@ -26,7 +26,13 @@ public class SignUp extends WebDriverListener {
     ExtentHtmlReporter reporter=new ExtentHtmlReporter("./test-output/ExtentReport.html");
     ExtentReports extent = new ExtentReports();
 
-	public SignUp(WebDriver driver, DeviceInterface runnerInfo) {
+	/**
+	 This Class has all the actions related to the Signup(Registered and Unregistered)
+	 @author jasmeetsingh
+	 @version 1.0
+	 @since 01 july 2019
+	 */
+    public SignUp(WebDriver driver, DeviceInterface runnerInfo) {
         this.driver = driver;
         deviceHelper = new DeviceHelper(driver);
         //PageFactory.initElements(new AppiumFieldDecorator(driver), this);

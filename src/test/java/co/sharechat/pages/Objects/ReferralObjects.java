@@ -5,6 +5,13 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 import java.util.List;
 
+
+/**
+ This Class has all the objects related to the Referral Screen and the screen after Referral screen
+ @author jasmeetsingh
+ @version 1.0
+ @since 01 july 2019
+ */
 public class ReferralObjects {
 
 

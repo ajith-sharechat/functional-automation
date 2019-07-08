@@ -5,15 +5,18 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 import java.util.List;
 
+/**
+ This Class has all the objects related to the create Pots(Text/Camera/Upload/Poll)
+ @author jasmeetsingh
+ @version 1.0
+ @since 01 july 2019
+ */
 public class CreatePostObjects {
 
 
 
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/iv_home_compose")
 	public MobileElement plusIcon;
-
-	@AndroidFindBy(id = "in.mohalla.sharechat:id/composeimage_next_ib ")
-	public MobileElement tickIconTextCompose;
 
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/et_compose_text")
 	public MobileElement writeSomethingAbtPost;
@@ -32,6 +35,15 @@ public class CreatePostObjects {
 	
 	@AndroidFindBy(className = "android.widget.EditText")
 	public MobileElement writeTextInCreateTextPost;
+
+
+	//Text post objects
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/composeimage_next_ib")
+	public MobileElement tickIconTextCompose;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/composeimage_back_ib")
+	public MobileElement crossIconTextCompose;
 
 	//===================
 

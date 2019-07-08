@@ -14,6 +14,12 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ This Class has all the actions related to the Referral module
+ @author jasmeetsingh
+ @version 1.0
+ @since 01 july 2019
+ */
 public class ReferralActions extends WebDriverListener {
 
 	DeviceInterface runnerInfo;

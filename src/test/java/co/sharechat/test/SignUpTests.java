@@ -6,6 +6,13 @@ import co.sharechat.utils.Constants;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+
+/**
+ This Class has all the tests related to the Singup/Login tests
+ @author jasmeetsingh
+ @version 1.0
+ @since 01 july 2019
+ */
 public class SignUpTests implements Constants {
 
     public SignUp getSignUpPage(){
