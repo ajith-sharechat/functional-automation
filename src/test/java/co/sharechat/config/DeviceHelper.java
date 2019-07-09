@@ -329,7 +329,7 @@ public class DeviceHelper {
     /**
      * This Function is to Scroll And click the element
      * @author Ramesh
-     * @param: Element and count of scroll
+     * @param: Mobile Element and count of scroll
      *
      */
     public void scrollToMobileElementAndClickElement(MobileElement element, String scrollcount) {
@@ -347,7 +347,7 @@ public class DeviceHelper {
     /**
      * This Function is to Scroll to element
      * @author Ramesh
-     * @param: Element and count of scroll
+     * @param: Mobile Element and count of scroll
      *
      */
     public void scrollToMobileElement(MobileElement element, String scrollcount) {
