@@ -13,4 +13,57 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 public class ProfilePageObjects {
     @AndroidFindBy(xpath = "in.mohalla.sharechat:id/btn_profile_action")
     public MobileElement profileDetailsLabel;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/menu_contact")
+    public MobileElement addFriendIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/menu_share")
+    public MobileElement shareIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/menu_setting")
+    public MobileElement settingIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_profile_pic")
+    public MobileElement profilePic;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_username")
+    public MobileElement profileUserName;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_handle")
+    public MobileElement profileHandleLabel;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/btn_profile_action")
+    public MobileElement profileEditButton;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_follower_count")
+    public MobileElement profileFollowerCount;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_following_count")
+    public MobileElement profileFollowingCount;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_post_count")
+    public MobileElement profilePostCount;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tabs']//following::androidx.appcompat.app.ActionBar.Tab" +
+            "//following::androidx.appcompat.app.ActionBar.Tab")
+    public MobileElement profileStickersSection;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tabs']//following::androidx.appcompat.app.ActionBar.Tab")
+    public MobileElement profileGallerySection;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_toolbar_title")
+    public MobileElement phoneContactsLabel;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tv_toolbar_title']//following::androidx.appcompat.app.ActionBar.Tab")
+    public MobileElement connectSection;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tv_toolbar_title']//following::androidx.appcompat.app.ActionBar.Tab//following::androidx.appcompat.app.ActionBar.Tab")
+    public MobileElement inviteSection;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_user_follow")
+    public MobileElement userFollowLink;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_invite")
+    public MobileElement inviteButton;
+
 }

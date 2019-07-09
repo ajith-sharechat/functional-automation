@@ -51,4 +51,7 @@ public class HomePageObjects {
     @AndroidFindBy(id = "in.mohalla.sharechat:id/iv_comment_send")
     public MobileElement postCommentSendIcon;
 
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/ib_post_video_play")
+    public MobileElement postVideoPlayIcon;
+
 }

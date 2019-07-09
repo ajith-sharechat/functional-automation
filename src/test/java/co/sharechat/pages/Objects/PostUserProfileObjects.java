@@ -38,4 +38,37 @@ public class PostUserProfileObjects {
 
     @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_username")
     public MobileElement postUserprofileDisplayName;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_post_share")
+    public MobileElement videoPostShareIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_post_comment")
+    public MobileElement videoPostCommentIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_post_repost")
+    public MobileElement videoPostRepostIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_post_like")
+    public MobileElement videoPostLikeIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_post_favourite")
+    public MobileElement videoPostFavouriteIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/fab")
+    public MobileElement videoPostAddFabIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/fabInside")
+    public MobileElement videoPostAddFabInsideIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/btn_profile_action")
+    public MobileElement postUserProfileFollowingButton;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_unfollow_text")
+    public MobileElement postUserUnfollowingPopupQuestion;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_unfollow_yes")
+    public MobileElement postUserUnfollowingPopupYes;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_unfollow_no")
+    public MobileElement postUserUnfollowingPopupNo;
 }

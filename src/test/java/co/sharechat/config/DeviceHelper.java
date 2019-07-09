@@ -84,12 +84,6 @@ public class DeviceHelper {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public void waitTillTheElementIsVisible(MobileElement element) {
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.visibilityOf(element));
-    }
-
     public void waitTillTheElementInVisible(WebElement element) {
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -269,6 +263,17 @@ public class DeviceHelper {
         }
     }
     /**
+     * This Function is to wait till element present
+     * @author Ramesh
+     * @param: Mobile Element
+     *
+     */
+    public void waitTillTheElementIsVisible(MobileElement element) {
+
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+    /**
      * This Function is to long Press of the element
      * @author Ramesh
      * @param: Mobile Element
@@ -364,5 +369,42 @@ public class DeviceHelper {
      */
     public void clickAndroidBackButton() {
         ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
+    }
+    /**
+     * This Function is to check element is not present and return true or false
+     * @author Ramesh
+     * @param: Mobile Element
+     *
+     */
+    public boolean isElementNotPresent(MobileElement element) {
+        if (isElementDisplay(element) == false) {
+            return true;
+        } else {
+            return false;
+
+        }
+    }
+    /**
+     *
+     * Asserts that a condition is true. If it isn't,
+     *  an AssertionError is thrown.
+     * @author Ramesh
+     * @param: Mobile Element
+     *
+     */
+    public void elementPresentAssertTrue(MobileElement element) {
+
+        Assert.assertTrue(isElementDisplay(element));
+    }
+    /**
+     * Asserts that a condition is true. If it isn't,
+     * an AssertionError is thrown.
+     * @author Ramesh
+     * @param: Mobile Element
+     *
+     */
+    public void elementNotPresentAssertTrue(MobileElement element) {
+
+        Assert.assertTrue(isElementNotPresent(element));
     }
 }

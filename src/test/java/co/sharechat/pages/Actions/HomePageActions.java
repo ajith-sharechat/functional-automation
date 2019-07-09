@@ -40,23 +40,25 @@ public class HomePageActions extends WebDriverListener {
         PageFactory.initElements(new AppiumFieldDecorator(driver), chatPageObjects);
         PageFactory.initElements(new AppiumFieldDecorator(driver), homePostObjects);
         PageFactory.initElements(new AppiumFieldDecorator(driver), signUpObjects);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), profileObjects);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), postUserObjects);
         this.runnerInfo = runnerInfo;
     }
 
     public void  verifyHomeScreenElement(){
         deviceHelper.waitTillTheElementIsVisible(homePostObjects.headerMenuBar);
-        Assert.assertTrue(deviceHelper.isElementDisplay(homePostObjects.languageTitle));
-        Assert.assertTrue(deviceHelper.isElementDisplay(homePostObjects.notificationIcon));
-        Assert.assertTrue(deviceHelper.isElementDisplay(homePostObjects.rupeeIcon));
+        deviceHelper.elementPresentAssertTrue(homePostObjects.languageTitle);
+        deviceHelper.elementPresentAssertTrue(homePostObjects.notificationIcon);
+        deviceHelper.elementPresentAssertTrue(homePostObjects.rupeeIcon);
         verifyHomeScreenBottomTabs();
     }
 
     public void  verifyHomeScreenBottomTabs(){
         deviceHelper.waitTillTheElementIsVisible(homePostObjects.homeIcon);
-        Assert.assertTrue(deviceHelper.isElementDisplay(homePostObjects.searchIcon));
-        Assert.assertTrue(deviceHelper.isElementDisplay(homePostObjects.composeIcon));
-        Assert.assertTrue(deviceHelper.isElementDisplay(homePostObjects.chatIcon));
-        Assert.assertTrue(deviceHelper.isElementDisplay(homePostObjects.profileIcon));
+        deviceHelper.elementPresentAssertTrue(homePostObjects.searchIcon);
+        deviceHelper.elementPresentAssertTrue(homePostObjects.composeIcon);
+        deviceHelper.elementPresentAssertTrue(homePostObjects.chatIcon);
+        deviceHelper.elementPresentAssertTrue(homePostObjects.profileIcon);
     }
     public void  clickHomeIcon(){
         deviceHelper.waitTillTheElementIsVisible(homePostObjects.homeIcon);
@@ -71,7 +73,6 @@ public class HomePageActions extends WebDriverListener {
     public void clickProfileIcon(){
         deviceHelper.waitTillTheElementIsVisibleAndClickable(homePostObjects.profileIcon);
         homePostObjects.profileIcon.click();
-        deviceHelper.waitTillTheElementIsVisible(profileObjects.profileDetailsLabel);
     }
     public void clickAllowButton() {
         if(deviceHelper.isElementDisplay(signUpObjects.allowPermissionPopUp)) {
@@ -88,7 +89,7 @@ public class HomePageActions extends WebDriverListener {
             homePostObjects.postImage.click();
         }
         else{
-//            deviceHelper.scrollToMobileElement(homePostObjects.postImage);
+            deviceHelper.scrollToMobileElement(homePostObjects.postImage, "5");
             homePostObjects.postImage.click();
         }
     }
@@ -107,12 +108,27 @@ public class HomePageActions extends WebDriverListener {
         homePostObjects.postCommentIcon.click();
         deviceHelper.waitInSec(3);
         if(deviceHelper.isElementDisplay(homePostObjects.postCommentSendIcon)) {
-            Assert.assertTrue(deviceHelper.isElementDisplay(homePostObjects.postCommentSendIcon));
+            deviceHelper.elementPresentAssertTrue(homePostObjects.postCommentSendIcon);
         }
         else{
             deviceHelper.swipeUp();
             homePostObjects.postCommentIcon.click();
         }
+    }
+    public void scrollToVideoPost() {
+        deviceHelper.waitTillTheElementIsVisible(homePostObjects.userProfileLink);
+        deviceHelper.scrollToMobileElement(homePostObjects.postVideoPlayIcon, "20");
+    }
+    public void clickVideoPost() {
+        deviceHelper.waitTillTheElementIsVisible(homePostObjects.postVideoPlayIcon);
+        homePostObjects.postVideoPlayIcon.click();
+    }
+    public void verifyVideoPostPreviewScreen() {
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.videoPostCommentIcon);
+        deviceHelper.elementPresentAssertTrue(postUserObjects.videoPostShareIcon);
+        deviceHelper.elementPresentAssertTrue(postUserObjects.videoPostRepostIcon);
+        deviceHelper.elementPresentAssertTrue(postUserObjects.videoPostLikeIcon);
+        deviceHelper.elementPresentAssertTrue(postUserObjects.videoPostFavouriteIcon);
     }
 
 }

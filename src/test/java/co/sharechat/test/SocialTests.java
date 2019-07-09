@@ -189,4 +189,56 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().verifyCommentScreen();
         getSocialActionsInstance().clickCommentUserProfile();
     }
+
+    @Test(enabled = true, description = "Verify Like link functionality beside to comment link",groups = {"RegressionTest", "Social"})
+    public void TC084_verifyLikeLinkFunctionalityBesideCommentLink() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().scrollToVideoPost();
+        getHomePageActionsInstance().clickVideoPost();
+        getHomePageActionsInstance().verifyVideoPostPreviewScreen();
+        getSocialActionsInstance().clickPostCommentIcon();
+        getSocialActionsInstance().clickPostPreviewLikeSection();
+    }
+
+    @Test(enabled = true, description = "Verify profile screen UI",groups = {"RegressionTest", "Social"})
+    public void TC098_verifyProfileScreenUI() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+    }
+
+    @Test(enabled = true, description = "Verify Add Friend button functionality",groups = {"RegressionTest", "Social"})
+    public void TC099_verifyAddFriendFunctionality() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().clickAddFriendIcon();
+        getSocialActionsInstance().verifyPhoneContactsScreen();
+        getSocialActionsInstance().clickFollowLink();
+        getSocialActionsInstance().clickUnfollowLink();
+        getSocialActionsInstance().clickFollowingButtonAndClickConfirmToUnfollow();
+        getSocialActionsInstance().clickInviteSection();
+        getSocialActionsInstance().clickInviteButton();
+    }
 }

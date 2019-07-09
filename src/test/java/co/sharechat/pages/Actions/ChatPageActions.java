@@ -42,14 +42,14 @@ public class ChatPageActions  extends WebDriverListener {
     public void verifyChatScreen(){
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.chatScreenTitle);
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.knownNameLabel);
-        Assert.assertTrue(deviceHelper.isElementDisplay(chatPageObjects.knownNameLabel));
-        Assert.assertTrue(deviceHelper.isElementDisplay(chatPageObjects.knownRecentChatTime));
-        Assert.assertTrue(deviceHelper.isElementDisplay(chatPageObjects.unKnownName));
-        Assert.assertTrue(deviceHelper.isElementDisplay(chatPageObjects.recentKnownNameLabel));
-        Assert.assertTrue(deviceHelper.isElementDisplay(chatPageObjects.addFriendIcon));
-        Assert.assertTrue(deviceHelper.isElementDisplay(chatPageObjects.recentKnownImage));
-        Assert.assertTrue(deviceHelper.isElementDisplay(chatPageObjects.shareMobileIcon));
-        Assert.assertTrue(deviceHelper.isElementDisplay(chatPageObjects.topSearchIcon));
+        deviceHelper.elementPresentAssertTrue(chatPageObjects.knownNameLabel);
+        deviceHelper.elementPresentAssertTrue(chatPageObjects.knownRecentChatTime);
+        deviceHelper.elementPresentAssertTrue(chatPageObjects.unKnownName);
+        deviceHelper.elementPresentAssertTrue(chatPageObjects.recentKnownNameLabel);
+        deviceHelper.elementPresentAssertTrue(chatPageObjects.addFriendIcon);
+        deviceHelper.elementPresentAssertTrue(chatPageObjects.recentKnownImage);
+        deviceHelper.elementPresentAssertTrue(chatPageObjects.shareMobileIcon);
+        deviceHelper.elementPresentAssertTrue(chatPageObjects.topSearchIcon);
     }
 
     public void clickKnownUserList(){
@@ -93,9 +93,9 @@ public class ChatPageActions  extends WebDriverListener {
     }
     public void verifyUnknownUserScreen(){
         deviceHelper.waitTillTheElementIsVisible(unknownUserObjects.addFriendUnknownUserIcon);
-        Assert.assertTrue(deviceHelper.isElementDisplay(unknownUserObjects.shareAndChatLabel));
-        Assert.assertTrue(deviceHelper.isElementDisplay(unknownUserObjects.sharePhoneToTalkLabel));
-        Assert.assertTrue(deviceHelper.isElementDisplay(unknownUserObjects.sharePhoneIconUnknownUsersScreen));
+        deviceHelper.elementPresentAssertTrue(unknownUserObjects.shareAndChatLabel);
+        deviceHelper.elementPresentAssertTrue(unknownUserObjects.sharePhoneToTalkLabel);
+        deviceHelper.elementPresentAssertTrue(unknownUserObjects.sharePhoneIconUnknownUsersScreen);
     }
     public void clickShareAndChatLink(){
         deviceHelper.waitTillTheElementIsVisible(unknownUserObjects.addFriendUnknownUserIcon);
@@ -104,7 +104,7 @@ public class ChatPageActions  extends WebDriverListener {
     }
     public void verifyShareAndChatScreen(){
         deviceHelper.waitTillTheElementIsVisible(unknownUserObjects.shareNChatLabel);
-        Assert.assertTrue(deviceHelper.isElementDisplay(unknownUserObjects.sharePhoneTalkStrangersLabel));
-        Assert.assertTrue(deviceHelper.isElementDisplay(postUserObjects.backIcon));
+        deviceHelper.elementPresentAssertTrue(unknownUserObjects.sharePhoneTalkStrangersLabel);
+        deviceHelper.elementPresentAssertTrue(postUserObjects.backIcon);
     }
 }

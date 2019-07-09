@@ -40,4 +40,23 @@ public class CommetsPageObjects {
 
     @AndroidFindBy(id ="in.mohalla.sharechat:id/lt_chat_empty")
     public MobileElement noCommentImage;
+
+//    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tv_comment_state']//preceding::android.widget.TextView[1]")
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tv_post_caption']" +
+            "//following::android.widget.TextView//following::android.widget.TextView")
+    public MobileElement commentPreviewLikeSection;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tv_post_caption']" +
+            "//following::android.widget.TextView")
+    public MobileElement commentPreviewCommentSection;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_user_follow")
+    public MobileElement commentPreviewUserFollowLink;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_user_unfollow")
+    public MobileElement commentPreviewUserUnfollowLink;
+
+
+
+
 }
