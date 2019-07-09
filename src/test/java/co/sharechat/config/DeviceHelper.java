@@ -7,6 +7,9 @@ import com.report.factory.ExtentTestManager;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -56,11 +59,38 @@ public class DeviceHelper {
 
         try {
             System.out.println("Trying to swipe up from x:" + startx + " y:" + starty + ", to x:" + endx + " y:" + endy);
-            new TouchAction((PerformsTouchActions) driver).press(point(startx, starty)).waitAction(waitOptions(ofSeconds(2)))
+            new TouchAction((PerformsTouchActions) driver).press(point(startx, starty)).waitAction(waitOptions(ofSeconds(1)))
                     .moveTo(point(endx, endy)).release().perform();
         } catch (Exception e) {
             System.out.println("Swipe did not complete succesfully.");
         }
+    }
+
+    /**
+     *This method will return the Width of the Phone Screen
+     * @since 08 July 2019
+     * @author Jasmeet
+     * */
+    public int getWidthOfScreen(){
+        return driver.manage().window().getSize().width;
+    }
+
+    /**
+     *This method will return the Height of the Phone Screen
+     * @since 08 July 2019
+     * @author Jasmeet
+     * */
+    public int getHeightOfScreen(){
+        return driver.manage().window().getSize().height;
+    }
+
+    /**
+     *This method will click on the Home button
+     * @since 09 July 2019
+     * @author Jasmeet
+     * */
+    public void clickHomeBtn(){
+        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.HOME));;
     }
 
 

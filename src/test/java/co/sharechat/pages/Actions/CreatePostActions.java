@@ -8,16 +8,16 @@ import co.sharechat.pages.Objects.SignUpPageObjects;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import io.appium.java_client.touch.WaitOptions;
-import io.appium.java_client.touch.offset.PointOption;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import java.time.Duration;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  This Class has all the actions related to the create Pots(Text/Camera/Upload/Poll)
@@ -57,7 +57,8 @@ public class CreatePostActions extends WebDriverListener {
 	public void composePost() {
 		createPostObjects.plusIcon.click();
 	}
-	
+
+	//===========================Text Post Screen Actions==================================
 	public void textCompose() {
 		element(createPostObjects.createText).click();
 	}
@@ -69,7 +70,79 @@ public class CreatePostActions extends WebDriverListener {
 	public void submitTextForTextPost() {
 		createPostObjects.tickIconTextCompose.click();
 	}
-	
+
+	public boolean isTickMarkOnTextPostDisplayed() {
+		return deviceHelper.isElementPresent(createPostObjects.tickIconTextCompose);
+	}
+
+	public boolean isCrossMarkOnTextPostDisplayed() {
+		return deviceHelper.isElementPresent(createPostObjects.crossIconTextCompose);
+	}
+
+	public boolean isTextBoldDisplayed() {
+		return deviceHelper.isElementPresent(createPostObjects.textBoldBtn);
+	}
+
+	public boolean isFontColorBtnDisplayed() {
+		return deviceHelper.isElementPresent(createPostObjects.fontColorBtn);
+	}
+
+	public boolean isFontBGBtnDisplayed() {
+		return deviceHelper.isElementPresent(createPostObjects.fontBGColorBtn);
+	}
+
+	public boolean isTextFieldToWriteTextDisplayed() {
+		return deviceHelper.isElementPresent(createPostObjects.writeTextTextField);
+	}
+
+	public boolean iswithoutBGBtnDisplayed() {
+		return deviceHelper.isElementPresent(createPostObjects.withoutBGBtn);
+	}
+
+	public boolean iscameraIconPicturepickGalaryPostDisplayed() {
+		return createPostObjects.cameraBtnOnTextPost.size() >= 2;
+	}
+
+	public int noOfBottomTabsDisplayed() {
+
+		hardWait(1);
+		if (createPostObjects.tabs.size() > 6){
+			System.out.println("===========================Done==================================");
+			return createPostObjects.tabs.size();
+		}
+
+
+		if (createPostObjects.bottomTabsinTextPost.size()==0)
+			hardWait(2);
+		if (createPostObjects.bottomTabsinTextPost.size()==0)
+			return 0;
+		int y = createPostObjects.bottomTabsinTextPost.get(0).getCenter().y;
+		int startx = deviceHelper.getWidthOfScreen() - 50;
+
+		Set<String> text_Set = new HashSet<>();
+
+		for (MobileElement box : createPostObjects.bottomTabsinTextPost) {
+			text_Set.add(box.getAttribute("content-desc"));
+		}
+
+		deviceHelper.swipe(startx, y, 100, y);
+
+		for (MobileElement box : createPostObjects.bottomTabsinTextPost) {
+			text_Set.add(box.getAttribute("content-desc"));
+		}
+
+		deviceHelper.swipe(startx, y, 50, y);
+
+		for (MobileElement box : createPostObjects.bottomTabsinTextPost) {
+			text_Set.add(box.getAttribute("content-desc"));
+		}
+		return text_Set.size();
+	}
+
+	public void clickOnCrossbtn(){
+		createPostObjects.crossIconTextCompose.click();
+	}
+
 	public void writeTextAboutPost(String text) {
 		element(createPostObjects.writeSomethingAbtPost).sendKeys(text);
 	}
@@ -113,18 +186,44 @@ public class CreatePostActions extends WebDriverListener {
 	}
 
 	public void clickCameraBtnOnTextPost(){
-		createPostObjects.camerBtnOnTextPost.get(1).click();
+		createPostObjects.cameraBtnOnTextPost.get(1).click();
 	}
 
 	public void cropPictureOk() {
 		element(createPostObjects.cropOkBtnOnCamera).click();
 	}
 
+
+	//Alert Actions
+
+	public boolean isAlertMessageByApplicationIsDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.alertGeneratedByApplication);
+	}
+
+	public boolean istextOnAlertDisplayed() {
+		return deviceHelper.isElementPresent(createPostObjects.alertaMessageText);
+	}
+
+	public boolean isNotNowBtnDisplayed() {
+		return deviceHelper.isElementPresent(createPostObjects.alertDismissBtn);
+	}
+
+	public boolean isYesBtnDisplayed() {
+		return deviceHelper.isElementPresent(createPostObjects.alertAcceptBtn);
+	}
+
+	public void clickYesOnAlert() {
+		createPostObjects.alertAcceptBtn.click();
+	}
+
 	public boolean isPostUploaded(int timeInSecs){
 
 		hardWait(timeInSecs);
-		deviceHelper.swipe(400, 0, 400, 800);
-		return deviceHelper.isElementPresent(element(createPostObjects.uploadedNotification));
+		deviceHelper.swipe(400, 0, 400, 1000);
+		boolean notification =  deviceHelper.isElementPresent(element(createPostObjects.uploadedNotification));
+		deviceHelper.swipe(400, deviceHelper.getHeightOfScreen()-300, 400, 10);
+		//deviceHelper.clickHomeBtn();
+		return notification;
 	}
 
 	public void hardWait(int timeInSecs){

@@ -11,7 +11,7 @@ import java.util.List;
  @version 1.0
  @since 01 july 2019
  */
-public class CreatePostObjects {
+public class CreatePostObjects extends CommonPageObjects {
 
 
 
@@ -45,6 +45,34 @@ public class CreatePostObjects {
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/composeimage_back_ib")
 	public MobileElement crossIconTextCompose;
 
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/composeimage_textbold_ib")
+	public MobileElement textBoldBtn;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/composeimage_textcolor_previewview")
+	public MobileElement fontColorBtn;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/composeimage_texthighlight_previewview")
+	public MobileElement fontBGColorBtn;
+
+	@AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/composeimage_textcreaterview']/android.widget.EditText")
+	public MobileElement writeTextTextField;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/composeimage_withoutbg_cv")
+	public MobileElement withoutBGBtn;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/item_bgimage_iv")
+	public List<MobileElement> cameraBtnOnTextPost;
+
+	@AndroidFindBy(xpath = "//androidx.appcompat.app.ActionBar.Tab")
+	public List<MobileElement> bottomTabsinTextPost;//content-desc
+
+	@AndroidFindBy(uiAutomator = "new UiScrollable(new UiSelector()"
+			+ ".className(\"androidx.appcompat.app.ActionBar$Tab\")).setAsHorizontalList();")
+	public List<MobileElement> tabs;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/crop_image_menu_crop")
+	public MobileElement cropOkBtnOnCamera;
+
 	//===================
 
 
@@ -69,20 +97,6 @@ public class CreatePostObjects {
 	//===================
 	@AndroidFindBy(xpath = "//*[contains(@text,'अपलोड हो चुका है')]")
 	public MobileElement uploadedNotification;
-
-	@AndroidFindBy(id = "in.mohalla.sharechat:id/composeimage_withoutbg_cv")
-	public MobileElement withoutBGBtn;
-	
-	@AndroidFindBy(id = "in.mohalla.sharechat:id/item_bgimage_iv")
-	public List<MobileElement> camerBtnOnTextPost;
-	
-	@AndroidFindBy(id = "in.mohalla.sharechat:id/crop_image_menu_crop")
-	public MobileElement cropOkBtnOnCamera;
-
-	@AndroidFindBy(uiAutomator = "new UiScrollable(new UiSelector()"
-			+ ".className(\"android.widget.ListView\")).scrollIntoView("
-			+ "new UiSelector().textContains(\"India\"));")
-	public MobileElement INDIACountryCode;
 
 
 }

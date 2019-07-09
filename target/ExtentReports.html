@@ -75,7 +75,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 5, 2019 07:25:36 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 9, 2019 06:18:15 PM</span>
 				</a>
 			</li>
 			<li>
@@ -101,7 +101,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -162,10 +161,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -177,10 +176,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='37.5%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>4</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -195,17 +194,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>ReferralTests</span>
-						<span class='test-time'>Jul 5, 2019 07:25:38 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>CreatePostTests</span>
+						<span class='test-time'>Jul 9, 2019 06:18:16 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 5, 2019 07:25:38 PM</span>
-	<span class='label end-time'>Jul 5, 2019 07:31:13 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 5m 35s+856ms</span>
+	<span class='label start-time'>Jul 9, 2019 06:18:16 PM</span>
+	<span class='label end-time'>Jul 9, 2019 06:19:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 8s+817ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -214,48 +213,11 @@
 	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf fail' status='fail' test-id='2'>
+				<li class='node level-1 leaf pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
-						<h5 class='node-name'>Verify Referral screen UI</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 07:27:06 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 1m 12s+789ms</span>
-						<span class='test-status right fail'>fail</span>
-							<div class='node-desc'>ONEPLUSA6000OnePlus_479a0d0e</div>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>7:27:05 PM</td>
-													<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.android.packageinstaller:id/permission_allow_button})</pre></td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>7:27:06 PM</td>
-													<td class='step-details'><a target="_parent" href=adblogs/479a0d0e__TC048_ReferralScreenUI.txt>AdbLogs</a></td>
-												</tr>
-										</tbody>
-									</table>
-										<ul class='screenshots'>
-												<li><img data-featherlight='/Users/jasmeetsingh/Documents/Sharechat/IntelliJ/target/screenshot/android/479a0d0e/ReferralTests/TC048_ReferralScreenUI/Jul_5__2019_7_27_06_PMONEPLUSA6000OnePlus_TC048_ReferralScreenUI_failed.jpeg' width='10%' src='/Users/jasmeetsingh/Documents/Sharechat/IntelliJ/target/screenshot/android/479a0d0e/ReferralTests/TC048_ReferralScreenUI/Jul_5__2019_7_27_06_PMONEPLUSA6000OnePlus_TC048_ReferralScreenUI_failed.jpeg' data-src='/Users/jasmeetsingh/Documents/Sharechat/IntelliJ/target/screenshot/android/479a0d0e/ReferralTests/TC048_ReferralScreenUI/Jul_5__2019_7_27_06_PMONEPLUSA6000OnePlus_TC048_ReferralScreenUI_failed.jpeg'></li>
-										</ul>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='3'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Verify My Winnings screen UI</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 07:28:27 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 1m 9s+29ms</span>
+						<h5 class='node-name'>Verify allow permissions functionality for creation functionality with text</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 9, 2019 06:19:25 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 54s+113ms</span>
 						<span class='test-status right pass'>pass</span>
 							<div class='node-desc'>ONEPLUSA6000OnePlus_479a0d0e</div>
 					</div>
@@ -272,81 +234,13 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:28:27 PM</td>
-													<td class='step-details'>TC099_MyWinningScreenUI</td>
+													<td class='timestamp'>6:19:25 PM</td>
+													<td class='step-details'>TC035_textPostAllowPermission</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>7:28:27 PM</td>
-													<td class='step-details'><a target="_parent" href=/Users/jasmeetsingh/Documents/Sharechat/IntelliJ/target/adblogs/479a0d0e__TC099_MyWinningScreenUI.txt>AdbLogs</a></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='4'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Verify Setup Payment link functionality</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 07:29:50 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 1m 10s+346ms</span>
-						<span class='test-status right pass'>pass</span>
-							<div class='node-desc'>ONEPLUSA6000OnePlus_479a0d0e</div>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:29:50 PM</td>
-													<td class='step-details'>TC108_SetupPaymentLinkFunctionality</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>7:29:50 PM</td>
-													<td class='step-details'><a target="_parent" href=/Users/jasmeetsingh/Documents/Sharechat/IntelliJ/target/adblogs/479a0d0e__TC108_SetupPaymentLinkFunctionality.txt>AdbLogs</a></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='5'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Verify update mobile number functionality</h5>
-						<span class="node-time label grey lighten-1 white-text">Jul 5, 2019 07:31:13 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 1m 11s+43ms</span>
-						<span class='test-status right pass'>pass</span>
-							<div class='node-desc'>ONEPLUSA6000OnePlus_479a0d0e</div>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:31:13 PM</td>
-													<td class='step-details'>TC109_SetupPaymentLinkFunctionality</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>7:31:13 PM</td>
-													<td class='step-details'><a target="_parent" href=/Users/jasmeetsingh/Documents/Sharechat/IntelliJ/target/adblogs/479a0d0e__TC109_SetupPaymentLinkFunctionality.txt>AdbLogs</a></td>
+													<td class='timestamp'>6:19:25 PM</td>
+													<td class='step-details'><a target="_parent" href=/Users/jasmeetsingh/Documents/Sharechat/IntelliJ/target/adblogs/479a0d0e__TC035_textPostAllowPermission.txt>AdbLogs</a></td>
 												</tr>
 										</tbody>
 									</table>
@@ -410,13 +304,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>ONEPLUSA6000OnePlus|127.0.0.1|479a0d0e</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -431,9 +325,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 5, 2019 07:25:38 PM</td>
-										<td class='linked' test-id='1'>ReferralTests</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Jul 9, 2019 06:18:16 PM</td>
+										<td class='linked' test-id='1'>CreatePostTests</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -461,31 +355,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 5, 2019 07:25:36 PM</div>
+					<div class='panel-lead'>Jul 9, 2019 06:18:15 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 5, 2019 07:31:14 PM</div>
+			 		<div class='panel-lead'>Jul 9, 2019 06:19:26 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 5m 38s+72ms</div>
+					<div class='panel-lead'>0h 1m 10s+947ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -534,11 +428,11 @@
 						</tr>
 						<tr>
 							<td>ONEPLUSA6000OnePlus|127.0.0.1|479a0d0e</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -554,22 +448,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 3,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 3,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 4,
-				exceptionsChild: 1,
+				infoChild: 1,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

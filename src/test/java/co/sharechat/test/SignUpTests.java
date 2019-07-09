@@ -1,6 +1,7 @@
 package co.sharechat.test;
 
 import co.sharechat.config.TestRunnerInfo;
+import co.sharechat.pages.Actions.CommonPageActions;
 import co.sharechat.pages.Actions.SignUp;
 import co.sharechat.utils.Constants;
 import org.testng.Assert;
@@ -19,6 +20,39 @@ public class SignUpTests implements Constants {
 
         return new SignUp(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
 
+    }
+
+    public CommonPageActions getCommonPage(){
+
+        return new CommonPageActions(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
+
+    }
+
+    /**
+    * This function will login with registered user and according to the permissionsActions array passed.
+     * Make sure array is of 3 length.
+     *  @author jasmeetsingh
+     *  @version 1.0
+     *  @since 09 july 2019
+    * */
+
+    public void registeredLogin(boolean []permissionsActions){
+        getSignUpPage().selectHindi();
+        getSignUpPage().enterName(userName);
+        getSignUpPage().selectCountry();
+        getSignUpPage().enterPhNo(registerNumber);
+        getSignUpPage().selectAgeGroup();
+        getSignUpPage().selectGender();
+        getSignUpPage().submit();
+        for (boolean action: permissionsActions) {
+            if(action == true)
+                getCommonPage().alllowPermission();
+            else
+                getCommonPage().denyPermission();
+        }
+
+        getSignUpPage().enterOTP(otp);
+        getSignUpPage().submitOTP();
     }
 
     @Test(enabled = true, groups = {"SmokeTest"},

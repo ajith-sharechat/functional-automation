@@ -9,11 +9,11 @@
     <parameter name="hostName" value="127.0.0.1"/>
     <parameter name="device" value="479a0d0e"/>
     <classes>
-      <class name="co.sharechat.test.ReferralTests">
+      <class name="co.sharechat.test.CreatePostTests">
         <methods>
-          <include name="TC048_ReferralScreenUI"/>
+          <include name="TC035_textPostAllowPermission"/>
         </methods>
-      </class> <!-- co.sharechat.test.ReferralTests -->
+      </class> <!-- co.sharechat.test.CreatePostTests -->
     </classes>
   </test> <!-- TestNG Test0(failed) -->
 </suite> <!-- Failed suite [TestNG Forum] -->
