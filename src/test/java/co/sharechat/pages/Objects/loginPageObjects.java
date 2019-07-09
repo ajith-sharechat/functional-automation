@@ -9,7 +9,7 @@ import java.util.List;
 
 
 /**
- * This Class has all the Actions related to Login Page Objects
+ * This Class has all the Objects related to Login Page
  *
  * @author Diljeet Singh
  * @version 1.0
@@ -17,12 +17,9 @@ import java.util.List;
  */
 public class loginPageObjects {
 
-    @AndroidFindBy(xpath = "in.mohalla.sharechat:id/select_title")
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_create_profile")
 
-    public MobileElement selectTitle;
-
-    @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_lang_name")
-    public MobileElement languageBoxTab;
+    public MobileElement createPFClick;
 
     @AndroidFindBy(xpath = "//*[@text='हिन्दी']")
     public MobileElement selectHindi;
@@ -44,5 +41,14 @@ public class loginPageObjects {
 
     public List<MobileElement> OTPValues;
 
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/rb_age_range2")
 
+    public MobileElement ageRange;
+
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_home_feed")
+
+    public MobileElement verifySuccessfullCreation ;
+
+    @AndroidFindBy(xpath = "//android.widget.Toast[1]")
+    public MobileElement Toast;
 }

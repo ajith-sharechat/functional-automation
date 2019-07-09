@@ -9,7 +9,7 @@ import java.util.List;
 
 
 /**
- * This Class has all the Actions related to Sticker Functionality Page Objects
+ * This Class has all the Objects related to Sticker Functionality Page
  *
  * @author Diljeet Singh
  * @version 1.0

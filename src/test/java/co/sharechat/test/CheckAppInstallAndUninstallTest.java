@@ -10,7 +10,7 @@ import static org.testng.Assert.assertTrue;
 
 
 /**
- * This Class has all the Actions related to App install & Uninstall Test
+ * This Class has all the Tests related to App install & Uninstall
  *
  * @author Diljeet Singh
  * @version 1.0

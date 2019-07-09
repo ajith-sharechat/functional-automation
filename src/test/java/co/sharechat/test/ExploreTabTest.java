@@ -9,7 +9,7 @@ import static org.testng.Assert.assertTrue;
 
 
 /**
- * This Class has all the Actions related to Explore Page Test
+ * This Class has all the Tests related to Explore Page
  *
  * @author Diljeet Singh
  * @version 1.0

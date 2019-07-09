@@ -9,7 +9,7 @@ import java.util.List;
 
 
 /**
- * This Class has all the Actions related to Explore Page Objects
+ * This Class has all the Objects related to Explore Page
  *
  * @author Diljeet Singh
  * @version 1.0

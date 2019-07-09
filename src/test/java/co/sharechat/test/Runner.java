@@ -16,12 +16,15 @@ public class Runner {
             List<String> tests = new ArrayList<>();
 
             //    tests.add("CheckAppInstallAndUninstallTest");
-            //    tests.add("UserLoginTest");
+            //    tests.add("LoginPageTest");
             // tests.add("ExploreTabTest");
             // tests.add("ProfilePageTest");
-            tests.add("TrendingTabTest");
+            // tests.add("TrendingTabTest");
             //           tests.add("HomeScreenTest");
-            tests.add("StickerFunctionalityTest");
+            // tests.add("StickerFunctionalityTest");
+            tests.add("LandingPageTest");
+            tests.add("LoginPageTest");
+
 
             parallelThread.runner("co.sharechat.test", tests);
 

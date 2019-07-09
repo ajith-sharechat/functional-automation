@@ -8,7 +8,7 @@ import static org.testng.Assert.assertTrue;
 
 
 /**
- This Class has all the Actions related to Trending Page Test
+ This Class has all the Tests related to Trending Page
  @author Diljeet Singh
  @version 1.0
  @since 08 july 2019

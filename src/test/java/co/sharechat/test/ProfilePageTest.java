@@ -10,7 +10,7 @@ import static org.testng.Assert.assertTrue;
 
 
 /**
- * This Class has all the Actions related to Profile Page Test
+ * This Class has all the Tests related to Profile Page
  *
  * @author Diljeet Singh
  * @version 1.0

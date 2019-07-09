@@ -60,10 +60,10 @@ public class DeviceHelper {
 
     public void waitTillTheElementIsVisibleAndClickable(WebElement element) {
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 12);
         wait.until(ExpectedConditions.visibilityOf(element));
 
-        wait = new WebDriverWait(driver, 5);
+        wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
@@ -283,5 +283,24 @@ public class DeviceHelper {
 
         return locator.isDisplayed();
     }
+/**
+ *This method will return the Width of the Phone Screen
+ * @since 08 July 2019
+ * @author Jasmeet
+*/
+public int getWidthOfScreen(){
+return driver.manage().window().getSize().width;
+}
+
+/**
+ *This method will return the Height of the Phone Screen
+ * @since 08 July 2019
+ * @author Jasmeet
+*/
+public int getHeightOfScreen(){
+return driver.manage().window().getSize().height;
+}
+
+
 
 }

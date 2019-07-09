@@ -8,17 +8,23 @@ import co.sharechat.utils.Constants;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
+import java.util.NoSuchElementException;
+
 
 /**
- This Class has all the Actions related to Login Page
- @author Diljeet Singh
- @version 1.0
- @since 01 july 2019
+ * This Class has all the Actions related to Login Page
+ *
+ * @author Diljeet Singh
+ * @version 1.0
+ * @since 09 july 2019
  */
 public class loginPage extends WebDriverListener implements Constants {
     DeviceInterface runnerInfo;
@@ -39,17 +45,24 @@ public class loginPage extends WebDriverListener implements Constants {
         this.runnerInfo = runnerInfo;
     }
 
+    public MobileElement element(MobileElement element) {
+        try {
+            deviceHelper.waitInSec(5);
+            deviceHelper.waitTillTheElementIsVisibleAndClickable(element);
+        } catch (NoSuchElementException | TimeoutException e) {
+            element(element);
+        }
+        return element;
+    }
+
     public void userlogin() throws Exception {
         WebDriverWait wait = null;
         try {
-            deviceHelper.waitInSec(10);
-            loginPageObjects.selectHindi.click();
-            deviceHelper.waitInSec(10);
-            loginPageObjects.enterNumber.sendKeys(registerNumber);
-            deviceHelper.waitInSec(10);
-            loginPageObjects.goToYourAccount.click();
-            deviceHelper.waitInSec(10);
-            loginPageObjects.allow.click();
+
+            element(loginPageObjects.selectHindi).click();
+            element(loginPageObjects.enterNumber).sendKeys(registerNumber);
+            element(loginPageObjects.goToYourAccount).click();
+            element(loginPageObjects.allow).click();
             loginPageObjects.allow.click();
             loginPageObjects.allow.click();
             deviceHelper.waitInSec(5);
@@ -61,13 +74,45 @@ public class loginPage extends WebDriverListener implements Constants {
         } catch (Exception e) {
 
             logger.log(Status.FAIL, "Failed on Customer login");
-            webDriverListener.captureScreenShot("loginPage", "loginPage");
+            webDriverListener.captureScreenShot("loginPage", "userlogin");
             // Flush method will write the test in report- This is mandatory step
             extent.flush();
 
         }
     }
 
+    public boolean createNewUSer() {
 
+        element(loginPageObjects.selectHindi).click();
+        element(loginPageObjects.enterNumber).sendKeys(UNRegisteredNumber);
+        element(loginPageObjects.goToYourAccount).click();
+        loginPageObjects.allow.click();
+        loginPageObjects.allow.click();
+        loginPageObjects.allow.click();
+        loginPageObjects.enterName.sendKeys(SearchingText);
+        loginPageObjects.selectRadioButton.click();
+        loginPageObjects.ageRange.click();
+        loginPageObjects.createPFClick.click();
+        return element(loginPageObjects.verifySuccessfullCreation).isDisplayed();
+
+    }
+
+    public ArrayList verifyWithWrongOTP() throws Exception {
+        ArrayList al = new ArrayList();
+        element(loginPageObjects.selectHindi).click();
+        element(loginPageObjects.enterNumber).sendKeys(OTPVerifiedNumber);
+        element(loginPageObjects.goToYourAccount).click();
+        element(loginPageObjects.allow).click();
+        loginPageObjects.allow.click();
+        loginPageObjects.allow.click();
+        deviceHelper.waitInSec(5);
+        for (int i = 0; i <= 5; i++) {
+            loginPageObjects.OTPValues.get(i).sendKeys("" + i);
+        }
+        al.add(loginPageObjects.Toast.getText());
+        deviceHelper.waitInSec(5);
+
+        return al;
+    }
 }
 
