@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 /**
@@ -37,14 +38,73 @@ public class LoginPageTest {
 
 
     @Test(enabled = true, description = "check login with verified number with wrong OTP.", groups = {"RegressionTest", "Creation"})
-    public void TC013_createNewUSer() throws Exception {
+    public void TC012_createNewUSer() throws Exception {
 
         ArrayList testResponse = getLoginPage().verifyWithWrongOTP();
         assertTrue(testResponse.get(0).equals(testResponse.get(0)),
                 "Test Fail check login with verified number with wrong OTP");
     }
 
+    @Test(enabled = true, description = "check login with invalid number.", groups = {"RegressionTest", "Creation"})
+    public void TC013_loginWithInvalidNumber() throws Exception {
 
+        ArrayList testResponse = getLoginPage().verifyLoginWithInvalidNumber();
+        System.err.println(" Checking :" + testResponse.get(0));
+        assertTrue(testResponse.get(0).equals(testResponse.get(0)),
+                "Test Fail check login with invalid then button should be disabled .");
+    }
+    @Test(enabled = true, description = "User try to submit the empty form", groups = {"RegressionTest", "Creation"})
+    public void TC014_verifyProceedWithEmptyForm() throws Exception {
+
+        String testResponse = getLoginPage().verifyProceedWithEmptyForm();
+        System.err.println(" Checking :" + testResponse);
+        assertTrue(testResponse.contains(testResponse),
+                "Test Fail User try to submit the empty form.");
+    }
+
+
+        @Test(enabled = true, description = "User try to submit the  form without user name", groups = {"RegressionTest", "Creation"})
+    public void TC015_verifyProceedWithoutName() throws Exception {
+
+        String testResponse = getLoginPage().verifyProceedWithoutName();
+        System.err.println(" Checking :" + testResponse);
+        assertTrue(testResponse.contains(testResponse),
+                "Test Fail User try to submit the  form without user name.");
+    }
+//    @Test(enabled = true, description = "User try to submit the  form without mobile number", groups = {"RegressionTest", "Creation"})
+//    public void TC016_verifyProceedWithoutMobileNumber() throws Exception {
+//
+//        String testResponse = getLoginPage().verifyProceedWithoutMobileNumber();
+//        System.err.println(" Checking :" + testResponse);
+//        assertTrue(testResponse.contains(testResponse),
+//                "Test Fail User try to submit the  form without mobile number.");
+//    }
+//
+//
+//    @Test(enabled = true, description = "User try to submit the  form without gender selection", groups = {"RegressionTest", "Creation"})
+//    public void TC017_verifyProceedWithoutGenderSelection() throws Exception {
+//
+//        String testResponse = getLoginPage().verifyProceedWithoutGenderSelection();
+//        System.err.println(" Checking :" + testResponse);
+//        assertTrue(testResponse.contains(testResponse),
+//                "Test Fail User try to submit the  form without gender selection.");
+//    }
+//
+//    @Test(enabled = true, description = "User try to submit the  form without age selection", groups = {"RegressionTest", "Creation"})
+//    public void TC018_verifyProceedWithoutAgeSelection() throws Exception {
+//
+//        String testResponse = getLoginPage().verifyProceedWithoutAgeSelection();
+//        System.err.println(" Checking :" + testResponse);
+//        assertTrue(testResponse.contains(testResponse),
+//                "Test Fail User try to submit the  form without age selection.");
+//    }
+
+//    @Test(enabled = true, description = "User try to submit the  form without user name", groups = {"RegressionTest", "Creation"})
+//    public void TC019_verifyTermPolicy(){
+//
+//        getLoginPage().verifyTermPolicy();
+//    }
+//
     public loginPage getLoginPage() {
 
         return new loginPage(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());

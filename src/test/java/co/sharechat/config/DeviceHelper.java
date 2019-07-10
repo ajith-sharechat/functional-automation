@@ -283,24 +283,37 @@ public class DeviceHelper {
 
         return locator.isDisplayed();
     }
-/**
- *This method will return the Width of the Phone Screen
- * @since 08 July 2019
- * @author Jasmeet
-*/
-public int getWidthOfScreen(){
-return driver.manage().window().getSize().width;
-}
 
-/**
- *This method will return the Height of the Phone Screen
- * @since 08 July 2019
- * @author Jasmeet
-*/
-public int getHeightOfScreen(){
-return driver.manage().window().getSize().height;
-}
+    /**
+     * This method will return the Width of the Phone Screen
+     *
+     * @author Jasmeet
+     * @since 08 July 2019
+     */
+    public int getWidthOfScreen() {
+        return driver.manage().window().getSize().width;
+    }
 
+    /**
+     * This method will return the Height of the Phone Screen
+     *
+     * @author Jasmeet
+     * @since 08 July 2019
+     */
+    public int getHeightOfScreen() {
+        return driver.manage().window().getSize().height;
+    }
+
+
+    /* Tap the screen on the basis of x1,y1 point.
+     * @author Diljeet Singh Ranaut
+     * @param x1
+     * @param y1
+     * @since 10 july
+     */
+    public void tapOnPoint(int x1, int y1) {
+        new TouchAction((AppiumDriver<MobileElement>) driver).tap(PointOption.point(x1, y1)).perform();
+    }
 
 
 }

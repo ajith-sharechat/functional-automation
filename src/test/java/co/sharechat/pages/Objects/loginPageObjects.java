@@ -21,6 +21,10 @@ public class loginPageObjects {
 
     public MobileElement createPFClick;
 
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_submit")
+
+    public MobileElement createSubmit;
+
     @AndroidFindBy(xpath = "//*[@text='हिन्दी']")
     public MobileElement selectHindi;
 
@@ -47,8 +51,11 @@ public class loginPageObjects {
 
     @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_home_feed")
 
-    public MobileElement verifySuccessfullCreation ;
+    public MobileElement verifySuccessfullCreation;
 
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_terms_policy")
+
+    public MobileElement termPolicy;
     @AndroidFindBy(xpath = "//android.widget.Toast[1]")
     public MobileElement Toast;
 }

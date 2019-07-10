@@ -3,6 +3,7 @@ package co.sharechat.utils;
 public interface Constants {
 
     String registerNumber = "9491862195";
+    String invalidNumber = "94918621";
     String UNRegisteredNumber = "942426219534";
     String OTPVerifiedNumber = "7888600653";
     String appPackage = "in.mohalla.sharechat";

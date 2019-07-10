@@ -114,5 +114,103 @@ public class loginPage extends WebDriverListener implements Constants {
 
         return al;
     }
+
+    public ArrayList verifyLoginWithInvalidNumber() {
+
+        ArrayList al = new ArrayList();
+        try {
+            element(loginPageObjects.selectHindi).click();
+            element(loginPageObjects.enterNumber).sendKeys(invalidNumber);
+            element(loginPageObjects.goToYourAccount).click();
+
+            al.add(loginPageObjects.Toast.getText());
+            return al;
+
+        } catch (NoSuchElementException e) {
+
+            element(loginPageObjects.enterNumber).sendKeys(invalidNumber);
+            loginPageObjects.enterName.sendKeys(SearchingText);
+            loginPageObjects.selectRadioButton.click();
+            loginPageObjects.ageRange.click();
+            al.add(loginPageObjects.createSubmit.isEnabled());
+            return al;
+        }
+
+    }
+
+    public String verifyProceedWithEmptyForm() {
+        element(loginPageObjects.selectHindi).click();
+        element(loginPageObjects.goToYourAccount).click();
+
+        return loginPageObjects.Toast.getText();
+
+
+    }
+
+    public String verifyProceedWithoutName() {
+
+        element(loginPageObjects.selectHindi).click();
+        element(loginPageObjects.enterNumber).sendKeys(UNRegisteredNumber);
+        element(loginPageObjects.goToYourAccount).click();
+        loginPageObjects.allow.click();
+        loginPageObjects.allow.click();
+        loginPageObjects.allow.click();
+        element(loginPageObjects.selectRadioButton).click();
+        element(loginPageObjects.ageRange).click();
+        loginPageObjects.createPFClick.click();
+        return loginPageObjects.Toast.getText();
+    }
+
+    public String verifyProceedWithoutMobileNumber() {
+        element(loginPageObjects.selectHindi).click();
+        element(loginPageObjects.goToYourAccount).click();
+
+        return loginPageObjects.Toast.getText();
+
+
+    }
+
+    public String verifyProceedWithoutGenderSelection() {
+
+        element(loginPageObjects.selectHindi).click();
+        element(loginPageObjects.enterNumber).sendKeys(UNRegisteredNumber);
+        element(loginPageObjects.goToYourAccount).click();
+        loginPageObjects.allow.click();
+        loginPageObjects.allow.click();
+        loginPageObjects.allow.click();
+        element(loginPageObjects.enterName).sendKeys(SearchingText);
+        element(loginPageObjects.ageRange).click();
+        loginPageObjects.createPFClick.click();
+        return loginPageObjects.Toast.getText();
+    }
+
+    public String verifyProceedWithoutAgeSelection() {
+
+        element(loginPageObjects.selectHindi).click();
+        element(loginPageObjects.enterNumber).sendKeys(UNRegisteredNumber);
+        element(loginPageObjects.goToYourAccount).click();
+        loginPageObjects.allow.click();
+        loginPageObjects.allow.click();
+        loginPageObjects.allow.click();
+        element(loginPageObjects.enterName).sendKeys(SearchingText);
+        element(loginPageObjects.selectRadioButton).click();
+        loginPageObjects.createPFClick.click();
+        return loginPageObjects.Toast.getText();
+    }
+
+    public void verifyTermPolicy() {
+        element(loginPageObjects.selectHindi).click();
+        deviceHelper.waitInSec(10);
+        int leftX = loginPageObjects.termPolicy.getLocation().getX();
+        int middleX = leftX + 200;
+        int upperY = loginPageObjects.termPolicy.getCenter().y;
+        //int lowerY = upperY + element.getSize().getHeight();
+        //int middleY = (upperY + lowerY) / 2;
+        deviceHelper.tapOnPoint(middleX, upperY);
+
+
+        deviceHelper.waitInSec(10);
+    }
+
 }
 
