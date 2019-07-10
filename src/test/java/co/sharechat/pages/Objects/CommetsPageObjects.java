@@ -41,7 +41,6 @@ public class CommetsPageObjects {
     @AndroidFindBy(id ="in.mohalla.sharechat:id/lt_chat_empty")
     public MobileElement noCommentImage;
 
-//    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tv_comment_state']//preceding::android.widget.TextView[1]")
     @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tv_post_caption']" +
             "//following::android.widget.TextView//following::android.widget.TextView")
     public MobileElement commentPreviewLikeSection;
@@ -56,7 +55,10 @@ public class CommetsPageObjects {
     @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_user_unfollow")
     public MobileElement commentPreviewUserUnfollowLink;
 
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tablayout_post']//androidx.appcompat.app.ActionBar.Tab")
+    public MobileElement commentSection;
 
-
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tablayout_post']//following::androidx.appcompat.app.ActionBar.Tab")
+    public MobileElement likeSection;
 
 }

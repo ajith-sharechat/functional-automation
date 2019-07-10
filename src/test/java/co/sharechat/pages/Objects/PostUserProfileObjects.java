@@ -71,4 +71,13 @@ public class PostUserProfileObjects {
 
     @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_unfollow_no")
     public MobileElement postUserUnfollowingPopupNo;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/toolbar']//android.widget.TextView")
+    public MobileElement sharePostWithTitle;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/btn_chat_send")
+    public MobileElement sendButtonSharePostWithScreen;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_chat_goto")
+    public MobileElement gotoIconSharePostWithScreen;
 }

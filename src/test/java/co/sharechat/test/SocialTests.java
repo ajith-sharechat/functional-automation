@@ -123,6 +123,7 @@ public class SocialTests  implements Constants {
         getHomePageActionsInstance().verifyHomeScreenElement();
         getHomePageActionsInstance().scrollTillPostImageOnHomeScreenClickPostImage();
         getHomePageActionsInstance().clickPostImageOptionTopRightCorner();
+
     }
 
     @Test(enabled = true, description = "Verify UNKNOWN chat screen functionality", groups = {"RegressionTest", "Social"})
@@ -240,5 +241,55 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().clickFollowingButtonAndClickConfirmToUnfollow();
         getSocialActionsInstance().clickInviteSection();
         getSocialActionsInstance().clickInviteButton();
+    }
+
+    @Test(enabled = true, description = "Verify Share apk icon functionality from My Contacts screen",groups = {"RegressionTest", "Social"})
+    public void TC100_verifyShareAPKIconFunctionalityMyContactsScreen() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().clickAddFriendIcon();
+        getSocialActionsInstance().clickShareIconInPhoneContactsScreen();
+        getSocialActionsInstance().verifyWhatAppWelcomeScreen();
+    }
+
+    @Test(enabled = true, description = "Verify share icon functionality",groups = {"RegressionTest", "Social"})
+    public void TC101_verifyShareIconFunctionality() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().clickShareIconInProfileScreen();
+        getSocialActionsInstance().verifySelectAppPopupAndClickWhatAppIcon();
+        getSocialActionsInstance().verifyWhatAppWelcomeScreen();
+    }
+
+    @Test(enabled = true, description = "Verify settings button functionality",groups = {"RegressionTest", "Social"})
+    public void TC102_verifySettingButtonFunctionality() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().clickSettingIconInProfileScreen();
+        getSocialActionsInstance().verifyProfileSettingScreen();
     }
 }

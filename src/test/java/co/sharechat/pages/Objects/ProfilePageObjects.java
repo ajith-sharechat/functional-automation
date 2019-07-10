@@ -44,6 +44,9 @@ public class ProfilePageObjects {
     @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_post_count")
     public MobileElement profilePostCount;
 
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/tabs']//androidx.appcompat.app.ActionBar.Tab")
+    public MobileElement profileMyPostSection;
+
     @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tabs']//following::androidx.appcompat.app.ActionBar.Tab" +
             "//following::androidx.appcompat.app.ActionBar.Tab")
     public MobileElement profileStickersSection;
@@ -63,7 +66,46 @@ public class ProfilePageObjects {
     @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_user_follow")
     public MobileElement userFollowLink;
 
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/ib_app_share")
+    public MobileElement shareIconInPhoneContacts;
+
     @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_invite")
     public MobileElement inviteButton;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/ll_change_cover_photo")
+    public MobileElement changeButtonBackgroundImageInEditScreen;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_profile_photo")
+    public MobileElement profilePicEditScreen;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/b_profile_save")
+    public MobileElement saveChangeButton;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_cover")
+    public MobileElement coverPicEditScreen;
+
+    @AndroidFindBy(xpath ="//android.widget.TextView[@resource-id='android:id/title']")
+    public MobileElement selectAppToShareTitle;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_change_profile_photo")
+    public MobileElement profileCameraIconEditScreen;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/ib_close")
+    public MobileElement closeIconProfilePicScreen;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/ib_gallery")
+    public MobileElement galleryIconChoosePicOption;
+
+    @AndroidFindBy(xpath ="//android.widget.TextView[@resource-id='android:id/title']")
+    public MobileElement galleryOptionCompleteActionUsingLabel;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/ib_camera")
+    public MobileElement cameraIconChoosePicOption;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/camera_takepicture_iv")
+    public MobileElement cameraCaptureButton;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/crop_image_menu_crop")
+    public MobileElement cameraCaptureImageSaveIcon;
 
 }

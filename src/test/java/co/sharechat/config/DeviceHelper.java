@@ -347,7 +347,7 @@ public class DeviceHelper {
     /**
      * This Function is to Scroll to element
      * @author Ramesh
-     * @param: Mobile Element and count of scroll
+     * @param: Mobile Element & String
      *
      */
     public void scrollToMobileElement(MobileElement element, String scrollcount) {
@@ -392,7 +392,7 @@ public class DeviceHelper {
      * @param: Mobile Element
      *
      */
-    public void elementPresentAssertTrue(MobileElement element) {
+    public void isElementPresentAssertTrue(MobileElement element) {
 
         Assert.assertTrue(isElementDisplay(element));
     }
@@ -403,7 +403,7 @@ public class DeviceHelper {
      * @param: Mobile Element
      *
      */
-    public void elementNotPresentAssertTrue(MobileElement element) {
+    public void isElementNotPresentAssertTrue(MobileElement element) {
 
         Assert.assertTrue(isElementNotPresent(element));
     }
