@@ -56,6 +56,17 @@ public class loginPageObjects {
     @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_terms_policy")
 
     public MobileElement termPolicy;
+
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/current_url")
+
+
+    public MobileElement currentUrl;
+
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/action_share")
+
+
+    public MobileElement policyShare;
+
     @AndroidFindBy(xpath = "//android.widget.Toast[1]")
     public MobileElement Toast;
 }

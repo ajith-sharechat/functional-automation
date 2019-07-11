@@ -10,6 +10,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -198,18 +199,18 @@ public class loginPage extends WebDriverListener implements Constants {
         return loginPageObjects.Toast.getText();
     }
 
-    public void verifyTermPolicy() {
+    public boolean[] verifyTermPolicyPages() {
+        boolean res[] = new boolean[2];
         element(loginPageObjects.selectHindi).click();
         deviceHelper.waitInSec(10);
         int leftX = loginPageObjects.termPolicy.getLocation().getX();
         int middleX = leftX + 200;
         int upperY = loginPageObjects.termPolicy.getCenter().y;
-        //int lowerY = upperY + element.getSize().getHeight();
-        //int middleY = (upperY + lowerY) / 2;
         deviceHelper.tapOnPoint(middleX, upperY);
-
-
         deviceHelper.waitInSec(10);
+        res[0] = loginPageObjects.policyShare.isDisplayed();
+        res[1] = loginPageObjects.currentUrl.isDisplayed();
+        return res;
     }
 
 }
