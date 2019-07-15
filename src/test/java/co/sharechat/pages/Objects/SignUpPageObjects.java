@@ -49,6 +49,9 @@ public class SignUpPageObjects {
 	public MobileElement OTPtextbox;
 
 	@AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/pin_view']//following::android.widget.EditText")
+	public MobileElement OTPtextfield1;
+
+	@AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/pin_view']//android.widget.EditText")
 	public MobileElement OTPtextfield;
 	
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/bt_submit")

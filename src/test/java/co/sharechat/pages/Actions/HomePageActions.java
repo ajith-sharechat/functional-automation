@@ -84,7 +84,7 @@ public class HomePageActions extends WebDriverListener {
             homePostObjects.userProfileLink.click();
         }
     }
-    public void scrollTillPostImageOnHomeScreenClickPostImage() {
+    public void scrollTillPostImageClickPostImage() {
         if(deviceHelper.isElementDisplay(homePostObjects.postImage)==true) {
             homePostObjects.postImage.click();
         }
@@ -129,5 +129,6 @@ public class HomePageActions extends WebDriverListener {
         deviceHelper.isElementPresentAssertTrue(postUserObjects.videoPostLikeIcon);
         deviceHelper.isElementPresentAssertTrue(postUserObjects.videoPostFavouriteIcon);
     }
+
 
 }

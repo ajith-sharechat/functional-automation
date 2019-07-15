@@ -32,7 +32,7 @@ public class SocialTests  implements Constants {
     }
 
     @Test(enabled = true, description = "Verify chat screen functionality", groups = {"RegressionTest", "Social"})
-    public void TC001_verifyChatScreen() throws Exception {
+    public void TC001_verifyChatScreen(){
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
         getSignUpInstance().clickOtpButton();
@@ -46,7 +46,7 @@ public class SocialTests  implements Constants {
     }
 
     @Test(enabled = true, description = "Verify chat initiating functionality from normal user profile screen", groups = {"RegressionTest", "Social"})
-    public void TC002_verifyChatInitiatingFunctionality() throws Exception {
+    public void TC002_verifyChatInitiatingFunctionality() {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
         getSignUpInstance().clickOtpButton();
@@ -59,7 +59,8 @@ public class SocialTests  implements Constants {
     }
 
     @Test(enabled = true, description = "Verify user row functionality", groups = {"RegressionTest", "Social"})
-    public void TC005_verifyChatScreenUserRow() throws Exception {
+    public void TC005_verifyChatScreenUserRow(){
+
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
         getSignUpInstance().clickOtpButton();
@@ -121,9 +122,7 @@ public class SocialTests  implements Constants {
         getHomePageActionsInstance().clickAllowButton();
         getSignUpInstance().enterOTPActions(otp);
         getHomePageActionsInstance().verifyHomeScreenElement();
-        getHomePageActionsInstance().scrollTillPostImageOnHomeScreenClickPostImage();
-        getHomePageActionsInstance().clickPostImageOptionTopRightCorner();
-
+        getSocialActionsInstance().sharingPostFunctionalityToKnownUser();
     }
 
     @Test(enabled = true, description = "Verify UNKNOWN chat screen functionality", groups = {"RegressionTest", "Social"})
@@ -291,5 +290,180 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().verifyProfileScreen();
         getSocialActionsInstance().clickSettingIconInProfileScreen();
         getSocialActionsInstance().verifyProfileSettingScreen();
+    }
+
+    @Test(enabled = true, description = "Verify Edit your profile button functionality",groups = {"RegressionTest", "Social"})
+    public void TC103_verifyEditProfileButtonFunctionality() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().clickEditProfileButton();
+        getSocialActionsInstance().verifyEditProfileScreen();
+    }
+
+    @Test(enabled = true, description = "Verify updating profile picture functionality with gallery from EDIT PROFILE screen",groups = {"RegressionTest", "Social"})
+    public void TC104_verifyUpdatingProfilePictureFunctionalityWithGallery() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().clickEditProfileButton();
+        getSocialActionsInstance().clickProfileCameraIcon();
+        getSocialActionsInstance().verifyProfilePicScreen();
+        getSocialActionsInstance().clickGalleryIconChooseOption();
+    }
+
+    @Test(enabled = true, description = "Verify updating profile picture functionality with camera from EDIT PROFILE screen",groups = {"RegressionTest", "Social"})
+    public void TC105_verifyUpdatingProfilePictureFunctionalityWithCamera() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().clickEditProfileButton();
+        getSocialActionsInstance().clickProfileCameraIcon();
+        getSocialActionsInstance().verifyProfilePicScreen();
+        getSocialActionsInstance().clickCameraIconChooseOption();
+        getSocialActionsInstance().clickCameraCaptureButton();
+        getSocialActionsInstance().clickCameraCaptureSaveButton();
+    }
+
+    @Test(enabled = true, description = "Verify update background picture functionality with gallery from EDIT PROFILE screen",groups = {"RegressionTest", "Social"})
+    public void TC106_verifyUpdatingProfilePictureFunctionalityWithGallery() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().clickEditProfileButton();
+        getSocialActionsInstance().clickChangeButtonProfileEditScreen();
+        getSocialActionsInstance().verifyProfilePicScreen();
+        getSocialActionsInstance().clickGalleryIconChooseOption();
+    }
+
+    @Test(enabled = true, description = "Verify update background picture functionality with camera from EDIT PROFILE screen",groups = {"RegressionTest", "Social"})
+    public void TC107_verifyEditProfileButtonFunctionality() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().clickEditProfileButton();
+        getSocialActionsInstance().clickChangeButtonProfileEditScreen();
+        getSocialActionsInstance().verifyProfilePicScreen();
+        getSocialActionsInstance().clickCameraIconChooseOption();
+        getSocialActionsInstance().clickCameraCaptureButton();
+        getSocialActionsInstance().clickCameraCaptureSaveButton();
+    }
+
+    @Test(enabled = true, description = "Verify single tap functionality on post",groups = {"RegressionTest", "Social"})
+    public void TC122_TC123_VerifySingleTapFunctionalityOnPost() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getHomePageActionsInstance().scrollTillPostImageClickPostImage();
+        getSocialActionsInstance().verifyPostPreviewScreen();
+    }
+
+    @Test(enabled = true, description = "Verify profile picture, name, and bio of the post",groups = {"RegressionTest", "Social"})
+    public void TC124_VerifyProfilePictureNameAndBioOnThePost() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getHomePageActionsInstance().scrollTillPostImageClickPostImage();
+        getSocialActionsInstance().verifyPostPreviewScreen();
+        getSocialActionsInstance().verifyHashTaglabelAndHashTagFeedTitle();
+    }
+
+    @Test(enabled = true, description = "Verify options button functionality of a post",groups = {"RegressionTest", "Social"})
+    public void TC125_VerifyOptionsButtonFunctionalityOfPost() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getHomePageActionsInstance().scrollTillPostImageClickPostImage();
+        getSocialActionsInstance().verifyPostPreviewScreen();
+        getHomePageActionsInstance().clickPostImageOptionTopRightCorner();
+        getSocialActionsInstance().verifySharePopupElements();
+    }
+    @Test(enabled = true, description = "Verify whatsapp share functionality for a post",groups = {"RegressionTest", "Social"})
+    public void TC130_verifyWhatsAppShareFunctionalityForPost() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().scrollToWhatsAppIconAndClickInPost();
+        getSocialActionsInstance().verifyWhatAppWelcomeScreen();
+    }
+
+    @Test(enabled = true, description = "Verify comments functionality for a post",groups = {"RegressionTest", "Social"})
+    public void TC131_verifyCommentFunctionalityForPost() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getHomePageActionsInstance().scrollToPostComment();
+        getHomePageActionsInstance().clickPostCommentIcon();
+        getSocialActionsInstance().enterCommentAndSend(textMessage);
     }
 }

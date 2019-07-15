@@ -80,4 +80,55 @@ public class PostUserProfileObjects {
 
     @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_chat_goto")
     public MobileElement gotoIconSharePostWithScreen;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/et_message']//" +
+            "preceding::android.widget.TextView[@resource-id='in.mohalla.sharechat:id/tv_message'][1]")
+    public MobileElement recentMessageInChatBox;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_post_profile_status")
+    public MobileElement postBioProfileStatusLabel;
+
+//    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tv_post_caption']")
+    @AndroidFindBy(xpath = "//*[contains(@text,'#')]")
+    public MobileElement postTagLink;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_post_profile")
+    public MobileElement postUserProfielPic;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/ib_create_stickers")
+    public MobileElement createStickersIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/btn_share_dm")
+    public MobileElement shareButtonInPostPreview;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/rl_comment_container")
+    public MobileElement commentTextfield;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_toolbar_title")
+    public MobileElement TagFeedTitle;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/cl_post_bottom_counters']//android.widget.ImageView")
+    public MobileElement whatsAppIconInPost;
+
+//    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/cl_post_bottom_counters']//following::android.widget.ImageView")
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/cl_post_bottom_counters']//following::android.widget.ImageView[1]")
+    public MobileElement commentIconInPost;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/cl_post_bottom_counters']//following::android.widget.ImageView[4]")
+    public MobileElement rePostIconInPost;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/compose_back_iv']//following::android.widget.TextView")
+    public MobileElement createPostLabel;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_post_tick")
+    public MobileElement postRightIcon;
+
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/iv_post_tick']//following::android.widget.TextView")
+    public MobileElement postButtonLabel;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/et_compose_text")
+    public MobileElement createPostTextField;
+
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/layout_exo_actions']//android.widget.ImageView")
+    public MobileElement whatsAppIconInVideoPost;
 }

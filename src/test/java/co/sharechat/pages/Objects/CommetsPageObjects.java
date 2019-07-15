@@ -61,4 +61,7 @@ public class CommetsPageObjects {
     @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tablayout_post']//following::androidx.appcompat.app.ActionBar.Tab")
     public MobileElement likeSection;
 
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/et_comment")
+    public MobileElement commentTextField;
+
 }

@@ -1,7 +1,10 @@
 package co.sharechat.pages.Objects;
 
+import com.sun.tools.javac.util.List;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AndroidFindBys;
 
 public class loginPageObjects {
 
@@ -19,5 +22,8 @@ public class loginPageObjects {
 
     @AndroidFindBy(xpath = "in.mohalla.sharechat:id/tv_get_otp")
     public MobileElement tv_get_otp;
+
+    @AndroidFindBys({@AndroidBy(className = "android.widget.EditText")})
+    public List<MobileElement> OTPValues;
 
 }

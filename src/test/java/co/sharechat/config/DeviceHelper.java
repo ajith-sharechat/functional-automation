@@ -269,9 +269,12 @@ public class DeviceHelper {
      *
      */
     public void waitTillTheElementIsVisible(MobileElement element) {
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.visibilityOf(element));
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 30);
+            wait.until(ExpectedConditions.visibilityOf(element));
+        }catch (Exception e) {
+            System.out.println("Wait till element visible failed");
+        }
     }
     /**
      * This Function is to long Press of the element
@@ -304,9 +307,14 @@ public class DeviceHelper {
      *
      */
     public void writeInputActions(MobileElement element,String otp){
-        waitForElementToAppear(element);
-        Actions a=new Actions(driver);
-        a.sendKeys(otp).build().perform();
+        try {
+            waitForElementToAppear(element);
+            Actions a = new Actions(driver);
+            a.sendKeys(otp).build().perform();
+        }
+        catch (Exception e) {
+            System.out.println("Write Input Action failed");
+        }
     }
     /**
      * This Function is to scroll to element text
@@ -315,8 +323,8 @@ public class DeviceHelper {
      *
      */
     public WebElement scrollToAndroidElementByText(String text) {
-        return driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector())" +
-                ".scrollIntoView(new UiSelector().text(\"" + text + "\"));"));
+            return driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector())" +
+                    ".scrollIntoView(new UiSelector().text(\"" + text + "\"));"));
     }
     /**
      * This Function is to hide keyboard
@@ -324,7 +332,11 @@ public class DeviceHelper {
      *
      */
     public void hideKeyBoard(){
-        ((AppiumDriver <MobileElement>)driver).hideKeyboard();
+        try {
+            ((AppiumDriver<MobileElement>) driver).hideKeyboard();
+        }catch (Exception e) {
+            System.out.println("Hide keyboard failed");
+        }
     }
     /**
      * This Function is to Scroll And click the element
@@ -333,15 +345,19 @@ public class DeviceHelper {
      *
      */
     public void scrollToMobileElementAndClickElement(MobileElement element, String scrollcount) {
-        waitInSec(3);
-        int count=Integer.parseInt(scrollcount);
-        for (int i = 0; i < count; i++) {
-            if (isElementDisplay(element)) {
-                element.click();
-            } else {
-                swipeUp();
-            }
+        try {
+            waitInSec(3);
+            int count = Integer.parseInt(scrollcount);
+            for (int i = 0; i < count; i++) {
+                if (isElementDisplay(element)) {
+                    element.click();
+                } else {
+                    swipeUp();
+                }
 
+            }
+        }catch (Exception e) {
+            System.out.println("Scroll to mobile element & click element failed");
         }
     }
     /**
@@ -351,15 +367,20 @@ public class DeviceHelper {
      *
      */
     public void scrollToMobileElement(MobileElement element, String scrollcount) {
-        waitInSec(3);
-        int count=Integer.parseInt(scrollcount);
-        for (int i = 0; i < count; i++) {
-            if (isElementDisplay(element)) {
-                isElementDisplay(element);
-            } else {
-                swipeUp();
-            }
+        try {
+            waitInSec(3);
+            int count = Integer.parseInt(scrollcount);
+            for (int i = 0; i < count; i++) {
+                if (isElementDisplay(element)) {
+                    isElementDisplay(element);
+                } else {
+                    swipeUp();
+                }
 
+            }
+        }
+        catch (Exception e) {
+            System.out.println("Scroll to mobile element failed");
         }
     }
     /**
@@ -368,7 +389,11 @@ public class DeviceHelper {
      *
      */
     public void clickAndroidBackButton() {
-        ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
+        try {
+            ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
+        }catch (Exception e) {
+            System.out.println("Android Back click failed");
+        }
     }
     /**
      * This Function is to check element is not present and return true or false
@@ -393,8 +418,11 @@ public class DeviceHelper {
      *
      */
     public void isElementPresentAssertTrue(MobileElement element) {
-
-        Assert.assertTrue(isElementDisplay(element));
+        try {
+            Assert.assertTrue(isElementDisplay(element));
+        }catch (Exception e) {
+            System.out.println(element+" The Element not present Assert false failed");
+        }
     }
     /**
      * Asserts that a condition is true. If it isn't,
@@ -404,7 +432,25 @@ public class DeviceHelper {
      *
      */
     public void isElementNotPresentAssertTrue(MobileElement element) {
-
-        Assert.assertTrue(isElementNotPresent(element));
+        try {
+            Assert.assertTrue(isElementNotPresent(element));
+        }catch (Exception e) {
+            System.out.println(element+"Element present assert true failed");
+        }
     }
+    /**
+     * This Function is to enter value in text field
+     * @author Ramesh
+     *
+     */
+    public void writeInputText(MobileElement element,String value){
+        try {
+            waitTillTheElementIsVisible(element);
+            element.sendKeys(value);
+        }
+        catch (Exception e) {
+            System.out.println("Write Input Action failed");
+        }
+    }
+
 }

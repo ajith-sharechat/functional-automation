@@ -108,4 +108,29 @@ public class ProfilePageObjects {
     @AndroidFindBy(id ="in.mohalla.sharechat:id/crop_image_menu_crop")
     public MobileElement cameraCaptureImageSaveIcon;
 
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/row_name']//following::android.widget.EditText[1]")
+    public MobileElement fullNameTextField;
+
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/row_name']//following::android.widget.EditText[2]")
+    public MobileElement handleTextField;
+
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/row_name']//following::android.widget.EditText[3]")
+    public MobileElement bioTextField;
+
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/row_name']//following::android.widget.EditText[4]")
+    public MobileElement birthdayTextField;
+
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/row_name']//following::android.widget.EditText[5]")
+    public MobileElement locationTextField;
+
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/row_name']//following::android.widget.EditText[6]")
+    public MobileElement mobileNumberTextField;
+
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/row_name']" +
+            "//following::android.widget.EditText[5]//following::android.widget.TextView")
+    public MobileElement privateInformationLabel;
+
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/row_name']//following::android.widget.EditText[5]" +
+            "//following::android.widget.TextView//following::android.widget.TextView")
+    public MobileElement privateInformationDescriptionLabel;
 }

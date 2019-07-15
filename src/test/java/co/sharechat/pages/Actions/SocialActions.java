@@ -34,11 +34,13 @@ public class SocialActions extends WebDriverListener {
     static HomePageObjects homePostObjects= new HomePageObjects();
     static ChatPageObjects chatPageObjects= new ChatPageObjects();
     static UnknowUsersPageObjects unknownUserObjects = new UnknowUsersPageObjects();
-    static PostUserProfileObjects postuserObjects = new PostUserProfileObjects();
+    static PostUserProfileObjects postUserObjects = new PostUserProfileObjects();
     static CommetsPageObjects commentsObjects = new CommetsPageObjects();
     static ProfilePageObjects profileObjects = new ProfilePageObjects();
     static ProfileSettingPageObjects profileSettingObjects = new ProfileSettingPageObjects();
-    static MessengerAppPageObjects MessengerAppObjects = new MessengerAppPageObjects();
+    static MessengerAppPageObjects messengerAppObjects = new MessengerAppPageObjects();
+    static SignUpPageObjects signUpObjects = new SignUpPageObjects();
+    static loginPageObjects loginObjects = new loginPageObjects();
     ExtentHtmlReporter reporter=new ExtentHtmlReporter("./test-output/ExtentReport.html");
     ExtentReports extent = new ExtentReports();
 
@@ -58,51 +60,52 @@ public class SocialActions extends WebDriverListener {
         deviceHelper = new DeviceHelper(driver);
         PageFactory.initElements(new AppiumFieldDecorator(driver), chatPageObjects);
         PageFactory.initElements(new AppiumFieldDecorator(driver), homePostObjects);
-        PageFactory.initElements(new AppiumFieldDecorator(driver), postuserObjects);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), postUserObjects);
         PageFactory.initElements(new AppiumFieldDecorator(driver), commentsObjects);
         PageFactory.initElements(new AppiumFieldDecorator(driver), profileObjects);
         PageFactory.initElements(new AppiumFieldDecorator(driver), profileSettingObjects);
-        PageFactory.initElements(new AppiumFieldDecorator(driver), MessengerAppObjects);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), messengerAppObjects);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), signUpObjects);
         this.runnerInfo = runnerInfo;
     }
 
     public void  clickPostUserChatIcon(){
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.profileChatIcon);
-        postuserObjects.profileChatIcon.click();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.profileChatIcon);
+        postUserObjects.profileChatIcon.click();
     }
 
     public void  verifyPostUserchatscreen(){
-        deviceHelper.waitForElementToAppear(postuserObjects.postUserMessageField);
-        deviceHelper.isElementPresentAssertTrue(postuserObjects.sendMessageIcon);
-        deviceHelper.isElementPresentAssertTrue(postuserObjects.backIcon);
-        deviceHelper.isElementPresentAssertTrue(postuserObjects.postUserNameLabel);
+        deviceHelper.waitForElementToAppear(postUserObjects.postUserMessageField);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.sendMessageIcon);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.backIcon);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.postUserNameLabel);
     }
 
     public void  clickSendMessageIcon(){
-        deviceHelper.waitForElementToAppear(postuserObjects.sendMessageIcon);
-        deviceHelper.isElementPresentAssertTrue(postuserObjects.sendMessageIcon);
-        postuserObjects.sendMessageIcon.click();
+        deviceHelper.waitForElementToAppear(postUserObjects.sendMessageIcon);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.sendMessageIcon);
+        postUserObjects.sendMessageIcon.click();
         if(deviceHelper.isElementDisplay(chatPageObjects.playPauseButton)){
             deviceHelper.waitTillTheElementIsVisible(chatPageObjects.playPauseButton);
 
         }else {
-            deviceHelper.waitTillTheElementIsVisible(postuserObjects.recentMessagePosted);
+            deviceHelper.waitTillTheElementIsVisible(postUserObjects.recentMessagePosted);
         }
     }
 
     public void  clickLongPressSendAudioIcon(){
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.sendMessageIcon);
-        deviceHelper.longPress(postuserObjects.sendMessageIcon);
-        deviceHelper.isElementPresentAssertTrue(postuserObjects.sendMessageIcon);
-        postuserObjects.sendMessageIcon.click();
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.recentMessagePosted);
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.sendMessageIcon);
+        deviceHelper.longPress(postUserObjects.sendMessageIcon);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.sendMessageIcon);
+        postUserObjects.sendMessageIcon.click();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.recentMessagePosted);
     }
 
     public void  clickBackButton(){
         deviceHelper.waitInSec(2);
-        if(deviceHelper.isElementDisplay(postuserObjects.backIcon)==true) {
-            deviceHelper.isElementPresentAssertTrue(postuserObjects.backIcon);
-            postuserObjects.backIcon.click();
+        if(deviceHelper.isElementDisplay(postUserObjects.backIcon)==true) {
+            deviceHelper.isElementPresentAssertTrue(postUserObjects.backIcon);
+            postUserObjects.backIcon.click();
         }
     }
 
@@ -115,8 +118,8 @@ public class SocialActions extends WebDriverListener {
         clickSendMessageIcon();
         clickBackButton();
         clickBackButton();
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.postUserProfileBackButton);
-        postuserObjects.postUserProfileBackButton.click();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.postUserProfileBackButton);
+        postUserObjects.postUserProfileBackButton.click();
         getHomePageActionsInstance().clickChatIcon();
         getChatPageActionsInstance().verifyChatScreen();
         String recentKnownUserName=chatPageObjects.recentKnownNameLabel.getText();
@@ -125,8 +128,8 @@ public class SocialActions extends WebDriverListener {
 
     public void backToHomeScreen(){
         deviceHelper.waitInSec(2);
-        if(deviceHelper.isElementDisplay(postuserObjects.backIcon)==true){
-            postuserObjects.backIcon.click();
+        if(deviceHelper.isElementDisplay(postUserObjects.backIcon)==true){
+            postUserObjects.backIcon.click();
         }
         else {
             getHomePageActionsInstance().clickHomeIcon();
@@ -170,12 +173,12 @@ public class SocialActions extends WebDriverListener {
     }
     public void  clickCommentUserProfile(){
         deviceHelper.waitTillTheElementIsVisible(commentsObjects.commentUserProfileName);
-        String commentUserNametext=commentsObjects.commentUserProfileName.getText();
+        String commentUserNameText=commentsObjects.commentUserProfileName.getText();
         commentsObjects.commentUserProfileName.click();
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.profileChatIcon);
-        deviceHelper.isElementPresentAssertTrue(postuserObjects.postUserprofileDisplayName);
-        String profileUserNametext=postuserObjects.postUserprofileDisplayName.getText();
-        Assert.assertEquals(commentUserNametext.toLowerCase(), profileUserNametext.toLowerCase());
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.profileChatIcon);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.postUserprofileDisplayName);
+        String profileUserNameText=postUserObjects.postUserprofileDisplayName.getText();
+        Assert.assertEquals(commentUserNameText.toLowerCase(), profileUserNameText.toLowerCase());
     }
     public void  clickPostCommentIcon(){
         deviceHelper.waitTillTheElementIsVisible(homePostObjects.postCommentIcon);
@@ -226,15 +229,15 @@ public class SocialActions extends WebDriverListener {
     public void  clickUnfollowLink(){
         deviceHelper.waitTillTheElementIsVisible(commentsObjects.commentPreviewUserUnfollowLink);
         commentsObjects.commentPreviewUserUnfollowLink.click();
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.postUserProfileFollowingButton);
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.postUserProfileFollowingButton);
     }
     public void  clickFollowingButtonAndClickConfirmToUnfollow(){
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.postUserProfileFollowingButton);
-        postuserObjects.postUserProfileFollowingButton.click();
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.postUserUnfollowingPopupQuestion);
-        deviceHelper.isElementPresentAssertTrue(postuserObjects.postUserUnfollowingPopupYes);
-        deviceHelper.isElementPresentAssertTrue(postuserObjects.postUserUnfollowingPopupNo);
-        postuserObjects.postUserUnfollowingPopupYes.click();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.postUserProfileFollowingButton);
+        postUserObjects.postUserProfileFollowingButton.click();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.postUserUnfollowingPopupQuestion);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.postUserUnfollowingPopupYes);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.postUserUnfollowingPopupNo);
+        postUserObjects.postUserUnfollowingPopupYes.click();
         deviceHelper.clickAndroidBackButton();
         deviceHelper.waitInSec(3);
         if(deviceHelper.isElementDisplay(profileObjects.inviteSection)==false) {
@@ -258,9 +261,9 @@ public class SocialActions extends WebDriverListener {
         deviceHelper.isElementNotPresentAssertTrue(profileObjects.shareIconInPhoneContacts);
     }
     public void  verifyWhatAppWelcomeScreen(){
-        deviceHelper.waitTillTheElementIsVisible(MessengerAppObjects.welcomeWhatsAppLabel);
-        deviceHelper.isElementPresentAssertTrue(MessengerAppObjects.welcomeWhatsAppLabel);
-        deviceHelper.isElementPresentAssertTrue(MessengerAppObjects.whatsAppAgreeAndContinueButton);
+        deviceHelper.waitTillTheElementIsVisible(messengerAppObjects.welcomeWhatsAppLabel);
+        deviceHelper.isElementPresentAssertTrue(messengerAppObjects.welcomeWhatsAppLabel);
+        deviceHelper.isElementPresentAssertTrue(messengerAppObjects.whatsAppAgreeAndContinueButton);
     }
     public void  clickShareIconInProfileScreen(){
         deviceHelper.isElementPresentAssertTrue(profileObjects.shareIcon);
@@ -270,10 +273,10 @@ public class SocialActions extends WebDriverListener {
     }
     public void  verifySelectAppPopupAndClickWhatAppIcon(){
         deviceHelper.isElementPresentAssertTrue(profileObjects.selectAppToShareTitle);
-        deviceHelper.isElementPresentAssertTrue(MessengerAppObjects.whatsAppIconTitleNamePopupScreen);
-        MessengerAppObjects.whatsAppIconTitleNamePopupScreen.click();
-        deviceHelper.waitTillTheElementIsVisible(MessengerAppObjects.welcomeWhatsAppLabel);
-        deviceHelper.isElementNotPresentAssertTrue(MessengerAppObjects.whatsAppIconTitleNamePopupScreen);
+        deviceHelper.isElementPresentAssertTrue(messengerAppObjects.whatsAppIconTitleNamePopupScreen);
+        messengerAppObjects.whatsAppIconTitleNamePopupScreen.click();
+        deviceHelper.waitTillTheElementIsVisible(messengerAppObjects.welcomeWhatsAppLabel);
+        deviceHelper.isElementNotPresentAssertTrue(messengerAppObjects.whatsAppIconTitleNamePopupScreen);
     }
     public void  clickSettingIconInProfileScreen(){
         deviceHelper.isElementPresentAssertTrue(profileObjects.settingIcon);
@@ -305,6 +308,15 @@ public class SocialActions extends WebDriverListener {
         deviceHelper.isElementPresentAssertTrue(profileObjects.saveChangeButton);
         deviceHelper.isElementPresentAssertTrue(profileObjects.coverPicEditScreen);
         deviceHelper.isElementPresentAssertTrue(profileObjects.profileCameraIconEditScreen);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.fullNameTextField);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.handleTextField);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.bioTextField);
+        deviceHelper.scrollToMobileElement(profileObjects.mobileNumberTextField, "5");
+        deviceHelper.isElementPresentAssertTrue(profileObjects.birthdayTextField);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.locationTextField);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.mobileNumberTextField);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.privateInformationLabel);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.privateInformationDescriptionLabel);
     }
     public void  clickProfileCameraIcon(){
         deviceHelper.isElementPresentAssertTrue(profileObjects.profileCameraIconEditScreen);
@@ -344,31 +356,106 @@ public class SocialActions extends WebDriverListener {
         deviceHelper.waitTillTheElementIsVisible(profileObjects.galleryIconChoosePicOption);
     }
     public void  verifySharePopupElements(){
-        deviceHelper.waitTillTheElementIsVisible(MessengerAppObjects.notificationsOffIconInSharePopup);
-        deviceHelper.isElementPresentAssertTrue(MessengerAppObjects.notificationsOffIconInSharePopup);
-        deviceHelper.isElementPresentAssertTrue(MessengerAppObjects.convertToStickerIconInSharePopup);
-        deviceHelper.isElementPresentAssertTrue(MessengerAppObjects.shareChatMessagesIconInSharePopup);
-        deviceHelper.isElementPresentAssertTrue(MessengerAppObjects.followIconInSharePopup);
+        deviceHelper.waitTillTheElementIsVisible(messengerAppObjects.notificationsOffIconInSharePopup);
+        deviceHelper.isElementPresentAssertTrue(messengerAppObjects.notificationsOffIconInSharePopup);
+        deviceHelper.isElementPresentAssertTrue(messengerAppObjects.convertToStickerIconInSharePopup);
+        deviceHelper.isElementPresentAssertTrue(messengerAppObjects.shareChatMessagesIconInSharePopup);
+        deviceHelper.isElementPresentAssertTrue(messengerAppObjects.followIconInSharePopup);
     }
     public void  clickShareChatMessages(){
-        deviceHelper.waitTillTheElementIsVisible(MessengerAppObjects.shareChatMessagesIconInSharePopup);
-        MessengerAppObjects.shareChatMessagesIconInSharePopup.click();
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.sharePostWithTitle);
+        deviceHelper.waitTillTheElementIsVisible(messengerAppObjects.shareChatMessagesIconInSharePopup);
+        messengerAppObjects.shareChatMessagesIconInSharePopup.click();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.sharePostWithTitle);
     }
     public void  clickSendButtonInSharePostWith(){
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.sendButtonSharePostWithScreen);
-        postuserObjects.sendButtonSharePostWithScreen.click();
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.gotoIconSharePostWithScreen);
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.sendButtonSharePostWithScreen);
+        postUserObjects.sendButtonSharePostWithScreen.click();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.gotoIconSharePostWithScreen);
     }
     public void  clickGotoButtonInSharePostWith(){
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.gotoIconSharePostWithScreen);
-        postuserObjects.gotoIconSharePostWithScreen.click();
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.postUserNameLabel);
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.gotoIconSharePostWithScreen);
+        postUserObjects.gotoIconSharePostWithScreen.click();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.postUserNameLabel);
     }
     public void  getRecentMessageSendElement(){
-        deviceHelper.waitTillTheElementIsVisible(postuserObjects.recentMessagePosted);
-        deviceHelper.getCountOfElements(postuserObjects.recentMessagePosted);
-
-//        postuserObjects.recentMessagePosted.getText();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.recentMessagePosted);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.recentMessageInChatBox);
+//        postuserObjects.recentMessageInChatBox.getText();
     }
+    public void clickRecentMessageLink(){
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.recentMessageInChatBox);
+        postUserObjects.recentMessageInChatBox.click();
+    }
+    public void  sharingPostFunctionalityToKnownUser() {
+        getHomePageActionsInstance().scrollTillPostImageClickPostImage();
+        deviceHelper.waitTillTheElementIsVisible(homePostObjects.userProfileLink);
+        String postedUserNameInHomeScreen=homePostObjects.userProfileLink.getText();
+        getHomePageActionsInstance().clickPostImageOptionTopRightCorner();
+        verifySharePopupElements();
+        clickShareChatMessages();
+        clickSendButtonInSharePostWith();
+        clickGotoButtonInSharePostWith();
+        getRecentMessageSendElement();
+        clickRecentMessageLink();
+        deviceHelper.waitTillTheElementIsVisible(homePostObjects.userProfileLink);
+        String postedUserNameInChatScreen=homePostObjects.userProfileLink.getText();
+        Assert.assertEquals(postedUserNameInHomeScreen.toLowerCase(), postedUserNameInChatScreen.toLowerCase());
+    }
+    public void  verifyPostPreviewScreen(){
+        deviceHelper.waitTillTheElementIsVisible(homePostObjects.userProfileLink);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.postBioProfileStatusLabel);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.postTagLink);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.postUserProfielPic);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.createStickersIcon);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.shareButtonInPostPreview);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.commentTextfield);
+        deviceHelper.isElementPresentAssertTrue(commentsObjects.commentPageSendCommentIcon);
+        deviceHelper.isElementPresentAssertTrue(homePostObjects.postImage);
+    }
+    public void clickPostTagLink(){
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.postTagLink);
+        postUserObjects.postTagLink.click();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.TagFeedTitle);
+    }
+    public void  verifyHashTaglabelAndHashTagFeedTitle(){
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.postTagLink);
+        String hashTagLink=postUserObjects.postTagLink.getText();
+        String[] hashTag =hashTagLink.split("#");
+        String hashTag1 = hashTag[1];
+        clickPostTagLink();
+        String tagFeedTitleLabel=postUserObjects.TagFeedTitle.getText();
+        Assert.assertEquals(hashTag1.toLowerCase().trim(),tagFeedTitleLabel.toLowerCase().trim());
+    }
+    public void scrollToWhatsAppIconAndClickInPost(){
+        deviceHelper.scrollToMobileElement(postUserObjects.whatsAppIconInPost, "20");
+        postUserObjects.whatsAppIconInPost.click();
+        deviceHelper.waitTillTheElementIsVisible(messengerAppObjects.welcomeWhatsAppLabel);
+    }
+    public void scrollToCommentIconAndClickInPost(){
+        deviceHelper.scrollToMobileElement(postUserObjects.commentIconInPost, "20");
+        postUserObjects.commentIconInPost.click();
+        deviceHelper.waitTillTheElementIsVisible(commentsObjects.commentTextField);
+    }
+    public void enterCommentAndSend(String value){
+        deviceHelper.waitTillTheElementIsVisible(commentsObjects.commentTextField);
+        commentsObjects.commentTextField.sendKeys(value);
+        deviceHelper.waitTillTheElementIsVisible(commentsObjects.commentPageSendCommentIcon);
+        commentsObjects.commentPageSendCommentIcon.click();
+    }
+    public void scrollToRepostIconAndClickInPost(){
+        deviceHelper.scrollToMobileElement(postUserObjects.rePostIconInPost, "20");
+        postUserObjects.rePostIconInPost.click();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.createPostLabel);
+    }
+    public void verifyCreatePostScreen(){
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.createPostLabel);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.postRightIcon);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.postButtonLabel);
+        deviceHelper.isElementPresentAssertTrue(postUserObjects.createPostTextField);
+    }
+    public void verifyVideoIsPlayingOrNot() {
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.whatsAppIconInVideoPost);
+        deviceHelper.isElementNotPresentAssertTrue(homePostObjects.postVideoPlayIcon);
+    }
+
 }
