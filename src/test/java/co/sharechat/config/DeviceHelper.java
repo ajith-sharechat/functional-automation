@@ -314,6 +314,28 @@ public class DeviceHelper {
     public void tapOnPoint(int x1, int y1) {
         new TouchAction((AppiumDriver<MobileElement>) driver).tap(PointOption.point(x1, y1)).perform();
     }
+    /**
+     * This Function is to Scroll to element
+     * @author Ramesh
+     * @param: Mobile Element & String
+     *
+     */
+    public void scrollToMobileElement(MobileElement element, String scrollcount) {
+        try {
+            waitInSec(3);
+            int count = Integer.parseInt(scrollcount);
+            for (int i = 0; i < count; i++) {
+                if (isDisplayed(element)) {
+                    isDisplayed(element);
+                } else {
+                    swipeUp();
+                }
 
+            }
+        }
+        catch (Exception e) {
+            System.out.println("Scroll to mobile element failed");
+        }
+    }
 
 }

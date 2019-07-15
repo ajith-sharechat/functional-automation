@@ -73,46 +73,46 @@ public class LoginPageTest {
 //        assertTrue(testResponse.contains(testResponse),
 //                "Test Fail User try to submit the  form without user name.");
 //    }
-    @Test(enabled = true, description = "User try to submit the  form without mobile number", groups = {"RegressionTest", "Creation"})
-    public void TC016_verifyProceedWithoutMobileNumber() throws Exception {
-
-        String testResponse = getLoginPage().verifyProceedWithoutMobileNumber();
-        System.err.println(" Checking :" + testResponse);
-        assertTrue(testResponse.contains(testResponse),
-                "Test Fail User try to submit the  form without mobile number.");
-    }
-
-
-    @Test(enabled = true, description = "User try to submit the  form without gender selection", groups = {"RegressionTest", "Creation"})
-    public void TC017_verifyProceedWithoutGenderSelection() throws Exception {
-
-        String testResponse = getLoginPage().verifyProceedWithoutGenderSelection();
-        System.err.println(" Checking :" + testResponse);
-        assertTrue(testResponse.contains(testResponse),
-                "Test Fail User try to submit the  form without gender selection.");
-    }
-
-    @Test(enabled = true, description = "User try to submit the  form without age selection", groups = {"RegressionTest", "Creation"})
-    public void TC018_verifyProceedWithoutAgeSelection() throws Exception {
-
-        String testResponse = getLoginPage().verifyProceedWithoutAgeSelection();
-        System.err.println(" Checking :" + testResponse);
-        assertTrue(testResponse.contains(testResponse),
-                "Test Fail User try to submit the  form without age selection.");
-    }
-
-//    @Test(enabled = true, description = "Checking term & policy page is displayed", groups = {"RegressionTest", "Creation"})
-//    public void TC019_verifyTermPolicy() {
+//    @Test(enabled = true, description = "User try to submit the  form without mobile number", groups = {"RegressionTest", "Creation"})
+//    public void TC016_verifyProceedWithoutMobileNumber() throws Exception {
 //
-//        boolean testResponse1[] = getLoginPage().verifyTermPolicyPages();
-//        System.err.println(" Checking :" + testResponse1);
-//        for (int i = 0; i< testResponse1.length; i++) {
-//            System.err.println(" Checking :" + testResponse1[i]);
-//            assertTrue(testResponse1[i],
-//                    "Test Fail Checking term & policy page is displayed .");
-//        }
-//
+//        String testResponse = getLoginPage().verifyProceedWithoutMobileNumber();
+//        System.err.println(" Checking :" + testResponse);
+//        assertTrue(testResponse.contains(testResponse),
+//                "Test Fail User try to submit the  form without mobile number.");
 //    }
+//
+//
+//    @Test(enabled = true, description = "User try to submit the  form without gender selection", groups = {"RegressionTest", "Creation"})
+//    public void TC017_verifyProceedWithoutGenderSelection() throws Exception {
+//
+//        String testResponse = getLoginPage().verifyProceedWithoutGenderSelection();
+//        System.err.println(" Checking :" + testResponse);
+//        assertTrue(testResponse.contains(testResponse),
+//                "Test Fail User try to submit the  form without gender selection.");
+//    }
+//
+//    @Test(enabled = true, description = "User try to submit the  form without age selection", groups = {"RegressionTest", "Creation"})
+//    public void TC018_verifyProceedWithoutAgeSelection() throws Exception {
+//
+//        String testResponse = getLoginPage().verifyProceedWithoutAgeSelection();
+//        System.err.println(" Checking :" + testResponse);
+//        assertTrue(testResponse.contains(testResponse),
+//                "Test Fail User try to submit the  form without age selection.");
+//    }
+
+    @Test(enabled = true, description = "Checking term & policy page is displayed", groups = {"RegressionTest", "Creation"})
+    public void TC019_verifyTermPolicy() {
+
+        boolean testResponse1[] = getLoginPage().verifyTermPolicyPages();
+        System.err.println(" Checking :" + testResponse1);
+        for (int i = 0; i< testResponse1.length; i++) {
+            System.err.println(" Checking :" + testResponse1[i]);
+            assertTrue(testResponse1[i],
+                    "Test Fail Checking term & policy page is displayed .");
+        }
+
+    }
 
     public loginPage getLoginPage() {
 

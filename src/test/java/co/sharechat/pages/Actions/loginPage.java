@@ -61,7 +61,7 @@ public class loginPage extends WebDriverListener implements Constants {
         try {
 
             element(loginPageObjects.selectHindi).click();
-            element(loginPageObjects.enterNumber).sendKeys(registerNumber);
+            element(loginPageObjects.enterNumber).sendKeys(uniqueNo);
             element(loginPageObjects.goToYourAccount).click();
             element(loginPageObjects.allow).click();
             loginPageObjects.allow.click();
@@ -69,7 +69,6 @@ public class loginPage extends WebDriverListener implements Constants {
             deviceHelper.waitInSec(5);
             for (int i = 0; i <= 5; i++) {
                 loginPageObjects.OTPValues.get(i).sendKeys("" + i);
-
             }
 
         } catch (Exception e) {

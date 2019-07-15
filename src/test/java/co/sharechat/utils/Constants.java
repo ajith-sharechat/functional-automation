@@ -12,9 +12,10 @@ public interface Constants {
     String chat = "Chat";
     String shareOnwhatsApp = "has been added to WhatsApp";
     String SearchingText = "Diljeet";
-    String uniqueNo = "946516167723";
+    String uniqueNo = "9465161677";
     String userName = "Jasmeet";
     String otp = "876238";
+    String countTry = "1";
     String textAboutPost = "Post Caption- This post is created for automation purpose. " +
             "It is a Test Post. It is a Test Post. It is a Test Post. It is a Test Post.";
 

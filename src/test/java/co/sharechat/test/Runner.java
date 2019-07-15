@@ -23,8 +23,10 @@ public class Runner {
 //            tests.add("HomeScreenTest");
 //            tests.add("StickerFunctionalityTest");
 //            tests.add("LandingPageTest");
-            tests.add("LoginPageTest");
-
+//            tests.add("LoginPageTest");
+//
+//            tests.add("StickerPicturePostTest");
+            tests.add("PostShareOptionTest");
 
 
             parallelThread.runner("co.sharechat.test", tests);
