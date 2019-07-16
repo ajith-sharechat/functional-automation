@@ -124,4 +124,35 @@ public class PostShareOptionPage extends WebDriverListener implements Constants 
 
 
     }
+
+    public boolean[] checkDownloadOption() {
+        boolean res[] = new boolean[4];
+        deviceHelper.waitInSec(10);
+        deviceHelper.scrollToMobileElement(PostShareOptionObjects.imagePost, countTry);
+        deviceHelper.waitInSec(5);
+        element(PostShareOptionObjects.postOptionClick).click();
+        deviceHelper.waitInSec(10);
+        deviceHelper.swipe(750, 1975, 280, 1950);
+        deviceHelper.waitInSec(10);
+        boolean check = PostShareOptionObjects.selectDownload.get(8).isDisplayed();
+        if (check == false) {
+            PostShareOptionObjects.selectDownload.get(7).click();
+        } else {
+            PostShareOptionObjects.selectDownload.get(8).click();
+        }
+        deviceHelper.waitInSec(10);
+        res[0] = PostShareOptionObjects.downloadPopTitle.isDisplayed();
+        deviceHelper.waitInSec(10);
+        res[1] = PostShareOptionObjects.phoneGallerySave.isDisplayed();
+        deviceHelper.waitInSec(10);
+        res[2] = PostShareOptionObjects.appGallerySave.isDisplayed();
+        deviceHelper.waitInSec(10);
+        PostShareOptionObjects.phoneGallerySave.click();
+        String success = PostShareOptionObjects.Toast1.getText();
+        // System.err.println("Success message :" + success);
+        res[3] = success.length() > 0;
+
+        return res;
+
+    }
 }

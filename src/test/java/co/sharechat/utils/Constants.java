@@ -20,8 +20,9 @@ public interface Constants {
             "It is a Test Post. It is a Test Post. It is a Test Post. It is a Test Post.";
 
     String SELECTYOURLANGUAGE = "Select your language";
-
+    int ShareOptionCount = 32;
     int LANGUAGEBOXCOUNT = 15;
+    int trendingTabsCount = 13;
 
 
 }

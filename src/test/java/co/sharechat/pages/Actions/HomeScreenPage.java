@@ -5,15 +5,22 @@ import co.sharechat.config.DeviceInterface;
 import co.sharechat.config.WebDriverListener;
 import co.sharechat.pages.Objects.HomeScreenObject;
 import co.sharechat.utils.Constants;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.HashSet;
+import java.util.NoSuchElementException;
+import java.util.Set;
+
 /**
- This Class has all the Actions related to Home Page
- @author Diljeet Singh
- @version 1.0
- @since 01 july 2019
+ * This Class has all the Actions related to Home Page
+ *
+ * @author Diljeet Singh
+ * @version 1.0
+ * @since 01 july 2019
  */
 public class HomeScreenPage extends WebDriverListener implements Constants {
 
@@ -31,6 +38,15 @@ public class HomeScreenPage extends WebDriverListener implements Constants {
 
     }
 
+    public MobileElement element(MobileElement element) {
+        try {
+            deviceHelper.waitTillTheElementIsVisibleAndClickable(element);
+        } catch (NoSuchElementException | TimeoutException e) {
+            element(element);
+        }
+        return element;
+    }
+
     //TC022
     public boolean verifyChangingLanguageOptionIsappearingInTopLeftCorner() {
 
@@ -46,40 +62,37 @@ public class HomeScreenPage extends WebDriverListener implements Constants {
 
     public boolean verifyByDefaultTrendingIsSelected() {
 
-        return HomeScreenObject.Trending.isDisplayed();
+        return HomeScreenObject.ThirteenTitles.get(1).isDisplayed();
 
     }
 
-    public boolean[] verifyThirteenTabsDifferentTabsAreArrangedHorizontallyAndTheTabsAreLikeFollowing() {
+    public int verifyThirteenTabsDifferentTabsAreArrangedHorizontallyAndTheTabsAreLikeFollowing() {
 
-        boolean TabsAll[] = new boolean[13];
-        deviceHelper.waitInSec(15);
-
-        TabsAll[0] = HomeScreenObject.Following.isDisplayed();
-        TabsAll[1] = HomeScreenObject.Trending.isDisplayed();
-        TabsAll[2] = HomeScreenObject.Video.isDisplayed();
-        TabsAll[3] = HomeScreenObject.Cricket.isDisplayed();
+        Set<String> text_Set = new HashSet<String>();
         deviceHelper.waitInSec(10);
+        for (MobileElement box : HomeScreenObject.ThirteenTitles) {
+            text_Set.add(element(box).getText());
+            System.err.println("Name is :" + box.getText());
+
+        }
+        deviceHelper.waitInSec(5);
         deviceHelper.swipe(890, 316, 190, 316);
         deviceHelper.waitInSec(10);
-        TabsAll[4] = HomeScreenObject.FilmSong.isDisplayed();
-        TabsAll[5] = HomeScreenObject.News.isDisplayed();
-        TabsAll[6] = HomeScreenObject.Love.isDisplayed();
-        deviceHelper.waitInSec(10);
-        deviceHelper.swipe(890, 316, 190, 316);
-        deviceHelper.waitInSec(10);
-        TabsAll[7] = HomeScreenObject.Wishes.isDisplayed();
-        TabsAll[8] = HomeScreenObject.WhatsApp.isDisplayed();
-        TabsAll[9] = HomeScreenObject.Devotion.isDisplayed();
-        deviceHelper.waitInSec(10);
-        deviceHelper.swipe(890, 316, 190, 316);
-        deviceHelper.waitInSec(10);
-        TabsAll[10] = HomeScreenObject.Funny.isDisplayed();
-        TabsAll[11] = HomeScreenObject.Fashion.isDisplayed();
-        TabsAll[12] = HomeScreenObject.LifeStyle.isDisplayed();
-        deviceHelper.waitInSec(10);
-        return TabsAll;
+        for (MobileElement box : HomeScreenObject.ThirteenTitles) {
+            text_Set.add(element(box).getText());
+            System.err.println("Name is :" + box.getText());
 
+        }
+
+        deviceHelper.waitInSec(5);
+        deviceHelper.swipe(890, 316, 190, 316);
+        deviceHelper.waitInSec(10);
+        for (MobileElement box : HomeScreenObject.ThirteenTitles) {
+            text_Set.add(element(box).getText());
+            System.err.println("Name is :" + box.getText());
+
+        }
+        return text_Set.size();
     }
 
     public boolean[] verifyFiveButtonsArePlacedInHomeExploreCreatePost() {
@@ -113,7 +126,7 @@ public class HomeScreenPage extends WebDriverListener implements Constants {
 
     public void selectOneLanguageFromScreen() {
 
-        HomeScreenObject.ChooseLang.click();
+        HomeScreenObject.ChooseLang.get(1).click();
 
 
     }
@@ -122,21 +135,21 @@ public class HomeScreenPage extends WebDriverListener implements Constants {
 
         boolean TabsAll[] = new boolean[2];
 
-        TabsAll[0] = HomeScreenObject.checklangTab.isDisplayed();
-        TabsAll[1] = HomeScreenObject.CheckExploreTabs.isDisplayed();
+        TabsAll[0] = HomeScreenObject.ThirteenTitles.get(2).isDisplayed();
+        TabsAll[1] = HomeScreenObject.Explore.isDisplayed();
         return TabsAll;
 
     }
 
     public boolean checkWithAllTheOptionsSelectLanguages() {
 
-        return HomeScreenObject.CheckSelectedLang.isDisplayed();
+        return HomeScreenObject.CheckLangScreen.isDisplayed();
 
     }
 
     public boolean verifyPostsAndTagsAppearingBasedOnLanguageRegion() {
 
-        return HomeScreenObject.CheckTags.isDisplayed();
+        return HomeScreenObject.CheckTags.get(0).isDisplayed();
 
 
     }
@@ -164,7 +177,7 @@ public class HomeScreenPage extends WebDriverListener implements Constants {
     public void verifyExploreButtonFromHomeScreen() {
 
         deviceHelper.waitInSec(10);
-        HomeScreenObject.exploreButton.click();
+        HomeScreenObject.Explore.click();
         deviceHelper.waitInSec(10);
 
     }
@@ -173,7 +186,7 @@ public class HomeScreenPage extends WebDriverListener implements Constants {
 
         boolean TabsAll[] = new boolean[2];
 
-        TabsAll[0] = HomeScreenObject.exploreButton.isDisplayed();
+        TabsAll[0] = HomeScreenObject.Explore.isDisplayed();
         TabsAll[1] = HomeScreenObject.searchExplore.isDisplayed();
         return TabsAll;
 
@@ -189,7 +202,7 @@ public class HomeScreenPage extends WebDriverListener implements Constants {
     //TC028
     public void verifyChatButtonFromHomeScreen() {
         deviceHelper.waitInSec(10);
-        HomeScreenObject.chatBox.click();
+        HomeScreenObject.ChatIcon.click();
         deviceHelper.waitInSec(10);
 
     }
@@ -197,7 +210,7 @@ public class HomeScreenPage extends WebDriverListener implements Constants {
     public boolean verifyChatScreenOpening() {
 
         deviceHelper.waitInSec(10);
-        return HomeScreenObject.chatBox.isDisplayed();
+        return HomeScreenObject.ChatIcon.isDisplayed();
 
 
     }
@@ -206,7 +219,7 @@ public class HomeScreenPage extends WebDriverListener implements Constants {
     public void verifyProfileButtonFromHomeScreen() {
 
         deviceHelper.waitInSec(10);
-        HomeScreenObject.PfButton.click();
+        HomeScreenObject.Profile.click();
         deviceHelper.waitInSec(10);
     }
 

@@ -68,6 +68,7 @@ public class loginPage extends WebDriverListener implements Constants {
             loginPageObjects.allow.click();
             deviceHelper.waitInSec(5);
             for (int i = 0; i <= 5; i++) {
+                deviceHelper.waitInSec(1);
                 loginPageObjects.OTPValues.get(i).sendKeys("" + i);
             }
 

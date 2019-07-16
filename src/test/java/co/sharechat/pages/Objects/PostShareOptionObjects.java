@@ -88,5 +88,18 @@ public class PostShareOptionObjects {
     @AndroidFindBy(id = "in.mohalla.sharechat:id/iv_post_image")
     public MobileElement imagePost;
 
+    //TC_177
+    @AndroidFindBys({@AndroidBy(id = "in.mohalla.sharechat:id/sharing_bs_appicon_iv")})
 
+    public List<MobileElement> selectDownload;
+
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/md_title")
+    public MobileElement downloadPopTitle;
+
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/md_buttonDefaultNegative")
+    public MobileElement phoneGallerySave;
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/md_buttonDefaultPositive")
+    public MobileElement appGallerySave;
+    @AndroidFindBy(xpath = "//android.widget.Toast[1]")
+    public MobileElement Toast1;
 }
