@@ -19,13 +19,13 @@ public class Runner {
 //            tests.add("ExploreTabTest");
 //            tests.add("ProfilePageTest");
 //            tests.add("TrendingTabTest");
-            tests.add("HomeScreenTest");
+//            tests.add("HomeScreenTest");
 //            tests.add("StickerFunctionalityTest");
 //            tests.add("LandingPageTest");
 //            tests.add("LoginPageTest");
 //            tests.add("StickerPicturePostTest");
 //            tests.add("PostShareOptionTest");
-//            tests.add("TrendingPostUserProfileTest");
+              tests.add("TrendingPostUserProfileTest");
 
             parallelThread.runner("co.sharechat.test", tests);
 

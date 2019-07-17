@@ -20,33 +20,47 @@ public class TrendingPostUserProfileTest extends WebDriverListener implements Co
      * @since 16 july 2019
      */
 
-    @Test(enabled = true, description = "Verify trending post user profile follow option", groups = {"RegressionTest", "Creation"})
-    public void TC181_checkUserPostFollowOption() throws Exception {
+//    @Test(enabled = true, description = "Verify trending post user profile follow option", groups = {"RegressionTest", "Creation"})
+//    public void TC181_checkUserPostFollowOption() throws Exception {
+//        getLoginPage().userlogin();
+//        boolean testResponse = getTrendingPostUserProfilePages().checkUserPostFollowOption();
+//        assertTrue(testResponse, "Test Fail Verify trending post user profile follow option.");
+//
+//
+//    }
+//
+//    @Test(enabled = true, description = "Verify trending post user profile chat option", groups = {"RegressionTest", "Creation"})
+//    public void TC184_checkUserPostChatOption() throws Exception {
+//        getLoginPage().userlogin();
+//        boolean[] testResponse = getTrendingPostUserProfilePages().checkUserPostChatOption();
+//        for (int i = 0; i < testResponse.length; i++) {
+//            assertTrue(testResponse[i], "Test Fail Verify trending post user profile chat option.");
+//        }
+//
+//    }
+//
+//    @Test(enabled = true, description = "Verify trending post user profile share option", groups = {"RegressionTest", "Creation"})
+//    public void TC185_checkUserPostShareOption() throws Exception {
+//        getLoginPage().userlogin();
+//        int testResponse = getTrendingPostUserProfilePages().checkUserPostShareOption();
+//
+//        assertTrue(testResponse == ShareOptionCount, "Test Fail Verify trending post user profile share option.");
+//    }
+
+    @Test(enabled = true, description = "Verify trending post user profile block option", groups = {"RegressionTest", "Creation"})
+    public void TC187_checkUserBlockOption() throws Exception {
         getLoginPage().userlogin();
-        boolean testResponse = getTrendingPostUserProfilePages().checkUserPostFollowOption();
-        assertTrue(testResponse, "Test Fail Verify trending post user profile follow option.");
+        boolean testResponse = getTrendingPostUserProfilePages().checkingBlockSpecificUser();
 
-
+        assertTrue(testResponse, "Test Fail Verify trending post user profile block option.");
     }
-
-    @Test(enabled = true, description = "Verify trending post user profile chat option", groups = {"RegressionTest", "Creation"})
-    public void TC184_checkUserPostChatOption() throws Exception {
+    @Test(enabled = true, description = "Verify trending post user profile unblock option", groups = {"RegressionTest", "Creation"})
+    public void TC188_checkUserUNBlockOption() throws Exception {
         getLoginPage().userlogin();
-        boolean[] testResponse = getTrendingPostUserProfilePages().checkUserPostChatOption();
-        for (int i = 0; i < testResponse.length; i++) {
-            assertTrue(testResponse[i], "Test Fail Verify trending post user profile chat option.");
-        }
+        boolean testResponse = getTrendingPostUserProfilePages().checkingUNBlockSpecificUser();
 
+        assertTrue(testResponse , "Test Fail Verify trending post user profile unblock option.");
     }
-
-    @Test(enabled = true, description = "Verify trending post user profile share option", groups = {"RegressionTest", "Creation"})
-    public void TC185_checkUserPostShareOption() throws Exception {
-        getLoginPage().userlogin();
-        int testResponse = getTrendingPostUserProfilePages().checkUserPostShareOption();
-
-        assertTrue(testResponse == ShareOptionCount, "Test Fail Verify trending post user profile share option.");
-    }
-
     public TrendingPostUserProfilePages getTrendingPostUserProfilePages() {
 
         return new TrendingPostUserProfilePages(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
