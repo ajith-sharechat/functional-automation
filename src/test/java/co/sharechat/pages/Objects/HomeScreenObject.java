@@ -83,8 +83,6 @@ public class HomeScreenObject {
 
     public static List<MobileElement> bucketCheck;
 
-    //TC-028
-
 
     //TC-029
 

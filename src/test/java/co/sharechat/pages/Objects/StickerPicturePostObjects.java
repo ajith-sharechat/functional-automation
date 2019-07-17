@@ -2,11 +2,8 @@ package co.sharechat.pages.Objects;
 
 
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import io.appium.java_client.pagefactory.AndroidFindBys;
 
-import java.util.List;
 
 /**
  * This Class has all the Objects related to Sticker Picture Post Page
@@ -49,7 +46,6 @@ public class StickerPicturePostObjects {
     @AndroidFindBy(id = "in.mohalla.sharechat:id/iv_post_image")
 
     public MobileElement imagePostCheck;
-
 
 
 }

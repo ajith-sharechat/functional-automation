@@ -63,7 +63,7 @@ public class TrendingPostUserProfileObjects {
     public List<MobileElement> allShareingOption1;
 
 
-    //TC_187 And TC_188
+    //TC_187 & TC_188
 
     @AndroidFindBys({@AndroidBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/menu_share']//following::android.widget.ImageView")})
 

@@ -3,7 +3,6 @@ package co.sharechat.pages.Actions;
 import co.sharechat.config.DeviceHelper;
 import co.sharechat.config.DeviceInterface;
 import co.sharechat.config.WebDriverListener;
-import co.sharechat.pages.Objects.StickerFunctionalityObjects;
 import co.sharechat.pages.Objects.StickerPicturePostObjects;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;

@@ -63,8 +63,7 @@ public class PostShareOptionObjects {
 
     public MobileElement imagePostCheck;
 
-//TC_175
-
+    //TC_175
     @AndroidFindBys({@AndroidBy(id = "in.mohalla.sharechat:id/sharing_bs_appicon_iv")})
 
     public List<MobileElement> selectFollow8;

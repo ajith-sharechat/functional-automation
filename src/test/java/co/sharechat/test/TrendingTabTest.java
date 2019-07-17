@@ -14,8 +14,6 @@ import static org.testng.Assert.assertTrue;
  @since 08 july 2019
  */
 
-
-
 public class TrendingTabTest {
 
 

@@ -3,7 +3,6 @@ package co.sharechat.pages.Actions;
 import co.sharechat.config.DeviceHelper;
 import co.sharechat.config.DeviceInterface;
 import co.sharechat.config.WebDriverListener;
-import co.sharechat.pages.Objects.PostShareOptionObjects;
 import co.sharechat.pages.Objects.TrendingPostUserProfileObjects;
 import co.sharechat.utils.Constants;
 import io.appium.java_client.MobileElement;
@@ -85,31 +84,15 @@ public class TrendingPostUserProfilePages extends WebDriverListener implements C
         deviceHelper.waitInSec(10);
         for (MobileElement box : TrendingPostUserProfileObjects.allShareingOption1) {
             text_Set.add(element(box).getText());
-            System.err.println("Name is :" + box.getText());
 
         }
         deviceHelper.swipe(760, 1590, 280, 1590);
         deviceHelper.waitInSec(2);
         for (MobileElement box : TrendingPostUserProfileObjects.allShareingOption1) {
             text_Set.add(element(box).getText());
-            System.err.println("Name is :" + box.getText());
 
         }
-        deviceHelper.swipe(760, 1590, 280, 1590);
-        deviceHelper.waitInSec(2);
-        deviceHelper.waitInSec(2);
-        for (MobileElement box : TrendingPostUserProfileObjects.allShareingOption1) {
-            text_Set.add(element(box).getText());
-            System.err.println("Name is :" + box.getText());
 
-        }
-        deviceHelper.swipe(760, 1590, 280, 1590);
-        deviceHelper.waitInSec(2);
-        for (MobileElement box : TrendingPostUserProfileObjects.allShareingOption1) {
-            text_Set.add(element(box).getText());
-            System.err.println("Name is :" + box.getText());
-
-        }
         return text_Set.size();
     }
 

@@ -11,10 +11,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 /**
- This Class has all the Actions related to Trending Page
- @author Diljeet Singh
- @version 1.0
- @since 08 july 2019
+ * This Class has all the Actions related to Trending Page
+ *
+ * @author Diljeet Singh
+ * @version 1.0
+ * @since 08 july 2019
  */
 
 
@@ -138,25 +139,6 @@ public class TrendingTabPage extends WebDriverListener implements Constants {
     public boolean verifyRelatedTagLinksAreAppearing() {
         deviceHelper.waitInSec(10);
         return TrendingTabObejects.relatedTags.isDisplayed();
-
-//        deviceHelper.waitInSec(10);
-//        int size = TrendingTabObejects.relatedTags.size();
-//        deviceHelper.waitInSec(10);
-//        System.err.println("Check Data : " + TrendingTabObejects.relatedTags.get(0).getText()+" size :"+size);
-//
-//        boolean TabsAll[] = new boolean[size];
-//        for (int i = 0; i < size; i++) {
-//
-//            if (i == 1 || i == 2 || i == 4 || i == 6 || i == 8) {
-//                deviceHelper.waitInSec(10);
-//                deviceHelper.swipe(890, 316, 190, 316);
-//                deviceHelper.waitInSec(10);
-//            }
-
-
-//
-//        }
-//        return TabsAll;
     }
 
 
@@ -182,95 +164,96 @@ public class TrendingTabPage extends WebDriverListener implements Constants {
             deviceHelper.waitInSec(10);
         } catch (Exception e) {
 
-             e.printStackTrace();
+            e.printStackTrace();
         }
     }
-        public boolean[] verifyBackSHAREButtonStickersAndOptionsButtonsAreAppearingOnTopOfTheScreen(){
 
-            boolean TabsAll[] = new boolean[4];
-            deviceHelper.waitInSec(10);
-            TabsAll[0] = TrendingTabObejects.postBackClick.isDisplayed();
-            TabsAll[1] = TrendingTabObejects.postShare.isDisplayed();
-            TabsAll[2] = TrendingTabObejects.stickerCheck.isDisplayed();
-            TabsAll[3] = TrendingTabObejects.optionCheck.isDisplayed();
-            return TabsAll;
-        }
+    public boolean[] verifyBackSHAREButtonStickersAndOptionsButtonsAreAppearingOnTopOfTheScreen() {
 
-        public boolean[] profileImageWithNameAndStatusWhoPostedThisPostAreAppearingOnScreen () {
+        boolean TabsAll[] = new boolean[4];
+        deviceHelper.waitInSec(10);
+        TabsAll[0] = TrendingTabObejects.postBackClick.isDisplayed();
+        TabsAll[1] = TrendingTabObejects.postShare.isDisplayed();
+        TabsAll[2] = TrendingTabObejects.stickerCheck.isDisplayed();
+        TabsAll[3] = TrendingTabObejects.optionCheck.isDisplayed();
+        return TabsAll;
+    }
 
-            boolean TabsAll[] = new boolean[4];
-            deviceHelper.waitInSec(10);
-            TabsAll[0] = TrendingTabObejects.pfImage.isDisplayed();
-            TabsAll[1] = TrendingTabObejects.pfName.isDisplayed();
-            TabsAll[2] = TrendingTabObejects.pfStatus.isDisplayed();
-            TabsAll[3] = TrendingTabObejects.optionCheck.isDisplayed();
-            return TabsAll;
+    public boolean[] profileImageWithNameAndStatusWhoPostedThisPostAreAppearingOnScreen() {
 
-        }
-
-        public boolean followButtonIsAppearingAtProfile () {
-
-            return TrendingTabObejects.followButton.isDisplayed();
-
-        }
-
-        public boolean imageWithTagAlsoAppearOnScreen () {
-
-            return TrendingTabObejects.postCaption.isDisplayed();
-
-        }
-
-        public boolean[] afterImmediateImageViewsCountAndHowManyDaysBackItWasPostedAlsoComingAtPost () {
-
-            deviceHelper.swipe(600, 1250, 600, 600);
-            deviceHelper.waitInSec(10);
-
-            boolean TabsAll[] = new boolean[2];
-            deviceHelper.waitInSec(10);
-            TabsAll[0] = TrendingTabObejects.postTotalView.isDisplayed();
-            TabsAll[1] = TrendingTabObejects.postCreatedTime.isDisplayed();
-            deviceHelper.waitInSec(10);
-            return TabsAll;
-        }
-
-        public boolean[] whatsappShareCommentsLikeRepostAndSaveButtonsAreAppearingWithCount () {
-
-            boolean TabsAll[] = new boolean[5];
-            deviceHelper.waitInSec(10);
-            TabsAll[0] = TrendingTabObejects.whatsapp_Save_Comments_Like_Repost.get(0).isDisplayed();
-            TabsAll[1] = TrendingTabObejects.whatsapp_Save_Comments_Like_Repost.get(1).isDisplayed();
-            TabsAll[2] = TrendingTabObejects.whatsapp_Save_Comments_Like_Repost.get(2).isDisplayed();
-            TabsAll[3] = TrendingTabObejects.whatsapp_Save_Comments_Like_Repost.get(3).isDisplayed();
-            TabsAll[4] = TrendingTabObejects.whatsapp_Save_Comments_Like_Repost.get(4).isDisplayed();
-            return TabsAll;
-
-        }
-
-        public boolean[] verifyCOMMENTAndLIKESectionsAreAppearingWithUserDetails () {
-
-            boolean TabsAll[] = new boolean[2];
-            deviceHelper.waitInSec(10);
-            TrendingTabObejects.whatsapp_Save_Comments_Like_Repost.get(1).isDisplayed();
-            deviceHelper.waitInSec(10);
-            TabsAll[0] = TrendingTabObejects.commentAndLike.get(0).isDisplayed();
-            TabsAll[1] = TrendingTabObejects.commentAndLike.get(1).isDisplayed();
-            return TabsAll;
-
-        }
-
-        public boolean[] verifyAudioRecorderAndSendButtonAreAppearing
-        () {
-            boolean TabsAll[] = new boolean[4];
-            deviceHelper.waitInSec(10);
-            TabsAll[0] = TrendingTabObejects.commentField.isDisplayed();
-            deviceHelper.waitInSec(10);
-            TrendingTabObejects.commentField.sendKeys(chat);
-            deviceHelper.waitInSec(10);
-            TabsAll[1] = TrendingTabObejects.commentSend.isDisplayed();
-            TabsAll[2] = TrendingTabObejects.audioMic.isDisplayed();
-            TabsAll[3] = TrendingTabObejects.gifImg.isDisplayed();
-            return TabsAll;
-        }
-
+        boolean TabsAll[] = new boolean[4];
+        deviceHelper.waitInSec(10);
+        TabsAll[0] = TrendingTabObejects.pfImage.isDisplayed();
+        TabsAll[1] = TrendingTabObejects.pfName.isDisplayed();
+        TabsAll[2] = TrendingTabObejects.pfStatus.isDisplayed();
+        TabsAll[3] = TrendingTabObejects.optionCheck.isDisplayed();
+        return TabsAll;
 
     }
+
+    public boolean followButtonIsAppearingAtProfile() {
+
+        return TrendingTabObejects.followButton.isDisplayed();
+
+    }
+
+    public boolean imageWithTagAlsoAppearOnScreen() {
+
+        return TrendingTabObejects.postCaption.isDisplayed();
+
+    }
+
+    public boolean[] afterImmediateImageViewsCountAndHowManyDaysBackItWasPostedAlsoComingAtPost() {
+
+        deviceHelper.swipe(600, 1250, 600, 600);
+        deviceHelper.waitInSec(10);
+
+        boolean TabsAll[] = new boolean[2];
+        deviceHelper.waitInSec(10);
+        TabsAll[0] = TrendingTabObejects.postTotalView.isDisplayed();
+        TabsAll[1] = TrendingTabObejects.postCreatedTime.isDisplayed();
+        deviceHelper.waitInSec(10);
+        return TabsAll;
+    }
+
+    public boolean[] whatsappShareCommentsLikeRepostAndSaveButtonsAreAppearingWithCount() {
+
+        boolean TabsAll[] = new boolean[5];
+        deviceHelper.waitInSec(10);
+        TabsAll[0] = TrendingTabObejects.whatsapp_Save_Comments_Like_Repost.get(0).isDisplayed();
+        TabsAll[1] = TrendingTabObejects.whatsapp_Save_Comments_Like_Repost.get(1).isDisplayed();
+        TabsAll[2] = TrendingTabObejects.whatsapp_Save_Comments_Like_Repost.get(2).isDisplayed();
+        TabsAll[3] = TrendingTabObejects.whatsapp_Save_Comments_Like_Repost.get(3).isDisplayed();
+        TabsAll[4] = TrendingTabObejects.whatsapp_Save_Comments_Like_Repost.get(4).isDisplayed();
+        return TabsAll;
+
+    }
+
+    public boolean[] verifyCOMMENTAndLIKESectionsAreAppearingWithUserDetails() {
+
+        boolean TabsAll[] = new boolean[2];
+        deviceHelper.waitInSec(10);
+        TrendingTabObejects.whatsapp_Save_Comments_Like_Repost.get(1).isDisplayed();
+        deviceHelper.waitInSec(10);
+        TabsAll[0] = TrendingTabObejects.commentAndLike.get(0).isDisplayed();
+        TabsAll[1] = TrendingTabObejects.commentAndLike.get(1).isDisplayed();
+        return TabsAll;
+
+    }
+
+    public boolean[] verifyAudioRecorderAndSendButtonAreAppearing
+            () {
+        boolean TabsAll[] = new boolean[4];
+        deviceHelper.waitInSec(10);
+        TabsAll[0] = TrendingTabObejects.commentField.isDisplayed();
+        deviceHelper.waitInSec(10);
+        TrendingTabObejects.commentField.sendKeys(chat);
+        deviceHelper.waitInSec(10);
+        TabsAll[1] = TrendingTabObejects.commentSend.isDisplayed();
+        TabsAll[2] = TrendingTabObejects.audioMic.isDisplayed();
+        TabsAll[3] = TrendingTabObejects.gifImg.isDisplayed();
+        return TabsAll;
+    }
+
+
+}
