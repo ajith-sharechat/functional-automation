@@ -14,8 +14,6 @@ import java.util.List;
  */
 public class ReferralObjects {
 
-
-
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/rl_toolbar_referrals")
 	public MobileElement referralBtn;
 
@@ -24,12 +22,10 @@ public class ReferralObjects {
 
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/tv_my_earnings")
 	public MobileElement myEarningsBtn;
-	
-	//@AndroidFindBy(xpath = "//*[contains(@text,'शेयरचैट पर अपने दोस्तों को आमंत्रित करके अनलिमिटेड राशि जीतें!')]")
+
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/tv_earn_text")
 	public MobileElement textForReferral;
 
-	//*[@id='in.mohalla.sharechat:id/crsv_link_share.id/tv_custom_referral_header']
 	@AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/crsv_link_share']//*[@resource-id = 'in.mohalla.sharechat:id/tv_custom_referral_header']")//[contains(@text,'इंस्टॉल करवाएँ और कमाएँ')]
 	public MobileElement getinstallEarnBtn;
 
@@ -53,8 +49,6 @@ public class ReferralObjects {
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/crsv_link_share")
 	public MobileElement getinstallEarnBox;
 
-
-
 	//=================My Earning Screen Object ==============
 
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/ib_back")
@@ -77,16 +71,12 @@ public class ReferralObjects {
 
 
 
-
-
 	@AndroidFindBy(className = "android.widget.EditText")
 	public MobileElement writeTextInCreateTextPost;
-
 
 	@AndroidFindBy(uiAutomator = "new UiScrollable(new UiSelector()"
 			+ ".className(\"android.widget.ListView\")).scrollIntoView("
 			+ "new UiSelector().textContains(\"India\"));")
 	public MobileElement INDIACountryCode;
-
 
 }

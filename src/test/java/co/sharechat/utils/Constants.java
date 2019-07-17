@@ -2,7 +2,7 @@ package co.sharechat.utils;
 
 public interface Constants {
 
-    String registerNumber = "9491862195";
+    String registerNumber = "9465161677";
     String appPackage = "in.mohalla.sharechat";
     String AfterlogoutPageText = "अपनी भाषा का चयन करें";
     String profileSettingText = "Profile settings";
@@ -19,6 +19,8 @@ public interface Constants {
 
     //Referral Screen texts
     String varificationText = "नंबर वेरिफिकेशन हो रहा है";
+
+    String externalLink = "http://wynk.in ";
 
 
 

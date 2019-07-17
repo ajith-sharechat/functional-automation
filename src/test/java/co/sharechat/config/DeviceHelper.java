@@ -10,7 +10,9 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
+import io.appium.java_client.clipboard.HasClipboard;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -90,13 +92,68 @@ public class DeviceHelper {
      * @author Jasmeet
      * */
     public void clickHomeBtn(){
-        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.HOME));;
+        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.HOME));
+    }
+
+    /**
+     *This method will open the notifications on device.
+     * @since 15 July 2019
+     * @author Jasmeet
+     * */
+    public void openNotification(){
+        ((AndroidDriver) driver).openNotifications();
+    }
+
+    /**
+     *This method will click on the Back button.
+     * @since 15 July 2019
+     * @author Jasmeet
+     * */
+    public void clickBackBtn(){
+        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));;
+    }
+
+    /**
+     *This method will return the copied text in the clipboard of device.
+     * @since 11 July 2019
+     * @author Jasmeet
+     * */
+    public String getCopiedText(){
+        return ((HasClipboard) driver).getClipboardText();
+    }
+
+    /**
+     * generateRandomPhNo(int length) can return the string of digits as specified length. Maximum 15 digit number could be generated.
+     * @param length NO of digits in the number
+     * @return String of digits as specified length
+     * @author jasmeetsingh
+     */
+    public String generateRandomPhNo(int length) {
+        if (length>15)
+            length = 15;
+        return  Long.toString((int) ((Math.random() * 100000000)) + 999999999999999l).substring(15-length, 15);
+    }
+
+    /**
+     * This Function is to Enter OTP with using Actions class method
+     * @author Ramesh
+     *
+     */
+    public void writeInputActions(MobileElement element,String otp){
+        try {
+            waitForElementToAppear(element);
+            Actions a = new Actions(driver);
+            a.sendKeys(otp).build().perform();
+        }
+        catch (Exception e) {
+            System.out.println("Write Input Action failed");
+        }
     }
 
 
     public void waitTillTheElementIsVisibleAndClickable(WebElement element) {
 
-        WebDriverWait wait = new WebDriverWait(driver, 12);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOf(element));
 
         wait = new WebDriverWait(driver, 5);
@@ -230,10 +287,11 @@ public class DeviceHelper {
 
     public boolean isElementPresent(WebElement locator) {
         try {
+            waitTillTheElementIsVisibleAndClickable(locator);
             if (locator.isDisplayed())
                 System.out.println("Element presend on screen ***********" + locator);
             return true;
-        } catch (NoSuchElementException e) {
+        } catch (Exception e) {
             System.out.println("Element not present on screen **************" + locator);
             return false;
         }

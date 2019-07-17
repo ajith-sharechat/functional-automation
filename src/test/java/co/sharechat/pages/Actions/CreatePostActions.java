@@ -9,14 +9,12 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -56,6 +54,55 @@ public class CreatePostActions extends WebDriverListener {
 	
 	public void composePost() {
 		createPostObjects.plusIcon.click();
+	}
+
+	public void clickOnExploreBtn() {
+		createPostObjects.exploreBTN.click();
+	}
+
+	public void clickOnPostOptionsBTN() {
+		createPostObjects.postOptionsBTN.click();
+	}
+
+	public void clickOnLinkCopyBTN() {
+		createPostObjects.postShareOptions.get(0).click();
+	}
+
+	public void clickOnPostsUserProfileBTN() {
+		createPostObjects.userProfilelinkOnPostsScreen.get(0).click();
+	}
+
+	public void clickOnFirstTagInTrendingTags() {
+		createPostObjects.trendingTagsOnTrendingScreen.get(0).click();
+	}
+
+	public void clickOnShareBTNOnTagPostsScreen() {
+		createPostObjects.shareBTnOnTagRelatedPostsScreen.click();
+	}
+
+	public void clickOnShareBTNOnProfileScreen() {
+		createPostObjects.shareBTnOnUsersProfileScreen.click();
+	}
+
+	public void clickOnShareWithShareChatOption() {
+		createPostObjects.shareWithShareChatOption.click();
+	}
+
+	public Set<String> getAllTrendingBuckets(){
+		Set<String> buckets = new HashSet<String>();
+		int initialSize ,finalSize ;
+		do {;
+			initialSize = buckets.size();
+			for (MobileElement box : createPostObjects.bucktNamesOnExplorePage) {
+				buckets.add(box.getText());
+			}
+			finalSize = buckets.size();
+			int x = (int) (deviceHelper.getWidthOfScreen() / 2);
+			int starty = deviceHelper.getHeightOfScreen() - 300;
+			deviceHelper.swipe(x, starty, x, 800);
+		}while (initialSize != finalSize);
+
+		return buckets;
 	}
 
 	//===========================Text Post Screen Actions==================================
@@ -99,8 +146,20 @@ public class CreatePostActions extends WebDriverListener {
 		return deviceHelper.isElementPresent(createPostObjects.withoutBGBtn);
 	}
 
+	public boolean isLinkPerviewDisplayed() {
+		return deviceHelper.isElementPresent(createPostObjects.linkPreview);
+	}
+
+	public boolean isRepostPerviewDisplayed() {
+		return deviceHelper.isElementPresent(createPostObjects.repostPreview);
+	}
+
 	public boolean iscameraIconPicturepickGalaryPostDisplayed() {
 		return createPostObjects.cameraBtnOnTextPost.size() >= 2;
+	}
+
+	public void selectGalaryPickForBG() {
+		createPostObjects.cameraBtnOnTextPost.get(2).click();
 	}
 
 	public int noOfBottomTabsDisplayed() {
@@ -139,12 +198,32 @@ public class CreatePostActions extends WebDriverListener {
 		return text_Set.size();
 	}
 
+	public void clickOnColorTabInTextPost(){
+		createPostObjects.selectColor.click();
+	}
+
+	public void clickOnShareChatCultureTabInTextPost(){
+		createPostObjects.selectShareChatCulture.click();
+	}
+
+	public void clickOnAnyColorTabInBGTextPost(){
+		createPostObjects.BGcolorTabs.get(1).click();
+	}
+
 	public void clickOnCrossbtn(){
 		createPostObjects.crossIconTextCompose.click();
 	}
 
 	public void writeTextAboutPost(String text) {
 		element(createPostObjects.writeSomethingAbtPost).sendKeys(text);
+	}
+
+	public void enterCopiedLink() {
+		element(createPostObjects.writeSomethingAbtPost).sendKeys(deviceHelper.getCopiedText()+"  ");
+	}
+
+	public String getTextAboutPost() {
+		return createPostObjects.writeSomethingAbtPost.getText();
 	}
 	
 	public void submitPost() {
@@ -154,6 +233,34 @@ public class CreatePostActions extends WebDriverListener {
 	
 	public void selectTagForPost() {
 		element(createPostObjects.tagsToSelect).click();
+	}
+
+	public void serchForTag(String tagName) {
+		element(createPostObjects.searchTagTextBox).sendKeys(tagName);
+	}
+
+	public void clickCreateTagBTN() {
+		element(createPostObjects.createTagBTN).click();
+	}
+
+	public void createUniqueNewTag(String tagName) {
+		serchForTag(tagName+ deviceHelper.generateRandomPhNo(6));
+	}
+
+	public void selectBucketForNewTag(){
+		createPostObjects.newTagBucketsRadioBtns.get(0).click();
+	}
+
+	public void submitNewTag(){
+		createPostObjects.submitNewTagBTN.click();
+	}
+
+	public void select3rdTagForPost() {
+		element(createPostObjects.tagsListToSelect.get(2)).click();
+	}
+
+	public String getTagUsed() {
+		return createPostObjects.tagsToSelect.getText();
 	}
 
 	public boolean checkPostUploadingText(){
@@ -176,6 +283,10 @@ public class CreatePostActions extends WebDriverListener {
 		element(createPostObjects.createPoll).click();
 	}
 
+	public void clickAddTagBTN() {
+		element(createPostObjects.addTagBtn).click();
+	}
+
 	public void enterInPollOptions(String[] options) {
 		for(byte i =0; i < options.length; i++)
 			createPostObjects.pollOptions.get(i).sendKeys(options[i]);
@@ -191,6 +302,36 @@ public class CreatePostActions extends WebDriverListener {
 
 	public void cropPictureOk() {
 		element(createPostObjects.cropOkBtnOnCamera).click();
+	}
+
+	public Set<String> getAllTrendingBucketsOnPost(){
+		Set<String> buckets = new HashSet<String>();
+		int initialSize ,finalSize ;
+		do {;
+			initialSize = buckets.size();
+			for (MobileElement box : createPostObjects.bucketNames) {
+				buckets.add(box.getText());
+			}
+			finalSize = buckets.size();
+			int x = (int) (deviceHelper.getWidthOfScreen() / 2);
+			int starty = deviceHelper.getHeightOfScreen() - 200;
+			deviceHelper.swipe(x, starty, x, 1100);
+		}while (initialSize != finalSize);
+
+		return buckets;
+	}
+
+	public boolean checkTrendingBucketInTagBuckets() {
+		for (MobileElement bucket: createPostObjects.bucketNames) {
+			if(bucket.getText().contains("trends"))
+				return true;
+		}
+		deviceHelper.swipe(500, 1600, 500, 1400);// Little swipe
+		for (MobileElement bucket: createPostObjects.bucketNames) {
+			if(bucket.getText().contains("trends"))
+				return true;
+		}
+		return false;
 	}
 
 
@@ -219,10 +360,9 @@ public class CreatePostActions extends WebDriverListener {
 	public boolean isPostUploaded(int timeInSecs){
 
 		hardWait(timeInSecs);
-		deviceHelper.swipe(400, 0, 400, 1000);
-		boolean notification =  deviceHelper.isElementPresent(element(createPostObjects.uploadedNotification));
-		deviceHelper.swipe(400, deviceHelper.getHeightOfScreen()-300, 400, 10);
-		//deviceHelper.clickHomeBtn();
+		deviceHelper.openNotification();
+		boolean notification =  deviceHelper.isElementPresent(createPostObjects.uploadedNotification);
+		deviceHelper.clickBackBtn();
 		return notification;
 	}
 

@@ -2,7 +2,7 @@ package co.sharechat.test;
 
 import co.sharechat.config.TestRunnerInfo;
 import co.sharechat.pages.Actions.CommonPageActions;
-import co.sharechat.pages.Actions.SignUp;
+import co.sharechat.pages.Actions.SignUpActions;
 import co.sharechat.utils.Constants;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -16,9 +16,9 @@ import org.testng.annotations.Test;
  */
 public class SignUpTests implements Constants {
 
-    public SignUp getSignUpPage(){
+    public SignUpActions getSignUpPage(){
 
-        return new SignUp(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
+        return new SignUpActions(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
 
     }
 
@@ -30,30 +30,57 @@ public class SignUpTests implements Constants {
 
     /**
     * This function will login with registered user and according to the permissionsActions array passed.
+     * It will check, if signup screen will come it will do signup.
      * Make sure array is of 3 length.
      *  @author jasmeetsingh
-     *  @version 1.0
+     *  @version 1.1
      *  @since 09 july 2019
     * */
 
     public void registeredLogin(boolean []permissionsActions){
         getSignUpPage().selectHindi();
-        getSignUpPage().enterName(userName);
-        getSignUpPage().selectCountry();
-        getSignUpPage().enterPhNo(registerNumber);
-        getSignUpPage().selectAgeGroup();
-        getSignUpPage().selectGender();
-        getSignUpPage().submit();
-        for (boolean action: permissionsActions) {
-            if(action == true)
+
+        if (getSignUpPage().isSignUpScreen()){//If signup screen then go through signup
+            getSignUpPage().enterName(userName);
+            getSignUpPage().selectCountry();
+            getSignUpPage().enterPhNo(registerNumber);
+            getSignUpPage().selectAgeGroup();
+            getSignUpPage().selectGender();
+            getSignUpPage().submit();
+
+            actonPermissions(permissionsActions);
+
+            getSignUpPage().enterOTP(otp);
+            getSignUpPage().submitOTP();
+        }
+        else {
+            getSignUpPage().enterPhNo(registerNumber);
+            getSignUpPage().clickLogin();
+
+            actonPermissions(permissionsActions);
+            getSignUpPage().enterOTPinLogin(otp);
+        }
+        getSignUpPage().langDDLdisplayed();
+    }
+
+    /**
+     * This function will accept or deny the permissions acess according to the permissionsActions array passed.
+     * Make sure array is of 3 length.
+     *  @author jasmeetsingh
+     *  @version 1.0
+     *  @since 09 july 2019
+     * */
+    public void actonPermissions(boolean []permissionsActions) {
+        for (boolean action : permissionsActions) {
+            if (action == true)
                 getCommonPage().alllowPermission();
             else
                 getCommonPage().denyPermission();
         }
-
-        getSignUpPage().enterOTP(otp);
-        getSignUpPage().submitOTP();
     }
+
+
+
 
     @Test(enabled = true, groups = {"SmokeTest"},
             description = "To verify if user is able to register/Sign up in application with unregistered mobile number")

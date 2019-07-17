@@ -55,6 +55,12 @@ public class SignUpPageObjects {
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/bt_submit")
 	public MobileElement submitOTP;
 
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/tv_get_otp")
+	public MobileElement loginBTN;
+
+	@AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/pin_view']//following::android.widget.EditText")
+	public MobileElement otpTextFieldForLogin;
+
 	@AndroidFindBy(id = "com.android.packageinstaller:id/permission_allow_button")
 	public MobileElement allowPermissionPopUp;
 

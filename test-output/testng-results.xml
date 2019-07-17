@@ -1,22 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="9" total="10" passed="1">
+<testng-results skipped="0" failed="0" ignored="22" total="26" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNG Forum" duration-ms="71297" started-at="2019-07-09T12:48:15Z" finished-at="2019-07-09T12:49:26Z">
+  <suite name="TestNG Forum" duration-ms="254799" started-at="2019-07-16T14:05:20Z" finished-at="2019-07-16T14:09:35Z">
     <groups>
       <group name="Creation">
-        <method signature="CreatePostTests.TC035_textPostAllowPermission()[pri:0, instance:co.sharechat.test.CreatePostTests@59309333]" name="TC035_textPostAllowPermission" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.TC047_textPostWithExternalLink()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC047_textPostWithExternalLink" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.TC048_textPostWithColorBG()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC048_textPostWithColorBG" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.TC049_textPostWithAnyDefaultPicturesBG()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC049_textPostWithAnyDefaultPicturesBG" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.TC050_textPostWithAnyDefaultP()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC050_textPostWithAnyDefaultP" class="co.sharechat.test.CreatePostTests"/>
       </group> <!-- Creation -->
       <group name="RegressionTest">
-        <method signature="CreatePostTests.TC035_textPostAllowPermission()[pri:0, instance:co.sharechat.test.CreatePostTests@59309333]" name="TC035_textPostAllowPermission" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.TC047_textPostWithExternalLink()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC047_textPostWithExternalLink" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.TC048_textPostWithColorBG()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC048_textPostWithColorBG" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.TC049_textPostWithAnyDefaultPicturesBG()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC049_textPostWithAnyDefaultPicturesBG" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.TC050_textPostWithAnyDefaultP()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC050_textPostWithAnyDefaultP" class="co.sharechat.test.CreatePostTests"/>
       </group> <!-- RegressionTest -->
     </groups>
-    <test name="TestNG Test0" duration-ms="71297" started-at="2019-07-09T12:48:15Z" finished-at="2019-07-09T12:49:26Z">
+    <test name="TestNG Test0" duration-ms="254799" started-at="2019-07-16T14:05:20Z" finished-at="2019-07-16T14:09:35Z">
       <class name="co.sharechat.test.CreatePostTests">
-        <test-method status="PASS" signature="TC035_textPostAllowPermission()[pri:0, instance:co.sharechat.test.CreatePostTests@59309333]" name="TC035_textPostAllowPermission" duration-ms="68623" started-at="2019-07-09T18:18:16Z" description="Verify allow permissions functionality for creation functionality with text" finished-at="2019-07-09T18:19:25Z">
+        <test-method status="PASS" signature="TC047_textPostWithExternalLink()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC047_textPostWithExternalLink" duration-ms="62511" started-at="2019-07-16T19:35:21Z" description="Verify creating link post by typing the link" finished-at="2019-07-16T19:36:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC035_textPostAllowPermission -->
+        </test-method> <!-- TC047_textPostWithExternalLink -->
+        <test-method status="PASS" signature="TC048_textPostWithColorBG()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC048_textPostWithColorBG" duration-ms="61583" started-at="2019-07-16T19:36:25Z" description="Verify text with background post functionality with Color pictures" finished-at="2019-07-16T19:37:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC048_textPostWithColorBG -->
+        <test-method status="PASS" signature="TC049_textPostWithAnyDefaultPicturesBG()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC049_textPostWithAnyDefaultPicturesBG" duration-ms="63539" started-at="2019-07-16T19:37:28Z" description="Verify text with background post functionality with our country pictures" finished-at="2019-07-16T19:38:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC049_textPostWithAnyDefaultPicturesBG -->
+        <test-method status="PASS" signature="TC050_textPostWithAnyDefaultP()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC050_textPostWithAnyDefaultP" duration-ms="60866" started-at="2019-07-16T19:38:32Z" description="Verify text with background post creation functionality with mobile gallery pictures" finished-at="2019-07-16T19:39:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC050_textPostWithAnyDefaultP -->
       </class> <!-- co.sharechat.test.CreatePostTests -->
     </test> <!-- TestNG Test0 -->
   </suite> <!-- TestNG Forum -->

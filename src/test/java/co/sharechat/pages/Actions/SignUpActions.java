@@ -1,6 +1,5 @@
 package co.sharechat.pages.Actions;
 
-import co.sharechat.config.TestRunnerInfo;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
@@ -16,7 +15,7 @@ import co.sharechat.config.WebDriverListener;
 import co.sharechat.pages.Objects.SignUpPageObjects;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class SignUp extends WebDriverListener {
+public class SignUpActions extends WebDriverListener {
 	
 	DeviceInterface runnerInfo;
     static DeviceHelper deviceHelper;
@@ -32,7 +31,7 @@ public class SignUp extends WebDriverListener {
 	 @version 1.0
 	 @since 01 july 2019
 	 */
-    public SignUp(WebDriver driver, DeviceInterface runnerInfo) {
+    public SignUpActions(WebDriver driver, DeviceInterface runnerInfo) {
         this.driver = driver;
         deviceHelper = new DeviceHelper(driver);
         //PageFactory.initElements(new AppiumFieldDecorator(driver), this);
@@ -57,6 +56,15 @@ public class SignUp extends WebDriverListener {
 	
 	public void enterName(String name) {
 		element(signUpObjects.loginNameBox).sendKeys(name);
+	}
+
+	public boolean isSignUpScreen() {
+    	return deviceHelper.isElementPresent(signUpObjects.loginNameBox);
+	}
+
+	public void clickLogin() {
+
+		signUpObjects.loginBTN.click();
 	}
 	
 	public void enterPhNo(String phNo) {
@@ -86,6 +94,10 @@ public class SignUp extends WebDriverListener {
 
 	public void enterOTP(String otp) {
 		element(signUpObjects.OTPtextbox).sendKeys(otp);
+	}
+
+	public void enterOTPinLogin(String otp) {
+		deviceHelper.writeInputActions(signUpObjects.otpTextFieldForLogin, otp);
 	}
 
 	public void submitOTP() {

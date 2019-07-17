@@ -2,7 +2,7 @@ package co.sharechat.test;
 
 import co.sharechat.config.TestRunnerInfo;
 import co.sharechat.pages.Actions.CreatePostActions;
-import co.sharechat.pages.Actions.SignUp;
+import co.sharechat.pages.Actions.SignUpActions;
 import co.sharechat.pages.Actions.loginPage;
 import io.appium.java_client.AppiumDriver;
 import org.testng.Assert;
@@ -28,9 +28,9 @@ public class launchAppTest
 
     //========================Meet=========================
 
-    public SignUp getSignUpPage(){
+    public SignUpActions getSignUpPage(){
 
-        return new SignUp(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
+        return new SignUpActions(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
 
     }
 
