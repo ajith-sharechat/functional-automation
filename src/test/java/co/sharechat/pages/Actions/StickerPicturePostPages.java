@@ -63,4 +63,23 @@ public class StickerPicturePostPages extends WebDriverListener {
         //Not Able to perform other steps due to no limitation of appium not able to interact with window dialogs as discussed with developer and team
 
     }
+
+    public boolean[] checkPostViewOption() {
+        boolean res[] = new boolean[3];
+        deviceHelper.scrollToMobileElement(StickerPicturePostObjects.imagePost, countTry);
+        deviceHelper.waitInSec(5);
+        element(StickerPicturePostObjects.imagePost).click();
+        element(StickerPicturePostObjects.chatShare).click();
+        deviceHelper.waitInSec(10);
+        res[0] = element(StickerPicturePostObjects.chatScreenTitle).isDisplayed();
+        element(StickerPicturePostObjects.sendChat).click();
+        deviceHelper.waitInSec(10);
+        res[1] = element(StickerPicturePostObjects.arrowIcon).isDisplayed();
+        element(StickerPicturePostObjects.arrowIcon).click();
+        element(StickerPicturePostObjects.chatMsg).click();
+        res[2] = element(StickerPicturePostObjects.imagePostCheck).isDisplayed();
+        return res;
+
+    }
+
 }

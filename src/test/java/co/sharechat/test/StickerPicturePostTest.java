@@ -19,12 +19,24 @@ import static org.testng.Assert.assertTrue;
 public class StickerPicturePostTest {
 
 
-    @Test(enabled = true, description = "Verify Post sticker Dropdown and create new pack", groups = {"RegressionTest", "Creation"})
-    public void TC157_verifyPostStickerDropdown() throws Exception {
+//    @Test(enabled = true, description = "Verify Post sticker Dropdown and create new pack", groups = {"RegressionTest", "Creation"})
+//    public void TC157_verifyPostStickerDropdown() throws Exception {
+//        getLoginPage().userlogin();
+//        getStickerPicturePostPages().createNewPackOfSticker();
+//
+//    }
+
+    @Test(enabled = true, description = "Verify post view option ", groups = {"RegressionTest", "Creation"})
+    public void TC200_checkingPostViewOption() throws Exception {
         getLoginPage().userlogin();
-        getStickerPicturePostPages().createNewPackOfSticker();
+        boolean[] testResponse = getStickerPicturePostPages().checkPostViewOption();
+        for (int i = 0; i < testResponse.length; i++) {
+            assertTrue(testResponse[i], "Test Fail Verify post view option.");
+        }
+
 
     }
+
 
     public StickerPicturePostPages getStickerPicturePostPages() {
 

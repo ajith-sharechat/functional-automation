@@ -81,14 +81,14 @@ public class ProfilePageObjects {
 
     public MobileElement checkChat;
 
-    @AndroidFindBy(xpath = "//*[@text='लॉगआउट']")
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/logout_container_main")
 
     public MobileElement logoutCheck;
-    @AndroidFindBy(xpath = "//*[@text='हाँ']")
+    @AndroidFindBy(id = "android:id/button1")
 
     public MobileElement logoutAlert;
 
-    @AndroidFindBy(xpath = "//*[@text='अपनी भाषा का चयन करें']")
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/select_title")
 
     public MobileElement confirmAfterLogoutScreen;
 }

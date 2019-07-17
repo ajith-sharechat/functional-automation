@@ -20,39 +20,39 @@ import static org.testng.Assert.assertTrue;
 public class PostShareOptionTest implements Constants {
 
 
-    //    @Test(enabled = true, description = "Verify post share options ", groups = {"RegressionTest", "Creation"})
-//    public void TC168_checkingPostShareOption() throws Exception {
-//        getLoginPage().userlogin();
-//        String testResponse = getPostShareOptionPage().checkPostShareOption();
-//        assertTrue(testResponse.contains(testResponse), "Test Fail Verify post share options");
-//
-//    }
-//    @Test(enabled = true, description = "Verify post share option of convert sticker", groups = {"RegressionTest", "Creation"})
-//    public void TC173_verifyConvertSticker() throws Exception {
-//        getLoginPage().userlogin();
-//        boolean testResponse = getPostShareOptionPage().checkConvertSticker();
-//        assertTrue(testResponse, "Test Fail Verify post share option of convert sticker");
-//
-//    }
-//
-//    @Test(enabled = true, description = "Verify post share option of message", groups = {"RegressionTest", "Creation"})
-//    public void TC174_checkingMessageOption() throws Exception {
-//        getLoginPage().userlogin();
-//        boolean[] testResponse = getPostShareOptionPage().checkMessageOption();
-//        for (int i = 0; i < testResponse.length; i++) {
-//            assertTrue(testResponse[i], "Test Fail Verify post share option of message.");
-//        }
-//
-//
-//    }
-//
-//    @Test(enabled = true, description = "Verify post share option of Follow ", groups = {"RegressionTest", "Creation"})
-//    public void TC175_checkingFollowOption() throws Exception {
-//        getLoginPage().userlogin();
-//        boolean testResponse = getPostShareOptionPage().checkFollowOption();
-//        assertTrue(testResponse, "Verify post share option of Follow");
-//
-//    }
+        @Test(enabled = true, description = "Verify post share options ", groups = {"RegressionTest", "Creation"})
+    public void TC168_checkingPostShareOption() throws Exception {
+        getLoginPage().userlogin();
+        String testResponse = getPostShareOptionPage().checkPostShareOption();
+        assertTrue(testResponse.contains(testResponse), "Test Fail Verify post share options");
+
+    }
+    @Test(enabled = true, description = "Verify post share option of convert sticker", groups = {"RegressionTest", "Creation"})
+    public void TC173_verifyConvertSticker() throws Exception {
+        getLoginPage().userlogin();
+        boolean testResponse = getPostShareOptionPage().checkConvertSticker();
+        assertTrue(testResponse, "Test Fail Verify post share option of convert sticker");
+
+    }
+
+    @Test(enabled = true, description = "Verify post share option of message", groups = {"RegressionTest", "Creation"})
+    public void TC174_checkingMessageOption() throws Exception {
+        getLoginPage().userlogin();
+        boolean[] testResponse = getPostShareOptionPage().checkMessageOption();
+        for (int i = 0; i < testResponse.length; i++) {
+            assertTrue(testResponse[i], "Test Fail Verify post share option of message.");
+        }
+
+
+    }
+
+    @Test(enabled = true, description = "Verify post share option of Follow ", groups = {"RegressionTest", "Creation"})
+    public void TC175_checkingFollowOption() throws Exception {
+        getLoginPage().userlogin();
+        boolean testResponse = getPostShareOptionPage().checkFollowOption();
+        assertTrue(testResponse, "Verify post share option of Follow");
+
+    }
 
 
     @Test(enabled = true, description = "Verify post share option of Report", groups = {"RegressionTest", "Creation"})

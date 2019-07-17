@@ -38,14 +38,14 @@ public class TrendingPostUserProfileTest extends WebDriverListener implements Co
 //        }
 //
 //    }
-//
-//    @Test(enabled = true, description = "Verify trending post user profile share option", groups = {"RegressionTest", "Creation"})
-//    public void TC185_checkUserPostShareOption() throws Exception {
-//        getLoginPage().userlogin();
-//        int testResponse = getTrendingPostUserProfilePages().checkUserPostShareOption();
-//
-//        assertTrue(testResponse == ShareOptionCount, "Test Fail Verify trending post user profile share option.");
-//    }
+
+    @Test(enabled = true, description = "Verify trending post user profile share option", groups = {"RegressionTest", "Creation"})
+    public void TC185_checkUserPostShareOption() throws Exception {
+        getLoginPage().userlogin();
+        int testResponse = getTrendingPostUserProfilePages().checkUserPostShareOption();
+
+        assertTrue(testResponse == ShareOptionCount, "Test Fail Verify trending post user profile share option.");
+    }
 
     @Test(enabled = true, description = "Verify trending post user profile block option", groups = {"RegressionTest", "Creation"})
     public void TC187_checkUserBlockOption() throws Exception {

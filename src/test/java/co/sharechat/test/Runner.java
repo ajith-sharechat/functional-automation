@@ -23,9 +23,9 @@ public class Runner {
 //            tests.add("StickerFunctionalityTest");
 //            tests.add("LandingPageTest");
 //            tests.add("LoginPageTest");
-//            tests.add("StickerPicturePostTest");
+            tests.add("StickerPicturePostTest");
 //            tests.add("PostShareOptionTest");
-              tests.add("TrendingPostUserProfileTest");
+            tests.add("TrendingPostUserProfileTest");
 
             parallelThread.runner("co.sharechat.test", tests);
 

@@ -29,37 +29,27 @@ public class StickerPicturePostObjects {
     @AndroidFindBy(id = "android:id/iv_sticker_pack ")
     public MobileElement itemSelect;
 
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/btn_share_dm")
+    public MobileElement chatShare;
 
-    @AndroidFindBy(xpath = "//*[@text='हिन्दी']")
-    public MobileElement selectHindi;
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/toolbar")
+    public MobileElement chatScreenTitle;
 
-    @AndroidFindBy(id = "in.mohalla.sharechat:id/et_name")
-    public MobileElement enterName;
 
-    @AndroidFindBy(id = "in.mohalla.sharechat:id/et_phone")
-    public MobileElement enterNumber;
-    @AndroidFindBy(id = "in.mohalla.sharechat:id/rb_male")
-    public MobileElement selectRadioButton;
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/btn_chat_send")
+    public MobileElement sendChat;
 
-    @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_get_otp")
-    public MobileElement goToYourAccount;
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/iv_chat_goto")
+    public MobileElement arrowIcon;
 
-    @AndroidFindBy(xpath = "//*[@text='ALLOW']")
-    public MobileElement allow;
-    @AndroidFindBys({@AndroidBy(className = "android.widget.EditText")})
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_message")
 
-    public List<MobileElement> OTPValues;
+    public MobileElement chatMsg;
 
-//    @AndroidFindBy(id = "in.mohalla.sharechat:id/ib_create_stickers")
-//    public MobileElement stickerTab;
-//    @AndroidFindBy(id = "in.mohalla.sharechat:id/ib_create_stickers")
-//    public MobileElement stickerTab;
-//    @AndroidFindBy(id = "in.mohalla.sharechat:id/ib_create_stickers")
-//    public MobileElement stickerTab;
-//    @AndroidFindBy(id = "in.mohalla.sharechat:id/ib_create_stickers")
-//    public MobileElement stickerTab;
-//    @AndroidFindBy(id = "in.mohalla.sharechat:id/ib_create_stickers")
-//    public MobileElement stickerTab;
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/iv_post_image")
+
+    public MobileElement imagePostCheck;
+
 
 
 }
