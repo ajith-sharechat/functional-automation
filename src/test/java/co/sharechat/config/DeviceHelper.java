@@ -495,7 +495,7 @@ public class DeviceHelper {
     /**
      * This Function is to Scroll to element
      * @author Ramesh
-     * @param: Mobile Element & String
+     * @param: String
      *
      */
     public String generateTextXpathAndReturnText(String value) {
