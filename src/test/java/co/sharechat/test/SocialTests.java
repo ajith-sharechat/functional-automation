@@ -384,8 +384,8 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().clickCameraCaptureSaveButton();
     }
 
-    @Test(enabled = true, description = "Verify single tap functionality on post",groups = {"RegressionTest", "Social"})
-    public void TC122_TC123_VerifySingleTapFunctionalityOnPost() throws Exception {
+    @Test(enabled = true, description = "Verify single tap functionality on post in my post section",groups = {"RegressionTest", "Social"})
+    public void TC122_TC123_myPostsVerifySingleTapFunctionalityOnPost() throws Exception {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
         getSignUpInstance().clickOtpButton();
@@ -400,8 +400,8 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().verifyPostPreviewScreen();
     }
 
-    @Test(enabled = true, description = "Verify profile picture, name, and bio of the post",groups = {"RegressionTest", "Social"})
-    public void TC124_VerifyProfilePictureNameAndBioOnThePost() throws Exception {
+    @Test(enabled = true, description = "Verify profile picture, name, and bio of the post in my post section",groups = {"RegressionTest", "Social"})
+    public void TC124_myPostVerifyProfilePictureNameAndBioOnThePost() throws Exception {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
         getSignUpInstance().clickOtpButton();
@@ -414,11 +414,11 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().verifyProfileScreen();
         getHomePageActionsInstance().scrollTillPostImageClickPostImage();
         getSocialActionsInstance().verifyPostPreviewScreen();
-        getSocialActionsInstance().verifyHashTaglabelAndHashTagFeedTitle();
+        getSocialActionsInstance().verifyHashTagLabelAndHashTagFeedTitle();
     }
 
-    @Test(enabled = true, description = "Verify options button functionality of a post",groups = {"RegressionTest", "Social"})
-    public void TC125_VerifyOptionsButtonFunctionalityOfPost() throws Exception {
+    @Test(enabled = true, description = "Verify options button functionality of a post in my post section",groups = {"RegressionTest", "Social"})
+    public void TC125_myPostVerifyOptionsButtonFunctionalityOfPost() throws Exception {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
         getSignUpInstance().clickOtpButton();
@@ -434,8 +434,8 @@ public class SocialTests  implements Constants {
         getHomePageActionsInstance().clickPostImageOptionTopRightCorner();
         getSocialActionsInstance().verifySharePopupElements();
     }
-    @Test(enabled = true, description = "Verify whatsapp share functionality for a post",groups = {"RegressionTest", "Social"})
-    public void TC130_verifyWhatsAppShareFunctionalityForPost() throws Exception {
+    @Test(enabled = true, description = "Verify whatsapp share functionality for a post in my post section",groups = {"RegressionTest", "Social"})
+    public void TC130_myPostVerifyWhatsAppShareFunctionalityForPost() throws Exception {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
         getSignUpInstance().clickOtpButton();
@@ -450,8 +450,8 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().verifyWhatAppWelcomeScreen();
     }
 
-    @Test(enabled = true, description = "Verify comments functionality for a post",groups = {"RegressionTest", "Social"})
-    public void TC131_verifyCommentFunctionalityForPost() throws Exception {
+    @Test(enabled = true, description = "Verify comments functionality for a post in my post section",groups = {"RegressionTest", "Social"})
+    public void TC131_myPostVerifyCommentFunctionalityForPost() throws Exception {
         getSignUpInstance().selectTelugu();
         getSignUpInstance().enterPhNo(registerNumber);
         getSignUpInstance().clickOtpButton();
@@ -465,5 +465,87 @@ public class SocialTests  implements Constants {
         getHomePageActionsInstance().scrollToPostComment();
         getHomePageActionsInstance().clickPostCommentIcon();
         getSocialActionsInstance().enterCommentAndSend(textMessage);
+    }
+
+    @Test(enabled = true, description = "Verify repost functionality for a post in my post section",groups = {"RegressionTest", "Social"})
+    public void TC133_myPostVerifyRePostFunctionalityForPost() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().scrollToRepostIconAndClickInPost();
+        getSocialActionsInstance().verifyCreatePostScreen();
+        getSocialActionsInstance().uploadingRePostFunctionalityInMyPost();
+    }
+
+    @Test(enabled = true, description = "Verify video playing functionality for a video post in my post section",groups = {"RegressionTest", "Social"})
+    public void TC134_myPostVerifyVideoPlayFunctionalityForVideoPost() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getHomePageActionsInstance().scrollToVideoPost();
+        getHomePageActionsInstance().clickVideoPost();
+        getSocialActionsInstance().verifyVideoIsPlayingOrNot();
+    }
+
+    @Test(enabled = true, description = "Verify audio post functionality for a audio post in my post section",groups = {"RegressionTest", "Social"})
+    public void TC135_myPostVerifyAudioPostFunctionalityForAudioPost() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().scrollToAudioPostAndClick();
+        getSocialActionsInstance().clickPauseButton();
+    }
+
+    @Test(enabled = true, description = "Verify GIF motion picture functionality for a GIF post in my post section",groups = {"RegressionTest", "Social"})
+    public void TC136_myPostVerifyGIFMotionPictureFunctionalityForGIFPost() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().scrollToGIFPostAndClickInPost();
+        getSocialActionsInstance().clickGIFButton();
+    }
+
+    @Test(enabled = true, description = "Verify tag link functionality of a post in Gallery section",groups = {"RegressionTest", "Social"})
+    public void TC140_galleryVerifyTagLinkFunctionalityOfPost() throws Exception {
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickOtpButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getHomePageActionsInstance().clickAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElement();
+        getHomePageActionsInstance().clickProfileIcon();
+        getSocialActionsInstance().verifyProfileScreen();
+        getSocialActionsInstance().clickGallerySection();
+        getSocialActionsInstance().verifyHashTagFunctionalityOfPost();
     }
 }

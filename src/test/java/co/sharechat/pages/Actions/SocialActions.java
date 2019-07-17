@@ -111,7 +111,7 @@ public class SocialActions extends WebDriverListener {
 
     public void  verifyPostUserChatInitiatingFunctionality(){
         deviceHelper.waitTillTheElementIsVisible(homePostObjects.userProfileLink);
-        String userprofileName=homePostObjects.userProfileLink.getText();
+        String userProfileName=homePostObjects.userProfileLink.getText();
         getHomePageActionsInstance().clickUserProfileLink();
         clickPostUserChatIcon();
         verifyPostUserchatscreen();
@@ -123,7 +123,7 @@ public class SocialActions extends WebDriverListener {
         getHomePageActionsInstance().clickChatIcon();
         getChatPageActionsInstance().verifyChatScreen();
         String recentKnownUserName=chatPageObjects.recentKnownNameLabel.getText();
-        Assert.assertEquals(recentKnownUserName.toLowerCase(), userprofileName.toLowerCase());
+        Assert.assertEquals(recentKnownUserName.toLowerCase(), userProfileName.toLowerCase());
     }
 
     public void backToHomeScreen(){
@@ -417,13 +417,15 @@ public class SocialActions extends WebDriverListener {
         postUserObjects.postTagLink.click();
         deviceHelper.waitTillTheElementIsVisible(postUserObjects.TagFeedTitle);
     }
-    public void  verifyHashTaglabelAndHashTagFeedTitle(){
+    public void  verifyHashTagLabelAndHashTagFeedTitle(){
         deviceHelper.waitTillTheElementIsVisible(postUserObjects.postTagLink);
         String hashTagLink=postUserObjects.postTagLink.getText();
         String[] hashTag =hashTagLink.split("#");
         String hashTag1 = hashTag[1];
+        System.out.println("hashTag1================="+hashTag1);
         clickPostTagLink();
         String tagFeedTitleLabel=postUserObjects.TagFeedTitle.getText();
+        System.out.println("tagFeedTitleLabel================="+tagFeedTitleLabel);
         Assert.assertEquals(hashTag1.toLowerCase().trim(),tagFeedTitleLabel.toLowerCase().trim());
     }
     public void scrollToWhatsAppIconAndClickInPost(){
@@ -453,9 +455,78 @@ public class SocialActions extends WebDriverListener {
         deviceHelper.isElementPresentAssertTrue(postUserObjects.postButtonLabel);
         deviceHelper.isElementPresentAssertTrue(postUserObjects.createPostTextField);
     }
+    public void uploadingRePostFunctionalityInMyPost() {
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.postRightIcon);
+        postUserObjects.postRightIcon.click();
+        deviceHelper.waitTillTheElementIsVisible(profileObjects.myPostsSection);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.gallerySection);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.stickersSection);
+        deviceHelper.scrollToMobileElementTopToBottom(profileObjects.rePostUserLabel,"20");
+        deviceHelper.isElementPresentAssertTrue(profileObjects.rePostUserLabel);
+    }
     public void verifyVideoIsPlayingOrNot() {
         deviceHelper.waitTillTheElementIsVisible(postUserObjects.whatsAppIconInVideoPost);
         deviceHelper.isElementNotPresentAssertTrue(homePostObjects.postVideoPlayIcon);
+    }
+    public void scrollToAudioPostAndClick(){
+        deviceHelper.scrollToMobileElement(postUserObjects.playMusicButtonOrPauseButtonForAudioPosts, "20");
+        postUserObjects.playMusicButtonOrPauseButtonForAudioPosts.click();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.audioExoProgress);
+    }
+    public void clickPauseButton(){
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.playMusicButtonOrPauseButtonForAudioPosts);
+        postUserObjects.playMusicButtonOrPauseButtonForAudioPosts.click();
+    }
+    public void scrollToGIFPostAndClickInPost(){
+        deviceHelper.scrollToMobileElement(postUserObjects.gifPost, "20");
+        postUserObjects.gifPostFrameViewLayout.click();
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.gifButtonInPost);
+    }
+    public void clickGIFButton(){
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.gifButtonInPost);
+        postUserObjects.gifButtonInPost.click();
+        deviceHelper.isElementNotPresentAssertTrue(postUserObjects.gifButtonInPost);
+    }
+
+    public void clickGallerySection(){
+        deviceHelper.waitTillTheElementIsVisible(profileObjects.gallerySection);
+        profileObjects.gallerySection.click();
+        deviceHelper.waitTillTheElementIsVisible(homePostObjects.userProfileLink);
+    }
+
+    public void clickMyPostSection(){
+        deviceHelper.waitTillTheElementIsVisible(profileObjects.myPostsSection);
+        profileObjects.myPostsSection.click();
+        deviceHelper.waitTillTheElementIsVisible(homePostObjects.userProfileLink);
+        deviceHelper.waitInSec(10);
+    }
+    public void verifyHashTagFunctionalityOfPost(){
+        deviceHelper.scrollToMobileElement(homePostObjects.userProfileLink, "20");
+        deviceHelper.scrollToMobileElement(postUserObjects.postTagLink, "20");
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.postTagLink);
+        String hashTagLink=postUserObjects.postTagLink.getText();
+        String[] hashTag =hashTagLink.split("#");
+        String hashTag1 = hashTag[1];
+        System.out.println("hashTag1================="+hashTag1);
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.postTagLink);
+        postUserObjects.postHashTagLink.click();
+        postUserObjects.postHashTagLink.click();
+        deviceHelper.waitInSec(5);
+        String tagFeedTitleLabel=postUserObjects.TagFeedTitle.getText();
+        System.out.println("tagFeedTitleLabel================="+tagFeedTitleLabel);
+        Assert.assertEquals(hashTag1.toLowerCase().trim(),tagFeedTitleLabel.toLowerCase().trim());
+    }
+    public void verifyUploadingRePostFunctionalityInGallery() {
+        deviceHelper.waitTillTheElementIsVisible(postUserObjects.postRightIcon);
+        String createPostHashTagTextMessage=postUserObjects.createPostTextField.getText();
+        postUserObjects.postRightIcon.click();
+        deviceHelper.waitTillTheElementIsVisible(profileObjects.myPostsSection);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.gallerySection);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.stickersSection);
+        clickMyPostSection();
+        String myPostHashTagText=deviceHelper.generateTextXpathAndReturnText(createPostHashTagTextMessage);
+        Assert.assertEquals(createPostHashTagTextMessage.toLowerCase().trim(), myPostHashTagText.toLowerCase().trim());
+
     }
 
 }

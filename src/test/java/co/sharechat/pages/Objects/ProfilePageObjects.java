@@ -133,4 +133,18 @@ public class ProfilePageObjects {
     @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/row_name']//following::android.widget.EditText[5]" +
             "//following::android.widget.TextView//following::android.widget.TextView")
     public MobileElement privateInformationDescriptionLabel;
+
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/tabs']//androidx.appcompat.app.ActionBar.Tab [2]")
+    public MobileElement gallerySection;
+
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/tabs']//androidx.appcompat.app.ActionBar.Tab [1]")
+    public MobileElement myPostsSection;
+
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/tabs']//androidx.appcompat.app.ActionBar.Tab [3]")
+    public MobileElement stickersSection;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_repost_user")
+    public MobileElement rePostUserLabel;
+
+
 }

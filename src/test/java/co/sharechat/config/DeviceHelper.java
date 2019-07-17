@@ -452,5 +452,56 @@ public class DeviceHelper {
             System.out.println("Write Input Action failed");
         }
     }
+    /**
+     * This Function is to swipe Down
+     * @author Ramesh
+     *
+     */
+    public void swipeDown() {
+        Dimension size = driver.manage().window().getSize();
+        int starty = (int) (size.height * 0.2);
+        int endy = (int) (size.height * 0.8);
+        int startx = (int) (size.width / 2.2);
+        try {
+            System.out.println("Trying to swipe up from x:" + startx + " y:" + starty + ", to x:" + startx + " y:" + endy);
+            new TouchAction((PerformsTouchActions) driver).press(point(startx, starty)).waitAction(waitOptions(ofSeconds(3)))
+                    .moveTo(point(startx, endy)).release().perform();
+        } catch (Exception e) {
+            System.out.println("Swipe did not complete succesfully.");
+        }
+    }
+    /**
+     * This Function is to Scroll to element
+     * @author Ramesh
+     * @param: Mobile Element & String
+     *
+     */
+    public void scrollToMobileElementTopToBottom(MobileElement element, String scrollcount) {
+        try {
+            waitInSec(3);
+            int count = Integer.parseInt(scrollcount);
+            for (int i = 0; i < count; i++) {
+                if (isElementDisplay(element)) {
+                } else {
+                    swipeDown();
+                }
+
+            }
+        }
+        catch (Exception e) {
+            System.out.println("Scroll to mobile element failed");
+        }
+    }
+    /**
+     * This Function is to Scroll to element
+     * @author Ramesh
+     * @param: Mobile Element & String
+     *
+     */
+    public String generateTextXpathAndReturnText(String value) {
+        String text=((AppiumDriver<MobileElement>) driver).findElement(By.xpath("//*[@text='"+value+"']")).getText();
+        System.out.println("***************========text=========*****************"+text);
+        return text;
+    }
 
 }

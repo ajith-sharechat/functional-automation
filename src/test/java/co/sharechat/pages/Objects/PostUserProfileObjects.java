@@ -88,7 +88,9 @@ public class PostUserProfileObjects {
     @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_post_profile_status")
     public MobileElement postBioProfileStatusLabel;
 
-//    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tv_post_caption']")
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tv_post_caption']")
+    public MobileElement postHashTagLink;
+
     @AndroidFindBy(xpath = "//*[contains(@text,'#')]")
     public MobileElement postTagLink;
 
@@ -131,4 +133,31 @@ public class PostUserProfileObjects {
 
     @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/layout_exo_actions']//android.widget.ImageView")
     public MobileElement whatsAppIconInVideoPost;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/btn_post_audio")
+    public MobileElement playMusicButtonOrPauseButtonForAudioPosts;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_post_audio_disc")
+    public MobileElement postAudioDiscIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/exo_overlay")
+    public MobileElement audioOverLay;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/exo_progress")
+    public MobileElement audioExoProgress;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/player_view_post_gif")
+    public MobileElement gifPost;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/exo_subtitles")
+    public MobileElement gifPostFrameViewLayout;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_post_gif_button")
+    public MobileElement gifButtonInPost;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/search_src_text")
+    public MobileElement searchTextFieldInCreatePost;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_tag_name")
+    public MobileElement bucketFeedFirstTag;
 }

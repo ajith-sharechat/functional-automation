@@ -12,9 +12,9 @@ public class Runner {
 
         try {
             ParallelThread parallelThread = new ParallelThread();
-
             List<String> tests = new ArrayList<>();
-            tests.add("launchAppTest");
+            tests.add("SocialTests");
+
             parallelThread.runner("co.sharechat.test", tests);
         }
         catch(Exception e4)
