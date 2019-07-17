@@ -110,43 +110,29 @@ public class TrendingPostUserProfilePages extends WebDriverListener implements C
             System.err.println("Name is :" + box.getText());
 
         }
-        System.err.println("Size : " + text_Set.size());
-
-//       boolean [] res =  new boolean[TrendingPostUserProfileObjects.allShareingOption.size()];
-//        deviceHelper.waitInSec(5);
-//        element(TrendingPostUserProfileObjects.userPF).click();
-//        element(TrendingPostUserProfileObjects.shareMenu).click();
-//        deviceHelper.waitInSec(5);
-//        deviceHelper.waitInSec(10);
-//        for (int i = 0; i < TrendingPostUserProfileObjects.allShareingOption.size(); i++) {
-//            res[i] = TrendingPostUserProfileObjects.allShareingOption.get(i).isDisplayed();
-//            System.err.println("check Name : " + res[i]);
-//        }
-////        int width = (int) (deviceHelper.getWidthOfScreen() / 2);
-////        int startPoint = (int) (deviceHelper.getHeightOfScreen() - 50);
-////        deviceHelper.waitInSec(2);
-//        deviceHelper.swipe(760, 1590, 280, 1590);
-//        deviceHelper.waitInSec(2);
-//        for (int i = 0; i < TrendingPostUserProfileObjects.allShareingOption.size(); i++) {
-//            res[i] = TrendingPostUserProfileObjects.allShareingOption.get(i).isDisplayed();
-//            System.err.println("check Name : " + res[i]);
-//        }
-//        deviceHelper.swipe(760, 1590, 280, 1590);
-//        deviceHelper.waitInSec(2);
-//        deviceHelper.waitInSec(10);
-//        for (int i = 0; i < TrendingPostUserProfileObjects.allShareingOption.size(); i++) {
-//            res[i] = TrendingPostUserProfileObjects.allShareingOption.get(i).isDisplayed();
-//            System.err.println("check Name : " + res[i]);
-//        }
-//        deviceHelper.swipe(760, 1590, 280, 1590);
-//        deviceHelper.waitInSec(2);
-//        for (int i = 0; i < TrendingPostUserProfileObjects.allShareingOption.size(); i++) {
-//            res[i] = TrendingPostUserProfileObjects.allShareingOption.get(i).isDisplayed();
-//            System.err.println("check Name : " + res[i]);
-//        }
-//
-//        System.err.println("Size : " + optionAdd.size());
         return text_Set.size();
     }
+
+    public boolean checkingBlockSpecificUser() {
+        deviceHelper.waitInSec(5);
+        element(TrendingPostUserProfileObjects.userPF).click();
+        element(TrendingPostUserProfileObjects.moreOption0.get(0)).click();
+        deviceHelper.waitInSec(5);
+        element(TrendingPostUserProfileObjects.blockButtonOptoin1.get(1)).click();
+        element(TrendingPostUserProfileObjects.doBlock).click();
+        return element(TrendingPostUserProfileObjects.unBlockButton).isDisplayed();
+    }
+
+    public boolean checkingUNBlockSpecificUser() {
+        deviceHelper.waitInSec(5);
+        element(TrendingPostUserProfileObjects.userPF).click();
+        element(TrendingPostUserProfileObjects.moreOption0.get(0)).click();
+        deviceHelper.waitInSec(5);
+        element(TrendingPostUserProfileObjects.blockButtonOptoin1.get(1)).click();
+        element(TrendingPostUserProfileObjects.doBlock).click();
+        element(TrendingPostUserProfileObjects.unBlockButton).click();
+        return element(TrendingPostUserProfileObjects.doFollow).isDisplayed();
+    }
+
 
 }

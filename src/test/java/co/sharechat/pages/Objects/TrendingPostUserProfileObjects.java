@@ -62,4 +62,25 @@ public class TrendingPostUserProfileObjects {
 
     public List<MobileElement> allShareingOption1;
 
+
+    //TC_187 And TC_188
+
+    @AndroidFindBys({@AndroidBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/menu_share']//following::android.widget.ImageView")})
+
+    public List<MobileElement> moreOption0;
+
+    @AndroidFindBys({@AndroidBy(id = "in.mohalla.sharechat:id/title")})
+
+    public List<MobileElement> blockButtonOptoin1;
+
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/tv_block_yes")
+    public MobileElement doBlock;
+
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/btn_profile_action")
+    public MobileElement unBlockButton;
+
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/btn_profile_action")
+    public MobileElement doFollow;
+
+
 }
