@@ -149,7 +149,8 @@ public class CreatePostObjects extends CommonPageObjects {
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/item_bgimage_iv")
 	public List<MobileElement> BGcolorTabs;
 
-	//===================
+	@AndroidFindBy(xpath = "in.mohalla.sharechat:id/tv_create_profile")
+	public MobileElement profileSubmitButton;
 
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/tv_open_camera")
 	public MobileElement slectCameraPost;
@@ -157,20 +158,14 @@ public class CreatePostObjects extends CommonPageObjects {
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/camera_takepicture_iv")
 	public MobileElement clickPicBtn;
 
-	//===================
-
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/ll_upload_gallery")
 	public MobileElement uploadFromGalaryBtn;
-
-	//===================
 
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/tv_compose_poll")//
 	public MobileElement createPoll;
 	
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/option_text")
 	public List<MobileElement> pollOptions;
-
-	//===================
 
 	@AndroidFindBy(xpath = "//*[contains(@text,'अपलोड हो चुका है')]")
 	public MobileElement uploadedNotification;

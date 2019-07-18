@@ -5,6 +5,7 @@ import co.sharechat.pages.Actions.CreatePostActions;
 import co.sharechat.pages.Actions.SignUpActions;
 import co.sharechat.pages.Actions.loginPage;
 import io.appium.java_client.AppiumDriver;
+import org.apache.commons.collections.functors.ExceptionClosure;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

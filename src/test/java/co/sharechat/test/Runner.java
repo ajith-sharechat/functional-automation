@@ -12,15 +12,15 @@ public class Runner {
 
         try {
             ParallelThread parallelThread = new ParallelThread();
-
             List<String> tests = new ArrayList<>();
-            //tests.add("CreatePostTests");
-            //tests.add("ReferralTests");
             tests.add("CreatePostTests");
+            tests.add("ReferralTests");
+            tests.add("SocialTests");
+            tests.add("StickerPicturePostTest");
+            tests.add("TrendingPostUserProfileTest");
             parallelThread.runner("co.sharechat.test", tests);
-        }
-        catch(Exception e4)
-        {
+
+        } catch (Exception e4) {
             System.out.println(e4);
         }
     }

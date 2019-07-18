@@ -11,18 +11,18 @@
     "deviceName": "RZ8M62S64ED"
   },
   "iOS": {
-  "platformName": "iOS",
-  "browserName": "Safari",
-  "deviceName": "iPhone",
-  "usePrebuiltWDA": true,
-  "wdaLaunchTimeout": "80000",
-  "wdaConnectionTimeout": "80000",
-  "preventWDAAttachments": true,
-  "clearSystemFiles": true,
-  "shouldUseSingletonTestManager": false,
-  "simpleIsVisibleCheck": true,
-  "maxTypingFrequency": 10
-},
+    "platformName": "iOS",
+    "browserName": "Safari",
+    "deviceName": "iPhone",
+    "usePrebuiltWDA": true,
+    "wdaLaunchTimeout": "80000",
+    "wdaConnectionTimeout": "80000",
+    "preventWDAAttachments": true,
+    "clearSystemFiles": true,
+    "shouldUseSingletonTestManager": false,
+    "simpleIsVisibleCheck": true,
+    "maxTypingFrequency": 10
+  },
   "hostMachines": [
     {
       "machineIP": "127.0.0.1",

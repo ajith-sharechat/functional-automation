@@ -6,7 +6,8 @@ import org.openqa.selenium.WebDriver;
 
 /**
  * Created by Qualitrix Technologies Pvt Ltd.
- * @author:	    Ajith Manjunath
+ *
+ * @author: Ajith Manjunath
  * Date:		07/17/2018
  * Purpose:	    Test Runner
  */
@@ -26,12 +27,12 @@ public class TestRunnerInfo {
     }
 
     public DeviceInterface runnerInfoStatus() {
-            viewFactory = new ViewFactory(AppiumDriverManager.getDriver());
-            runnerInfo = viewFactory.getMobilePlatform(AppiumDriverManager.getDriver().
-                            getPlatformName().toString(),
-                    AppiumDriverManager.getDriver());
-            DriverManager.setDriver(AppiumDriverManager.getDriver());
-            return runnerInfo;
+        viewFactory = new ViewFactory(AppiumDriverManager.getDriver());
+        runnerInfo = viewFactory.getMobilePlatform(AppiumDriverManager.getDriver().
+                        getPlatformName().toString(),
+                AppiumDriverManager.getDriver());
+        DriverManager.setDriver(AppiumDriverManager.getDriver());
+        return runnerInfo;
     }
 
     public WebDriver getDriverSession() {
