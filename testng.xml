@@ -2,9 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="ColivePOC">
 
-	<test thread-count="5" name="Testing">
-		<classes>
-			<class name="Runner" />
-		</classes>
-	</test>
+    <test thread-count="5" name="Testing">
+
+        <groups>
+
+            <run>
+
+                <include name="RegressionTest"/>
+
+            </run>
+
+        </groups>
+        <classes>
+            <class name="co.sharechat.test.Runner"/>
+        </classes>
+    </test>
 </suite>

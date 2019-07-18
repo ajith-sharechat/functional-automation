@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestNG Forum" duration-ms="96519" started-at="2019-07-04T08:27:13Z" finished-at="2019-07-04T08:28:49Z">
+    <groups>
+      <group name="Growth">
+        <method signature="ReferralTests.TC109_SetupPaymentLinkFunctionality()[pri:0, instance:co.sharechat.test.ReferralTests@1aa7ecca]" name="TC109_SetupPaymentLinkFunctionality" class="co.sharechat.test.ReferralTests"/>
+      </group> <!-- Growth -->
+      <group name="RegressionTest">
+        <method signature="ReferralTests.TC109_SetupPaymentLinkFunctionality()[pri:0, instance:co.sharechat.test.ReferralTests@1aa7ecca]" name="TC109_SetupPaymentLinkFunctionality" class="co.sharechat.test.ReferralTests"/>
+      </group> <!-- RegressionTest -->
+    </groups>
+    <test name="TestNG Test0" duration-ms="96519" started-at="2019-07-04T08:27:13Z" finished-at="2019-07-04T08:28:49Z">
+      <class name="co.sharechat.test.ReferralTests">
+        <test-method status="PASS" signature="TC109_SetupPaymentLinkFunctionality()[pri:0, instance:co.sharechat.test.ReferralTests@1aa7ecca]" name="TC109_SetupPaymentLinkFunctionality" duration-ms="94049" started-at="2019-07-04T13:57:14Z" description="Verify update mobile number functionality" finished-at="2019-07-04T13:58:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC109_SetupPaymentLinkFunctionality -->
+      </class> <!-- co.sharechat.test.ReferralTests -->
+    </test> <!-- TestNG Test0 -->
+  </suite> <!-- TestNG Forum -->
+</testng-results>

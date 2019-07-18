@@ -13,20 +13,13 @@ public class Runner {
         try {
             ParallelThread parallelThread = new ParallelThread();
             List<String> tests = new ArrayList<>();
-//            tests.add("launchAppTest");
-//            tests.add("CreatePostTests");
-//            tests.add("TC001_verifyChatScreenFunctionality");
-            tests.add("TC002_verifyChatInitiatingFunctionalityNormalUser");
-//            tests.add("TC005_verifyUserRowFunctionality");
-//            tests.add("TC007_verifyTextMessageFunctionality");
-//            tests.add("TC008_verifyAudioRecordingFunctionality");
-//            tests.add("TC011_verifyBlockUserFunctionality");
-//            tests.add("SocialTests");
-            parallelThread.runner("co.sharechat.test.SocialTestcases", tests);
-//            parallelThread.runner("co.sharechat.test", tests);
-        }
-        catch(Exception e4)
-        {
+            tests.add("ReferralTests");
+            tests.add("SocialTests");
+            tests.add("StickerPicturePostTest");
+            tests.add("TrendingPostUserProfileTest");
+            parallelThread.runner("co.sharechat.test", tests);
+
+        } catch (Exception e4) {
             System.out.println(e4);
         }
     }

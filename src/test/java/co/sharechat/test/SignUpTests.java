@@ -14,7 +14,8 @@ public class SignUpTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "To verify if user is able to register/Sign up in application with unregistered mobile number")
+    @Test(enabled = true, groups = {"SmokeTest"},
+            description = "To verify if user is able to register/Sign up in application with unregistered mobile number")
     public void  TC003_signupRegistered(){
 
         getSignUpPage().selectHindi();
@@ -28,7 +29,8 @@ public class SignUpTests implements Constants {
 
     }
 
-    @Test(enabled = true, description = "To verify if user is able to register/Sign up in application with registered mobile number")
+    @Test(enabled = true, groups = {"SmokeTest"},
+            description = "To verify if user is able to register/Sign up in application with registered mobile number")
     public void TC004_signupRegistered(){
 
         getSignUpPage().selectHindi();

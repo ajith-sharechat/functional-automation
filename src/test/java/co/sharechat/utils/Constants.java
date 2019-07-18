@@ -2,15 +2,17 @@ package co.sharechat.utils;
 
 public interface Constants {
 
-    String registerNumber = "9832142177";
-//            "9491862195";
+    String registerNumber = "9491862195";
+    String invalidNumber = "94918621";
+    String UNRegisteredNumber = "942426219534";
+    String OTPVerifiedNumber = "7888600653";
     String appPackage = "in.mohalla.sharechat";
     String AfterlogoutPageText = "अपनी भाषा का चयन करें";
     String profileSettingText = "Profile settings";
     String chat = "Chat";
     String shareOnwhatsApp = "has been added to WhatsApp";
     String SearchingText = "Diljeet";
-    String uniqueNo = "946516167723";
+    String uniqueNo = "9465161677";
     String userName = "Jasmeet";
     String otp = "000000";
     String textMessage = "text Message for testing";
@@ -22,7 +24,15 @@ public interface Constants {
 
 
     String Language=TELUGU;
+    String countTry = "1";
+    String SELECTYOURLANGUAGE = "Select your language";
+    int ShareOptionCount = 32;
+    int LANGUAGEBOXCOUNT = 15;
+    int trendingTabsCount = 13;
 
+
+    //Referral Screen texts
+    String varificationText = "नंबर वेरिफिकेशन हो रहा है";
 
 
 }
