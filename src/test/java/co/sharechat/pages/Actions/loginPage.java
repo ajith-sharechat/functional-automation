@@ -6,6 +6,7 @@ import co.sharechat.config.WebDriverListener;
 import co.sharechat.pages.Objects.loginPageObjects;
 import co.sharechat.utils.Constants;
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.appium.java_client.MobileElement;
@@ -17,6 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -58,17 +60,6 @@ public class loginPage extends WebDriverListener implements Constants {
     public void userlogin() throws Exception {
         WebDriverWait wait = null;
         try {
-<<<<<<< HEAD
-            extent.attachReporter(reporter);
-            ExtentTest logger=extent.createTest("CustomerLogin");
-            driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-            //loginPageObjects.selectKannada.click();
-            //Assert.assertEquals("ಶೇರ್ ಚಾಟ್", loginPageObjects.shareChatTextInKannada.getText());
-            //((AppiumDriver <MobileElement>)driver).hideKeyboard();
-            //Assert.assertEquals(loginPageObjects.et_Phone.getText(), "ಮೊಬೈಲ್ ನಂಬರ್");
-            System.out.println("Edit Phone number text box found in ಕನ್ನಡ");
-            //Assert.assertEquals(loginPageObjects.tv_get_otp.getText(), "ಅಕೌಂಟ್ ಗೆ ಹೋಗಲು");
-=======
 
             element(loginPageObjects.selectHindi).click();
             element(loginPageObjects.enterNumber).sendKeys(uniqueNo);
@@ -86,10 +77,7 @@ public class loginPage extends WebDriverListener implements Constants {
 
             logger.log(Status.FAIL, "Failed on Customer login");
             webDriverListener.captureScreenShot("loginPage", "userlogin");
->>>>>>> diljeet_05July2019
-            // Flush method will write the test in report- This is mandatory step
-            //extent.flush();
-
+            
         }
     }
 
