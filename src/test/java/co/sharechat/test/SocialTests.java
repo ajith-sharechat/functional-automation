@@ -33,7 +33,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify chat screen functionality", groups = {"RegressionTest", "Social"})
     public void TC001_verifyChatScreen(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapChatIcon();
         getChatPageActionsInstance().verifyChatScreenElements();
@@ -41,14 +41,14 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify chat initiating functionality from normal user profile screen", groups = {"RegressionTest", "Social"})
     public void TC002_verifyChatInitiatingFunctionality(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getSocialActionsInstance().verifyPostUserChatInitiatingFunctionality();
     }
 
     @Test(enabled = true, description = "Verify user row functionality", groups = {"RegressionTest", "Social"})
     public void TC005_verifyChatScreenUserRow(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapChatIcon();
         getChatPageActionsInstance().verifyChatScreenElements();
@@ -59,7 +59,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify sending text message functionality to known user", groups = {"RegressionTest", "Social"})
     public void TC007_verifyChatScreenTextMessageFunctionlity(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapChatIcon();
         getChatPageActionsInstance().verifyChatScreenElements();
@@ -71,7 +71,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify Block User functionality form chat session", groups = {"RegressionTest", "Social"})
     public void TC011_verifyChatBoxBlockUserFunctionality(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapChatIcon();
         getChatPageActionsInstance().verifyChatScreenElements();
@@ -83,14 +83,14 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify sharing a post functionality to known user", groups = {"RegressionTest", "Social"})
     public void TC021_verifySharingPostFunctionalityKnownUser(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getSocialActionsInstance().verifySharingPostFunctionalityToKnownUser();
     }
 
     @Test(enabled = true, description = "Verify UNKNOWN chat screen functionality", groups = {"RegressionTest", "Social"})
     public void TC022_verifyUnknownChatScreenFunctionality(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapChatIcon();
         getChatPageActionsInstance().verifyChatScreenElements();
@@ -100,7 +100,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify Shake and Chat screen functionality", groups = {"RegressionTest", "Social"})
     public void TC026_verifyShareAndChatScreen(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapChatIcon();
         getChatPageActionsInstance().verifyChatScreenElements();
@@ -112,7 +112,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify comment screen UI for a picture post",groups = {"RegressionTest", "Social"})
     public void TC065_verifyCommentScreenUIPostFunctionality(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().scrollToPostComment();
         getHomePageActionsInstance().tapPostCommentIcon();
@@ -121,7 +121,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify user profile functionality from comments list",groups = {"RegressionTest", "Social"})
     public void TC083_verifyUserProfileFunctionalityInCommentsList(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().scrollToPostComment();
         getHomePageActionsInstance().tapPostCommentIcon();
@@ -131,7 +131,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify Like link functionality beside to comment link",groups = {"RegressionTest", "Social"})
     public void TC084_verifyLikeLinkFunctionalityBesideCommentLink(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().scrollToVideoPost();
         getHomePageActionsInstance().tapOnVideoPost();
@@ -142,7 +142,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify profile screen UI",groups = {"RegressionTest", "Social"})
     public void TC098_verifyProfileScreenUI(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -150,7 +150,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify Add Friend button functionality",groups = {"RegressionTest", "Social"})
     public void TC099_verifyAddFriendFunctionality(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -169,7 +169,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify Share apk icon functionality from My Contacts screen",groups = {"RegressionTest", "Social"})
     public void TC100_verifyShareAPKIconFunctionalityMyContactsScreen(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -180,7 +180,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify share icon functionality",groups = {"RegressionTest", "Social"})
     public void TC101_verifyShareIconFunctionality(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -191,7 +191,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify settings button functionality",groups = {"RegressionTest", "Social"})
     public void TC102_verifySettingButtonFunctionality(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -201,7 +201,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify Edit your profile button functionality",groups = {"RegressionTest", "Social"})
     public void TC103_verifyEditProfileButtonFunctionality(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -211,7 +211,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify updating profile picture functionality with gallery from EDIT PROFILE screen",groups = {"RegressionTest", "Social"})
     public void TC104_verifyUpdatingProfilePictureFunctionalityWithGallery(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -223,7 +223,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify updating profile picture functionality with camera from EDIT PROFILE screen",groups = {"RegressionTest", "Social"})
     public void TC105_verifyUpdatingProfilePictureFunctionalityWithCamera(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -237,7 +237,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify update background picture functionality with gallery from EDIT PROFILE screen",groups = {"RegressionTest", "Social"})
     public void TC106_verifyUpdatingProfilePictureFunctionalityWithGallery(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -249,7 +249,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify update background picture functionality with camera from EDIT PROFILE screen",groups = {"RegressionTest", "Social"})
     public void TC107_verifyEditProfileButtonFunctionality(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -263,7 +263,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify single tap functionality on post in my post section",groups = {"RegressionTest", "Social"})
     public void TC122_TC123_myPostsVerifySingleTapFunctionalityOnPost(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -273,7 +273,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify profile picture, name, and bio of the post in my post section",groups = {"RegressionTest", "Social"})
     public void TC124_myPostVerifyProfilePictureNameAndBioOnThePost(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -284,7 +284,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify options button functionality of a post in my post section",groups = {"RegressionTest", "Social"})
     public void TC125_myPostVerifyOptionsButtonFunctionalityOfPost(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -295,7 +295,7 @@ public class SocialTests  implements Constants {
     }
     @Test(enabled = true, description = "Verify whatsapp share functionality for a post in my post section",groups = {"RegressionTest", "Social"})
     public void TC130_myPostVerifyWhatsAppShareFunctionalityForPost(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -316,7 +316,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify repost functionality for a post in my post section",groups = {"RegressionTest", "Social"})
     public void TC133_myPostVerifyRePostFunctionalityForPost(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -327,7 +327,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify video playing functionality for a video post in my post section",groups = {"RegressionTest", "Social"})
     public void TC134_myPostVerifyVideoPlayFunctionalityForVideoPost(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -338,7 +338,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify audio post functionality for a audio post in my post section",groups = {"RegressionTest", "Social"})
     public void TC135_myPostVerifyAudioPostFunctionalityForAudioPost(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -348,7 +348,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify GIF motion picture functionality for a GIF post in my post section",groups = {"RegressionTest", "Social"})
     public void TC136_myPostVerifyGIFMotionPictureFunctionalityForGIFPost(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -358,7 +358,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify tag link functionality of a post in Gallery section",groups = {"RegressionTest", "Social"})
     public void TC140_galleryVerifyTagLinkFunctionalityOfPost(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber, otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -368,7 +368,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify whatsapp share functionality for a post in gallery section",groups = {"RegressionTest", "Social"})
     public void TC145_galleryVerifyWhatsAppShareFunctionalityForPost(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -377,8 +377,8 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().verifyWhatsAppWelcomeScreenElements();
     }
     @Test(enabled = true, description = "Verify repost functionality for a post in gallery section",groups = {"RegressionTest", "Social"})
-    public void TC148_galleryVerifyRepostFunctionalityForPost(){
-        getSignUpInstance().selectTelugu();
+    public void TC148_galleryVerifyRePostFunctionalityForPost(){
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -390,7 +390,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify video playing functionality for a video post in gallery section",groups = {"RegressionTest", "Social"})
     public void TC150_galleryVerifyVideoPlayingFunctionalityForVideoPost(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
@@ -402,7 +402,7 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify audio post functionality for a audio post in gallery section",groups = {"RegressionTest", "Social"})
     public void TC151_galleryVerifyAudioPostFunctionalityForAudioPost(){
-        getSignUpInstance().selectTelugu();
+        getSignUpInstance().selectLanguage(Language);
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();

@@ -59,6 +59,14 @@ public class SignUp extends WebDriverListener {
 		deviceHelper.waitTillTheElementIsVisibleAndClickable(signUpObjects.teluguBox);
 		element(signUpObjects.teluguBox).click();
 	}
+	/**
+	 * This Function is to Select Language using text
+	 * @author Ramesh
+	 */
+	public void selectLanguage(String language) {
+		deviceHelper.waitTillTheElementIsVisible(signUpObjects.selectLanguageTitle);
+		deviceHelper.selectLanguageUsingText(language);
+	}
 	
 	public void enterName(String name) {
 		element(signUpObjects.loginNameBox).sendKeys(name);

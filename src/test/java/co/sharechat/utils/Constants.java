@@ -16,6 +16,12 @@ public interface Constants {
     String textMessage = "text Message for testing";
     String textAboutPost = "Post Caption- This post is created for automation purpose. " +
             "It is a Test Post. It is a Test Post. It is a Test Post. It is a Test Post." ;
+    String TELUGU="తెలుగు";
+    String HINDI="हिन्दी";
+
+
+
+    String Language=TELUGU;
 
 
 

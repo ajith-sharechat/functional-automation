@@ -23,6 +23,9 @@ public class SignUpPageObjects {
 
 	@AndroidFindBy(xpath = "//*[@text='తెలుగు']")
 	public MobileElement teluguBox;
+
+	@AndroidFindBy(id ="in.mohalla.sharechat:id/select_title")
+	public MobileElement selectLanguageTitle;
 	
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/et_name")
 	public MobileElement loginNameBox;

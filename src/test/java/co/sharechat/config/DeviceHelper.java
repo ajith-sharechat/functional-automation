@@ -502,5 +502,14 @@ public class DeviceHelper {
         String text=((AppiumDriver<MobileElement>) driver).findElement(By.xpath("//*[@text='"+value+"']")).getText();
         return text;
     }
+    /**
+     * This Function is to Select Language
+     * @author Ramesh
+     * @param: String
+     */
+    public void selectLanguageUsingText(String value) {
+        waitInSec(5);
+        ((AppiumDriver<MobileElement>) driver).findElement(By.xpath("//*[@text='"+value+"']")).click();
+    }
 
 }
