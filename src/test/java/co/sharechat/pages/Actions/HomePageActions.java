@@ -45,7 +45,7 @@ public class HomePageActions extends WebDriverListener {
         this.runnerInfo = runnerInfo;
     }
 
-    public void  verifyHomeScreenElement(){
+    public void  verifyHomeScreenElements(){
         deviceHelper.waitTillTheElementIsVisible(homePostObjects.headerMenuBar);
         deviceHelper.isElementPresentAssertTrue(homePostObjects.languageTitle);
         deviceHelper.isElementPresentAssertTrue(homePostObjects.notificationIcon);
@@ -60,31 +60,31 @@ public class HomePageActions extends WebDriverListener {
         deviceHelper.isElementPresentAssertTrue(homePostObjects.chatIcon);
         deviceHelper.isElementPresentAssertTrue(homePostObjects.profileIcon);
     }
-    public void  clickHomeIcon(){
+    public void  tapHomeIcon(){
         deviceHelper.waitTillTheElementIsVisible(homePostObjects.homeIcon);
         homePostObjects.homeIcon.click();
     }
 
-    public void clickChatIcon(){
+    public void tapChatIcon(){
         deviceHelper.waitTillTheElementIsVisibleAndClickable(homePostObjects.chatIcon);
         homePostObjects.chatIcon.click();
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.recentKnownNameLabel);
     }
-    public void clickProfileIcon(){
+    public void tapProfileIcon(){
         deviceHelper.waitTillTheElementIsVisibleAndClickable(homePostObjects.profileIcon);
         homePostObjects.profileIcon.click();
     }
-    public void clickAllowButton() {
+    public void tapAllowButton() {
         if(deviceHelper.isElementDisplay(signUpObjects.allowPermissionPopUp)==true) {
             signUpObjects.allowPermissionPopUp.click();
         }
     }
-    public void clickUserProfileLink() {
+    public void tapUserProfileLink() {
         if(deviceHelper.isElementDisplay(homePostObjects.userProfileLink)) {
             homePostObjects.userProfileLink.click();
         }
     }
-    public void scrollTillPostImageClickPostImage() {
+    public void scrollTillPostImageAndTapPostImage() {
         if(deviceHelper.isElementDisplay(homePostObjects.postImage)==true) {
             homePostObjects.postImage.click();
         }
@@ -93,7 +93,7 @@ public class HomePageActions extends WebDriverListener {
             homePostObjects.postImage.click();
         }
     }
-    public void clickPostImageOptionTopRightCorner() {
+    public void tapPostImageOptionOnTopRightCorner() {
         deviceHelper.waitTillTheElementIsVisible(postUserObjects.postImageToolOptions);
         postUserObjects.postImageToolOptions.click();
     }
@@ -102,7 +102,7 @@ public class HomePageActions extends WebDriverListener {
         deviceHelper.scrollToMobileElement(homePostObjects.postCommentIcon, "3");
     }
 
-    public void clickPostCommentIcon() {
+    public void tapPostCommentIcon() {
         deviceHelper.waitTillTheElementIsVisible(homePostObjects.postCommentIcon);
         homePostObjects.postCommentIcon.click();
         deviceHelper.waitInSec(3);
@@ -118,11 +118,11 @@ public class HomePageActions extends WebDriverListener {
         deviceHelper.waitTillTheElementIsVisible(homePostObjects.userProfileLink);
         deviceHelper.scrollToMobileElement(homePostObjects.postVideoPlayIcon, "20");
     }
-    public void clickVideoPost() {
+    public void tapOnVideoPost() {
         deviceHelper.waitTillTheElementIsVisible(homePostObjects.postVideoPlayIcon);
         homePostObjects.postVideoPlayIcon.click();
     }
-    public void verifyVideoPostPreviewScreen() {
+    public void verifyVideoPostPreviewScreenElements() {
         deviceHelper.waitTillTheElementIsVisible(postUserObjects.videoPostCommentIcon);
         deviceHelper.isElementPresentAssertTrue(postUserObjects.videoPostShareIcon);
         deviceHelper.isElementPresentAssertTrue(postUserObjects.videoPostRepostIcon);

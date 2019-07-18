@@ -344,7 +344,7 @@ public class DeviceHelper {
      * @param: Mobile Element and count of scroll
      *
      */
-    public void scrollToMobileElementAndClickElement(MobileElement element, String scrollcount) {
+    public void scrollToMobileElementAndTapElement(MobileElement element, String scrollcount) {
         try {
             waitInSec(3);
             int count = Integer.parseInt(scrollcount);
@@ -384,11 +384,11 @@ public class DeviceHelper {
         }
     }
     /**
-     * This Function is to click android back button
+     * This Function is to Tap android back button
      * @author Ramesh
      *
      */
-    public void clickAndroidBackButton() {
+    public void tapAndroidBackButton() {
         try {
             ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
         }catch (Exception e) {
@@ -500,7 +500,6 @@ public class DeviceHelper {
      */
     public String generateTextXpathAndReturnText(String value) {
         String text=((AppiumDriver<MobileElement>) driver).findElement(By.xpath("//*[@text='"+value+"']")).getText();
-        System.out.println("***************========text=========*****************"+text);
         return text;
     }
 

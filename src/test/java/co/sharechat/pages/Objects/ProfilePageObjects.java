@@ -146,5 +146,21 @@ public class ProfilePageObjects {
     @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_repost_user")
     public MobileElement rePostUserLabel;
 
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/btn_sticker_start_download")
+    public MobileElement stickerDownloadIcon;
 
+    @AndroidFindBy(id ="com.whatsapp:id/cancel_button")
+    public MobileElement cancelPopupButton;
+
+    @AndroidFindBy(id ="com.whatsapp:id/add_button")
+    public MobileElement addPopupButton;
+
+    @AndroidFindBy(xpath ="//*[contains(@text,'Would you like to add')]")
+    public MobileElement stickerToAddWhatsAppPopupQuestion;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_sticker_pack")
+    public MobileElement stickerImage;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_sticker_pack")
+    public MobileElement stickerImageLabel;
 }

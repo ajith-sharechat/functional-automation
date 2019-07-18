@@ -39,7 +39,7 @@ public class ChatPageActions  extends WebDriverListener {
         this.runnerInfo = runnerInfo;
     }
 
-    public void verifyChatScreen(){
+    public void verifyChatScreenElements(){
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.chatScreenTitle);
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.knownNameLabel);
         deviceHelper.isElementPresentAssertTrue(chatPageObjects.knownNameLabel);
@@ -52,13 +52,13 @@ public class ChatPageActions  extends WebDriverListener {
         deviceHelper.isElementPresentAssertTrue(chatPageObjects.topSearchIcon);
     }
 
-    public void clickKnownUserList(){
+    public void verifyRecentKnownUserFromKnownUserList(){
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.recentKnownNameLabel);
-        String username=chatPageObjects.recentKnownNameLabel.getText();
+        String userName=chatPageObjects.recentKnownNameLabel.getText();
         chatPageObjects.recentKnownNameLabel.click();
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.recentMessageInChatBox);
-        String chatboxusername=chatPageObjects.recentKnownNameLabel.getText();
-        Assert.assertEquals(username.toLowerCase(), chatboxusername.toLowerCase());
+        String chatBoxUserName=chatPageObjects.recentKnownNameLabel.getText();
+        Assert.assertEquals(userName.toLowerCase().trim(), chatBoxUserName.toLowerCase().trim());
     }
 
     public void enterTextMessage(String message){
@@ -71,38 +71,38 @@ public class ChatPageActions  extends WebDriverListener {
         Actions a=new Actions(driver);
         a.sendKeys(message).build().perform();
     }
-    public void clickRightTopConerOption(){
+    public void tapRightTopConerOption(){
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.rightConerOptionListChatBox);
         chatPageObjects.rightConerOptionListChatBox.click();
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.blockOption);
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.hideChatOption);
     }
-    public void clickBlockOption(){
+    public void tapBlockOption(){
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.blockOption);
         chatPageObjects.blockOption.click();
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.unblockButton);
     }
-    public void clickUnblockButton(){
+    public void tapUnblockButton(){
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.unblockButton);
         chatPageObjects.unblockButton.click();
         deviceHelper.waitTillTheElementIsVisible(postUserObjects.sendMessageIcon);
     }
-    public void clickUknownUser(){
+    public void tapUknownUser(){
         deviceHelper.waitTillTheElementIsVisible(chatPageObjects.unKnownName);
         chatPageObjects.unKnownName.click();
     }
-    public void verifyUnknownUserScreen(){
+    public void verifyUnknownUserScreenElements(){
         deviceHelper.waitTillTheElementIsVisible(unknownUserObjects.addFriendUnknownUserIcon);
         deviceHelper.isElementPresentAssertTrue(unknownUserObjects.shareAndChatLabel);
         deviceHelper.isElementPresentAssertTrue(unknownUserObjects.sharePhoneToTalkLabel);
         deviceHelper.isElementPresentAssertTrue(unknownUserObjects.sharePhoneIconUnknownUsersScreen);
     }
-    public void clickShareAndChatLink(){
+    public void tapShareAndChatLink(){
         deviceHelper.waitTillTheElementIsVisible(unknownUserObjects.addFriendUnknownUserIcon);
         unknownUserObjects.shareAndChatLabel.click();
         deviceHelper.waitTillTheElementIsVisible(unknownUserObjects.shareNChatLabel);
     }
-    public void verifyShareAndChatScreen(){
+    public void verifyShareAndChatScreenElements(){
         deviceHelper.waitTillTheElementIsVisible(unknownUserObjects.shareNChatLabel);
         deviceHelper.isElementPresentAssertTrue(unknownUserObjects.sharePhoneTalkStrangersLabel);
         deviceHelper.isElementPresentAssertTrue(postUserObjects.backIcon);

@@ -71,7 +71,7 @@ public class SignUp extends WebDriverListener {
 	 * This Function is to Click OTP Button
 	 * @author Ramesh
 	 */
-	public void clickOtpButton() {
+	public void clickGoToYourAccountButton() {
 		element(signUpObjects.getOTPButton).click();
 	}
 
