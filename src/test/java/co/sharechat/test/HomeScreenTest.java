@@ -25,27 +25,27 @@ public class HomeScreenTest implements Constants {
 
         boolean testResponse = getHomeScreenPage().verifyChangingLanguageOptionIsappearingInTopLeftCorner();
         assertTrue(testResponse,
-                "Test Fail Verify Changing language option is appearing in top left corner.");
+                "Test Fail: Verify Changing language option is appearing in top left corner.");
 
-        boolean testResponse1 = getHomeScreenPage().verifyRupeeIconAndNotificationsIconOnTopRightCornerOfTheScreen();
-        assertTrue(testResponse1,
-                "Test Fail Verify Rupee icon and notifications icon on top right corner of the screen.");
+        testResponse = getHomeScreenPage().verifyPresenceOfRupeeIconAndNotificationsIconOnTopRightCornerOfTheScreen();
+        assertTrue(testResponse,
+                "Test Fail: Verify Rupee icon and notifications icon on top right corner of the screen.");
 
-        boolean testResponse2 = getHomeScreenPage().verifyByDefaultTrendingIsSelected();
-        assertTrue(testResponse2,
-                "Test Fail for Verify By default Trending is selected");
+        testResponse= getHomeScreenPage().verifyByDefaultTrendingIsSelected();
+        assertTrue(testResponse,
+                "Test Fail: for Verify By default Trending is selected");
 
-        int testResponse3 = getHomeScreenPage().verifyThirteenTabsDifferentTabsAreArrangedHorizontallyAndTheTabsAreLikeFollowing();
+        int testResponse1 = getHomeScreenPage().verifyTrendingTabsCountAndVerifyPresenceOfTabs();
 
-        assertTrue(testResponse3 == trendingTabsCount,
-                "Test Fail for Verify thirteen  tabs different tabs are arranged horizontally");
+        assertTrue(testResponse1 == trendingTabsCount,
+                "Test Fail: for Verify thirteen  tabs different tabs are arranged horizontally");
 
 
         boolean testResponse4[] = getHomeScreenPage().verifyFiveButtonsArePlacedInHomeExploreCreatePost();
         for (int i = 0; i < testResponse4.length; i++) {
 
             assertTrue(testResponse4[i],
-                    "Test Fail for Verify five buttons are placed constantly with suitable icons which are Home, Explore, Create Post, Chat, and Profile in bottom of the screen");
+                    "Test Fail: for Verify five buttons are placed constantly with suitable icons which are Home, Explore, Create Post, Chat, and Profile in bottom of the screen");
         }
     }
 
@@ -56,11 +56,11 @@ public class HomeScreenTest implements Constants {
 
         boolean testResponse = getHomeScreenPage().tapOnDefaultLanguageDropDownField();
         assertTrue(testResponse,
-                "Test Fail Tap on default Language drop down field.");
+                "Test Fail: Tap on default Language drop down field.");
 
-        boolean testResponse1 = getHomeScreenPage().screenRedirectingToChangeLanguageScreen();
-        assertTrue(testResponse1,
-                "Test Fail for Screen is redirecting to Change you language screen");
+        testResponse= getHomeScreenPage().screenRedirectingToChangeLanguageScreen();
+        assertTrue(testResponse,
+                "Test Fail: for Screen is redirecting to Change you language screen");
 
         getHomeScreenPage().selectOneLanguageFromScreen();
 
@@ -68,17 +68,17 @@ public class HomeScreenTest implements Constants {
         for (int i = 0; i < testRespons2.length; i++) {
             System.err.println("Checking Array : " + testRespons2[i]);
             assertTrue(testRespons2[i],
-                    "Test Fail for Verify whole screen is changing to that selected language");
+                    "Test Fail: for Verify whole screen is changing to that selected language");
         }
 
-        boolean testResponse3 = getHomeScreenPage().checkWithAllTheOptionsSelectLanguages();
-        assertTrue(testResponse3,
-                "Test Fail for Check with all the options Select Languages.");
+        testResponse = getHomeScreenPage().checkWithAllTheOptionsSelectLanguages();
+        assertTrue(testResponse,
+                "Test Fail: for Check with all the options Select Languages.");
 
 
-        boolean testRespons4 = getHomeScreenPage().verifyPostsAndTagsAppearingBasedOnLanguageRegion();
-        assertTrue(testRespons4,
-                "Test Fail for Verify that posts and tags are appearing based on language region");
+        testResponse = getHomeScreenPage().verifyPostsAndTagsAppearingBasedOnLanguageRegion();
+        assertTrue(testResponse,
+                "Test Fail: for Verify that posts and tags are appearing based on language region");
     }
 
 
@@ -89,7 +89,7 @@ public class HomeScreenTest implements Constants {
 
         boolean testResponse = getHomeScreenPage().verifyRupeeIconTopRightCornerOfTheHomeScreen();
         assertTrue(testResponse,
-                "Test Fail for Verify that tap on rupee icon from top right corner of the home screen and Verify that home screen is redirecting to user money screen.");
+                "Test Fail: for Verify that tap on rupee icon from top right corner of the home screen and Verify that home screen is redirecting to user money screen.");
 
     }
 
@@ -100,7 +100,7 @@ public class HomeScreenTest implements Constants {
 
         boolean testResponse = getHomeScreenPage().verifyNotificationsButtonTopRightCornerOfTheHomeScreen();
         assertTrue(testResponse,
-                "Test Fail for Verify Tap on notifications button from top right corner of the home screen and Verify that home screen is redirecting to notifications screen");
+                "Test Fail: for Verify Tap on notifications button from top right corner of the home screen and Verify that home screen is redirecting to notifications screen");
 
     }
 
@@ -113,13 +113,13 @@ public class HomeScreenTest implements Constants {
         boolean testResponse[] = getHomeScreenPage().verifySearchBarAppear();
         for (int i = 0; i < testResponse.length; i++) {
             assertTrue(testResponse[i],
-                    "Test Fail for Verify that search bar should appear");
+                    "Test Fail: for Verify that search bar should appear");
         }
 
         boolean testResponse1 = getHomeScreenPage().differentTypesOfTrendingBucketsAppearingOnScreen();
 
         assertTrue(testResponse1,
-                "Test Fail for different types of trending buckets appearing on screen.");
+                "Test Fail: for different types of trending buckets appearing on screen.");
     }
 
     @Test(enabled = true, description = "Verify home screen functionality", groups = {"RegressionTest", "Creation"})
@@ -128,10 +128,10 @@ public class HomeScreenTest implements Constants {
         getLoginPage().userlogin();
         getHomeScreenPage().verifyChatButtonFromHomeScreen();
 
-        boolean testResponse1 = getHomeScreenPage().verifyChatScreenOpening();
+        boolean testResponse = getHomeScreenPage().verifyChatScreenOpening();
 
-        assertTrue(testResponse1,
-                "Test Fail for Verify that Chat screen is opening.");
+        assertTrue(testResponse,
+                "Test Fail: for Verify that Chat screen is opening.");
     }
 
     @Test(enabled = true, description = "Verify home screen functionality", groups = {"RegressionTest", "Creation"})
@@ -140,10 +140,10 @@ public class HomeScreenTest implements Constants {
         getLoginPage().userlogin();
         getHomeScreenPage().verifyProfileButtonFromHomeScreen();
 
-        boolean testResponse1 = getHomeScreenPage().verifyUserProfileScreenOpening();
+        boolean testResponse = getHomeScreenPage().verifyUserProfileScreenOpening();
 
-        assertTrue(testResponse1,
-                "Test Fail for Verify that user profile screen is opening.");
+        assertTrue(testResponse,
+                "Test Fail: for Verify that user profile screen is opening.");
     }
 
 

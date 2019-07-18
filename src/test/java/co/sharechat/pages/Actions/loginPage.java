@@ -81,7 +81,7 @@ public class loginPage extends WebDriverListener implements Constants {
         }
     }
 
-    public boolean createNewUSer() {
+    public boolean createNewUser() {
 
         element(loginPageObjects.selectHindi).click();
         element(loginPageObjects.enterNumber).sendKeys(UNRegisteredNumber);
@@ -97,8 +97,7 @@ public class loginPage extends WebDriverListener implements Constants {
 
     }
 
-    public ArrayList verifyWithWrongOTP() throws Exception {
-        ArrayList al = new ArrayList();
+    public boolean verifyWithWrongOTP() throws Exception {
         element(loginPageObjects.selectHindi).click();
         element(loginPageObjects.enterNumber).sendKeys(OTPVerifiedNumber);
         element(loginPageObjects.goToYourAccount).click();
@@ -109,10 +108,8 @@ public class loginPage extends WebDriverListener implements Constants {
         for (int i = 0; i <= 5; i++) {
             loginPageObjects.OTPValues.get(i).sendKeys("" + i);
         }
-        al.add(loginPageObjects.Toast.getText());
-        deviceHelper.waitInSec(5);
 
-        return al;
+        return loginPageObjects.Toast.isDisplayed();
     }
 
     public ArrayList verifyLoginWithInvalidNumber() {
@@ -138,16 +135,16 @@ public class loginPage extends WebDriverListener implements Constants {
 
     }
 
-    public String verifyProceedWithEmptyForm() {
+    public boolean verifyProceedWithEmptyForm() {
         element(loginPageObjects.selectHindi).click();
         element(loginPageObjects.goToYourAccount).click();
 
-        return loginPageObjects.Toast.getText();
+        return loginPageObjects.Toast.isDisplayed();
 
 
     }
 
-    public String verifyProceedWithoutName() {
+    public boolean verifyProceedWithoutName() {
 
         element(loginPageObjects.selectHindi).click();
         element(loginPageObjects.enterNumber).sendKeys(UNRegisteredNumber);
@@ -158,19 +155,19 @@ public class loginPage extends WebDriverListener implements Constants {
         element(loginPageObjects.selectRadioButton).click();
         element(loginPageObjects.ageRange).click();
         loginPageObjects.createPFClick.click();
-        return loginPageObjects.Toast.getText();
+        return loginPageObjects.Toast.isDisplayed();
     }
 
-    public String verifyProceedWithoutMobileNumber() {
+    public boolean verifyProceedWithoutMobileNumber() {
         element(loginPageObjects.selectHindi).click();
         element(loginPageObjects.goToYourAccount).click();
 
-        return loginPageObjects.Toast.getText();
+        return loginPageObjects.Toast.isDisplayed();
 
 
     }
 
-    public String verifyProceedWithoutGenderSelection() {
+    public boolean verifyProceedWithoutGenderSelection() {
 
         element(loginPageObjects.selectHindi).click();
         element(loginPageObjects.enterNumber).sendKeys(UNRegisteredNumber);
@@ -181,10 +178,10 @@ public class loginPage extends WebDriverListener implements Constants {
         element(loginPageObjects.enterName).sendKeys(SearchingText);
         element(loginPageObjects.ageRange).click();
         loginPageObjects.createPFClick.click();
-        return loginPageObjects.Toast.getText();
+        return loginPageObjects.Toast.isDisplayed();
     }
 
-    public String verifyProceedWithoutAgeSelection() {
+    public boolean verifyProceedWithoutAgeSelection() {
 
         element(loginPageObjects.selectHindi).click();
         element(loginPageObjects.enterNumber).sendKeys(UNRegisteredNumber);
@@ -195,7 +192,7 @@ public class loginPage extends WebDriverListener implements Constants {
         element(loginPageObjects.enterName).sendKeys(SearchingText);
         element(loginPageObjects.selectRadioButton).click();
         loginPageObjects.createPFClick.click();
-        return loginPageObjects.Toast.getText();
+        return loginPageObjects.Toast.isDisplayed();
     }
 
     public boolean[] verifyTermPolicyPages() {

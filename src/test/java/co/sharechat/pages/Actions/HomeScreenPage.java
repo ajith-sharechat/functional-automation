@@ -54,7 +54,7 @@ public class HomeScreenPage extends WebDriverListener implements Constants {
         return HomeScreenObject.LangDD.isDisplayed();
     }
 
-    public boolean verifyRupeeIconAndNotificationsIconOnTopRightCornerOfTheScreen() {
+    public boolean verifyPresenceOfRupeeIconAndNotificationsIconOnTopRightCornerOfTheScreen() {
 
         return HomeScreenObject.Rupeicon.isDisplayed();
 
@@ -66,7 +66,7 @@ public class HomeScreenPage extends WebDriverListener implements Constants {
 
     }
 
-    public int verifyThirteenTabsDifferentTabsAreArrangedHorizontallyAndTheTabsAreLikeFollowing() {
+    public int verifyTrendingTabsCountAndVerifyPresenceOfTabs() {
 
         Set<String> text_Set = new HashSet<String>();
         deviceHelper.waitInSec(10);

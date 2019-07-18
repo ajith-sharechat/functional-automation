@@ -21,8 +21,8 @@ public class CheckAppInstallAndUninstallTest implements Constants {
     @Test(enabled = true, description = "Verify install and uninstall app", groups = {"SmokeTest"})
     public void TC001_checkAppInstallAndUninstall() {
 
-        assertTrue(getCheckAppInstallAndUninstall().checkInstall(appPackage), "Test Fail, User not able to install the App.");
-        assertFalse(getCheckAppInstallAndUninstall().checkUnInstall(appPackage), "Test Fail, User not able to uninstall the App.");
+        assertTrue(getCheckAppInstallAndUninstall().checkInstall(appPackage), "Test Fail: User not able to install the App.");
+        assertFalse(getCheckAppInstallAndUninstall().checkUnInstall(appPackage), "Test Fail: User not able to uninstall the App.");
     }
 
     public CheckAppInstallAndUninstall getCheckAppInstallAndUninstall() {

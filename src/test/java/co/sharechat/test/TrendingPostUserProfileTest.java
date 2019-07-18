@@ -24,7 +24,7 @@ public class TrendingPostUserProfileTest extends WebDriverListener implements Co
     public void TC181_checkUserPostFollowOption() throws Exception {
         getLoginPage().userlogin();
         boolean testResponse = getTrendingPostUserProfilePages().checkUserPostFollowOption();
-        assertTrue(testResponse, "Test Fail Verify trending post user profile follow option.");
+        assertTrue(testResponse, "Test Fail: Verify trending post user profile follow option.");
 
 
     }
@@ -34,7 +34,7 @@ public class TrendingPostUserProfileTest extends WebDriverListener implements Co
         getLoginPage().userlogin();
         boolean[] testResponse = getTrendingPostUserProfilePages().checkUserPostChatOption();
         for (int i = 0; i < testResponse.length; i++) {
-            assertTrue(testResponse[i], "Test Fail Verify trending post user profile chat option.");
+            assertTrue(testResponse[i], "Test Fail: Verify trending post user profile chat option.");
         }
 
     }
@@ -44,7 +44,7 @@ public class TrendingPostUserProfileTest extends WebDriverListener implements Co
         getLoginPage().userlogin();
         int testResponse = getTrendingPostUserProfilePages().checkUserPostShareOption();
 
-        assertTrue(testResponse == testResponse, "Test Fail Verify trending post user profile share option.");
+        assertTrue(testResponse == testResponse, "Test Fail: Verify trending post user profile share option.");
     }
 
     @Test(enabled = true, description = "Verify trending post user profile block option", groups = {"RegressionTest", "Creation"})
@@ -52,7 +52,7 @@ public class TrendingPostUserProfileTest extends WebDriverListener implements Co
         getLoginPage().userlogin();
         boolean testResponse = getTrendingPostUserProfilePages().checkingBlockSpecificUser();
 
-        assertTrue(testResponse, "Test Fail Verify trending post user profile block option.");
+        assertTrue(testResponse, "Test Fail: Verify trending post user profile block option.");
     }
 
     @Test(enabled = true, description = "Verify trending post user profile unblock option", groups = {"RegressionTest", "Creation"})
@@ -60,7 +60,7 @@ public class TrendingPostUserProfileTest extends WebDriverListener implements Co
         getLoginPage().userlogin();
         boolean testResponse = getTrendingPostUserProfilePages().checkingUNBlockSpecificUser();
 
-        assertTrue(testResponse, "Test Fail Verify trending post user profile unblock option.");
+        assertTrue(testResponse, "Test Fail: Verify trending post user profile unblock option.");
     }
 
     public TrendingPostUserProfilePages getTrendingPostUserProfilePages() {

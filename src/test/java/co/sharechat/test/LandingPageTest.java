@@ -24,11 +24,11 @@ public class LandingPageTest implements Constants {
     public void TC005_verifyLandingScreenFunctionality() throws Exception {
         String testResponse = getLandingPage().verifyTheSharechatLogo();
         assertTrue(testResponse.contains(SELECTYOURLANGUAGE),
-                "Test Fail Text should be 'Select your language'.");
+                "Test Fail: Text should be 'Select your language'.");
 
-        int testResponse1 = getLandingPage().verifyLandingScreenOpeningWithDifferentLanguageBoxes();
+        int testResponse1 = getLandingPage().getCountOfDifferentLanguageOptionsOnLandingPage();
         assertTrue(testResponse1 == LANGUAGEBOXCOUNT,
-                "Test Fail There should be" + LANGUAGEBOXCOUNT + " language boxes");
+                "Test Fail: There should be" + LANGUAGEBOXCOUNT + " language boxes");
 
 
     }

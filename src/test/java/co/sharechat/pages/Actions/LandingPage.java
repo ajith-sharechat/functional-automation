@@ -57,7 +57,7 @@ public class LandingPage extends WebDriverListener implements Constants {
 
     }
 
-    public int verifyLandingScreenOpeningWithDifferentLanguageBoxes() {
+    public int getCountOfDifferentLanguageOptionsOnLandingPage() {
         Set<String> text_Set = new HashSet<String>();
         deviceHelper.waitInSec(10);
         for (MobileElement box : LandingPageObjects.select_lang_boxes) {

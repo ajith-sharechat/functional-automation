@@ -24,14 +24,14 @@ public class PostShareOptionTest implements Constants {
     public void TC168_checkingPostShareOption() throws Exception {
         getLoginPage().userlogin();
         String testResponse = getPostShareOptionPage().checkPostShareOption();
-        assertTrue(testResponse.contains(testResponse), "Test Fail Verify post share options");
+        assertTrue(testResponse.contains(testResponse), "Test Fail: Verify post share options");
 
     }
     @Test(enabled = true, description = "Verify post share option of convert sticker", groups = {"RegressionTest", "Creation"})
     public void TC173_verifyConvertSticker() throws Exception {
         getLoginPage().userlogin();
         boolean testResponse = getPostShareOptionPage().checkConvertSticker();
-        assertTrue(testResponse, "Test Fail Verify post share option of convert sticker");
+        assertTrue(testResponse, "Test Fail: Verify post share option of convert sticker");
 
     }
 
@@ -40,7 +40,7 @@ public class PostShareOptionTest implements Constants {
         getLoginPage().userlogin();
         boolean[] testResponse = getPostShareOptionPage().checkMessageOption();
         for (int i = 0; i < testResponse.length; i++) {
-            assertTrue(testResponse[i], "Test Fail Verify post share option of message.");
+            assertTrue(testResponse[i], "Test Fail: Verify post share option of message.");
         }
 
 
@@ -50,7 +50,7 @@ public class PostShareOptionTest implements Constants {
     public void TC175_checkingFollowOption() throws Exception {
         getLoginPage().userlogin();
         boolean testResponse = getPostShareOptionPage().checkFollowOption();
-        assertTrue(testResponse, "Verify post share option of Follow");
+        assertTrue(testResponse, "Test Fail: Verify post share option of Follow");
 
     }
 
@@ -63,12 +63,12 @@ public class PostShareOptionTest implements Constants {
 
     }
 
-    @Test(enabled = true, description = "Verify post share option of Download", groups = {"RegressionTest", "Creation"})
+    @Test(enabled = true, description = "Test Fail: Verify post share option of Download", groups = {"RegressionTest", "Creation"})
     public void TC177_checkingDownloadOption() throws Exception {
         getLoginPage().userlogin();
         boolean[] testResponse = getPostShareOptionPage().checkDownloadOption();
         for (int i = 0; i < testResponse.length; i++) {
-            assertTrue(testResponse[i], "Test Fail Verify post share option of Download.");
+            assertTrue(testResponse[i], "Test Fail: Verify post share option of Download.");
         }
     }
 

@@ -50,7 +50,7 @@ public class ProfilePageTest implements Constants {
         getLoginPage().userlogin();
         String testResponse = getProfilePage().checkLogout();
         assertTrue(testResponse.contains(AfterlogoutPageText),
-                "Test Fail Tap on Settings and logout from the App.");
+                "Test Fail: Tap on Settings and logout from the App.");
     }
 
     public ProfilePage getProfilePage() {

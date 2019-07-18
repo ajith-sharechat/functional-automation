@@ -31,7 +31,7 @@ public class StickerPicturePostTest {
         getLoginPage().userlogin();
         boolean[] testResponse = getStickerPicturePostPages().checkPostViewOption();
         for (int i = 0; i < testResponse.length; i++) {
-            assertTrue(testResponse[i], "Test Fail Verify post view option.");
+            assertTrue(testResponse[i], "Test Fail: Verify post view option.");
         }
 
 

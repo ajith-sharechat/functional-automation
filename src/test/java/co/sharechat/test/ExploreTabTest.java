@@ -23,7 +23,7 @@ public class ExploreTabTest {
         getLoginPage().userlogin();
         boolean testResponse = getExploreTabTest().checkExploreTab();
         assertTrue(testResponse,
-                "Test Fail Tap on any explore tab and check search and tiles functionality");
+                "Test Fail: Tap on any explore tab and check search and tiles functionality");
     }
 
     public ExploreTabPage getExploreTabTest() {

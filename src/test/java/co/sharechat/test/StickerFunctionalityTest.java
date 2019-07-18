@@ -27,7 +27,7 @@ public class StickerFunctionalityTest implements Constants {
         getLoginPage().userlogin();
         boolean testResponse = StickerFunctionalityPage().verifySticker();
         assertTrue(testResponse,
-                "Test Fail Verify that default sticker packs list are appearing in STICKERS section");
+                "Test Fail: Verify that default sticker packs list are appearing in STICKERS section");
     }
 
     public StickerFunctionalityPage StickerFunctionalityPage() {
