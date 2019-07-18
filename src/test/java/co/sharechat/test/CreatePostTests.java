@@ -40,7 +40,7 @@ public class CreatePostTests implements Constants {
     public void  TC001_createTextPost(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -63,7 +63,7 @@ public class CreatePostTests implements Constants {
             groups = {"SmokeTest"})
     public void  TC002_createBackgroundTextPost(){
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -86,7 +86,7 @@ public class CreatePostTests implements Constants {
             groups = {"SmokeTest"})
     public void  TC003_createCameraBackgroundTextPost(){
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -110,7 +110,7 @@ public class CreatePostTests implements Constants {
     @Test(enabled = false, description = "Verify create poll post functionality", groups = {"SmokeTest"})
     public void TC004_createPollPost(){
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Poll Post
@@ -132,7 +132,7 @@ public class CreatePostTests implements Constants {
     public void TC030_textPosts(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -169,7 +169,7 @@ public class CreatePostTests implements Constants {
     public void TC031_textPostsCloseFunctionality(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -194,7 +194,7 @@ public class CreatePostTests implements Constants {
     public void TC032_textPostsCheckMarkFunctionality(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -213,7 +213,7 @@ public class CreatePostTests implements Constants {
     public void TC033_textPostWithoutBG(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -236,7 +236,7 @@ public class CreatePostTests implements Constants {
     public void TC034_textPostSimpleText(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -260,7 +260,7 @@ public class CreatePostTests implements Constants {
     public void TC035_textPostAllowPermission(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, false};
+        boolean []permissionsActions = {allow, allow, deny};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -292,7 +292,7 @@ public class CreatePostTests implements Constants {
     public void TC036_textPostDenyPermission(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, false};
+        boolean []permissionsActions = {allow, allow, deny};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -324,7 +324,7 @@ public class CreatePostTests implements Constants {
     public void TC040_trendingBucketsOnPost(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Get all trending bucket names
@@ -351,7 +351,7 @@ public class CreatePostTests implements Constants {
     public void TC041_textPostUsedTag(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -388,7 +388,7 @@ public class CreatePostTests implements Constants {
     public void TC042_textPostWithExternalLink(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -412,7 +412,7 @@ public class CreatePostTests implements Constants {
     public void TC043_textPostWithExternalLink(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //copy the link of any post
@@ -439,7 +439,7 @@ public class CreatePostTests implements Constants {
     public void TC044_creatingLinkPostWithShareChatTag(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Click on Trending Tag and Share
@@ -462,7 +462,7 @@ public class CreatePostTests implements Constants {
     public void TC045_createPostWithUserProfileShare(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Click on user profile of post, Share Btn, Share with share-chat.
@@ -486,7 +486,7 @@ public class CreatePostTests implements Constants {
     public void TC047_textPostWithExternalLink(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -513,7 +513,7 @@ public class CreatePostTests implements Constants {
     public void TC048_textPostWithColorBG(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -541,7 +541,7 @@ public class CreatePostTests implements Constants {
     public void TC049_textPostWithAnyDefaultPicturesBG(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -569,7 +569,7 @@ public class CreatePostTests implements Constants {
     public void TC050_textPostWithAnyDefaultP(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -591,12 +591,13 @@ public class CreatePostTests implements Constants {
                 "Success message should populate on screen after successful post");
 
     }
+//==============================================Toady
 
     @Test(enabled = false, description = "Verify text with background post creation functionality with camera pictures",
             groups = {"RegressionTest", "Creation"})
-    public void  TC053_textPostWithCameraBackground(){
+    public void  AR52_textPostWithCameraBackground(){
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -621,9 +622,9 @@ public class CreatePostTests implements Constants {
     @Test(enabled = false,
             description = "Verify text post creation functionality by allowing permissions what app asked",
             groups = {"RegressionTest", "Creation"})
-    public void  TC054_textPostWithAllowPermission(){
+    public void  AR53_textPostWithAllowPermission(){
         //Login in application
-        boolean []permissionsActions = {true, true, false};
+        boolean []permissionsActions = {allow, allow, deny};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -654,10 +655,10 @@ public class CreatePostTests implements Constants {
     @Test(enabled = false,
             description = "Verify text post creation functionality by denying permissions what mobile asked",
             groups = {"RegressionTest", "Creation"})
-    public void TC055_textPostWithDenyPermissionWithColorBG(){
+    public void AR54_textPostWithDenyPermissionWithColorBG(){
 
         //Login in application
-        boolean []permissionsActions = {true, true, false};
+        boolean []permissionsActions = {allow, allow, deny};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -688,9 +689,9 @@ public class CreatePostTests implements Constants {
 
     @Test(enabled = false, description = "Verify text post creation functionality by single tag",
             groups = {"RegressionTest", "Creation"})
-    public void  TC056_textPostWithSingleTag(){
+    public void  AR55_textPostWithSingleTag(){
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -710,9 +711,9 @@ public class CreatePostTests implements Constants {
 
     @Test(enabled = false, description = "Verify text post creation functionality by creating new tag",
             groups = {"RegressionTest", "Creation"})
-    public void  TC057_textPostWithCreateNewTag(){
+    public void  AR56_textPostWithCreateNewTag(){
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -737,12 +738,12 @@ public class CreatePostTests implements Constants {
                 "Success message should populate on screen after successful post");
 
     }
-
-    @Test(enabled = true, description = "Verify text post creation functionality by multiple tag",
+//-------------------------------------------------------------
+    @Test(enabled = false, description = "Verify text post creation functionality by multiple tag",
             groups = {"RegressionTest", "Creation"})
-    public void  TC058_textPostWithCreateNewTag(){
+    public void  AR57_textPostWithMultipleTags(){
         //Login in application
-        boolean []permissionsActions = {true, true, true};
+        boolean []permissionsActions = {allow, allow, allow};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Create Text Post
@@ -762,9 +763,214 @@ public class CreatePostTests implements Constants {
 
         for (String tagText: tags) {
             Assert.assertTrue(getCreatePost().getTextAboutPost().contains(tagText),
-                    "Tag should be created and attached to the post");
+                    "Tag should be attached to the post");
         }
 
+        getCreatePost().submitPost();
+
+        Assert.assertTrue(getCreatePost().isPostUploaded(1),
+                "Success message should populate on screen after successful post");
+
+    }
+
+    @Test(enabled = false, description = "Verify text post creation functionality by adding single friend",
+            groups = {"RegressionTest", "Creation"})
+    public void  AR58_textPostWithSingleFriend(){
+        //Login in application
+        boolean []permissionsActions = {allow, allow, allow};
+        new SignUpTests().registeredLogin(permissionsActions);
+
+        //Create Text Post
+        getCreatePost().composePost();
+        getCreatePost().textCompose();
+        getCreatePost().writeTextofTextPost("Post to check");
+        getCreatePost().submitTextForTextPost();
+        getCreatePost().writeTextAboutPost(textAboutPost);
+
+        getCreatePost().tapAddFriendButton();//Tap on Add friend Button
+        //Select First Friend and Save him in list
+        List<String > friends= new ArrayList<>();
+        friends.add(getCreatePost().selectFriendForPost(1));
+
+        for (String friendName: friends) {
+            Assert.assertTrue(getCreatePost().getTextAboutPost().contains(friendName),
+                    "Friend should be attached to the post");
+        }
+        getCreatePost().submitPost();
+        getCreatePost().selectTagForPost(1);
+        getCreatePost().submitPost();
+
+        Assert.assertTrue(getCreatePost().isPostUploaded(1),
+                "Success message should populate on screen after successful post");
+
+    }
+
+    @Test(enabled = false, description = "Verify text post creation functionality by adding multiple friends",
+            groups = {"RegressionTest", "Creation"})
+    public void  AR59_textPostWithMultipleFriends(){
+        //Login in application
+        boolean []permissionsActions = {allow, allow, allow};
+        new SignUpTests().registeredLogin(permissionsActions);
+
+        //Create Text Post
+        getCreatePost().composePost();
+        getCreatePost().textCompose();
+        getCreatePost().writeTextofTextPost("Post to check");
+        getCreatePost().submitTextForTextPost();
+        getCreatePost().writeTextAboutPost(textAboutPost);
+
+        getCreatePost().tapAddFriendButton();//Tap on Add friend Button
+        //Select Multiple Friends and Save them in list
+        List<String > friends= new ArrayList<>();
+        friends.add(getCreatePost().selectFriendForPost(1));
+        friends.add(getCreatePost().selectFriendForPost(2));
+
+        for (String friendName: friends) {
+            Assert.assertTrue(getCreatePost().getTextAboutPost().contains(friendName),
+                    "Friend should be attached to the post");
+        }
+        getCreatePost().submitPost();
+        getCreatePost().selectTagForPost(1);
+        getCreatePost().submitPost();
+
+        Assert.assertTrue(getCreatePost().isPostUploaded(1),
+                "Success message should populate on screen after successful post");
+
+    }
+
+    @Test(enabled = true,
+            description = "Verify text post creation functionality by attaching single person who user is following",
+            groups = {"RegressionTest", "Creation"})
+    public void  AR60_textPostWithSingleFollowingFriend(){
+        //Login in application
+        boolean []permissionsActions = {allow, allow, allow};
+        new SignUpTests().registeredLogin(permissionsActions);
+
+        //Create Text Post
+        getCreatePost().composePost();
+        getCreatePost().textCompose();
+        getCreatePost().writeTextofTextPost("Post to check");
+        getCreatePost().submitTextForTextPost();
+        getCreatePost().writeTextAboutPost(textAboutPost);
+
+        getCreatePost().tapAddFriendButton();//Tap on Add friend Button
+        getCreatePost().tapFollowingTabInAddFriend();//Tap on Following tab
+
+        //Select First Friend and Save him in list
+        List<String > friends= new ArrayList<>();
+        friends.add(getCreatePost().selectFriendForPost(1));
+
+        for (String friendName: friends) {
+            Assert.assertTrue(getCreatePost().getTextAboutPost().contains(friendName),
+                    "Friend should be attached to the post");
+        }
+        getCreatePost().submitPost();
+        getCreatePost().selectTagForPost(1);
+        getCreatePost().submitPost();
+
+        Assert.assertTrue(getCreatePost().isPostUploaded(1),
+                "Success message should populate on screen after successful post");
+
+    }
+
+    @Test(enabled = true,
+            description = "Verify text post creation functionality by attaching multiple persons who user is following",
+            groups = {"RegressionTest", "Creation"})
+    public void  AR61_textPostWithMultipleFollowingFriends(){
+        //Login in application
+        boolean []permissionsActions = {allow, allow, allow};
+        new SignUpTests().registeredLogin(permissionsActions);
+
+        //Create Text Post
+        getCreatePost().composePost();
+        getCreatePost().textCompose();
+        getCreatePost().writeTextofTextPost("Post to check");
+        getCreatePost().submitTextForTextPost();
+        getCreatePost().writeTextAboutPost(textAboutPost);
+
+        getCreatePost().tapAddFriendButton();//Tap on Add friend Button
+        getCreatePost().tapFollowingTabInAddFriend();//Tap on Following tab
+
+        //Select Multiple Friends and Save them in list
+        List<String > friends= new ArrayList<>();
+        friends.add(getCreatePost().selectFriendForPost(1));
+        friends.add(getCreatePost().selectFriendForPost(2));
+
+        for (String friendName: friends) {
+            Assert.assertTrue(getCreatePost().getTextAboutPost().contains(friendName),
+                    "Friend should be attached to the post");
+        }
+        getCreatePost().submitPost();
+        getCreatePost().selectTagForPost(1);
+        getCreatePost().submitPost();
+
+        Assert.assertTrue(getCreatePost().isPostUploaded(1),
+                "Success message should populate on screen after successful post");
+
+    }
+
+    @Test(enabled = true, description = "Verify text post creation functionality by attaching single follower",
+            groups = {"RegressionTest", "Creation"})
+    public void  AR62_textPostWithSingleFollowerFriend(){
+        //Login in application
+        boolean []permissionsActions = {allow, allow, allow};
+        new SignUpTests().registeredLogin(permissionsActions);
+
+        //Create Text Post
+        getCreatePost().composePost();
+        getCreatePost().textCompose();
+        getCreatePost().writeTextofTextPost("Post to check");
+        getCreatePost().submitTextForTextPost();
+        getCreatePost().writeTextAboutPost(textAboutPost);
+
+        getCreatePost().tapAddFriendButton();//Tap on Add friend Button
+        getCreatePost().tapFollowersTabInAddFriend();//Tap on Followers tab
+
+        //Select First Friend and Save him in list
+        List<String > friends= new ArrayList<>();
+        friends.add(getCreatePost().selectFriendForPost(1));
+
+        for (String friendName: friends) {
+            Assert.assertTrue(getCreatePost().getTextAboutPost().contains(friendName),
+                    "Friend should be attached to the post");
+        }
+        getCreatePost().submitPost();
+        getCreatePost().selectTagForPost(1);
+        getCreatePost().submitPost();
+
+        Assert.assertTrue(getCreatePost().isPostUploaded(1),
+                "Success message should populate on screen after successful post");
+
+    }
+
+    @Test(enabled = true, description = "Verify text post creation functionality by attaching multiple follower",
+            groups = {"RegressionTest", "Creation"})
+    public void  AR63_textPostWithMultipleFollowersFriends(){
+        //Login in application
+        boolean []permissionsActions = {allow, allow, allow};
+        new SignUpTests().registeredLogin(permissionsActions);
+
+        //Create Text Post
+        getCreatePost().composePost();
+        getCreatePost().textCompose();
+        getCreatePost().writeTextofTextPost("Post to check");
+        getCreatePost().submitTextForTextPost();
+        getCreatePost().writeTextAboutPost(textAboutPost);
+
+        getCreatePost().tapAddFriendButton();//Tap on Add friend Button
+        getCreatePost().tapFollowersTabInAddFriend();//Tap on Followers tab
+
+        //Select Multiple Friends and Save them in list
+        List<String > friends= new ArrayList<>();
+        friends.add(getCreatePost().selectFriendForPost(1));
+        friends.add(getCreatePost().selectFriendForPost(2));
+
+        for (String friendName: friends) {
+            Assert.assertTrue(getCreatePost().getTextAboutPost().contains(friendName),
+                    "Friend should be attached to the post");
+        }
+        getCreatePost().submitPost();
+        getCreatePost().selectTagForPost(1);
         getCreatePost().submitPost();
 
         Assert.assertTrue(getCreatePost().isPostUploaded(1),

@@ -61,6 +61,12 @@ public class CreatePostObjects extends CommonPageObjects {
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/bt_add_friends")
 	public MobileElement addFriendsBTN;
 
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/tv_user_name")
+	public List<MobileElement> nameOfFriends;
+
+	@AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/contact_tabs']//android.widget.TextView")
+	public List<MobileElement> friendlistTabs;
+
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/ll_link_type_preview")
 	public MobileElement linkPreview;
 

@@ -256,9 +256,31 @@ public class CreatePostActions extends WebDriverListener {
 	}
 
 	public String selectTagForPost(int whichTag) {
-		String tagName = element(createPostObjects.tagsListToSelect.get(2)).getText();
+		for (byte i = 1; createPostObjects.tagsListToSelect.size() == 0 || i < 10; i++)
+			hardWait(1);
+		String tagName = createPostObjects.tagsListToSelect.get(whichTag - 1).getText();
 		createPostObjects.tagsListToSelect.get(whichTag - 1).click();
 		return tagName;
+	}
+
+	public String selectFriendForPost(int whichFriend) {
+		for (byte i = 1; createPostObjects.nameOfFriends.size() == 0 || i < 10; i++)
+			hardWait(1);
+		String friendName = element(createPostObjects.nameOfFriends.get(whichFriend - 1)).getText();
+		createPostObjects.nameOfFriends.get(whichFriend - 1).click();
+		return friendName;
+	}
+
+	public void tapFollowingTabInAddFriend() {
+		for (byte i = 1; createPostObjects.friendlistTabs.size() == 0 || i < 10; i++)
+			hardWait(1);
+		createPostObjects.nameOfFriends.get(1).click();
+	}
+
+	public void tapFollowersTabInAddFriend() {
+		for (byte i = 1; createPostObjects.friendlistTabs.size() == 0 || i < 10; i++)
+			hardWait(1);
+		createPostObjects.nameOfFriends.get(2).click();
 	}
 
 	public String getTagUsed() {

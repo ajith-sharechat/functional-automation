@@ -21,6 +21,8 @@ public interface Constants {
     String varificationText = "नंबर वेरिफिकेशन हो रहा है";
 
     String externalLink = "http://wynk.in ";
+    Boolean allow = true;
+    Boolean deny = false;
 
 
 

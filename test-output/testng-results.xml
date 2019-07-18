@@ -1,40 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="22" total="26" passed="4">
+<testng-results skipped="0" failed="0" ignored="26" total="29" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNG Forum" duration-ms="254799" started-at="2019-07-16T14:05:20Z" finished-at="2019-07-16T14:09:35Z">
+  <suite name="TestNG Forum" duration-ms="394546" started-at="2019-07-18T08:28:29Z" finished-at="2019-07-18T08:35:04Z">
     <groups>
       <group name="Creation">
-        <method signature="CreatePostTests.TC047_textPostWithExternalLink()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC047_textPostWithExternalLink" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.TC048_textPostWithColorBG()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC048_textPostWithColorBG" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.TC049_textPostWithAnyDefaultPicturesBG()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC049_textPostWithAnyDefaultPicturesBG" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.TC050_textPostWithAnyDefaultP()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC050_textPostWithAnyDefaultP" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR57_textPostWithMultipleTags()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR57_textPostWithMultipleTags" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR58_textPostWithSingleFriend()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR58_textPostWithSingleFriend" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR59_textPostWithMultipleFriends()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR59_textPostWithMultipleFriends" class="co.sharechat.test.CreatePostTests"/>
       </group> <!-- Creation -->
       <group name="RegressionTest">
-        <method signature="CreatePostTests.TC047_textPostWithExternalLink()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC047_textPostWithExternalLink" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.TC048_textPostWithColorBG()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC048_textPostWithColorBG" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.TC049_textPostWithAnyDefaultPicturesBG()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC049_textPostWithAnyDefaultPicturesBG" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.TC050_textPostWithAnyDefaultP()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC050_textPostWithAnyDefaultP" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR57_textPostWithMultipleTags()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR57_textPostWithMultipleTags" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR58_textPostWithSingleFriend()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR58_textPostWithSingleFriend" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR59_textPostWithMultipleFriends()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR59_textPostWithMultipleFriends" class="co.sharechat.test.CreatePostTests"/>
       </group> <!-- RegressionTest -->
     </groups>
-    <test name="TestNG Test0" duration-ms="254799" started-at="2019-07-16T14:05:20Z" finished-at="2019-07-16T14:09:35Z">
+    <test name="TestNG Test0" duration-ms="394546" started-at="2019-07-18T08:28:29Z" finished-at="2019-07-18T08:35:04Z">
       <class name="co.sharechat.test.CreatePostTests">
-        <test-method status="PASS" signature="TC047_textPostWithExternalLink()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC047_textPostWithExternalLink" duration-ms="62511" started-at="2019-07-16T19:35:21Z" description="Verify creating link post by typing the link" finished-at="2019-07-16T19:36:24Z">
+        <test-method status="PASS" signature="AR57_textPostWithMultipleTags()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR57_textPostWithMultipleTags" duration-ms="150902" started-at="2019-07-18T13:58:31Z" description="Verify text post creation functionality by multiple tag" finished-at="2019-07-18T14:01:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC047_textPostWithExternalLink -->
-        <test-method status="PASS" signature="TC048_textPostWithColorBG()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC048_textPostWithColorBG" duration-ms="61583" started-at="2019-07-16T19:36:25Z" description="Verify text with background post functionality with Color pictures" finished-at="2019-07-16T19:37:26Z">
+        </test-method> <!-- AR57_textPostWithMultipleTags -->
+        <test-method status="PASS" signature="AR58_textPostWithSingleFriend()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR58_textPostWithSingleFriend" duration-ms="113184" started-at="2019-07-18T14:01:04Z" description="Verify text post creation functionality by adding single friend" finished-at="2019-07-18T14:02:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC048_textPostWithColorBG -->
-        <test-method status="PASS" signature="TC049_textPostWithAnyDefaultPicturesBG()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC049_textPostWithAnyDefaultPicturesBG" duration-ms="63539" started-at="2019-07-16T19:37:28Z" description="Verify text with background post functionality with our country pictures" finished-at="2019-07-16T19:38:31Z">
+        </test-method> <!-- AR58_textPostWithSingleFriend -->
+        <test-method status="PASS" signature="AR59_textPostWithMultipleFriends()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR59_textPostWithMultipleFriends" duration-ms="121917" started-at="2019-07-18T14:03:00Z" description="Verify text post creation functionality by adding multiple friends" finished-at="2019-07-18T14:05:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC049_textPostWithAnyDefaultPicturesBG -->
-        <test-method status="PASS" signature="TC050_textPostWithAnyDefaultP()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="TC050_textPostWithAnyDefaultP" duration-ms="60866" started-at="2019-07-16T19:38:32Z" description="Verify text with background post creation functionality with mobile gallery pictures" finished-at="2019-07-16T19:39:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC050_textPostWithAnyDefaultP -->
+        </test-method> <!-- AR59_textPostWithMultipleFriends -->
       </class> <!-- co.sharechat.test.CreatePostTests -->
     </test> <!-- TestNG Test0 -->
   </suite> <!-- TestNG Forum -->
