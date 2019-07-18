@@ -14,12 +14,27 @@ public class Runner {
             ParallelThread parallelThread = new ParallelThread();
 
             List<String> tests = new ArrayList<>();
+<<<<<<< HEAD
             //tests.add("SignUpTests");
             tests.add("ReferralTests");
+=======
+//            tests.add("CheckAppInstallAndUninstallTest");
+//            tests.add("LoginPageTest");
+//            tests.add("ExploreTabTest");
+//            tests.add("ProfilePageTest");
+//            tests.add("TrendingTabTest");
+//            tests.add("HomeScreenTest");
+//            tests.add("StickerFunctionalityTest");
+//            tests.add("LandingPageTest");
+//            tests.add("LoginPageTest");
+            tests.add("StickerPicturePostTest");
+//            tests.add("PostShareOptionTest");
+            tests.add("TrendingPostUserProfileTest");
+
+>>>>>>> diljeet_05July2019
             parallelThread.runner("co.sharechat.test", tests);
-        }
-        catch(Exception e4)
-        {
+
+        } catch (Exception e4) {
             System.out.println(e4);
         }
     }
