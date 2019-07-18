@@ -56,35 +56,35 @@ public class CreatePostActions extends WebDriverListener {
 		createPostObjects.plusIcon.click();
 	}
 
-	public void clickOnExploreBtn() {
+	public void tapOnExploreButton() {
 		createPostObjects.exploreBTN.click();
 	}
 
-	public void clickOnPostOptionsBTN() {
+	public void tapOnPostOptionsButton() {
 		createPostObjects.postOptionsBTN.click();
 	}
 
-	public void clickOnLinkCopyBTN() {
+	public void tapOnLinkCopyButton() {
 		createPostObjects.postShareOptions.get(0).click();
 	}
 
-	public void clickOnPostsUserProfileBTN() {
+	public void tapOnPostsUserProfileButton() {
 		createPostObjects.userProfilelinkOnPostsScreen.get(0).click();
 	}
 
-	public void clickOnFirstTagInTrendingTags() {
+	public void tapOnFirstTagInTrendingTags() {
 		createPostObjects.trendingTagsOnTrendingScreen.get(0).click();
 	}
 
-	public void clickOnShareBTNOnTagPostsScreen() {
+	public void tapOnShareButtonOnTagPostsScreen() {
 		createPostObjects.shareBTnOnTagRelatedPostsScreen.click();
 	}
 
-	public void clickOnShareBTNOnProfileScreen() {
+	public void tapOnShareButtonOnProfileScreen() {
 		createPostObjects.shareBTnOnUsersProfileScreen.click();
 	}
 
-	public void clickOnShareWithShareChatOption() {
+	public void tapOnShareWithShareChatOption() {
 		createPostObjects.shareWithShareChatOption.click();
 	}
 
@@ -130,11 +130,11 @@ public class CreatePostActions extends WebDriverListener {
 		return deviceHelper.isElementPresent(createPostObjects.textBoldBtn);
 	}
 
-	public boolean isFontColorBtnDisplayed() {
+	public boolean isFontColorButtonDisplayed() {
 		return deviceHelper.isElementPresent(createPostObjects.fontColorBtn);
 	}
 
-	public boolean isFontBGBtnDisplayed() {
+	public boolean isFontBGButtonDisplayed() {
 		return deviceHelper.isElementPresent(createPostObjects.fontBGColorBtn);
 	}
 
@@ -142,15 +142,15 @@ public class CreatePostActions extends WebDriverListener {
 		return deviceHelper.isElementPresent(createPostObjects.writeTextTextField);
 	}
 
-	public boolean iswithoutBGBtnDisplayed() {
+	public boolean isWithoutBGButtonDisplayed() {
 		return deviceHelper.isElementPresent(createPostObjects.withoutBGBtn);
 	}
 
-	public boolean isLinkPerviewDisplayed() {
+	public boolean isLinkPreviewDisplayed() {
 		return deviceHelper.isElementPresent(createPostObjects.linkPreview);
 	}
 
-	public boolean isRepostPerviewDisplayed() {
+	public boolean isRepostPreviewDisplayed() {
 		return deviceHelper.isElementPresent(createPostObjects.repostPreview);
 	}
 
@@ -198,19 +198,19 @@ public class CreatePostActions extends WebDriverListener {
 		return text_Set.size();
 	}
 
-	public void clickOnColorTabInTextPost(){
+	public void tapOnColorTabInTextPost(){
 		createPostObjects.selectColor.click();
 	}
 
-	public void clickOnShareChatCultureTabInTextPost(){
+	public void tapOnShareChatCultureTabInTextPost(){
 		createPostObjects.selectShareChatCulture.click();
 	}
 
-	public void clickOnAnyColorTabInBGTextPost(){
+	public void tapOnAnyColorTabInBGTextPost(){
 		createPostObjects.BGcolorTabs.get(1).click();
 	}
 
-	public void clickOnCrossbtn(){
+	public void tapOnCrossbtn(){
 		createPostObjects.crossIconTextCompose.click();
 	}
 
@@ -235,16 +235,16 @@ public class CreatePostActions extends WebDriverListener {
 		element(createPostObjects.tagsToSelect).click();
 	}
 
-	public void serchForTag(String tagName) {
+	public void searchForTag(String tagName) {
 		element(createPostObjects.searchTagTextBox).sendKeys(tagName);
 	}
 
-	public void clickCreateTagBTN() {
+	public void tapCreateTagButton() {
 		element(createPostObjects.createTagBTN).click();
 	}
 
 	public void createUniqueNewTag(String tagName) {
-		serchForTag(tagName+ deviceHelper.generateRandomPhNo(6));
+		searchForTag(tagName+ deviceHelper.generateRandomPhNo(6));
 	}
 
 	public void selectBucketForNewTag(){
@@ -255,8 +255,10 @@ public class CreatePostActions extends WebDriverListener {
 		createPostObjects.submitNewTagBTN.click();
 	}
 
-	public void select3rdTagForPost() {
-		element(createPostObjects.tagsListToSelect.get(2)).click();
+	public String selectTagForPost(int whichTag) {
+		String tagName = element(createPostObjects.tagsListToSelect.get(2)).getText();
+		createPostObjects.tagsListToSelect.get(whichTag - 1).click();
+		return tagName;
 	}
 
 	public String getTagUsed() {
@@ -283,8 +285,12 @@ public class CreatePostActions extends WebDriverListener {
 		element(createPostObjects.createPoll).click();
 	}
 
-	public void clickAddTagBTN() {
+	public void tapAddTagButton() {
 		element(createPostObjects.addTagBtn).click();
+	}
+
+	public void tapAddFriendButton() {
+		element(createPostObjects.addFriendsBTN).click();
 	}
 
 	public void enterInPollOptions(String[] options) {
@@ -292,11 +298,11 @@ public class CreatePostActions extends WebDriverListener {
 			createPostObjects.pollOptions.get(i).sendKeys(options[i]);
 	}
 
-	public void clickWithouBGBtn(){
+	public void tapWithouBGButton(){
 		element(createPostObjects.withoutBGBtn).click();
 	}
 
-	public void clickCameraBtnOnTextPost(){
+	public void tapCameraButtonOnTextPost(){
 		createPostObjects.cameraBtnOnTextPost.get(1).click();
 	}
 
@@ -341,11 +347,11 @@ public class CreatePostActions extends WebDriverListener {
 		return deviceHelper.isElementPresent(createPostObjects.alertGeneratedByApplication);
 	}
 
-	public boolean istextOnAlertDisplayed() {
+	public boolean isTextOnAlertDisplayed() {
 		return deviceHelper.isElementPresent(createPostObjects.alertaMessageText);
 	}
 
-	public boolean isNotNowBtnDisplayed() {
+	public boolean isNotNowButtonDisplayed() {
 		return deviceHelper.isElementPresent(createPostObjects.alertDismissBtn);
 	}
 
@@ -353,7 +359,7 @@ public class CreatePostActions extends WebDriverListener {
 		return deviceHelper.isElementPresent(createPostObjects.alertAcceptBtn);
 	}
 
-	public void clickYesOnAlert() {
+	public void tapYesOnAlert() {
 		createPostObjects.alertAcceptBtn.click();
 	}
 

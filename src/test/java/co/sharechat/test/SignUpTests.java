@@ -48,19 +48,19 @@ public class SignUpTests implements Constants {
             getSignUpPage().selectGender();
             getSignUpPage().submit();
 
-            actonPermissions(permissionsActions);
+            actionPermissions(permissionsActions);
 
             getSignUpPage().enterOTP(otp);
             getSignUpPage().submitOTP();
         }
         else {
             getSignUpPage().enterPhNo(registerNumber);
-            getSignUpPage().clickLogin();
+            getSignUpPage().tapLogin();
 
-            actonPermissions(permissionsActions);
+            actionPermissions(permissionsActions);
             getSignUpPage().enterOTPinLogin(otp);
         }
-        getSignUpPage().langDDLdisplayed();
+        getSignUpPage().isLanguageDropDownListDisplayed();
     }
 
     /**
@@ -70,10 +70,10 @@ public class SignUpTests implements Constants {
      *  @version 1.0
      *  @since 09 july 2019
      * */
-    public void actonPermissions(boolean []permissionsActions) {
+    public void actionPermissions(boolean []permissionsActions) {
         for (boolean action : permissionsActions) {
             if (action == true)
-                getCommonPage().alllowPermission();
+                getCommonPage().allowPermission();
             else
                 getCommonPage().denyPermission();
         }
@@ -92,7 +92,7 @@ public class SignUpTests implements Constants {
         getSignUpPage().selectAgeGroup();
         getSignUpPage().selectGender();
         getSignUpPage().submit();
-        Assert.assertTrue(getSignUpPage().langDDLdisplayed(),
+        Assert.assertTrue(getSignUpPage().isLanguageDropDownListDisplayed(),
                 "User should be logged into account and home screen should open");
 
     }
@@ -110,7 +110,7 @@ public class SignUpTests implements Constants {
         getSignUpPage().submit();
         getSignUpPage().enterOTP(otp);
         getSignUpPage().submitOTP();
-        Assert.assertTrue(getSignUpPage().langDDLdisplayed(),
+        Assert.assertTrue(getSignUpPage().isLanguageDropDownListDisplayed(),
                 "User should be logged into account and home screen should open");
     }
 

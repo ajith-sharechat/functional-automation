@@ -51,19 +51,19 @@ public class ReferralActions extends WebDriverListener {
 		return element;
 	}
 	
-	public void clickRfererralBtn() {
+	public void tapReferralButton() {
 		element(referralObjs.referralBtn).click();
 	}
 
-	public void clickBackBtn() {
+	public void tapBackButton() {
 		element(referralObjs.referralBackBtn).click();
 	}
 
-	public void clickMyEarnings() {
+	public void tapMyEarnings() {
 		element(referralObjs.myEarningsBtn).click();
 	}
 
-	public boolean isBackBtnDisplayed() {
+	public boolean isBackButtonDisplayed() {
 		return deviceHelper.isElementPresent(element(referralObjs.referralBackBtn));
 	}
 
@@ -95,7 +95,7 @@ public class ReferralActions extends WebDriverListener {
 		return deviceHelper.isElementPresent(element(referralObjs.setupPaymentBtn));
 	}
 
-	public void clickSetupPayment() {
+	public void tapSetupPayment() {
 		element(referralObjs.setupPaymentBtn).click();
 	}
 
@@ -118,7 +118,7 @@ public class ReferralActions extends WebDriverListener {
 
 	//=================My Earning Screen Avtions ==============
 
-	public boolean isMyEarningBackBtnDisplayed() {
+	public boolean isMyEarningBackButtonDisplayed() {
 		return deviceHelper.isElementPresent(element(referralObjs.myEarningBackBtn));
 	}
 
@@ -132,11 +132,11 @@ public class ReferralActions extends WebDriverListener {
 		return deviceHelper.isElementPresent(element(referralObjs.setupPaymentMobileNoField));
 	}
 
-	public void enyetNoInSetupPaymentMobileNoField(String number) {
+	public void enterNoInSetupPaymentMobileNoField(String number) {
 		element(referralObjs.setupPaymentMobileNoField).sendKeys(number);
 	}
 
-	public void clickSubmitPayTMtMobileNo() {
+	public void tapSubmitPayTMMobileNo() {
 		element(referralObjs.submitPayTMtMobileNo).click();
 	}
 

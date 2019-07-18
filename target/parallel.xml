@@ -7,7 +7,7 @@
   </listeners>
   <test name="TestNG Test0" preserve-order="false">
     <parameter name="hostName" value="127.0.0.1"/>
-    <parameter name="device" value="479a0d0e"/>
+    <parameter name="device" value="RZ8M62S64ED"/>
     <classes>
       <class name="co.sharechat.test.CreatePostTests"/>
     </classes>

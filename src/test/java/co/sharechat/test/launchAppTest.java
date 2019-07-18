@@ -43,7 +43,7 @@ public class launchAppTest
         getSignUpPage().selectAgeGroup();
         getSignUpPage().selectGender();
         getSignUpPage().submit();
-        Assert.assertTrue(getSignUpPage().langDDLdisplayed(),
+        Assert.assertTrue(getSignUpPage().isLanguageDropDownListDisplayed(),
                 "User should be logged into account and home screen should open");
 
     }
@@ -60,7 +60,7 @@ public class launchAppTest
         getSignUpPage().submit();
         getSignUpPage().enterOTP("765789");
         getSignUpPage().submitOTP();
-        Assert.assertTrue(getSignUpPage().langDDLdisplayed(),
+        Assert.assertTrue(getSignUpPage().isLanguageDropDownListDisplayed(),
                 "User should be logged into account and home screen should open");
     }
 
@@ -80,7 +80,7 @@ public class launchAppTest
         //Create Text Post
         getCreatePost().composePost();
         getCreatePost().textCompose();
-        getCreatePost().clickWithouBGBtn();
+        getCreatePost().tapWithouBGButton();
         //getCreatePost().writeTextofTextPost("Post to check");
         //getCreatePost().submitTextForTextPost();
         getCreatePost().writeTextAboutPost("Post Caption");
@@ -122,7 +122,7 @@ public class launchAppTest
         //Create Text Post
         getCreatePost().composePost();
         getCreatePost().textCompose();
-        getCreatePost().clickCameraBtnOnTextPost();
+        getCreatePost().tapCameraButtonOnTextPost();
         getCreatePost().clickPicture();
         getCreatePost().cropPictureOk();
         getCreatePost().writeTextofTextPost("Post to check");

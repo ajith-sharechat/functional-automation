@@ -27,12 +27,12 @@ public class ReferralTests implements Constants {
 
         new SignUpTests().TC004_signupRegistered();
 
-        getReferral().clickRfererralBtn();//Go to referrals screen
+        getReferral().tapReferralButton();//Go to referrals screen
 
         Assert.assertTrue(getReferral().isMyEarningsDisplayed(),
                 "My Winnings button should appear in top of the screen");
 
-        Assert.assertTrue(getReferral().isBackBtnDisplayed(),
+        Assert.assertTrue(getReferral().isBackButtonDisplayed(),
                 "Back button should appear in top of the screen");
 
         Assert.assertTrue(getReferral().isTextonreferralDisplayed(),
@@ -47,7 +47,7 @@ public class ReferralTests implements Constants {
                 "\"Print My QR Code\" button should appear with text");
 
         Assert.assertTrue(getReferral().isSetupPaymentDisplayed() ,
-                "\"Setup Payment\" button sholuld appear with text");
+                "\"Setup Payment\" button should appear with text");
 
 
     }
@@ -57,11 +57,11 @@ public class ReferralTests implements Constants {
 
         new SignUpTests().TC004_signupRegistered();
 
-        getReferral().clickRfererralBtn();//Go to referrals screen
-        getReferral().clickMyEarnings();//Tap on My Earnings
+        getReferral().tapReferralButton();//Go to referrals screen
+        getReferral().tapMyEarnings();//Tap on My Earnings
 
 
-        Assert.assertTrue(getReferral().isMyEarningBackBtnDisplayed(),
+        Assert.assertTrue(getReferral().isMyEarningBackButtonDisplayed(),
                 "Back button should appear on top left corner of the screen");
 
         Assert.assertTrue(getReferral().isTotalEarningsAmountDisplayed(),
@@ -75,8 +75,8 @@ public class ReferralTests implements Constants {
 
         new SignUpTests().TC004_signupRegistered();
 
-        getReferral().clickRfererralBtn();//Go to referrals screen
-        getReferral().clickSetupPayment();//Tap on Setup Payment
+        getReferral().tapReferralButton();//Go to referrals screen
+        getReferral().tapSetupPayment();//Tap on Setup Payment
 
         Assert.assertTrue(getReferral().isSetupPaymentMobileNoFieldDisplayed(),
                 "Paytm Mobile number field should open with keyboard");
@@ -89,11 +89,11 @@ public class ReferralTests implements Constants {
 
         new SignUpTests().TC004_signupRegistered();
 
-        getReferral().clickRfererralBtn();//Go to referrals screen
-        getReferral().clickSetupPayment();//Tap on Setup Payment
+        getReferral().tapReferralButton();//Go to referrals screen
+        getReferral().tapSetupPayment();//Tap on Setup Payment
 
-        getReferral().enyetNoInSetupPaymentMobileNoField(registerNumber);
-        getReferral().clickSubmitPayTMtMobileNo();//Click on Submit
+        getReferral().enterNoInSetupPaymentMobileNoField(registerNumber);
+        getReferral().tapSubmitPayTMMobileNo();//Click on Submit
 
         Assert.assertTrue(getReferral().verificationInProgressText().contains(varificationText),
                 "Total Earnings amount should appear on screen");

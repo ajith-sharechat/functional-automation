@@ -47,7 +47,7 @@ public class CommonPageActions extends WebDriverListener {
 		return element;
 	}
 
-	public void alllowPermission(){
+	public void allowPermission(){
 		commonPageObjects.allowPermissionPopUp.click();
 	}
 

@@ -62,7 +62,7 @@ public class SignUpActions extends WebDriverListener {
     	return deviceHelper.isElementPresent(signUpObjects.loginNameBox);
 	}
 
-	public void clickLogin() {
+	public void tapLogin() {
 
 		signUpObjects.loginBTN.click();
 	}
@@ -83,7 +83,7 @@ public class SignUpActions extends WebDriverListener {
 		element(signUpObjects.loginSubmitBtn).click();
 	}
 	
-	public boolean langDDLdisplayed() {
+	public boolean isLanguageDropDownListDisplayed() {
 		return deviceHelper.isElementPresent(element(signUpObjects.langDDL));
 	}
 
@@ -104,8 +104,5 @@ public class SignUpActions extends WebDriverListener {
 		signUpObjects.submitOTP.click();
 	}
 
-	public void acceptPermission(){
-		signUpObjects.allowPermissionPopUp.click();
-	}
 
 }

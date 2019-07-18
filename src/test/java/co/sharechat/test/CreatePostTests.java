@@ -7,6 +7,8 @@ import co.sharechat.utils.Constants;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 
@@ -44,7 +46,7 @@ public class CreatePostTests implements Constants {
         //Create Text Post
         getCreatePost().composePost();
         getCreatePost().textCompose();
-        getCreatePost().clickWithouBGBtn();
+        getCreatePost().tapWithouBGButton();
         //getCreatePost().writeTextofTextPost("Post to check");
         //getCreatePost().submitTextForTextPost();
         getCreatePost().writeTextAboutPost(textAboutPost);
@@ -90,7 +92,7 @@ public class CreatePostTests implements Constants {
         //Create Text Post
         getCreatePost().composePost();
         getCreatePost().textCompose();
-        getCreatePost().clickCameraBtnOnTextPost();
+        getCreatePost().tapCameraButtonOnTextPost();
         getCreatePost().clickPicture();
         getCreatePost().cropPictureOk();
         getCreatePost().writeTextofTextPost("Post to check");
@@ -111,7 +113,7 @@ public class CreatePostTests implements Constants {
         boolean []permissionsActions = {true, true, true};
         new SignUpTests().registeredLogin(permissionsActions);
 
-        //Create Text Post
+        //Create Poll Post
         getCreatePost().composePost();
         getCreatePost().createPollPost();
         getCreatePost().writeTextAboutPost(textAboutPost);
@@ -144,15 +146,15 @@ public class CreatePostTests implements Constants {
 
         Assert.assertTrue(getCreatePost().isTextBoldDisplayed(),
                 "Bold should appear on screen");
-        Assert.assertTrue(getCreatePost().isFontColorBtnDisplayed(),
+        Assert.assertTrue(getCreatePost().isFontColorButtonDisplayed(),
                 "Font color should appear on screen");
-        Assert.assertTrue(getCreatePost().isFontBGBtnDisplayed(),
+        Assert.assertTrue(getCreatePost().isFontBGButtonDisplayed(),
                 "Font background color should appear on screen");
 
         Assert.assertTrue(getCreatePost().isTextFieldToWriteTextDisplayed(),
                 "Text field should appear with placeholder text in middle of the screen");
 
-        Assert.assertTrue(getCreatePost().iswithoutBGBtnDisplayed(),
+        Assert.assertTrue(getCreatePost().isWithoutBGButtonDisplayed(),
                 "Crete without background button should be there on screen");
 
         Assert.assertTrue(getCreatePost().iscameraIconPicturepickGalaryPostDisplayed(),
@@ -173,18 +175,18 @@ public class CreatePostTests implements Constants {
         //Create Text Post
         getCreatePost().composePost();
         getCreatePost().textCompose();
-        getCreatePost().clickOnCrossbtn();
+        getCreatePost().tapOnCrossbtn();
 
-        Assert.assertTrue(getCreatePost().istextOnAlertDisplayed(),
+        Assert.assertTrue(getCreatePost().isTextOnAlertDisplayed(),
                 "Description should be present in popup");
 
-        Assert.assertTrue(getCreatePost().isNotNowBtnDisplayed(),
+        Assert.assertTrue(getCreatePost().isNotNowButtonDisplayed(),
                 "YES button should appear on popup");
         Assert.assertTrue(getCreatePost().isYesBtnDisplayed(),
                 "NOT NOW button should appear on popup");
 
         Assert.assertFalse(getCreatePost().isCrossMarkOnTextPostDisplayed(),
-                "Post should be discard and Screen should redirect to home screen");
+                "Post should be discarded and Screen should redirect to home screen");
     }
 
     @Test(enabled = false, description = "Verify Check Mark functionality from post creation screen",
@@ -218,7 +220,7 @@ public class CreatePostTests implements Constants {
         getCreatePost().composePost();
         getCreatePost().textCompose();
 
-        getCreatePost().clickWithouBGBtn();
+        getCreatePost().tapWithouBGButton();
         getCreatePost().writeTextAboutPost(textAboutPost);
         getCreatePost().submitPost();
         getCreatePost().selectTagForPost();
@@ -267,7 +269,7 @@ public class CreatePostTests implements Constants {
 
         Assert.assertTrue(getCommonPage().isAndroidAlertDisplayed(),
                 " Files Access permission popup should appear on screen");
-        getCommonPage().alllowPermission();
+        getCommonPage().allowPermission();
 
         Assert.assertTrue(getCreatePost().iscameraIconPicturepickGalaryPostDisplayed(),
                 "Permission should be given and images should appear on create post screen");
@@ -319,14 +321,14 @@ public class CreatePostTests implements Constants {
     @Test(enabled = false,
             description = "Verify that all trending buckets are appearing in tag feed while posting a post",
             groups = {"RegressionTest", "Creation"})
-    public void TC040_trendindbucketsOnPost(){
+    public void TC040_trendingBucketsOnPost(){
 
         //Login in application
         boolean []permissionsActions = {true, true, true};
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Get all trending bucket names
-        getCreatePost().clickOnExploreBtn();
+        getCreatePost().tapOnExploreButton();
         Set<String> bucketNames = getCreatePost().getAllTrendingBuckets();
 
         //Create Text Post
@@ -336,7 +338,7 @@ public class CreatePostTests implements Constants {
         getCreatePost().writeTextofTextPost("Post to check");
         getCreatePost().submitTextForTextPost();
         getCreatePost().writeTextAboutPost(textAboutPost);
-        getCreatePost().clickAddTagBTN();
+        getCreatePost().tapAddTagButton();
 
         Assert.assertEquals(getCreatePost().getAllTrendingBucketsOnPost(), bucketNames,
                 "All trending buckets should appear in tag feed");
@@ -393,10 +395,10 @@ public class CreatePostTests implements Constants {
         getCreatePost().composePost();
         getCreatePost().textCompose();
 
-        getCreatePost().clickWithouBGBtn();//Without BG btn
+        getCreatePost().tapWithouBGButton();//Without BG btn
         getCreatePost().writeTextAboutPost(externalLink);
 
-        Assert.assertTrue(getCreatePost().isLinkPerviewDisplayed(), "Link Perview should apear");
+        Assert.assertTrue(getCreatePost().isLinkPreviewDisplayed(), "Link Preview should appear");
 
         getCreatePost().submitPost();
         getCreatePost().selectTagForPost();
@@ -414,17 +416,17 @@ public class CreatePostTests implements Constants {
         new SignUpTests().registeredLogin(permissionsActions);
 
         //copy the link of any post
-        getCreatePost().clickOnPostOptionsBTN();
-        getCreatePost().clickOnLinkCopyBTN();
+        getCreatePost().tapOnPostOptionsButton();
+        getCreatePost().tapOnLinkCopyButton();
 
         //Create Text Post
         getCreatePost().composePost();
         getCreatePost().textCompose();
 
-        getCreatePost().clickWithouBGBtn();//Without BG btn
+        getCreatePost().tapWithouBGButton();//Without BG btn
         getCreatePost().enterCopiedLink();
 
-        Assert.assertTrue(getCreatePost().isRepostPerviewDisplayed(), "Repost Perview should apear");
+        Assert.assertTrue(getCreatePost().isRepostPreviewDisplayed(), "Repost Preview should appear");
 
         getCreatePost().submitPost();
        // getCreatePost().submitPost();
@@ -441,13 +443,13 @@ public class CreatePostTests implements Constants {
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Click on Trending Tag and Share
-        getCreatePost().clickOnFirstTagInTrendingTags();
-        getCreatePost().clickOnShareBTNOnTagPostsScreen();
-        getCreatePost().clickOnShareWithShareChatOption();
+        getCreatePost().tapOnFirstTagInTrendingTags();
+        getCreatePost().tapOnShareButtonOnTagPostsScreen();
+        getCreatePost().tapOnShareWithShareChatOption();
 
         //Submit post
         getCreatePost().submitPost();
-        getCreatePost().select3rdTagForPost();
+        getCreatePost().selectTagForPost(3);
         getCreatePost().submitPost();
 
         Assert.assertTrue(getCreatePost().isPostUploaded(1),
@@ -464,13 +466,13 @@ public class CreatePostTests implements Constants {
         new SignUpTests().registeredLogin(permissionsActions);
 
         //Click on user profile of post, Share Btn, Share with share-chat.
-        getCreatePost().clickOnPostsUserProfileBTN();
-        getCreatePost().clickOnShareBTNOnProfileScreen();
-        getCreatePost().clickOnShareWithShareChatOption();
+        getCreatePost().tapOnPostsUserProfileButton();
+        getCreatePost().tapOnShareButtonOnProfileScreen();
+        getCreatePost().tapOnShareWithShareChatOption();
 
         //Submit post
         getCreatePost().submitPost();
-        getCreatePost().select3rdTagForPost();
+        getCreatePost().selectTagForPost(3);
         getCreatePost().submitPost();
 
         Assert.assertTrue(getCreatePost().isPostUploaded(1),
@@ -478,7 +480,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = true,
+    @Test(enabled = false,
             description = "Verify creating link post by typing the link",
             groups = {"RegressionTest", "Creation"})
     public void TC047_textPostWithExternalLink(){
@@ -491,10 +493,10 @@ public class CreatePostTests implements Constants {
         getCreatePost().composePost();
         getCreatePost().textCompose();
 
-        getCreatePost().clickWithouBGBtn();//Without BG btn
+        getCreatePost().tapWithouBGButton();//Without BG btn
         getCreatePost().writeTextAboutPost(externalLink);
 
-        Assert.assertTrue(getCreatePost().isLinkPerviewDisplayed(), "Link Perview should apear");
+        Assert.assertTrue(getCreatePost().isLinkPreviewDisplayed(), "Link Preview should appear");
 
         getCreatePost().submitPost();
         getCreatePost().selectTagForPost();
@@ -505,7 +507,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = true,
+    @Test(enabled = false,
             description = "Verify text with background post functionality with Color pictures",
             groups = {"RegressionTest", "Creation"})
     public void TC048_textPostWithColorBG(){
@@ -518,8 +520,8 @@ public class CreatePostTests implements Constants {
         getCreatePost().composePost();
         getCreatePost().textCompose();
 
-        getCreatePost().clickOnColorTabInTextPost();
-        getCreatePost().clickOnAnyColorTabInBGTextPost();
+        getCreatePost().tapOnColorTabInTextPost();
+        getCreatePost().tapOnAnyColorTabInBGTextPost();
 
         getCreatePost().writeTextofTextPost("Post to check");
         getCreatePost().submitTextForTextPost();
@@ -533,7 +535,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = true,
+    @Test(enabled = false,
             description = "Verify text with background post functionality with our country pictures",
             groups = {"RegressionTest", "Creation"})
     public void TC049_textPostWithAnyDefaultPicturesBG(){
@@ -546,8 +548,8 @@ public class CreatePostTests implements Constants {
         getCreatePost().composePost();
         getCreatePost().textCompose();
 
-        getCreatePost().clickOnShareChatCultureTabInTextPost();
-        getCreatePost().clickOnAnyColorTabInBGTextPost();
+        getCreatePost().tapOnShareChatCultureTabInTextPost();
+        getCreatePost().tapOnAnyColorTabInBGTextPost();
 
         getCreatePost().writeTextofTextPost("Post to check");
         getCreatePost().submitTextForTextPost();
@@ -561,7 +563,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = true,
+    @Test(enabled = false,
             description = "Verify text with background post creation functionality with mobile gallery pictures",
             groups = {"RegressionTest", "Creation"})
     public void TC050_textPostWithAnyDefaultP(){
@@ -600,7 +602,7 @@ public class CreatePostTests implements Constants {
         //Create Text Post
         getCreatePost().composePost();
         getCreatePost().textCompose();
-        getCreatePost().clickCameraBtnOnTextPost();
+        getCreatePost().tapCameraButtonOnTextPost();
         getCreatePost().clickPicture();
         getCreatePost().cropPictureOk();
         getCreatePost().writeTextofTextPost("Post to check");
@@ -610,7 +612,8 @@ public class CreatePostTests implements Constants {
         getCreatePost().selectTagForPost();
         getCreatePost().submitPost();
 
-        Assert.assertTrue(getCreatePost().isPostUploaded(5),
+        Assert.assertTrue(getCreatePost().isPostUploaded(
+                5),
                 "Success message should populate on screen after successful post");
 
     }
@@ -629,7 +632,7 @@ public class CreatePostTests implements Constants {
 
         Assert.assertTrue(getCommonPage().isAndroidAlertDisplayed(),
                 " Files Access permission popup should appear on screen");
-        getCommonPage().alllowPermission();
+        getCommonPage().allowPermission();
 
         Assert.assertTrue(getCreatePost().iscameraIconPicturepickGalaryPostDisplayed(),
                 "Permission should be given and images should appear on create post screen");
@@ -668,8 +671,8 @@ public class CreatePostTests implements Constants {
         Assert.assertFalse(getCreatePost().iscameraIconPicturepickGalaryPostDisplayed(),
                 "Permission should be given and images should appear on create post screen");
 
-        getCreatePost().clickOnColorTabInTextPost();
-        getCreatePost().clickOnAnyColorTabInBGTextPost();
+        getCreatePost().tapOnColorTabInTextPost();
+        getCreatePost().tapOnAnyColorTabInBGTextPost();
 
         getCreatePost().writeTextofTextPost("Post to check");
         getCreatePost().submitTextForTextPost();
@@ -722,11 +725,45 @@ public class CreatePostTests implements Constants {
         getCreatePost().submitPost();
         //Create new Tag
         getCreatePost().createUniqueNewTag("Automation_");
-        getCreatePost().clickCreateTagBTN();
+        getCreatePost().tapCreateTagButton();
         getCreatePost().selectBucketForNewTag();
         getCreatePost().submitNewTag();
         Assert.assertTrue(getCreatePost().getTextAboutPost().contains("#Automation_"),
                 "Tag should be created and attached to the post");
+
+        getCreatePost().submitPost();
+
+        Assert.assertTrue(getCreatePost().isPostUploaded(1),
+                "Success message should populate on screen after successful post");
+
+    }
+
+    @Test(enabled = true, description = "Verify text post creation functionality by multiple tag",
+            groups = {"RegressionTest", "Creation"})
+    public void  TC058_textPostWithCreateNewTag(){
+        //Login in application
+        boolean []permissionsActions = {true, true, true};
+        new SignUpTests().registeredLogin(permissionsActions);
+
+        //Create Text Post
+        getCreatePost().composePost();
+        getCreatePost().textCompose();
+        getCreatePost().writeTextofTextPost("Post to check");
+        getCreatePost().submitTextForTextPost();
+        getCreatePost().writeTextAboutPost(textAboutPost);
+
+        getCreatePost().submitPost();
+
+        //Select Multiple tegs and Save them in list
+        List<String > tags= new ArrayList<>();
+        tags.add(getCreatePost().selectTagForPost(1));
+        tags.add(getCreatePost().selectTagForPost(2));
+        tags.add(getCreatePost().selectTagForPost(3));
+
+        for (String tagText: tags) {
+            Assert.assertTrue(getCreatePost().getTextAboutPost().contains(tagText),
+                    "Tag should be created and attached to the post");
+        }
 
         getCreatePost().submitPost();
 

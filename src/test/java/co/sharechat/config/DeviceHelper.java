@@ -55,7 +55,11 @@ public class DeviceHelper {
         }
     }
 
-
+    /**
+     *This method will return the Width of the Phone Screen
+     * @since 01 July 2019
+     * @author Jasmeet
+     * */
     public void swipe(int startx, int starty, int endx, int endy) {
         Dimension size = driver.manage().window().getSize();
 
