@@ -1,0 +1,4 @@
+.idea/workspace.xml
+target/
+test-output/
+src/test/java/co/sharechat/test/SocialTestcases/
