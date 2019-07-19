@@ -1,9 +1,9 @@
 caps/capabilities.json
 src/test/java/co/sharechat/test/SocialTestcases/*
 *.idea/workspace.xml
-logs/*
-target/*
-test-output/*
+logs/
+target/
+test-output/
 *.idea/misc.xml
 # Java class files
 *.class
