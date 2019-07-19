@@ -402,13 +402,91 @@ public class SocialTests  implements Constants {
 
     @Test(enabled = true, description = "Verify audio post functionality for a audio post in gallery section",groups = {"RegressionTest", "Social"})
     public void TC151_galleryVerifyAudioPostFunctionalityForAudioPost(){
-        getSignUpInstance().selectLanguage(Language);
+        getSignUpInstance().selectTelugu();
+        getSignUpInstance().enterPhNo(registerNumber);
+        getSignUpInstance().clickGoToYourAccountButton();
+        getHomePageActionsInstance().tapAllowButton();
+        getHomePageActionsInstance().tapAllowButton();
+        getHomePageActionsInstance().tapAllowButton();
+        getSignUpInstance().enterOTPActions(otp);
+        getHomePageActionsInstance().verifyHomeScreenElements();
+        getHomePageActionsInstance().tapProfileIcon();
+        getSocialActionsInstance().verifyProfileScreenElements();
+        getSocialActionsInstance().tapGallerySection();
+        getSocialActionsInstance().scrollToAudioPostAndTap();
+        getSocialActionsInstance().tapPauseButton();
+    }
+
+    @Test(enabled = true, description = "Verify GIF motion picture functionality for a GIF post in gallery section",groups = {"RegressionTest", "Social"})
+    public void TC152_galleryVerifyGIFMotionPictureFunctionalityForGIFPost(){
+        getSignUpInstance().selectTelugu();
         getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
         getHomePageActionsInstance().tapProfileIcon();
         getSocialActionsInstance().verifyProfileScreenElements();
         getSocialActionsInstance().tapGallerySection();
-        getHomePageActionsInstance().scrollToVideoPost();
-        getHomePageActionsInstance().tapOnVideoPost();
-        getSocialActionsInstance().verifyVideoIsPlayingOrNot();
+        getSocialActionsInstance().scrollToGIFPostAndTapInPost();
+        getSocialActionsInstance().tapGIFButton();
+    }
+
+    @Test(enabled = true, description = "Verify download sticker functionality",groups = {"RegressionTest", "Social"})
+    public void TC154_stickersVerifyDownloadStickerFunctionality(){
+        getSignUpInstance().selectLanguage(Language);
+        getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
+        getHomePageActionsInstance().tapProfileIcon();
+        getSocialActionsInstance().verifyProfileScreenElements();
+        getSocialActionsInstance().tapStickerSection();
+        getSocialActionsInstance().tapStickerDownloadIcon();
+        getSocialActionsInstance().verifyPopupElements();
+        getSocialActionsInstance().verifyStickerScreenElements();
+    }
+
+    @Test(enabled = true, description = "Verify Change Language Mode functionality with English",groups = {"RegressionTest", "Social"})
+    public void TC159_settingVerifyChangeLanguageModeFunctionalityWithEnglish(){
+        getSignUpInstance().selectLanguage(Language);
+        getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
+        getHomePageActionsInstance().tapProfileIcon();
+        getSocialActionsInstance().verifyProfileScreenElements();
+        getSocialActionsInstance().tapSettingIconInProfileScreen();
+        getSocialActionsInstance().tapChangeLanguageModeDropDown();
+        getSocialActionsInstance().verifyLanguageModePopupElements();
+        getSocialActionsInstance().tapEnglishRadioButton();
+        getSocialActionsInstance().verifyLanguageModeFunctionality();
+    }
+
+    @Test(enabled = true, description = "Verify Change Language Mode functionality with Telugish",groups = {"RegressionTest", "Social"})
+    public void TC160_settingVerifyChangeLanguageModeFunctionalityWithTelugish(){
+        getSignUpInstance().selectLanguage(Language);
+        getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
+        getHomePageActionsInstance().tapProfileIcon();
+        getSocialActionsInstance().verifyProfileScreenElements();
+        getSocialActionsInstance().tapSettingIconInProfileScreen();
+        getSocialActionsInstance().tapChangeLanguageModeDropDown();
+        getSocialActionsInstance().verifyLanguageModePopupElements();
+        getSocialActionsInstance().tapHinglishRadioButton();
+        getSocialActionsInstance().verifyLanguageModeFunctionality();
+    }
+
+    @Test(enabled = true, description = "Verify Change Language Mode functionality with Default",groups = {"RegressionTest", "Social"})
+    public void TC161_settingVerifyChangeLanguageModeFunctionalityWithDefault(){
+        getSignUpInstance().selectLanguage(Language);
+        getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
+        getHomePageActionsInstance().tapProfileIcon();
+        getSocialActionsInstance().verifyProfileScreenElements();
+        getSocialActionsInstance().tapSettingIconInProfileScreen();
+        getSocialActionsInstance().tapChangeLanguageModeDropDown();
+        getSocialActionsInstance().verifyLanguageModePopupElements();
+        getSocialActionsInstance().tapDefaultRadioButton();
+        getSocialActionsInstance().verifyLanguageModeFunctionality();
+    }
+
+    @Test(enabled = true, description = "Verify that media is not downloading automatically when data saver mode is enabled",groups = {"RegressionTest", "Social"})
+    public void TC164_VerifyMediaIsNotDownloadedPostImagesAutomaticallyWhenDataSaverModeEnabled(){
+        getSignUpInstance().selectLanguage(Language);
+        getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
+        getHomePageActionsInstance().tapProfileIcon();
+        getSocialActionsInstance().verifyProfileScreenElements();
+        getSocialActionsInstance().tapSettingIconInProfileScreen();
+        getSocialActionsInstance().verifyProfileSettingScreenElements();
+        getSocialActionsInstance().verifyDataSaverFunctionality();
     }
 }

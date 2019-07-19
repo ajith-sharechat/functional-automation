@@ -1,11 +1,11 @@
 package co.sharechat.pages.Objects;
 
-import com.sun.tools.javac.util.List;
 import io.appium.java_client.MobileElement;
-//<<<<<<< HEAD
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AndroidFindBys;
+
+import java.util.List;
 
 /**
  * This Class has all the Objects related to Profile Page
@@ -52,8 +52,7 @@ public class ProfilePageObjects {
     @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/tabs']//androidx.appcompat.app.ActionBar.Tab")
     public MobileElement profileMyPostSection;
 
-    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tabs']//following::androidx.appcompat.app.ActionBar.Tab" +
-            "//following::androidx.appcompat.app.ActionBar.Tab")
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tabs']//following::androidx.appcompat.app.ActionBar.Tab[3]")
     public MobileElement profileStickersSection;
 
     @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/tabs']//following::androidx.appcompat.app.ActionBar.Tab")
@@ -169,6 +168,18 @@ public class ProfilePageObjects {
     @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_sticker_pack")
     public MobileElement stickerImageLabel;
 
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_sticker_delete")
+    public MobileElement stickerDeleteIcon;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_toolbar_title")
+    public MobileElement stickerTitleLabel;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/ib_toolbar_search")
+    public MobileElement stickerSaveButton;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_sticker_save")
+    public MobileElement stickers;
+
     @AndroidFindBys
             ({@AndroidBy(id = "in.mohalla.sharechat:id/image_view")})
     public List<MobileElement> saveButton;
@@ -187,7 +198,6 @@ public class ProfilePageObjects {
 
     @AndroidFindBys
             ({@AndroidBy(id = "in.mohalla.sharechat:id/btn_sticker_start_download")})
-
     public List<MobileElement> downLoadbutton;
 
     @AndroidFindBy(id = "com.whatsapp:id/add_button")

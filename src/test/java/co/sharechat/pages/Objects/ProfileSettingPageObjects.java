@@ -41,4 +41,25 @@ public class ProfileSettingPageObjects {
     @AndroidFindBy(id ="in.mohalla.sharechat:id/logout_icon")
     public MobileElement logoutIcon;
 
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/skin_default")
+    public MobileElement defaultRadioButton;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/skin_english")
+    public MobileElement englishRadioButton;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/skin_english']//following::android.widget.RadioButton")
+    public MobileElement hinglishRadioButton;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/appskin_container']//preceding::android.widget.TextView")
+    public MobileElement changeLanguageModePopupTitle;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/data_saver_switch")
+    public MobileElement dataSaverSwitch;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/post_download_switch")
+    public MobileElement postDownloadSwitch;
+
+    @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_gallery_description")
+    public MobileElement galleryDescriptionSubTitle;
+
 }

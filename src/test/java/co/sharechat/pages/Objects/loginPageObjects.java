@@ -1,10 +1,10 @@
 package co.sharechat.pages.Objects;
 
-import com.sun.tools.javac.util.List;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AndroidFindBys;
+import java.util.List;
 
 
 /**
@@ -42,7 +42,6 @@ public class loginPageObjects {
     public MobileElement allow;
 
     @AndroidFindBys({@AndroidBy(className = "android.widget.EditText")})
-
     public List<MobileElement> OTPValues;
 
     @AndroidFindBy(id = "in.mohalla.sharechat:id/rb_age_range2")

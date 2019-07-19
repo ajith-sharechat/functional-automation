@@ -8,7 +8,7 @@ import io.appium.java_client.*;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.android.nativekey.AndroidKey;
-import com.sun.tools.internal.jxc.ConfigReader;
+//import com.sun.tools.internal.jxc.ConfigReader;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;

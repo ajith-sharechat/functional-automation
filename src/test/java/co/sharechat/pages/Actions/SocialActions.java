@@ -502,7 +502,13 @@ public class SocialActions extends WebDriverListener {
     }
     public void tapGIFButton(){
         deviceHelper.waitTillTheElementIsVisible(postUserObjects.gifButtonInPost);
+        if(deviceHelper.isElementPresent(postUserObjects.gifButtonInPost)==true){
         postUserObjects.gifButtonInPost.click();
+        }
+        else{
+            deviceHelper.swipeUp();
+            postUserObjects.gifButtonInPost.click();
+        }
         deviceHelper.isElementNotPresentAssertTrue(postUserObjects.gifButtonInPost);
     }
 
@@ -520,13 +526,12 @@ public class SocialActions extends WebDriverListener {
     public void tapStickerImage(){
         deviceHelper.waitTillTheElementIsVisible(profileObjects.stickerImage);
         profileObjects.stickerImage.click();
-        deviceHelper.waitTillTheElementIsVisible(profileObjects.stickerDownloadIcon);
+        deviceHelper.isElementNotPresentAssertTrue(profileObjects.stickerDeleteIcon);
     }
 
     public void tapStickerDownloadIcon(){
         deviceHelper.waitTillTheElementIsVisible(profileObjects.stickerDownloadIcon);
         profileObjects.stickerDownloadIcon.click();
-        deviceHelper.waitTillTheElementIsVisible(profileObjects.stickerDownloadIcon);
     }
 
     public void tapMyPostSection(){
@@ -542,13 +547,11 @@ public class SocialActions extends WebDriverListener {
         String hashTagLink=postUserObjects.postTagLink.getText();
         String[] hashTag =hashTagLink.split("#");
         String hashTag1 = hashTag[1];
-        System.out.println("hashTag1================="+hashTag1);
         deviceHelper.waitTillTheElementIsVisible(postUserObjects.postTagLink);
         postUserObjects.postHashTagLink.click();
         postUserObjects.postHashTagLink.click();
         deviceHelper.waitInSec(5);
         String tagFeedTitleLabel=postUserObjects.TagFeedTitle.getText();
-        System.out.println("tagFeedTitleLabel================="+tagFeedTitleLabel);
         Assert.assertEquals(hashTag1.toLowerCase().trim(),tagFeedTitleLabel.toLowerCase().trim());
     }
     public void verifyUploadingRePostFunctionalityInGallery() {
@@ -562,6 +565,76 @@ public class SocialActions extends WebDriverListener {
         String myPostHashTagText=deviceHelper.generateTextXpathAndReturnText(createPostHashTagTextMessage);
         Assert.assertEquals(createPostHashTagTextMessage.toLowerCase().trim(), myPostHashTagText.toLowerCase().trim());
 
+    }
+    public void verifyPopupElements(){
+        deviceHelper.waitTillTheElementIsVisible(profileObjects.cancelPopupButton);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.addPopupButton);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.stickerToAddWhatsAppPopupQuestion);
+        profileObjects.cancelPopupButton.click();
+    }
+    public void verifyStickerScreenElements(){
+        deviceHelper.waitTillTheElementIsVisible(profileObjects.stickers);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.stickerSaveButton);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.stickerDeleteIcon);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.stickerTitleLabel);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.toolBarBack);
+    }
+
+    public void  tapChangeLanguageModeDropDown(){
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.changeLanguageModeOption);
+        profileSettingObjects.changeLanguageModeOption.click();
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.changeLanguageModePopupTitle);
+    }
+    public void verifyLanguageModePopupElements(){
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.changeLanguageModePopupTitle);
+        deviceHelper.isElementPresentAssertTrue(profileSettingObjects.defaultRadioButton);
+        deviceHelper.isElementPresentAssertTrue(profileSettingObjects.englishRadioButton);
+        deviceHelper.isElementPresentAssertTrue(profileSettingObjects.hinglishRadioButton);
+    }
+    public void  tapEnglishRadioButton(){
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.englishRadioButton);
+        profileSettingObjects.englishRadioButton.click();
+        deviceHelper.waitInSec(9);
+    }
+    public void  tapHinglishRadioButton(){
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.hinglishRadioButton);
+        profileSettingObjects.hinglishRadioButton.click();
+        deviceHelper.waitInSec(9);
+    }
+    public void  tapDefaultRadioButton(){
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.defaultRadioButton);
+        profileSettingObjects.defaultRadioButton.click();
+        deviceHelper.waitInSec(9);
+    }
+    public void verifyLanguageModeFunctionality(){
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.changeLanguageModeOption);
+        String changeLanguageModeDropDown=profileSettingObjects.changeLanguageModeOption.getText();
+        profileSettingObjects.changeLanguageModeOption.click();
+        verifyLanguageModePopupElements();
+        String changeLanguageModePopupTitle=profileSettingObjects.changeLanguageModePopupTitle.getText();
+        Assert.assertEquals(changeLanguageModePopupTitle.toLowerCase().trim(), changeLanguageModeDropDown.toLowerCase().trim());
+    }
+    public void  verifyDataSaverFunctionality(){
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.dataSaverSwitch);
+        profileSettingObjects.dataSaverSwitch.click();
+        deviceHelper.tapAndroidBackButton();
+        homePostObjects.homeIcon.click();
+        homePostObjects.homeIcon.click();
+        deviceHelper.scrollToMobileElement(homePostObjects.postImageDownloadIcon,"20");
+        deviceHelper.isElementPresentAssertTrue(homePostObjects.postImage);
+    }
+    public void  verifyPostDownloadSwitchFunctionality(){
+        tapChangeLanguageModeDropDown();
+        verifyLanguageModePopupElements();
+        tapEnglishRadioButton();
+        deviceHelper.waitInSec(5);
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.postDownloadSwitch);
+        String galleryDescriptionOffLabel=profileSettingObjects.galleryDescriptionSubTitle.getText();
+        Assert.assertEquals(galleryDescriptionOffLabel.toLowerCase().trim(), "Saving download files to ShareChat-Media is OFF".toLowerCase().trim());
+        profileSettingObjects.postDownloadSwitch.click();
+        deviceHelper.waitInSec(3);
+        String galleryDescriptionOnLabel=profileSettingObjects.galleryDescriptionSubTitle.getText();
+        Assert.assertEquals(galleryDescriptionOnLabel.toLowerCase().trim(), "Saving download files to ShareChat-Media is ON".toLowerCase().trim());
     }
 
 }

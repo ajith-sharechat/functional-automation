@@ -73,6 +73,7 @@ public class SignUp extends WebDriverListener {
 	}
 	
 	public void enterPhNo(String phNo) {
+		deviceHelper.waitTillTheElementIsVisible(signUpObjects.loginPhBox);
 		signUpObjects.loginPhBox.sendKeys(phNo);
 	}
 	/**

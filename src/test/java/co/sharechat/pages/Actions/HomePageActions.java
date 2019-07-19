@@ -75,7 +75,8 @@ public class HomePageActions extends WebDriverListener {
         homePostObjects.profileIcon.click();
     }
     public void tapAllowButton() {
-        if(deviceHelper.isElementDisplay(signUpObjects.allowPermissionPopUp)==true) {
+        deviceHelper.waitInSec(3);
+        if(deviceHelper.isElementDisplay(signUpObjects.allowPermissionPopUp)==true){
             signUpObjects.allowPermissionPopUp.click();
         }
     }
