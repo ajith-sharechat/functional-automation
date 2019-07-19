@@ -156,7 +156,7 @@ public class CreatePostObjects extends CommonPageObjects {
 	public MobileElement slectCameraPost;
 	
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/camera_takepicture_iv")
-	public MobileElement clickPicBtn;
+	public MobileElement cameraTakePicButton;
 
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/ll_upload_gallery")
 	public MobileElement uploadFromGalaryBtn;
@@ -169,6 +169,44 @@ public class CreatePostObjects extends CommonPageObjects {
 
 	@AndroidFindBy(xpath = "//*[contains(@text,'अपलोड हो चुका है')]")
 	public MobileElement uploadedNotification;
+	//========================================Create Camera Starts======================================
 
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/camera_close_iv")
+	public MobileElement cameraCloseButton;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/camera_flash_iv")
+	public MobileElement cameraFlashButton;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/ib_time_travel")
+	public MobileElement cameraVideoSpeedButton;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/ib_timer")
+	public MobileElement cameraTimerButton;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/ib_beauty")
+	public MobileElement cameraBeautyButton;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/ib_camera_switch")
+	public MobileElement switchCameraButton;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/iv_magic_stickers")
+	public MobileElement cameraMagicStickersButton;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/iv_music")
+	public MobileElement cameraMusicButton;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/camera_instructions_tv")
+	public MobileElement cameraInstructions;
+
+	@AndroidFindBy(xpath = "//*[@resource-id='android:id/content']//android.widget.TextView[@clickable='false']")
+	public MobileElement downloadCameraFeatureText;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/b_download")
+	public MobileElement downloadCameraFeatureDownloadButton;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/tv_cancel")
+	public MobileElement downloadCameraFeatureSkipButton;
+
+	//========================================Create Camera Ends========================================
 
 }

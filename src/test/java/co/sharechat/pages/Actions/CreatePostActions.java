@@ -5,6 +5,7 @@ import co.sharechat.config.DeviceInterface;
 import co.sharechat.config.WebDriverListener;
 import co.sharechat.pages.Objects.CreatePostObjects;
 import co.sharechat.pages.Objects.SignUpPageObjects;
+import co.sharechat.test.SignUpTests;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.appium.java_client.MobileElement;
@@ -166,7 +167,6 @@ public class CreatePostActions extends WebDriverListener {
 
 		hardWait(1);
 		if (createPostObjects.tabs.size() > 6){
-			System.out.println("===========================Done==================================");
 			return createPostObjects.tabs.size();
 		}
 
@@ -296,7 +296,7 @@ public class CreatePostActions extends WebDriverListener {
 	}
 
 	public void clickPicture() {
-		element(createPostObjects.clickPicBtn).click();
+		element(createPostObjects.cameraTakePicButton).click();
 	}
 
 	public void uploadPost() {
@@ -361,6 +361,77 @@ public class CreatePostActions extends WebDriverListener {
 		}
 		return false;
 	}
+
+	//========================================Create Camera Starts======================================
+	public boolean isCameraCloseButtonDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.cameraCloseButton);
+	}
+
+	public boolean isCameraFlashButtonDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.cameraFlashButton);
+	}
+
+	public boolean isCameraVideoSpeedButtonDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.cameraVideoSpeedButton);
+	}
+
+	public boolean isCameraTimerButtonDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.cameraTimerButton);
+	}
+
+	public boolean isCameraBeautyButtonDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.cameraBeautyButton);
+	}
+
+	public boolean isFlipCameraButtonDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.switchCameraButton);
+	}
+
+	public boolean isCameraMagicStickersButtonDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.cameraMagicStickersButton);
+	}
+
+	public boolean isCameraMusicButtonDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.cameraMusicButton);
+	}
+
+	public boolean isCaptureButtonDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.cameraTakePicButton);
+	}
+
+	public boolean isCameraInstructionsDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.cameraInstructions);
+	}
+
+	public void tapOnCloseCameraButton(){
+		element(createPostObjects.cameraCloseButton).click();
+	}
+
+	public void tapOnVideoSpeedButton(){
+		element(createPostObjects.cameraVideoSpeedButton).click();
+	}
+
+	public void tapOnTimerButton(){
+		element(createPostObjects.cameraTimerButton).click();
+	}
+
+	public void tapOnDownloadCameraPopupSkipButton(){
+		createPostObjects.downloadCameraFeatureSkipButton.click();
+	}
+
+	public boolean isDownloadCameraFeatureTextDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.downloadCameraFeatureText);
+	}
+
+	public boolean isDownloadCameraFeatureDownloadButtonDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.downloadCameraFeatureDownloadButton);
+	}
+
+	public boolean isDownloadCameraFeatureSkipDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.downloadCameraFeatureSkipButton);
+	}
+
+	//========================================Create Camera Ends========================================
 
 
 	//Alert Actions
