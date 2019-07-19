@@ -3,7 +3,7 @@ package co.sharechat.test;
 import co.sharechat.config.TestRunnerInfo;
 import co.sharechat.pages.Actions.ChatPageActions;
 import co.sharechat.pages.Actions.HomePageActions;
-import co.sharechat.pages.Actions.SignUp;
+import co.sharechat.pages.Actions.SignUpActions;
 import co.sharechat.pages.Actions.SocialActions;
 import co.sharechat.utils.Constants;
 import org.testng.annotations.Test;
@@ -20,9 +20,9 @@ public class SocialTests  implements Constants {
         return new ChatPageActions(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
 
     }
-    public SignUp getSignUpInstance(){
+    public SignUpActions getSignUpInstance(){
 
-        return new SignUp(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
+        return new SignUpActions(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
 
     }
     public SocialActions getSocialActionsInstance(){

@@ -274,13 +274,13 @@ public class CreatePostActions extends WebDriverListener {
 	public void tapFollowingTabInAddFriend() {
 		for (byte i = 1; createPostObjects.friendlistTabs.size() == 0 || i < 10; i++)
 			hardWait(1);
-		createPostObjects.nameOfFriends.get(1).click();
+		createPostObjects.friendlistTabs.get(1).click();
 	}
 
 	public void tapFollowersTabInAddFriend() {
 		for (byte i = 1; createPostObjects.friendlistTabs.size() == 0 || i < 10; i++)
 			hardWait(1);
-		createPostObjects.nameOfFriends.get(2).click();
+		createPostObjects.friendlistTabs.get(2).click();
 	}
 
 	public String getTagUsed() {
