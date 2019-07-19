@@ -55,9 +55,9 @@ public class SocialActions extends WebDriverListener {
 
     }
 
-    public SignUp getSignUpInstance(){
+    public SignUpActions getSignUpInstance(){
 
-        return new SignUp(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
+        return new SignUpActions(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
 
     }
 

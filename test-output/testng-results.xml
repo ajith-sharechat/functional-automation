@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="26" total="29" passed="3">
+<testng-results skipped="0" failed="0" ignored="29" total="33" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNG Forum" duration-ms="394546" started-at="2019-07-18T08:28:29Z" finished-at="2019-07-18T08:35:04Z">
+  <suite name="TestNG Forum" duration-ms="1627613" started-at="2019-07-18T13:53:36Z" finished-at="2019-07-18T14:20:44Z">
     <groups>
       <group name="Creation">
-        <method signature="CreatePostTests.AR57_textPostWithMultipleTags()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR57_textPostWithMultipleTags" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.AR58_textPostWithSingleFriend()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR58_textPostWithSingleFriend" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.AR59_textPostWithMultipleFriends()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR59_textPostWithMultipleFriends" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR60_textPostWithSingleFollowingFriend()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR60_textPostWithSingleFollowingFriend" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR61_textPostWithMultipleFollowingFriends()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR61_textPostWithMultipleFollowingFriends" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR62_textPostWithSingleFollowerFriend()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR62_textPostWithSingleFollowerFriend" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR63_textPostWithMultipleFollowersFriends()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR63_textPostWithMultipleFollowersFriends" class="co.sharechat.test.CreatePostTests"/>
       </group> <!-- Creation -->
       <group name="RegressionTest">
-        <method signature="CreatePostTests.AR57_textPostWithMultipleTags()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR57_textPostWithMultipleTags" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.AR58_textPostWithSingleFriend()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR58_textPostWithSingleFriend" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.AR59_textPostWithMultipleFriends()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR59_textPostWithMultipleFriends" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR60_textPostWithSingleFollowingFriend()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR60_textPostWithSingleFollowingFriend" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR61_textPostWithMultipleFollowingFriends()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR61_textPostWithMultipleFollowingFriends" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR62_textPostWithSingleFollowerFriend()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR62_textPostWithSingleFollowerFriend" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR63_textPostWithMultipleFollowersFriends()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR63_textPostWithMultipleFollowersFriends" class="co.sharechat.test.CreatePostTests"/>
       </group> <!-- RegressionTest -->
     </groups>
-    <test name="TestNG Test0" duration-ms="394546" started-at="2019-07-18T08:28:29Z" finished-at="2019-07-18T08:35:04Z">
+    <test name="TestNG Test0" duration-ms="1627613" started-at="2019-07-18T13:53:36Z" finished-at="2019-07-18T14:20:44Z">
       <class name="co.sharechat.test.CreatePostTests">
-        <test-method status="PASS" signature="AR57_textPostWithMultipleTags()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR57_textPostWithMultipleTags" duration-ms="150902" started-at="2019-07-18T13:58:31Z" description="Verify text post creation functionality by multiple tag" finished-at="2019-07-18T14:01:02Z">
+        <test-method status="PASS" signature="AR60_textPostWithSingleFollowingFriend()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR60_textPostWithSingleFollowingFriend" duration-ms="151182" started-at="2019-07-18T19:23:37Z" description="Verify text post creation functionality by attaching single person who user is following" finished-at="2019-07-18T19:26:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AR57_textPostWithMultipleTags -->
-        <test-method status="PASS" signature="AR58_textPostWithSingleFriend()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR58_textPostWithSingleFriend" duration-ms="113184" started-at="2019-07-18T14:01:04Z" description="Verify text post creation functionality by adding single friend" finished-at="2019-07-18T14:02:57Z">
+        </test-method> <!-- AR60_textPostWithSingleFollowingFriend -->
+        <test-method status="PASS" signature="AR61_textPostWithMultipleFollowingFriends()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR61_textPostWithMultipleFollowingFriends" duration-ms="152061" started-at="2019-07-18T19:26:11Z" description="Verify text post creation functionality by attaching multiple persons who user is following" finished-at="2019-07-18T19:28:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AR58_textPostWithSingleFriend -->
-        <test-method status="PASS" signature="AR59_textPostWithMultipleFriends()[pri:0, instance:co.sharechat.test.CreatePostTests@5876a9af]" name="AR59_textPostWithMultipleFriends" duration-ms="121917" started-at="2019-07-18T14:03:00Z" description="Verify text post creation functionality by adding multiple friends" finished-at="2019-07-18T14:05:01Z">
+        </test-method> <!-- AR61_textPostWithMultipleFollowingFriends -->
+        <test-method status="PASS" signature="AR62_textPostWithSingleFollowerFriend()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR62_textPostWithSingleFollowerFriend" duration-ms="1164076" started-at="2019-07-18T19:28:46Z" description="Verify text post creation functionality by attaching single follower" finished-at="2019-07-18T19:48:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AR59_textPostWithMultipleFriends -->
+        </test-method> <!-- AR62_textPostWithSingleFollowerFriend -->
+        <test-method status="PASS" signature="AR63_textPostWithMultipleFollowersFriends()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR63_textPostWithMultipleFollowersFriends" duration-ms="149022" started-at="2019-07-18T19:48:12Z" description="Verify text post creation functionality by attaching multiple follower" finished-at="2019-07-18T19:50:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AR63_textPostWithMultipleFollowersFriends -->
       </class> <!-- co.sharechat.test.CreatePostTests -->
     </test> <!-- TestNG Test0 -->
   </suite> <!-- TestNG Forum -->
