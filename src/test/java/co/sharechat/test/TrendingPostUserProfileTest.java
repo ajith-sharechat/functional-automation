@@ -2,7 +2,6 @@ package co.sharechat.test;
 
 import co.sharechat.config.TestRunnerInfo;
 import co.sharechat.config.WebDriverListener;
-import co.sharechat.pages.Actions.StickerPicturePostPages;
 import co.sharechat.pages.Actions.TrendingPostUserProfilePages;
 import co.sharechat.pages.Actions.loginPage;
 import co.sharechat.utils.Constants;

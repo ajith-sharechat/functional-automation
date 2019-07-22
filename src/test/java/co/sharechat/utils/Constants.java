@@ -23,6 +23,7 @@ public interface Constants {
 
 
 
+
     String Language=TELUGU;
     String countTry = "1";
     String SELECTYOURLANGUAGE = "Select your language";
@@ -37,6 +38,7 @@ public interface Constants {
     String externalLink = "http://wynk.in ";
     Boolean allow = true;
     Boolean deny = false;
+    String postSavingMSuccessMessage = "पोस्ट शेयरचैट गैलरी में सेव हो गयी हैं";
 
 
 }

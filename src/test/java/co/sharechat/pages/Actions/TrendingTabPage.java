@@ -34,6 +34,14 @@ public class TrendingTabPage extends WebDriverListener implements Constants {
         PageFactory.initElements(new AppiumFieldDecorator(driver), TrendingObejects);
     }
 
+    public void imagePostClick() {
+
+        deviceHelper.scrollToMobileElement(TrendingObejects.imagePost, countTry);
+        deviceHelper.waitInSec(5);
+        TrendingObejects.imagePost.click();
+        deviceHelper.waitInSec(10);
+    }
+
     //TC016
     public boolean trendingCheckFeedsAndClickOnAnyoneVerifyTitle() {
         String tagName, tagTitle;
@@ -253,6 +261,54 @@ public class TrendingTabPage extends WebDriverListener implements Constants {
         TabsAll[2] = TrendingTabObejects.audioMic.isDisplayed();
         TabsAll[3] = TrendingTabObejects.gifImg.isDisplayed();
         return TabsAll;
+    }
+
+    public void clickOnProfile() {
+        deviceHelper.waitInSec(5);
+        TrendingTabObejects.profileButton.click();
+        deviceHelper.waitInSec(5);
+
+    }
+
+    public void clickOnSetting() {
+        deviceHelper.waitInSec(5);
+        TrendingTabObejects.settingButton.click();
+        deviceHelper.waitInSec(5);
+
+    }
+
+    public void checkingPostDownloadOption() {
+        deviceHelper.waitInSec(5);
+        TrendingTabObejects.postDownloadSwitch.click();
+        deviceHelper.waitInSec(5);
+        deviceHelper.waitInSec(5);
+        TrendingTabObejects.postDownloadSwitch.click();
+        deviceHelper.waitInSec(10);
+        deviceHelper.clickBackBtn();
+        deviceHelper.waitInSec(5);
+
+    }
+
+    public void clickOnHomeScreen() {
+        deviceHelper.waitInSec(5);
+        TrendingTabObejects.homeButton.click();
+        deviceHelper.waitInSec(5);
+    }
+
+    public String clickOnSaveButtonAndChooseAppGallery() {
+        deviceHelper.waitInSec(5);
+        TrendingTabObejects.savePost.get(4).click();
+        if (deviceHelper.isElementPresent(TrendingTabObejects.appGalleryOption)) {
+            deviceHelper.waitInSec(5);
+            TrendingTabObejects.appGalleryOption.click();
+            return TrendingTabObejects.Toast.getText();
+
+        } else {
+            return TrendingTabObejects.Toast.getText();
+
+        }
+
+
     }
 
 

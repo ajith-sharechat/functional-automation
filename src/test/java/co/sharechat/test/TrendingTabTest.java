@@ -5,6 +5,7 @@ import co.sharechat.pages.Actions.TrendingTabPage;
 import co.sharechat.pages.Actions.loginPage;
 import org.testng.annotations.Test;
 
+import static co.sharechat.utils.Constants.postSavingMSuccessMessage;
 import static org.testng.Assert.assertTrue;
 
 
@@ -141,6 +142,22 @@ public class TrendingTabTest {
             assertTrue(testResponse9[i],
                     "Test Fail: for In bottom of the screen, user profile picture, text field, audio recorder, and send button are appearing");
         }
+
+
+    }
+
+    @Test(enabled = true, description = "Verify Trending tab POST functionality", groups = {"RegressionTest", "Creation"})
+    public void TC221_Verify_Trending_tab_functionality() throws Exception {
+
+        getLoginPage().userlogin();
+        getTrendingTabPage().clickOnProfile();
+        getTrendingTabPage().clickOnSetting();
+        getTrendingTabPage().checkingPostDownloadOption();
+        getTrendingTabPage().clickOnHomeScreen();
+        getTrendingTabPage().imagePostClick();
+        String testResponse = getTrendingTabPage().clickOnSaveButtonAndChooseAppGallery();
+        assertTrue(testResponse.contains(postSavingMSuccessMessage),
+                "Test Fail: Verify Trending tab POST functionality");
 
 
     }

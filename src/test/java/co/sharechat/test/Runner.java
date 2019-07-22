@@ -13,7 +13,8 @@ public class Runner {
         try {
             ParallelThread parallelThread = new ParallelThread();
             List<String> tests = new ArrayList<>();
-            tests.add("CreatePostTests");
+           // tests.add("CreatePostTests");
+            tests.add("VideoFeedTest");
             parallelThread.runner("co.sharechat.test", tests);
 
         } catch (Exception e4) {

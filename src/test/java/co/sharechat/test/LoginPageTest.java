@@ -2,14 +2,10 @@ package co.sharechat.test;
 
 import co.sharechat.config.TestRunnerInfo;
 import co.sharechat.pages.Actions.loginPage;
-import io.appium.java_client.AppiumDriver;
-import org.openqa.selenium.Dimension;
 import org.testng.annotations.Test;
 
-import java.awt.*;
 import java.util.ArrayList;
 
-import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 /**

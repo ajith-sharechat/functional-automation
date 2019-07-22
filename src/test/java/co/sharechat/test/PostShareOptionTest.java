@@ -2,7 +2,6 @@ package co.sharechat.test;
 
 import co.sharechat.config.TestRunnerInfo;
 import co.sharechat.pages.Actions.PostShareOptionPage;
-import co.sharechat.pages.Actions.TrendingTabPage;
 import co.sharechat.pages.Actions.loginPage;
 import co.sharechat.utils.Constants;
 import org.testng.annotations.Test;

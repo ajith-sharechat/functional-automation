@@ -1,7 +1,6 @@
 package co.sharechat.test;
 
 import co.sharechat.config.TestRunnerInfo;
-import co.sharechat.pages.Actions.ProfilePage;
 import co.sharechat.pages.Actions.StickerFunctionalityPage;
 import co.sharechat.pages.Actions.loginPage;
 import co.sharechat.utils.Constants;

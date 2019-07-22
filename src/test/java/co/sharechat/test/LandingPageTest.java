@@ -2,9 +2,7 @@ package co.sharechat.test;
 
 
 import co.sharechat.config.TestRunnerInfo;
-import co.sharechat.pages.Actions.HomeScreenPage;
 import co.sharechat.pages.Actions.LandingPage;
-import co.sharechat.pages.Actions.loginPage;
 import co.sharechat.utils.Constants;
 import org.testng.annotations.Test;
 

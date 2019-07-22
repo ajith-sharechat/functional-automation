@@ -2,54 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b8a24e4-4154-43bc-8bc3-c251a89d2eee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CommentPostPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/VideoFeedPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CommentPostObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/VideoFeedObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/CommentPostTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/VideoFeedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CreatePostActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CreatePostActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/SocialActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/SocialActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/test/CreatePostTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/CreatePostTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/TrendingTabPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/TrendingTabPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/TrendingTabObejects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/TrendingTabObejects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/test/LandingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/LandingPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/test/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/test/PostShareOptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/PostShareOptionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/test/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/test/SocialTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/SocialTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ExtentReports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ExtentReports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adblogs/RZ8M62S64ED__AR60_textPostWithSingleFollowingFriend.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/adblogs/RZ8M62S64ED__AR60_textPostWithSingleFollowingFriend.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adblogs/RZ8M62S64ED__AR61_textPostWithMultipleFollowingFriends.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/adblogs/RZ8M62S64ED__AR61_textPostWithMultipleFollowingFriends.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/appiumlogs/appium_logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/appiumlogs/appium_logs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/DeviceHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/DeviceHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/DriverManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/DriverManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/ExtentTestFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/ExtentTestFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/JSONParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/JSONParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/PropertyReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/PropertyReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/TestRunnerInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/TestRunnerInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/ViewFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/ViewFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/WebDriverListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/WebDriverListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/flows/AndroidFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/flows/AndroidFlow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/flows/iOSFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/flows/iOSFlow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Actions/CreatePostActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Actions/CreatePostActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Actions/SignUpActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Actions/SignUpActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Actions/loginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Actions/loginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/CreatePostObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/CreatePostObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/HomePageObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/HomePageObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/SignUpPageObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/SignUpPageObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/loginPageObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/loginPageObjects.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/test/StickerFunctionalityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/StickerFunctionalityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/test/StickerPicturePostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/StickerPicturePostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/test/TrendingPostUserProfileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/TrendingPostUserProfileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/test/TrendingTabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/TrendingTabTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/IntelliJ.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/CreatePostTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/CreatePostTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/SignUpTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/SignUpTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/launchAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/launchAppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/utils/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/utils/GenericFunctions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/utils/GenericFunctions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/TestNG Forum/TestNG Test0.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/TestNG Forum/TestNG Test0.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/TestNG Forum/TestNG Test0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/TestNG Forum/TestNG Test0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/TestNG Forum/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/TestNG Forum/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-co.sharechat.test.CreatePostTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-co.sharechat.test.CreatePostTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/TestNG Forum/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/TestNG Forum/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/TestNG Forum/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/TestNG Forum/groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/TestNG Forum/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/TestNG Forum/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/TestNG Forum/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/TestNG Forum/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/TestNG Forum/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/TestNG Forum/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/TestNG Forum/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/TestNG Forum/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,44 +33,79 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CreatePostObjects.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/LoginPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2475">
-              <caret line="168" selection-start-line="168" selection-end-line="168" />
+            <state relative-caret-position="-645">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/ExploreTabTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/ProfilePageTest.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/PostShareOptionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/LandingPageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/CheckAppInstallAndUninstallTest.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/CreatePostTests.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/CommentPostTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="713" column="49" lean-forward="true" selection-start-line="713" selection-start-column="49" selection-end-line="713" selection-end-column="49" />
+            <state relative-caret-position="95">
+              <caret line="19" selection-start-line="19" selection-end-line="50" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/Runner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CommentPostObjects.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CreatePostActions.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CommentPostPages.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/HomeScreenTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="281" column="24" selection-start-line="281" selection-start-column="24" selection-end-line="281" selection-end-column="24" />
-            </state>
+            <state relative-caret-position="-414" />
           </provider>
         </entry>
       </file>
@@ -109,19 +118,33 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/launchAppTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/config/DeviceHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/SignUpActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CreatePostObjects.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/HomePageObjects.java" />
-        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/Runner.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/SocialTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/SocialActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CreatePostActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/CreatePostTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/Runner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/VideoFeedPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/TrendingTabTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/TrendingTabPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/StickerPicturePostTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/VideoFeedTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/HomeScreenTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CommentPostPages.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/CommentPostTests.java" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="40" />
+    <option name="y" value="50" />
+    <option name="width" value="1400" />
+    <option name="height" value="757" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -134,52 +157,38 @@
         <subPane>
           <expand>
             <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="functional-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="functional-automation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="functional-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="functional-automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="functional-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="functional-automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="functional-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="functional-automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="functional-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="functional-automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sharechat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sharechat" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="functional-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="functional-automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -187,8 +196,8 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="functional-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="functional-automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -197,8 +206,8 @@
               <item name="Actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="functional-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="functional-automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -207,8 +216,8 @@
               <item name="Objects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="functional-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="functional-automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -216,8 +225,8 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="functional-automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="functional-automation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -229,6 +238,23 @@
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/co/sharechat/test" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="co.sharechat.pages.Actions" />
+      <recent name="co.sharechat.pages.Objects" />
+      <recent name="co.sharechat.test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/co/sharechat/test" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -289,37 +315,43 @@
     <history-entry file="Runner - 2019.07.19 at 11h 22m 34s.xml">
       <configuration name="Runner" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Runner - 2019.07.22 at 15h 50m 07s.xml">
+      <configuration name="Runner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Runner - 2019.07.22 at 15h 50m 32s.xml">
+      <configuration name="Runner" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="804" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32907802" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286517" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286517" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286517" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -327,20 +359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-19">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/TrendingTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/TrendingPostUserProfileTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -397,13 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CreatePostObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2475">
-          <caret line="168" selection-start-line="168" selection-end-line="168" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/HomePageObjects.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
@@ -424,13 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -445,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/ExploreTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/SocialTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-203">
@@ -462,26 +459,236 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CreatePostObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/CreatePostTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2493">
+          <caret line="713" column="49" selection-start-line="713" selection-start-column="49" selection-end-line="713" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/ExploreTabPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/ExploreTabObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CreatePostActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="373">
           <caret line="281" column="24" selection-start-line="281" selection-start-column="24" selection-end-line="281" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="180">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/CreatePostTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/VideoFeedObjects.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/VideoFeedPage.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/TrendingTabObejects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="713" column="49" lean-forward="true" selection-start-line="713" selection-start-column="49" selection-end-line="713" selection-end-column="49" />
+        <state relative-caret-position="180">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/TrendingTabPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-402" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/TrendingTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="158" column="55" selection-start-line="158" selection-start-column="55" selection-end-line="158" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/StickerFunctionalityTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/StickerPicturePostTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/TrendingPostUserProfileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/TrendingPostUserProfilePages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/VideoFeedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/ExploreTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/ProfilePageTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/CheckAppInstallAndUninstallTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/HomeScreenTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/PostShareOptionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/LoginPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-645">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/LandingPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CommentPostObjects.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CommentPostPages.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/CommentPostTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="19" selection-start-line="19" selection-end-line="50" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

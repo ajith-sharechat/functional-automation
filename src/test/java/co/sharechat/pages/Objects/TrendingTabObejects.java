@@ -156,4 +156,23 @@ public class TrendingTabObejects {
 
     public static MobileElement gifImg;
 
+    //TC-221
+
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/iv_home_profile")
+    public static MobileElement profileButton;
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/menu_setting")
+    public static MobileElement settingButton;
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/post_download_switch")
+    public static MobileElement postDownloadSwitch;
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/iv_home_feed")
+    public static MobileElement homeButton;
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/iv_post_image")
+    public MobileElement imagePost;
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/image_view")
+    public static List<MobileElement> savePost;
+    @AndroidFindBy(id = "in.mohalla.sharechat:id/md_buttonDefaultPositive")
+    public static MobileElement appGalleryOption;
+    @AndroidFindBy(xpath = "//android.widget.Toast[1]")
+    public static MobileElement Toast;
+
 }
