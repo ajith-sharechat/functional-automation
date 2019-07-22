@@ -28,6 +28,9 @@ public class CreatePostObjects extends CommonPageObjects {
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/iv_post_tick")
 	public MobileElement tickIconCreatePost;
 
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/compose_back_iv")
+	public MobileElement backIconOnCreatePost;
+
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/search_src_text")
 	public MobileElement searchTagTextBox;
 
@@ -206,6 +209,9 @@ public class CreatePostObjects extends CommonPageObjects {
 
 	@AndroidFindBy(id = "in.mohalla.sharechat:id/tv_cancel")
 	public MobileElement downloadCameraFeatureSkipButton;
+
+	@AndroidFindBy(id = "in.mohalla.sharechat:id/accept_preview")
+	public MobileElement tickButtonOnVideoPreview;
 
 	//========================================Create Camera Ends========================================
 

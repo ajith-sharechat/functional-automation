@@ -71,6 +71,10 @@ public class CommonPageActions extends WebDriverListener {
 		return commonPageObjects.alertaMessageText.getText();
 	}
 
+	public boolean isAccepRejectAlertPresent(){
+		return deviceHelper.isElementPresent(commonPageObjects.alertaMessageText);
+	}
+
 	public boolean isAppGeneratedAlertDisplayed() {
 		return deviceHelper.isElementPresent(commonPageObjects.alertGeneratedByApplication);
 	}

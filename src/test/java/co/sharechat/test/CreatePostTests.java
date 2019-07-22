@@ -3,6 +3,7 @@ package co.sharechat.test;
 import co.sharechat.config.TestRunnerInfo;
 import co.sharechat.pages.Actions.CommonPageActions;
 import co.sharechat.pages.Actions.CreatePostActions;
+import co.sharechat.pages.Actions.SignUpActions;
 import co.sharechat.utils.Constants;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -26,6 +27,12 @@ public class CreatePostTests implements Constants {
 
     }
 
+    public SignUpActions getSignUpPage(){
+
+        return new SignUpActions(new TestRunnerInfo().getDriverSession(), new TestRunnerInfo().getRunnerInfo());
+
+    }
+
     /*@BeforeMethod(alwaysRun = true, description = "Login with Registered Number and Click on compose post",
             groups = {"SmokeTest", "RegressionTest", "Creation"})
     public void beforeCreatePost(){
@@ -35,7 +42,7 @@ public class CreatePostTests implements Constants {
         getCreatePost().composePost();
     }*/
 
-    @Test(enabled = false, description = "Verify create without background button functionality",
+    @Test(enabled = true, description = "Verify create without background button functionality",
             groups = {"SmokeTest"})
     public void  TC001_createTextPost(){
 
@@ -59,7 +66,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify create text post with background functionality",
+    @Test(enabled = true, description = "Verify create text post with background functionality",
             groups = {"SmokeTest"})
     public void  TC002_createBackgroundTextPost(){
         //Login in application
@@ -82,7 +89,7 @@ public class CreatePostTests implements Constants {
     }
 
 
-    @Test(enabled = false, description = "Verify create post with camera background functionality",
+    @Test(enabled = true, description = "Verify create post with camera background functionality",
             groups = {"SmokeTest"})
     public void  TC003_createCameraBackgroundTextPost(){
         //Login in application
@@ -93,7 +100,7 @@ public class CreatePostTests implements Constants {
         getCreatePost().composePost();
         getCreatePost().textCompose();
         getCreatePost().tapCameraButtonOnTextPost();
-        getCreatePost().clickPicture();
+        getCreatePost().capturePicture();
         getCreatePost().cropPictureOk();
         getCreatePost().writeTextofTextPost("Post to check");
         getCreatePost().submitTextForTextPost();
@@ -107,7 +114,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify create poll post functionality", groups = {"SmokeTest"})
+    @Test(enabled = true, description = "Verify create poll post functionality", groups = {"SmokeTest"})
     public void TC004_createPollPost(){
         //Login in application
         boolean []permissionsActions = {allow, allow, allow};
@@ -127,7 +134,7 @@ public class CreatePostTests implements Constants {
                 "User should be logged into account and home screen should open");
     }
 
-    @Test(enabled = false, description = "Verify text button functionality from creation options",
+    @Test(enabled = true, description = "Verify text button functionality from creation options",
             groups = {"RegressionTest", "Creation"})
     public void TC030_textPosts(){
 
@@ -164,7 +171,7 @@ public class CreatePostTests implements Constants {
                 "9 tabs should appear on bottom of the screen");
     }
 
-    @Test(enabled = false, description = "Verify Close button functionality from post creation screen",
+    @Test(enabled = true, description = "Verify Close button functionality from post creation screen",
             groups = {"RegressionTest", "Creation"})
     public void TC031_textPostsCloseFunctionality(){
 
@@ -189,7 +196,7 @@ public class CreatePostTests implements Constants {
                 "Post should be discarded and Screen should redirect to home screen");
     }
 
-    @Test(enabled = false, description = "Verify Check Mark functionality from post creation screen",
+    @Test(enabled = true, description = "Verify Check Mark functionality from post creation screen",
             groups = {"RegressionTest", "Creation"})
     public void TC032_textPostsCheckMarkFunctionality(){
 
@@ -208,7 +215,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify create without background button functionality",
+    @Test(enabled = true, description = "Verify create without background button functionality",
             groups = {"RegressionTest", "Creation"})
     public void TC033_textPostWithoutBG(){
 
@@ -231,7 +238,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify post creation functionality with plan text",
+    @Test(enabled = true, description = "Verify post creation functionality with plan text",
             groups = {"RegressionTest", "Creation"})
     public void TC034_textPostSimpleText(){
 
@@ -255,7 +262,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify allow permissions functionality for creation functionality with text",
+    @Test(enabled = true, description = "Verify allow permissions functionality for creation functionality with text",
             groups = {"RegressionTest", "Creation"})
     public void TC035_textPostAllowPermission(){
 
@@ -286,7 +293,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify deny permissions functionality while creating post functionality with text",
             groups = {"RegressionTest", "Creation"})
     public void TC036_textPostDenyPermission(){
@@ -318,7 +325,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify that all trending buckets are appearing in tag feed while posting a post",
             groups = {"RegressionTest", "Creation"})
     public void TC040_trendingBucketsOnPost(){
@@ -345,7 +352,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify that used tags are appearing in recent tag section in tag feed",
             groups = {"RegressionTest", "Creation"})
     public void TC041_textPostUsedTag(){
@@ -382,7 +389,7 @@ public class CreatePostTests implements Constants {
                 "Recently used tag should be appear in Recent Tags bucket in tag feed");
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify creating link post by pasting external link",
             groups = {"RegressionTest", "Creation"})
     public void TC042_textPostWithExternalLink(){
@@ -406,7 +413,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify creating link post by pasting ShareChat post link",
             groups = {"RegressionTest", "Creation"})
     public void TC043_textPostWithExternalLink(){
@@ -433,7 +440,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify creating link post with ShareChat tag links",
             groups = {"RegressionTest", "Creation"})
     public void TC044_creatingLinkPostWithShareChatTag(){
@@ -456,7 +463,7 @@ public class CreatePostTests implements Constants {
                 "Success message should populate on screen after successful post");
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify creating link post with ShareChat user profile link",
             groups = {"RegressionTest", "Creation"})
     public void TC045_createPostWithUserProfileShare(){
@@ -480,7 +487,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify creating link post by typing the link",
             groups = {"RegressionTest", "Creation"})
     public void TC047_textPostWithExternalLink(){
@@ -507,7 +514,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify text with background post functionality with Color pictures",
             groups = {"RegressionTest", "Creation"})
     public void TC048_textPostWithColorBG(){
@@ -535,7 +542,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify text with background post functionality with our country pictures",
             groups = {"RegressionTest", "Creation"})
     public void TC049_textPostWithAnyDefaultPicturesBG(){
@@ -563,7 +570,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify text with background post creation functionality with mobile gallery pictures",
             groups = {"RegressionTest", "Creation"})
     public void TC050_textPostWithAnyDefaultP(){
@@ -592,7 +599,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify text with background post creation functionality with camera pictures",
+    @Test(enabled = true, description = "Verify text with background post creation functionality with camera pictures",
             groups = {"RegressionTest", "Creation"})
     public void  AR52_textPostWithCameraBackground(){
         //Login in application
@@ -603,7 +610,7 @@ public class CreatePostTests implements Constants {
         getCreatePost().composePost();
         getCreatePost().textCompose();
         getCreatePost().tapCameraButtonOnTextPost();
-        getCreatePost().clickPicture();
+        getCreatePost().capturePicture();
         getCreatePost().cropPictureOk();
         getCreatePost().writeTextofTextPost("Post to check");
         getCreatePost().submitTextForTextPost();
@@ -618,7 +625,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify text post creation functionality by allowing permissions what app asked",
             groups = {"RegressionTest", "Creation"})
     public void  AR53_textPostWithAllowPermission(){
@@ -651,7 +658,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify text post creation functionality by denying permissions what mobile asked",
             groups = {"RegressionTest", "Creation"})
     public void AR54_textPostWithDenyPermissionWithColorBG(){
@@ -686,7 +693,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify text post creation functionality by single tag",
+    @Test(enabled = true, description = "Verify text post creation functionality by single tag",
             groups = {"RegressionTest", "Creation"})
     public void  AR55_textPostWithSingleTag(){
         //Login in application
@@ -708,7 +715,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify text post creation functionality by creating new tag",
+    @Test(enabled = true, description = "Verify text post creation functionality by creating new tag",
             groups = {"RegressionTest", "Creation"})
     public void  AR56_textPostWithCreateNewTag(){
         //Login in application
@@ -738,7 +745,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify text post creation functionality by multiple tag",
+    @Test(enabled = true, description = "Verify text post creation functionality by multiple tag",
             groups = {"RegressionTest", "Creation"})
     public void  AR57_textPostWithMultipleTags(){
         //Login in application
@@ -772,7 +779,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify text post creation functionality by adding single friend",
+    @Test(enabled = true, description = "Verify text post creation functionality by adding single friend",
             groups = {"RegressionTest", "Creation"})
     public void  AR58_textPostWithSingleFriend(){
         //Login in application
@@ -804,7 +811,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify text post creation functionality by adding multiple friends",
+    @Test(enabled = true, description = "Verify text post creation functionality by adding multiple friends",
             groups = {"RegressionTest", "Creation"})
     public void  AR59_textPostWithMultipleFriends(){
         //Login in application
@@ -837,7 +844,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false,
+    @Test(enabled = true,
             description = "Verify text post creation functionality by attaching single person who user is following",
             groups = {"RegressionTest", "Creation"})
     public void  AR60_textPostWithSingleFollowingFriend(){
@@ -871,8 +878,8 @@ public class CreatePostTests implements Constants {
                 "Success message should populate on screen after successful post");
 
     }
-    //==============================================Today======================================
-    @Test(enabled = false,
+
+    @Test(enabled = true,
             description = "Verify text post creation functionality by attaching multiple persons who user is following",
             groups = {"RegressionTest", "Creation"})
     public void  AR61_textPostWithMultipleFollowingFriends(){
@@ -908,7 +915,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify text post creation functionality by attaching single follower",
+    @Test(enabled = true, description = "Verify text post creation functionality by attaching single follower",
             groups = {"RegressionTest", "Creation"})
     public void  AR62_textPostWithSingleFollowerFriend(){
         //Login in application
@@ -942,7 +949,7 @@ public class CreatePostTests implements Constants {
 
     }
 
-    @Test(enabled = false, description = "Verify text post creation functionality by attaching multiple follower",
+    @Test(enabled = true, description = "Verify text post creation functionality by attaching multiple follower",
             groups = {"RegressionTest", "Creation"})
     public void  AR63_textPostWithMultipleFollowersFriends(){
         //Login in application
@@ -976,7 +983,6 @@ public class CreatePostTests implements Constants {
                 "Success message should populate on screen after successful post");
 
     }
-    //==============================================Today======================================
     //========================================Create Camera Starts======================================
 
     @Test(enabled = true, description = "Verify Camera button functionality from Creation POPUP",
@@ -1023,7 +1029,7 @@ public class CreatePostTests implements Constants {
                 "Camera Instructions Should be Displayed");
 
     }
-
+    //==============================================Today======================================
     @Test(enabled = true, description = "Verify Close button functionality from camera screen",
             groups = {"RegressionTest", "Creation"})
     public void  AR65_cameraPostCloseButtonFunctionality(){
@@ -1066,11 +1072,12 @@ public class CreatePostTests implements Constants {
 
         getCreatePost().tapOnDownloadCameraPopupSkipButton();
 
-        Assert.assertFalse(getCreatePost().isDownloadCameraFeatureTextDisplayed(),
+        Assert.assertFalse(getCreatePost().isDownloadCameraPopupSkipButtonDisplayed(),
                 "Popup should be closed");
 
     }
 
+    // Need to update test case
     @Test(enabled = true, description = "Verify timer button functionality from camera screen",
             groups = {"RegressionTest", "Creation"})
     public void  AR70_cameraPostTimerFunctionality(){
@@ -1095,12 +1102,145 @@ public class CreatePostTests implements Constants {
 
         getCreatePost().tapOnDownloadCameraPopupSkipButton();
 
-        Assert.assertFalse(getCreatePost().isDownloadCameraFeatureTextDisplayed(),
+        Assert.assertFalse(getCreatePost().isDownloadCameraPopupSkipButtonDisplayed(),
+                "Popup should be closed");
+
+    }
+//==============================================Today======================================
+
+    @Test(enabled = true, description = "Verify stickers icon functionality from camera screen",
+            groups = {"RegressionTest", "Creation"})
+    public void  AR74_cameraStickersFunctionality(){
+        //Login in application
+        boolean []permissionsActions = {allow, allow, allow};
+        new SignUpTests().registeredLogin(permissionsActions);
+
+        //Open Camera and click on permissions.
+        getCreatePost().composePost();
+        getCreatePost().openCamera();
+
+        getCreatePost().tapOnStickersButton();
+
+        Assert.assertTrue(getCreatePost().isDownloadCameraFeatureTextDisplayed(),
+                "Popup should have proper text at below the video");
+
+        Assert.assertTrue(getCreatePost().isDownloadCameraFeatureDownloadButtonDisplayed(),
+                "Popup should have DOWNLOAD button.");
+
+        Assert.assertTrue(getCreatePost().isDownloadCameraFeatureSkipDisplayed(),
+                "Popup should have SKIP button");
+
+        getCreatePost().tapOnDownloadCameraPopupSkipButton();
+
+        Assert.assertFalse(getCreatePost().isDownloadCameraPopupSkipButtonDisplayed(),
                 "Popup should be closed");
 
     }
 
+    @Test(enabled = true, description = "Verify music icon functionality from camera screen",
+            groups = {"RegressionTest", "Creation"})
+    public void  AR75_cameraMusicFunctionality(){
+        //Login in application
+        boolean []permissionsActions = {allow, allow, allow};
+        new SignUpTests().registeredLogin(permissionsActions);
 
+        //Open Camera and click on permissions.
+        getCreatePost().composePost();
+        getCreatePost().openCamera();
+
+        getCreatePost().tapOnMusicButton();
+
+        Assert.assertTrue(getCreatePost().isDownloadCameraFeatureTextDisplayed(),
+                "Popup should have proper text at below the video");
+
+        Assert.assertTrue(getCreatePost().isDownloadCameraFeatureDownloadButtonDisplayed(),
+                "Popup should have DOWNLOAD button.");
+
+        Assert.assertTrue(getCreatePost().isDownloadCameraFeatureSkipDisplayed(),
+                "Popup should have SKIP button");
+
+        getCreatePost().tapOnDownloadCameraPopupSkipButton();
+
+        Assert.assertFalse(getCreatePost().isDownloadCameraPopupSkipButtonDisplayed(),
+                "Popup should be closed");
+
+    }
+
+    @Test(enabled = true, description = "Verify picture post creation with base camera",
+            groups = {"RegressionTest", "Creation"})
+    public void  AR76_cameraPostCreationFunctionality(){
+        //Login in application
+        boolean []permissionsActions = {allow, allow, allow};
+        new SignUpTests().registeredLogin(permissionsActions);
+
+        //Open Camera and click on permissions.
+        getCreatePost().composePost();
+        getCreatePost().openCamera();
+
+        getCreatePost().capturePicture();
+
+        getCreatePost().submitPost();
+        getCreatePost().selectTagForPost(1);
+        getCreatePost().submitPost();
+
+        Assert.assertTrue(getCreatePost().isPostUploaded(1),
+                "Notification should populate on mobile about the post upload");
+
+    }
+
+    @Test(enabled = true, description = "Verify camera picture post discard functionality",
+            groups = {"RegressionTest", "Creation"})
+    public void  AR77_cameraPostDiscardFunctionality(){
+        //Login in application
+        boolean []permissionsActions = {allow, allow, allow};
+        new SignUpTests().registeredLogin(permissionsActions);
+
+        //Open Camera and click on permissions.
+        getCreatePost().composePost();
+        getCreatePost().openCamera();
+
+        getCreatePost().capturePicture();
+
+        getCreatePost().tapOnbackIconOnCreatePost();
+
+        Assert.assertTrue(getCommonPage().isAccepRejectAlertPresent(),
+                "Description should be present in popup");
+
+        Assert.assertTrue(getCreatePost().isYesBtnDisplayed(),
+                "YES button should appear on popup");
+        Assert.assertTrue(getCreatePost().isNotNowButtonDisplayed(),
+                "NOT NOW button should appear on popup");
+
+        getCommonPage().acceptAlert();
+
+        Assert.assertTrue(getSignUpPage().isLanguageDropDownListDisplayed(),
+                "Post should be deleted and User should be on home screen");
+
+    }
+
+    @Test(enabled = true, description = "Verify video post creation with base camera",
+            groups = {"RegressionTest", "Creation"})
+    public void  AR78_videoPostCreationFunctionality(){
+        //Login in application
+        boolean []permissionsActions = {allow, allow, allow};
+        new SignUpTests().registeredLogin(permissionsActions);
+
+        //Open Camera and click on permissions.
+        getCreatePost().composePost();
+        getCreatePost().openCamera();
+
+        getCreatePost().captureVideo(10);
+
+        getCreatePost().tapOnTickButtonOnVideoPreview();
+
+        getCreatePost().submitPost();
+        getCreatePost().selectTagForPost(1);
+        getCreatePost().submitPost();
+
+        Assert.assertTrue(getCreatePost().isPostUploaded(15),
+                "Notification should populate on mobile about the post upload");
+
+    }
 
 
     //========================================Create Camera Ends========================================

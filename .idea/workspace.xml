@@ -3,36 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6e480dc9-9fab-475a-8f37-b373a5b1d41e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/config/DeviceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/config/DeviceHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CommonPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CommonPageActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CreatePostActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CreatePostActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CreatePostObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CreatePostObjects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/test/CreatePostTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/CreatePostTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ExtentReports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ExtentReports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/appiumlogs/appium_logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/appiumlogs/appium_logs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/IntelliJ.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/DeviceHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/DeviceHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/DriverManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/DriverManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/ExtentTestFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/ExtentTestFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/JSONParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/JSONParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/PropertyReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/PropertyReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/TestRunnerInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/TestRunnerInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/ViewFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/ViewFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/WebDriverListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/config/WebDriverListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/flows/AndroidFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/flows/AndroidFlow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/flows/iOSFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/flows/iOSFlow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Actions/CreatePostActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Actions/CreatePostActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Actions/SignUpActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Actions/SignUpActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Actions/loginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Actions/loginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/CreatePostObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/CreatePostObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/HomePageObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/HomePageObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/SignUpPageObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/SignUpPageObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/loginPageObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/pages/Objects/loginPageObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/CreatePostTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/CreatePostTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/SignUpTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/SignUpTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/launchAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/test/launchAppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/utils/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/co/sharechat/utils/GenericFunctions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/co/sharechat/utils/GenericFunctions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/sharechat/test/launchAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/sharechat/test/launchAppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/TestNG Forum/TestNG Test0.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/TestNG Forum/TestNG Test0.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/TestNG Forum/TestNG Test0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/TestNG Forum/TestNG Test0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/TestNG Forum/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/TestNG Forum/testng-failed.xml" afterDir="false" />
@@ -45,10 +21,11 @@
       <change beforePath="$PROJECT_DIR$/test-output/old/TestNG Forum/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/TestNG Forum/methods-not-run.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/TestNG Forum/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/TestNG Forum/methods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/TestNG Forum/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/TestNG Forum/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,43 +38,36 @@
     <favorites_list name="IntelliJ" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/CreatePostTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1345">
-              <caret line="873" column="95" selection-start-line="873" selection-start-column="95" selection-end-line="873" selection-end-column="95" />
+            <state relative-caret-position="8168">
+              <caret line="1190" column="26" selection-start-line="1190" selection-start-column="26" selection-end-line="1190" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CommonPageActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
               <folding>
-                <element signature="method#TC001_createTextPost#0;class#CreatePostTests#0" />
-                <element signature="method#TC002_createBackgroundTextPost#0;class#CreatePostTests#0" />
-                <element signature="method#TC003_createCameraBackgroundTextPost#0;class#CreatePostTests#0" />
-                <element signature="method#TC004_createPollPost#0;class#CreatePostTests#0" />
-                <element signature="method#TC030_textPosts#0;class#CreatePostTests#0" />
-                <element signature="method#TC031_textPostsCloseFunctionality#0;class#CreatePostTests#0" />
-                <element signature="method#TC032_textPostsCheckMarkFunctionality#0;class#CreatePostTests#0" />
-                <element signature="method#TC033_textPostWithoutBG#0;class#CreatePostTests#0" />
-                <element signature="method#TC035_textPostAllowPermission#0;class#CreatePostTests#0" />
-                <element signature="method#TC036_textPostDenyPermission#0;class#CreatePostTests#0" />
-                <element signature="method#TC040_trendingBucketsOnPost#0;class#CreatePostTests#0" />
-                <element signature="method#TC041_textPostUsedTag#0;class#CreatePostTests#0" />
-                <element signature="method#TC042_textPostWithExternalLink#0;class#CreatePostTests#0" />
-                <element signature="method#TC043_textPostWithExternalLink#0;class#CreatePostTests#0" />
-                <element signature="method#TC044_creatingLinkPostWithShareChatTag#0;class#CreatePostTests#0" />
-                <element signature="method#TC045_createPostWithUserProfileShare#0;class#CreatePostTests#0" />
-                <element signature="method#TC047_textPostWithExternalLink#0;class#CreatePostTests#0" />
-                <element signature="method#TC048_textPostWithColorBG#0;class#CreatePostTests#0" />
-                <element signature="method#TC049_textPostWithAnyDefaultPicturesBG#0;class#CreatePostTests#0" />
-                <element signature="method#TC050_textPostWithAnyDefaultP#0;class#CreatePostTests#0" />
-                <element signature="method#AR52_textPostWithCameraBackground#0;class#CreatePostTests#0" />
-                <element signature="method#AR53_textPostWithAllowPermission#0;class#CreatePostTests#0" />
-                <element signature="method#AR54_textPostWithDenyPermissionWithColorBG#0;class#CreatePostTests#0" />
-                <element signature="method#AR55_textPostWithSingleTag#0;class#CreatePostTests#0" />
-                <element signature="method#AR56_textPostWithCreateNewTag#0;class#CreatePostTests#0" />
-                <element signature="method#AR57_textPostWithMultipleTags#0;class#CreatePostTests#0" />
-                <element signature="method#AR58_textPostWithSingleFriend#0;class#CreatePostTests#0" />
-                <element signature="method#AR59_textPostWithMultipleFriends#0;class#CreatePostTests#0" />
-                <element signature="method#AR60_textPostWithSingleFollowingFriend#0;class#CreatePostTests#0" />
+                <element signature="e#2157#2158#0" expanded="true" />
+                <element signature="e#2204#2205#0" expanded="true" />
+                <element signature="e#2318#2319#0" expanded="true" />
+                <element signature="e#2377#2378#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CommonPageObjects.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -105,23 +75,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CreatePostActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="413" column="32" selection-start-line="413" selection-start-column="16" selection-end-line="413" selection-end-column="32" />
+            <state relative-caret-position="220">
+              <caret line="441" column="59" selection-start-line="441" selection-start-column="19" selection-end-line="441" selection-end-column="59" />
               <folding>
-                <element signature="e#4873#4874#0" expanded="true" />
-                <element signature="e#4949#4950#0" expanded="true" />
+                <element signature="e#2898#2899#0" expanded="true" />
+                <element signature="e#2955#2956#0" expanded="true" />
+                <element signature="e#2999#3000#0" expanded="true" />
+                <element signature="e#3060#3061#0" expanded="true" />
+                <element signature="e#2959#3475#0" />
+                <element signature="e#6474#6475#0" expanded="true" />
+                <element signature="e#6527#6528#0" expanded="true" />
+                <element signature="e#7005#7006#0" expanded="true" />
+                <element signature="e#7065#7066#0" expanded="true" />
                 <element signature="e#8843#8844#0" expanded="true" />
                 <element signature="e#8900#8901#0" expanded="true" />
-                <element signature="e#8983#8984#0" expanded="true" />
-                <element signature="e#9036#9037#0" expanded="true" />
                 <element signature="e#12134#12135#0" expanded="true" />
-                <element signature="e#12157#12158#0" expanded="true" />
-                <element signature="e#12233#12234#0" expanded="true" />
-                <element signature="e#12292#12293#0" expanded="true" />
-                <element signature="e#12335#12336#0" expanded="true" />
-                <element signature="e#12399#12400#0" expanded="true" />
-                <element signature="e#12348#12349#0" expanded="true" />
-                <element signature="e#12412#12413#0" expanded="true" />
+                <element signature="e#12193#12194#0" expanded="true" />
+                <element signature="e#12330#12331#0" expanded="true" />
+                <element signature="e#12389#12390#0" expanded="true" />
+                <element signature="e#12423#12424#0" expanded="true" />
+                <element signature="e#12482#12483#0" expanded="true" />
+                <element signature="e#12516#12517#0" expanded="true" />
+                <element signature="e#12575#12576#0" expanded="true" />
+                <element signature="e#12441#12442#0" expanded="true" />
+                <element signature="e#12505#12506#0" expanded="true" />
+                <element signature="e#13406#13407#0" expanded="true" />
+                <element signature="e#13484#13485#0" expanded="true" />
+                <element signature="e#13523#13524#0" expanded="true" />
+                <element signature="e#13600#13601#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,8 +111,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CreatePostObjects.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="180" column="25" selection-start-line="180" selection-start-column="25" selection-end-line="180" selection-end-column="25" />
+            <state relative-caret-position="167">
+              <caret line="203" column="28" selection-start-line="203" selection-start-column="28" selection-end-line="203" selection-end-column="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/config/DeviceHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="144" column="25" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4751#4752#0" expanded="true" />
+                <element signature="e#4816#4817#0" expanded="true" />
+                <element signature="e#8548#8549#0" expanded="true" />
+                <element signature="e#9369#9370#0" expanded="true" />
+                <element signature="e#11120#11121#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,9 +140,15 @@
     <findStrings>
       <find>enabled = false,</find>
       <find>enabled = true,</find>
-      <find>cameraTakePicButton</find>
       <find>lang</find>
       <find>in.mohalla.sharechat:id/camera_takepicture_iv</find>
+      <find>cameraTakePicButton</find>
+      <find>back</find>
+      <find>android:id/button1</find>
+      <find>lon</find>
+      <find>alertaMessageText</find>
+      <find>android:id/message</find>
+      <find>tickButtonOnVideoPreview</find>
     </findStrings>
     <replaceStrings>
       <replace>enabled = true,</replace>
@@ -162,29 +166,28 @@
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/Runner.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/SignUpTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CreatePostObjects.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/config/DeviceHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CommonPageActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CreatePostActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/sharechat/test/CreatePostTests.java" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
@@ -224,6 +227,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sharechat" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sharechat" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -233,7 +245,8 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sharechat" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="Actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
@@ -242,13 +255,28 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sharechat" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="Objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntelliJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IntelliJ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sharechat" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -290,10 +318,35 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e480dc9-9fab-475a-8f37-b373a5b1d41e" name="Default Changelist" comment="" />
+      <created>1563596835516</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563596835516</updated>
+    </task>
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="Runner - 2019.07.19 at 18h 17m 23s.xml">
+      <configuration name="Runner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Runner - 2019.07.22 at 16h 48m 33s.xml">
+      <configuration name="Runner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Runner - 2019.07.22 at 17h 08m 56s.xml">
+      <configuration name="Runner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Runner - 2019.07.22 at 17h 49m 42s.xml">
+      <configuration name="Runner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Runner - 2019.07.22 at 17h 57m 41s.xml">
+      <configuration name="Runner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Runner - 2019.07.22 at 18h 05m 20s.xml">
+      <configuration name="Runner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Runner - 2019.07.22 at 18h 21m 40s.xml">
       <configuration name="Runner" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -310,17 +363,13 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" sideWeight="0.50089765" side_tool="true" weight="0.24964234" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" sideWeight="0.50089765" side_tool="true" weight="0.24964234" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49928468" weight="0.27951807" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5007153" side_tool="true" weight="0.27951807" />
-      <window_info anchor="bottom" id="Messages" weight="0.32891566" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50089765" side_tool="true" weight="0.24964234" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
@@ -328,31 +377,21 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" weight="0.23734939" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.27951807" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/SocialActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/ProfilePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/PostShareOptionPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -378,13 +417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CommonPageActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -444,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CommonPageObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/ExploreTabObjects.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -497,13 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/SignUpPageObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -636,20 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/SignUpTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="112" column="8" lean-forward="true" selection-start-line="112" selection-start-column="8" selection-end-line="113" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CreatePostObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="180" column="25" selection-start-line="180" selection-start-column="25" selection-end-line="180" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -686,64 +690,113 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/config/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/SignUpPageObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/config/DeviceHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="144" column="25" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4751#4752#0" expanded="true" />
+            <element signature="e#4816#4817#0" expanded="true" />
+            <element signature="e#8548#8549#0" expanded="true" />
+            <element signature="e#9369#9370#0" expanded="true" />
+            <element signature="e#11120#11121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/SignUpTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-989">
+          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CommonPageObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CommonPageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+          <folding>
+            <element signature="e#2157#2158#0" expanded="true" />
+            <element signature="e#2204#2205#0" expanded="true" />
+            <element signature="e#2318#2319#0" expanded="true" />
+            <element signature="e#2377#2378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Objects/CreatePostObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="203" column="28" selection-start-line="203" selection-start-column="28" selection-end-line="203" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/pages/Actions/CreatePostActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="413" column="32" selection-start-line="413" selection-start-column="16" selection-end-line="413" selection-end-column="32" />
+        <state relative-caret-position="220">
+          <caret line="441" column="59" selection-start-line="441" selection-start-column="19" selection-end-line="441" selection-end-column="59" />
           <folding>
-            <element signature="e#4873#4874#0" expanded="true" />
-            <element signature="e#4949#4950#0" expanded="true" />
+            <element signature="e#2898#2899#0" expanded="true" />
+            <element signature="e#2955#2956#0" expanded="true" />
+            <element signature="e#2999#3000#0" expanded="true" />
+            <element signature="e#3060#3061#0" expanded="true" />
+            <element signature="e#2959#3475#0" />
+            <element signature="e#6474#6475#0" expanded="true" />
+            <element signature="e#6527#6528#0" expanded="true" />
+            <element signature="e#7005#7006#0" expanded="true" />
+            <element signature="e#7065#7066#0" expanded="true" />
             <element signature="e#8843#8844#0" expanded="true" />
             <element signature="e#8900#8901#0" expanded="true" />
-            <element signature="e#8983#8984#0" expanded="true" />
-            <element signature="e#9036#9037#0" expanded="true" />
             <element signature="e#12134#12135#0" expanded="true" />
-            <element signature="e#12157#12158#0" expanded="true" />
-            <element signature="e#12233#12234#0" expanded="true" />
-            <element signature="e#12292#12293#0" expanded="true" />
-            <element signature="e#12335#12336#0" expanded="true" />
-            <element signature="e#12399#12400#0" expanded="true" />
-            <element signature="e#12348#12349#0" expanded="true" />
-            <element signature="e#12412#12413#0" expanded="true" />
+            <element signature="e#12193#12194#0" expanded="true" />
+            <element signature="e#12330#12331#0" expanded="true" />
+            <element signature="e#12389#12390#0" expanded="true" />
+            <element signature="e#12423#12424#0" expanded="true" />
+            <element signature="e#12482#12483#0" expanded="true" />
+            <element signature="e#12516#12517#0" expanded="true" />
+            <element signature="e#12575#12576#0" expanded="true" />
+            <element signature="e#12441#12442#0" expanded="true" />
+            <element signature="e#12505#12506#0" expanded="true" />
+            <element signature="e#13406#13407#0" expanded="true" />
+            <element signature="e#13484#13485#0" expanded="true" />
+            <element signature="e#13523#13524#0" expanded="true" />
+            <element signature="e#13600#13601#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/co/sharechat/test/CreatePostTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1345">
-          <caret line="873" column="95" selection-start-line="873" selection-start-column="95" selection-end-line="873" selection-end-column="95" />
-          <folding>
-            <element signature="method#TC001_createTextPost#0;class#CreatePostTests#0" />
-            <element signature="method#TC002_createBackgroundTextPost#0;class#CreatePostTests#0" />
-            <element signature="method#TC003_createCameraBackgroundTextPost#0;class#CreatePostTests#0" />
-            <element signature="method#TC004_createPollPost#0;class#CreatePostTests#0" />
-            <element signature="method#TC030_textPosts#0;class#CreatePostTests#0" />
-            <element signature="method#TC031_textPostsCloseFunctionality#0;class#CreatePostTests#0" />
-            <element signature="method#TC032_textPostsCheckMarkFunctionality#0;class#CreatePostTests#0" />
-            <element signature="method#TC033_textPostWithoutBG#0;class#CreatePostTests#0" />
-            <element signature="method#TC035_textPostAllowPermission#0;class#CreatePostTests#0" />
-            <element signature="method#TC036_textPostDenyPermission#0;class#CreatePostTests#0" />
-            <element signature="method#TC040_trendingBucketsOnPost#0;class#CreatePostTests#0" />
-            <element signature="method#TC041_textPostUsedTag#0;class#CreatePostTests#0" />
-            <element signature="method#TC042_textPostWithExternalLink#0;class#CreatePostTests#0" />
-            <element signature="method#TC043_textPostWithExternalLink#0;class#CreatePostTests#0" />
-            <element signature="method#TC044_creatingLinkPostWithShareChatTag#0;class#CreatePostTests#0" />
-            <element signature="method#TC045_createPostWithUserProfileShare#0;class#CreatePostTests#0" />
-            <element signature="method#TC047_textPostWithExternalLink#0;class#CreatePostTests#0" />
-            <element signature="method#TC048_textPostWithColorBG#0;class#CreatePostTests#0" />
-            <element signature="method#TC049_textPostWithAnyDefaultPicturesBG#0;class#CreatePostTests#0" />
-            <element signature="method#TC050_textPostWithAnyDefaultP#0;class#CreatePostTests#0" />
-            <element signature="method#AR52_textPostWithCameraBackground#0;class#CreatePostTests#0" />
-            <element signature="method#AR53_textPostWithAllowPermission#0;class#CreatePostTests#0" />
-            <element signature="method#AR54_textPostWithDenyPermissionWithColorBG#0;class#CreatePostTests#0" />
-            <element signature="method#AR55_textPostWithSingleTag#0;class#CreatePostTests#0" />
-            <element signature="method#AR56_textPostWithCreateNewTag#0;class#CreatePostTests#0" />
-            <element signature="method#AR57_textPostWithMultipleTags#0;class#CreatePostTests#0" />
-            <element signature="method#AR58_textPostWithSingleFriend#0;class#CreatePostTests#0" />
-            <element signature="method#AR59_textPostWithMultipleFriends#0;class#CreatePostTests#0" />
-            <element signature="method#AR60_textPostWithSingleFollowingFriend#0;class#CreatePostTests#0" />
-          </folding>
+        <state relative-caret-position="8168">
+          <caret line="1190" column="26" selection-start-line="1190" selection-start-column="26" selection-end-line="1190" selection-end-column="26" />
         </state>
       </provider>
     </entry>

@@ -8,31 +8,24 @@ import io.appium.java_client.*;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.android.nativekey.AndroidKey;
-import com.sun.tools.internal.jxc.ConfigReader;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.clipboard.HasClipboard;
+import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.offset.ElementOption;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
-import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.touch.TouchActions;
-import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.Calendar;
-import java.util.HashMap;
 import java.util.List;
 
 import static io.appium.java_client.touch.WaitOptions.waitOptions;
@@ -142,6 +135,19 @@ public class DeviceHelper {
      * */
     public String getCopiedText(){
         return ((HasClipboard) driver).getClipboardText();
+    }
+
+    /**
+     *This method will press and hold the element for given seconds of time.
+     * @since 22 July 2019
+     * @author Jasmeet
+     * */
+    public void longPress(MobileElement element, int seconds) {
+        new TouchAction((PerformsTouchActions) driver).
+                longPress(LongPressOptions.longPressOptions().
+                        withElement(ElementOption.element (element)).
+                        withDuration(Duration.ofSeconds(seconds))).
+                perform();
     }
 
     /**

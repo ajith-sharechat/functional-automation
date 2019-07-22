@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="33" total="36" passed="2">
+<testng-results skipped="0" failed="1" ignored="39" total="42" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNG Forum" duration-ms="275167" started-at="2019-07-19T12:42:37Z" finished-at="2019-07-19T12:47:13Z">
+  <suite name="TestNG Forum" duration-ms="345983" started-at="2019-07-22T12:45:44Z" finished-at="2019-07-22T12:51:29Z">
     <groups>
       <group name="Creation">
-        <method signature="CreatePostTests.AR64_cameraPostFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR64_cameraPostFunctionality" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.AR65_cameraPostCloseButtonFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR65_cameraPostCloseButtonFunctionality" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.AR69_cameraPostVideoSpeedFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR69_cameraPostVideoSpeedFunctionality" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR74_cameraStickersFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR74_cameraStickersFunctionality" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR75_cameraMusicFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR75_cameraMusicFunctionality" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR78_videoPostCreationFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR78_videoPostCreationFunctionality" class="co.sharechat.test.CreatePostTests"/>
       </group> <!-- Creation -->
       <group name="RegressionTest">
-        <method signature="CreatePostTests.AR64_cameraPostFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR64_cameraPostFunctionality" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.AR65_cameraPostCloseButtonFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR65_cameraPostCloseButtonFunctionality" class="co.sharechat.test.CreatePostTests"/>
-        <method signature="CreatePostTests.AR69_cameraPostVideoSpeedFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR69_cameraPostVideoSpeedFunctionality" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR74_cameraStickersFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR74_cameraStickersFunctionality" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR75_cameraMusicFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR75_cameraMusicFunctionality" class="co.sharechat.test.CreatePostTests"/>
+        <method signature="CreatePostTests.AR78_videoPostCreationFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR78_videoPostCreationFunctionality" class="co.sharechat.test.CreatePostTests"/>
       </group> <!-- RegressionTest -->
     </groups>
-    <test name="TestNG Test0" duration-ms="275167" started-at="2019-07-19T12:42:37Z" finished-at="2019-07-19T12:47:13Z">
+    <test name="TestNG Test0" duration-ms="345983" started-at="2019-07-22T12:45:44Z" finished-at="2019-07-22T12:51:29Z">
       <class name="co.sharechat.test.CreatePostTests">
-        <test-method status="PASS" signature="AR64_cameraPostFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR64_cameraPostFunctionality" duration-ms="85141" started-at="2019-07-19T18:12:39Z" description="Verify Camera button functionality from Creation POPUP" finished-at="2019-07-19T18:14:04Z">
+        <test-method status="PASS" signature="AR74_cameraStickersFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR74_cameraStickersFunctionality" duration-ms="89710" started-at="2019-07-22T18:15:45Z" description="Verify stickers icon functionality from camera screen" finished-at="2019-07-22T18:17:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AR64_cameraPostFunctionality -->
-        <test-method status="PASS" signature="AR65_cameraPostCloseButtonFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR65_cameraPostCloseButtonFunctionality" duration-ms="89260" started-at="2019-07-19T18:14:07Z" description="Verify Close button functionality from camera screen" finished-at="2019-07-19T18:15:36Z">
+        </test-method> <!-- AR74_cameraStickersFunctionality -->
+        <test-method status="PASS" signature="AR75_cameraMusicFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR75_cameraMusicFunctionality" duration-ms="82353" started-at="2019-07-22T18:17:17Z" description="Verify music icon functionality from camera screen" finished-at="2019-07-22T18:18:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AR65_cameraPostCloseButtonFunctionality -->
-        <test-method status="FAIL" signature="AR69_cameraPostVideoSpeedFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR69_cameraPostVideoSpeedFunctionality" duration-ms="89586" started-at="2019-07-19T18:15:38Z" description="Verify video speed button functionality from camera screen" finished-at="2019-07-19T18:17:08Z">
+        </test-method> <!-- AR75_cameraMusicFunctionality -->
+        <test-method status="FAIL" signature="AR78_videoPostCreationFunctionality()[pri:0, instance:co.sharechat.test.CreatePostTests@6c64cb25]" name="AR78_videoPostCreationFunctionality" duration-ms="164388" started-at="2019-07-22T18:18:41Z" description="Verify video post creation with base camera" finished-at="2019-07-22T18:21:26Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Popup should be closed expected [false] but found [true]]]>
+              <![CDATA[Notification should populate on mobile about the post upload expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Popup should be closed expected [false] but found [true]
+              <![CDATA[java.lang.AssertionError: Notification should populate on mobile about the post upload expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertFalse(Assert.java:62)
-	at co.sharechat.test.CreatePostTests.AR69_cameraPostVideoSpeedFunctionality(CreatePostTests.java:1069)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at co.sharechat.test.CreatePostTests.AR78_videoPostCreationFunctionality(CreatePostTests.java:1240)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,7 +61,7 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AR69_cameraPostVideoSpeedFunctionality -->
+        </test-method> <!-- AR78_videoPostCreationFunctionality -->
       </class> <!-- co.sharechat.test.CreatePostTests -->
     </test> <!-- TestNG Test0 -->
   </suite> <!-- TestNG Forum -->

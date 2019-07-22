@@ -5,7 +5,6 @@ import co.sharechat.pages.Actions.CreatePostActions;
 import co.sharechat.pages.Actions.SignUpActions;
 import co.sharechat.pages.Actions.loginPage;
 import io.appium.java_client.AppiumDriver;
-import org.apache.commons.collections.functors.ExceptionClosure;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -124,7 +123,7 @@ public class launchAppTest
         getCreatePost().composePost();
         getCreatePost().textCompose();
         getCreatePost().tapCameraButtonOnTextPost();
-        getCreatePost().clickPicture();
+        getCreatePost().capturePicture();
         getCreatePost().cropPictureOk();
         getCreatePost().writeTextofTextPost("Post to check");
         getCreatePost().submitTextForTextPost();
@@ -165,7 +164,7 @@ public class launchAppTest
         //Crete Camera Post
         getCreatePost().composePost();
         getCreatePost().openCamera();
-        getCreatePost().clickPicture();
+        getCreatePost().capturePicture();
         getCreatePost().writeTextAboutPost("Post Caption");
         getCreatePost().submitPost();
         getCreatePost().selectTagForPost();

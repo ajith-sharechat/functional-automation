@@ -89,6 +89,10 @@ public class CreatePostActions extends WebDriverListener {
 		createPostObjects.shareWithShareChatOption.click();
 	}
 
+	public void tapOnbackIconOnCreatePost() {
+		element(createPostObjects.backIconOnCreatePost).click();
+	}
+
 	public Set<String> getAllTrendingBuckets(){
 		Set<String> buckets = new HashSet<String>();
 		int initialSize ,finalSize ;
@@ -227,8 +231,7 @@ public class CreatePostActions extends WebDriverListener {
 	}
 	
 	public void submitPost() {
-		hardWait(2);
-		createPostObjects.tickIconCreatePost.click();
+		element(createPostObjects.tickIconCreatePost).click();
 	}
 	
 	public void selectTagForPost() {
@@ -295,8 +298,13 @@ public class CreatePostActions extends WebDriverListener {
 		element(createPostObjects.slectCameraPost).click();
 	}
 
-	public void clickPicture() {
+	public void capturePicture() {
+		hardWait(2);
 		element(createPostObjects.cameraTakePicButton).click();
+	}
+
+	public void captureVideo(int seconds) {
+		deviceHelper.longPress(element(createPostObjects.cameraTakePicButton), seconds);
 	}
 
 	public void uploadPost() {
@@ -415,6 +423,14 @@ public class CreatePostActions extends WebDriverListener {
 		element(createPostObjects.cameraTimerButton).click();
 	}
 
+	public void tapOnStickersButton(){
+		element(createPostObjects.cameraMagicStickersButton).click();
+	}
+
+	public void tapOnMusicButton(){
+		element(createPostObjects.cameraMusicButton).click();
+	}
+
 	public void tapOnDownloadCameraPopupSkipButton(){
 		createPostObjects.downloadCameraFeatureSkipButton.click();
 	}
@@ -423,12 +439,21 @@ public class CreatePostActions extends WebDriverListener {
 		return deviceHelper.isElementPresent(createPostObjects.downloadCameraFeatureText);
 	}
 
+	public boolean isDownloadCameraPopupSkipButtonDisplayed(){
+		return deviceHelper.isElementPresent(createPostObjects.downloadCameraFeatureSkipButton);
+	}
+
 	public boolean isDownloadCameraFeatureDownloadButtonDisplayed(){
 		return deviceHelper.isElementPresent(createPostObjects.downloadCameraFeatureDownloadButton);
 	}
 
 	public boolean isDownloadCameraFeatureSkipDisplayed(){
 		return deviceHelper.isElementPresent(createPostObjects.downloadCameraFeatureSkipButton);
+	}
+
+	public void tapOnTickButtonOnVideoPreview(){
+		hardWait(15);
+		element(createPostObjects.tickButtonOnVideoPreview).click();
 	}
 
 	//========================================Create Camera Ends========================================
