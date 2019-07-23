@@ -158,11 +158,7 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().verifyPhoneContactsScreenElements();
         getSocialActionsInstance().tapFollowLink();
         getSocialActionsInstance().tapUnfollowLink();
-
-
-        getSocialActionsInstance().tapFollowingButtonAndTapConfirmToUnfollow();//verifyFollowingButtonFunctionality
-
-
+        getSocialActionsInstance().tapFollowingButtonAndTapConfirmToUnfollow();
         getSocialActionsInstance().tapInviteSection();
         getSocialActionsInstance().tapInviteButton();
     }
@@ -488,5 +484,63 @@ public class SocialTests  implements Constants {
         getSocialActionsInstance().tapSettingIconInProfileScreen();
         getSocialActionsInstance().verifyProfileSettingScreenElements();
         getSocialActionsInstance().verifyDataSaverFunctionality();
+    }
+
+    @Test(enabled = true, description = "Verify Post Download button functionality",groups = {"RegressionTest", "Social"})
+    public void TC165_verifyPostDownloadButtonFunctionality(){
+        getSignUpInstance().selectLanguage(Language);
+        getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
+        getHomePageActionsInstance().tapProfileIcon();
+        getSocialActionsInstance().verifyProfileScreenElements();
+        getSocialActionsInstance().tapSettingIconInProfileScreen();
+        getSocialActionsInstance().verifyProfileSettingScreenElements();
+        getSocialActionsInstance().verifyPostDownloadSwitchFunctionality();
+    }
+
+    @Test(enabled = true, description = "Verify Account Settings functionality",groups = {"RegressionTest", "Social"})
+    public void TC168_verifyAccountSettingsFunctionality(){
+        getSignUpInstance().selectLanguage(Language);
+        getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
+        getHomePageActionsInstance().tapProfileIcon();
+        getSocialActionsInstance().verifyProfileScreenElements();
+        getSocialActionsInstance().tapSettingIconInProfileScreen();
+        getSocialActionsInstance().verifyProfileSettingScreenElements();
+        getSocialActionsInstance().tapAccountSettngs();
+        getSocialActionsInstance().verifyEditProfileScreenElements();
+    }
+
+    @Test(enabled = true, description = "Verify Logout link functionality",groups = {"RegressionTest", "Social"})
+    public void TC169_verifyLogoutLinkFunctionality(){
+        getSignUpInstance().selectLanguage(Language);
+        getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
+        getHomePageActionsInstance().tapProfileIcon();
+        getSocialActionsInstance().verifyProfileScreenElements();
+        getSocialActionsInstance().tapSettingIconInProfileScreen();
+        getSocialActionsInstance().verifyProfileSettingScreenElements();
+        getSocialActionsInstance().verifyLogoutFunctionality();
+    }
+
+    @Test(enabled = true, description = "Verify Privacy Settings screen UI",groups = {"RegressionTest", "Social"})
+    public void TC170_verifyPrivacySettingsScreenUI(){
+        getSignUpInstance().selectLanguage(Language);
+        getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
+        getHomePageActionsInstance().tapProfileIcon();
+        getSocialActionsInstance().verifyProfileScreenElements();
+        getSocialActionsInstance().tapSettingIconInProfileScreen();
+        getSocialActionsInstance().verifyProfileSettingScreenElements();
+        getSocialActionsInstance().tapPrivacySettngs();
+        getSocialActionsInstance().verifyPrivacySettingsScreenElements();
+    }
+
+    @Test(enabled = true, description = "Verify notification settings screen functionality",groups = {"RegressionTest", "Social"})
+    public void TC195_verifyNotificationSettingsScreenElements(){
+        getSignUpInstance().selectLanguage(Language);
+        getSocialActionsInstance().appLoginInitializationAndVerifyHomeScreenElements(registerNumber,otp);
+        getHomePageActionsInstance().tapProfileIcon();
+        getSocialActionsInstance().verifyProfileScreenElements();
+        getSocialActionsInstance().tapSettingIconInProfileScreen();
+        getSocialActionsInstance().verifyProfileSettingScreenElements();
+        getSocialActionsInstance().tapNotificationSettngs();
+        getSocialActionsInstance().verifyNotificationSettingsScreenElements();
     }
 }

@@ -180,6 +180,9 @@ public class ProfilePageObjects {
     @AndroidFindBy(id ="in.mohalla.sharechat:id/iv_sticker_save")
     public MobileElement stickers;
 
+    @AndroidFindBy(xpath ="//*[@resource-id='in.mohalla.sharechat:id/ll_change_cover_photo']//following::android.widget.TextView")
+    public MobileElement editButton;
+
     @AndroidFindBys
             ({@AndroidBy(id = "in.mohalla.sharechat:id/image_view")})
     public List<MobileElement> saveButton;

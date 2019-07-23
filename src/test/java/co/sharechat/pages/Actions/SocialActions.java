@@ -41,6 +41,9 @@ public class SocialActions extends WebDriverListener {
     static MessengerAppPageObjects messengerAppObjects = new MessengerAppPageObjects();
     static SignUpPageObjects signUpObjects = new SignUpPageObjects();
     static loginPageObjects loginObjects = new loginPageObjects();
+    static PrivacySettingObjects privacyObjects = new PrivacySettingObjects();
+    static NotificationSettingsObjects notificationObjects = new NotificationSettingsObjects();
+
     ExtentHtmlReporter reporter=new ExtentHtmlReporter("./test-output/ExtentReport.html");
     ExtentReports extent = new ExtentReports();
 
@@ -72,6 +75,8 @@ public class SocialActions extends WebDriverListener {
         PageFactory.initElements(new AppiumFieldDecorator(driver), profileSettingObjects);
         PageFactory.initElements(new AppiumFieldDecorator(driver), messengerAppObjects);
         PageFactory.initElements(new AppiumFieldDecorator(driver), signUpObjects);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), privacyObjects);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), notificationObjects);
         this.runnerInfo = runnerInfo;
     }
 
@@ -315,6 +320,7 @@ public class SocialActions extends WebDriverListener {
         deviceHelper.isElementPresentAssertTrue(profileSettingObjects.privacySettings);
         deviceHelper.isElementPresentAssertTrue(profileSettingObjects.notificationSettings);
         deviceHelper.isElementPresentAssertTrue(profileSettingObjects.helpFeedbackSettings);
+        deviceHelper.isElementPresentAssertTrue(profileSettingObjects.logoutIcon);
     }
     public void  tapEditProfileButton(){
         deviceHelper.isElementPresentAssertTrue(profileObjects.profileEditButton);
@@ -326,6 +332,7 @@ public class SocialActions extends WebDriverListener {
         deviceHelper.isElementPresentAssertTrue(profileObjects.changeButtonBackgroundImageInEditScreen);
         deviceHelper.isElementPresentAssertTrue(profileObjects.profilePicEditScreen);
         deviceHelper.isElementPresentAssertTrue(profileObjects.saveChangeButton);
+        deviceHelper.isElementPresentAssertTrue(profileObjects.editButton);
         deviceHelper.isElementPresentAssertTrue(profileObjects.coverPicEditScreen);
         deviceHelper.isElementPresentAssertTrue(profileObjects.profileCameraIconEditScreen);
         deviceHelper.isElementPresentAssertTrue(profileObjects.fullNameTextField);
@@ -636,5 +643,73 @@ public class SocialActions extends WebDriverListener {
         String galleryDescriptionOnLabel=profileSettingObjects.galleryDescriptionSubTitle.getText();
         Assert.assertEquals(galleryDescriptionOnLabel.toLowerCase().trim(), "Saving download files to ShareChat-Media is ON".toLowerCase().trim());
     }
-
+    public void  tapAccountSettngs(){
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.accountSettings);;
+        profileSettingObjects.accountSettings.click();
+    }
+    public void  verifyLogoutFunctionality(){
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.logoutIcon);
+        profileSettingObjects.logoutIcon.click();
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.logoutPopupMessageLabel);
+        deviceHelper.isElementPresentAssertTrue(profileSettingObjects.logoutPopupNo);
+        deviceHelper.isElementPresentAssertTrue(profileSettingObjects.logoutPopupYes);
+        profileSettingObjects.logoutPopupYes.click();
+        deviceHelper.waitTillTheElementIsVisible(signUpObjects.selectLanguageTitle);
+    }
+    public void verifyPrivacySettingsScreenElements(){
+        deviceHelper.waitTillTheElementIsVisible(privacyObjects.privacySettingTitle);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.privacyFollowerList);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.privacyFollowerDescription);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.privacyFollowerIcon);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.privacyFollowingList);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.privacyFollowingDescription);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.privacyFollowingIcon);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.privacyTagList);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.privacyTagDescription);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.privacyTagIcon);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.privacyBlockTitle);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.privacyBlockDescription);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.privacyBlockIcon);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.DeactivateYourAccountLabel);
+        deviceHelper.isElementPresentAssertTrue(privacyObjects.DeactivateYourAccountIcon);
+    }
+    public void  tapPrivacySettngs(){
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.privacySettings);;
+        profileSettingObjects.privacySettings.click();
+        deviceHelper.waitTillTheElementIsVisible(privacyObjects.privacySettingTitle);
+    }
+    public void  tapNotificationSettngs(){
+        deviceHelper.waitTillTheElementIsVisible(profileSettingObjects.notificationSettings);;
+        profileSettingObjects.notificationSettings.click();
+        deviceHelper.waitTillTheElementIsVisible(notificationObjects.notificationSettingTitle);
+    }
+    public void verifyNotificationSettingsScreenElements(){
+        deviceHelper.waitTillTheElementIsVisible(notificationObjects.notificationSettingTitle);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.notificationFollowIcon);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.followNotificationLabel);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.followNotificationSwitchButton);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.notificationLikeIcon);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.notificationLikeLabel);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.likeNotificationSwitchButton);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.notificationShareIcon);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.shareNotificationLabel);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.shareNotificationSwitchButton);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.notificationCommentIcon);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.commentNotificationLabel);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.commentNotificationSwitchButton);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.feedNotificationIcon);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.feedNotificationLabel);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.feedNotificationSwitchButton);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.chatNotificationIcon);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.chatNotificationLabel);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.chatNotificationSwitchButton);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.repostNotificationIcon);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.repostNotificationLabel);
+        deviceHelper.isElementPresentAssertTrue(notificationObjects.repostNotificationSwitchButton);
+    }
+    public void  tapExploreIcon(){
+        deviceHelper.waitTillTheElementIsVisible(homePostObjects.searchIcon);;
+        homePostObjects.searchIcon.click();
+        deviceHelper.waitTillTheElementIsVisible(privacyObjects.privacySettingTitle);
+    }
 }

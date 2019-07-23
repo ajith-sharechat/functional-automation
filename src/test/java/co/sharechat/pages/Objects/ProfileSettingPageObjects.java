@@ -62,4 +62,14 @@ public class ProfileSettingPageObjects {
     @AndroidFindBy(id ="in.mohalla.sharechat:id/tv_gallery_description")
     public MobileElement galleryDescriptionSubTitle;
 
+    @AndroidFindBy(id ="android:id/message")
+    public MobileElement logoutPopupMessageLabel;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/buttonPanel']//android.widget.Button[1]")
+    public MobileElement logoutPopupNo;
+
+    @AndroidFindBy(xpath = "//*[@resource-id='in.mohalla.sharechat:id/buttonPanel']//android.widget.Button[2]")
+    public MobileElement logoutPopupYes;
+
+
 }
